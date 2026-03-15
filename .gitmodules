@@ -10,6 +10,3 @@
 [submodule "clones/lead"]
 	path = clones/lead
 	url = https://github.com/autonomousvision/lead.git
-[submodule "clones/DrivoR"]
-	path = clones/DrivoR
-	url = https://github.com/valeoai/DrivoR.git

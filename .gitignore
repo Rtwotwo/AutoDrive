@@ -1,3 +1,5 @@
 # ignore clones and papers file
 clones/
-papers/ 
+
+# ignore workshop logs
+logs/
