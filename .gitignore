@@ -3,3 +3,6 @@ clones/
 
 # ignore workshop logs
 logs/
+
+# ignore workshop papers
+papers/
