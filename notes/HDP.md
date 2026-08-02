@@ -62,9 +62,9 @@ $$\mathcal{L} = \mathbb{E}_{t,\tau_0,\tau_t,\epsilon}\left[\|\epsilon_\theta(\ta
 
 | 预测 ↓ / 损失 → | $\tau_0$-loss | $v$-loss | $\epsilon$-loss |
 |:---:|:---:|:---:|:---:|
-| **$\tau_0$-pred** | $E[\|\tau_\theta - \tau_0\|^2]$ | — | — |
-| **$v$-pred** | — | $E[\|v_{\theta;t} - v_t\|^2]$ | — |
-| **$\epsilon$-pred** | — | — | $E[\|\epsilon_\theta - \epsilon\|^2]$ |
+| **$\tau_0$-pred** | $E[\lVert\tau_\theta - \tau_0\rVert^2]$ | — | — |
+| **$v$-pred** | — | $E[\lVert v_{\theta;t} - v_t\rVert^2]$ | — |
+| **$\epsilon$-pred** | — | — | $E[\lVert\epsilon_\theta - \epsilon\rVert^2]$ |
 
 其中各预测头与损失函数的转换关系（表 III）完整定义了模型的参数化和监督方式。例如参数化为输出 $\tau_\theta$ 但用 $\epsilon$-loss：
 

@@ -299,8 +299,8 @@ $$L_{\text{diff}} = \|\epsilon - \hat{\epsilon}\|_2^2 \tag{19}$$
 | $\hat{Y}_k = Y_{AR}^{(k)} + \Delta \hat{Y}_k$ | (15) | DDIM 采样重建 |
 | $L_{\text{stage1}} = L_{\text{traj}} + \lambda_1 L_{\text{scorer}}$ | (16) | Stage I 损失 |
 | $L_{\text{stage2}} = \lambda_2 L_{\text{diff}} + \lambda_3 L_{\text{traj}} + \lambda_4 L_{\text{scorer}}$ | (17) | Stage II 损失 |
-| $k^* = \arg\min_k \|Y_{AR}^{(k)} - Y^*\|_2$ | (18) | 非对称 WTA 模式匹配 |
-| $L_{\text{diff}} = \|\epsilon - \hat{\epsilon}\|_2^2$ | (19) | 扩散去噪损失 |
+| $k^* = \arg\min_k \lVert Y_{AR}^{(k)} - Y^*\rVert_2$ | (18) | 非对称 WTA 模式匹配 |
+| $L_{\text{diff}} = \lVert\epsilon - \hat{\epsilon}\rVert_2^2$ | (19) | 扩散去噪损失 |
 
 ---
 

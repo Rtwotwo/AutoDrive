@@ -71,7 +71,7 @@ $$\boxed{J(\mathbf{u}) = S\big(\text{BM}(\mathbf{u}, v_0); o, g\big) - \lambda_a
 | 项 | 公式 | 作用 |
 |-----|------|------|
 | **Scorer Reward** | $S(\text{BM}(\mathbf{u}, v_0); o, g)$ | 学习到的轨迹级奖励（主优化信号） |
-| **Anchor Regularizer** | $C_{\text{anchor}}(\mathbf{u}) = \|\mathbf{u} - \mathbf{u}_{\text{base}}\|^2$ | 约束搜索不远离锚点，保持在评分器可靠区域内 |
+| **Anchor Regularizer** | $C_{\text{anchor}}(\mathbf{u}) = \lVert\mathbf{u} - \mathbf{u}_{\text{base}}\rVert^2$ | 约束搜索不远离锚点，保持在评分器可靠区域内 |
 | **Comfort Regularizer** | $C_{\text{comf}}$（闭式） | 累积违反标准运动学舒适限制的平方值：纵/横向加速度、jerk、yaw rate、yaw acceleration |
 
 $C_{\text{comf}}$ 是精确的闭式表达式而非学习估计，提供评分器仅能粗略估计的信号。评估范围涵盖未来控制以及上一次执行的控制，惩罚自车近期运动的不舒适转换。

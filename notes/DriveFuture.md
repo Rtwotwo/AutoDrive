@@ -198,7 +198,7 @@ $$\boxed{L = \lambda_{plan} L_{plan} + \lambda_{bev} L_{bev}} \tag{11}$$
 
 | | 现有世界模型 | DriveFuture |
 |---|---|---|
-| 训练目标 | $\min \mathbb{E}[D(f(Z_t, a_t), Z_{t+T})]$ — 在特征空间中最小化预测误差 | $\min \mathbb{E}[\|\epsilon - \epsilon_\theta(a_s, s, Z_t, f(Z_t; E_\tau))\|^2]$ — 轨迹去噪损失的梯度**直接塑造世界模型** |
+| 训练目标 | $\min \mathbb{E}[D(f(Z_t, a_t), Z_{t+T})]$ — 在特征空间中最小化预测误差 | $\min \mathbb{E}[\lVert\epsilon - \epsilon_\theta(a_s, s, Z_t, f(Z_t; E_\tau))\rVert^2]$ — 轨迹去噪损失的梯度**直接塑造世界模型** |
 | 未来潜在的作用 | 被动的重建目标 | 主动的规划条件 |
 | 优化什么 | 未来状态能否被预测 | 未来信息是否改善轨迹去噪 |
 
@@ -372,7 +372,7 @@ $$w_{tw}(r) = \begin{cases} 0, & r \leq \beta \\ \frac{w_{tw}^{max}}{2}\left[1 -
 | $\tilde{Z}_{t+T}^c = \alpha(e) Z_{t+T}^c + (1-\alpha(e)) \hat{Z}_{t+T}$ | (6) | **LatentAlign 退火混合** |
 | $a_s = \sqrt{\bar{\alpha}_s} a_0 + \sqrt{1-\bar{\alpha}_s} \epsilon$ | (7) | 前向扩散加噪 |
 | $\hat{\epsilon} = \epsilon_\theta(a_s, s, C_{scene}, Z_{t+T}^c)$ | (8) | **未来条件化噪声预测** |
-| $L_{plan} = \mathbb{E}[\|\epsilon - \hat{\epsilon}\|_2^2]$ | (9) | 扩散规划损失 |
+| $L_{plan} = \mathbb{E}[\lVert\epsilon - \hat{\epsilon}\rVert_2^2]$ | (9) | 扩散规划损失 |
 | $L_{bev} = \text{CE}(\hat{Y}_{bev}, Y_{bev})$ | (10) | BEV 语义辅助损失 |
 | $L = \lambda_{plan} L_{plan} + \lambda_{bev} L_{bev}$ | (11) | 总训练目标 |
 | $\hat{a}_0^{(s)} = (a_s - \sqrt{1-\bar{\alpha}_s}\hat{\epsilon})/\sqrt{\bar{\alpha}_s}$ | (12) | **Tweedie 公式自估计** |
