@@ -1,4 +1,4 @@
-﻿# GTRS: Generalized Trajectory Scoring for End-to-end Multimodal Planning 阅读笔记
+# GTRS: Generalized Trajectory Scoring for End-to-end Multimodal Planning 阅读笔记
 
 > **论文标题**: Generalized Trajectory Scoring for End-to-end Multimodal Planning
 > **arXiv**: 2506.06664v1, 2025-06-07

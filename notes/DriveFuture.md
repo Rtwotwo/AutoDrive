@@ -1,4 +1,4 @@
-﻿# DriveFuture: Future-Aware Latent World Models for Autonomous Driving 阅读笔记
+# DriveFuture: Future-Aware Latent World Models for Autonomous Driving 阅读笔记
 
 > **论文标题**: DriveFuture: Future-Aware Latent World Models for Autonomous Driving
 > **arXiv**: 2605.09701v1, 2026-05-10

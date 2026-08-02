@@ -1,4 +1,4 @@
-﻿# Hyper Diffusion Planner (HDP) 阅读笔记
+# Hyper Diffusion Planner (HDP) 阅读笔记
 
 > **论文标题**: Unleashing the Potential of Diffusion Models for End-to-End Autonomous Driving
 > **arXiv**: 2602.22801v1, 2026-02-26

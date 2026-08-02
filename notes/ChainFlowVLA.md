@@ -1,4 +1,4 @@
-﻿# ChainFlow-VLA: Causal Flow Planning with Vision-Language Models 阅读笔记
+# ChainFlow-VLA: Causal Flow Planning with Vision-Language Models 阅读笔记
 
 > **论文标题**: ChainFlow-VLA: Causal Flow Planning with Vision-Language Models
 > **arXiv**: 2605.23270v1, 2026-05-22

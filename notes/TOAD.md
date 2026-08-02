@@ -1,4 +1,4 @@
-﻿# TOAD: Test-Time Trajectory Optimization for Autonomous Driving 阅读笔记
+# TOAD: Test-Time Trajectory Optimization for Autonomous Driving 阅读笔记
 
 > **论文标题**: Test-Time Trajectory Optimization for Autonomous Driving
 > **arXiv**: 2606.07170v1, 2026-06-05
