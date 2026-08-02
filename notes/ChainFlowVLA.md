@@ -1,4 +1,4 @@
-# ChainFlow-VLA: Causal Flow Planning with Vision-Language Models 阅读笔记
+﻿# ChainFlow-VLA: Causal Flow Planning with Vision-Language Models 阅读笔记
 
 > **论文标题**: ChainFlow-VLA: Causal Flow Planning with Vision-Language Models
 > **arXiv**: 2605.23270v1, 2026-05-22
@@ -55,7 +55,7 @@ BEV特征 → AR Generator (Chain) → K个轨迹Proposals → Diffusion Refiner
 
 $$P(Y \mid O) \tag{1}$$
 
-其中 $O$ 为多模态观测，$Y = \{y_t\}_{t=1}^{T}$ 为未来轨迹。
+其中 $O$ 为多模态观测，$Y = \{y_{t}\}_{t=1}^{T}$ 为未来轨迹。
 
 #### 自回归因果分解
 
@@ -99,7 +99,7 @@ $$p(y_t \mid y_{<t}, O) \tag{6}$$
 
 #### 控制空间解码
 
-每个时间步 $t$ 预测控制变量（加速度 $a_t$ 和转向角 $\delta_t$）：
+每个时间步 $t$ 预测控制变量（加速度 $a_{t}$ 和转向角 $\delta_{t}$）：
 
 $$(a_t^{(k)}, \delta_t^{(k)}) = \mathcal{H}(y_{<t}^{(k)}, O) \tag{7}$$
 
@@ -131,7 +131,7 @@ Flow 模块**不在全局空间建模完整轨迹分布**，而是在每个 AR �
 
 $$\boxed{Y = Y_{AR}^{(k)} + \Delta Y_k} \tag{10}$$
 
-其中 $\Delta Y_k$ 是第 $k$ 个 AR 提议相对于专家轨迹的修正量。
+其中 $\Delta Y_{k}$ 是第 $k$ 个 AR 提议相对于专家轨迹的修正量。
 
 #### 残差条件分布
 
@@ -189,7 +189,7 @@ $$L_{\text{stage1}} = L_{\text{traj}} + \lambda_1 L_{\text{scorer}} \tag{16}$$
 
 $$L_{\text{stage2}} = \lambda_2 L_{\text{diff}} + \lambda_3 L_{\text{traj}} + \lambda_4 L_{\text{scorer}} \tag{17}$$
 
-损失权重：$\lambda_1=1, \lambda_2=10, \lambda_3=20, \lambda_4=4$。
+损失权重：$\lambda_{1}=1, \lambda_{2}=10, \lambda_{3}=20, \lambda_{4}=4$。
 
 #### 非对称 WTA 分配
 
@@ -283,24 +283,24 @@ $$L_{\text{diff}} = \|\epsilon - \hat{\epsilon}\|_2^2 \tag{19}$$
 | 公式 | 编号 | 含义 |
 |------|------|------|
 | $P(Y \mid O)$ | (1) | 轨迹条件分布定义 |
-| $P(Y_{AR} \mid O) = \prod_t P(y_t \mid y_{<t}, O)$ | (2) | AR 因果分解 |
+| $P(Y_{AR} \mid O) = \prod_{t} P(y_{t} \mid y_{<t}, O)$ | (2) | AR 因果分解 |
 | $P(Y \mid Y_{AR}^{(k)}, O)$ | (3) | 模式条件分布 |
 | $P(Y \mid Y_{AR}^{(k)}, O) \approx P(Y \mid Y_{AR}^{(k)}, h_{VLM})$ | (4) | VLM 语义条件近似 |
-| $P(Y \mid O) \approx \sum_k P(Y \mid Y_{AR}^{(k)}, h_{VLM}) \cdot P(Y_{AR}^{(k)} \mid O)$ | (5) | **全概率混合公式（核心）** |
-| $p(y_t \mid y_{<t}, O)$ | (6) | 逐步条件预测 |
-| $(a_t^{(k)}, \delta_t^{(k)}) = \mathcal{H}(y_{<t}^{(k)}, O)$ | (7) | 控制变量预测 |
-| $y_t^{(k)} = \text{Bicycle}(y_{t-1}^{(k)}, a_t^{(k)}, \delta_t^{(k)})$ | (8) | 运动学自行车模型约束 |
+| $P(Y \mid O) \approx \sum_{k} P(Y \mid Y_{AR}^{(k)}, h_{VLM}) \cdot P(Y_{AR}^{(k)} \mid O)$ | (5) | **全概率混合公式（核心）** |
+| $p(y_{t} \mid y_{<t}, O)$ | (6) | 逐步条件预测 |
+| $(a_{t}^{(k)}, \delta_{t}^{(k)}) = \mathcal{H}(y_{<t}^{(k)}, O)$ | (7) | 控制变量预测 |
+| $y_{t}^{(k)} = \text{Bicycle}(y_{t-1}^{(k)}, a_{t}^{(k)}, \delta_{t}^{(k)})$ | (8) | 运动学自行车模型约束 |
 | $Y_{AR} = \{Y_{AR}^{(k)}\}_{k=1}^{K}$ | (9) | 多模态轨迹提议集 |
-| $Y = Y_{AR}^{(k)} + \Delta Y_k$ | (10) | **残差轨迹表示** |
-| $P(Y \mid Y_{AR}^{(k)}, h_{VLM}) = P(\Delta Y_k \mid Y_{AR}^{(k)}, h_{VLM})$ | (11) | 残差空间条件分布 |
-| $\Delta Y_k = Y^* - Y_{AR}^{(k)}$ | (12) | 残差监督目标 |
-| $z_t^{(k)} = \sqrt{\bar{\alpha}_t} \Delta Y_k + \sqrt{1 - \bar{\alpha}_t} \epsilon$ | (13) | 前向扩散加噪 |
-| $\hat{\epsilon}^{(k)} = \epsilon_\theta(z_t^{(k)}, t, c_{ego}, h_{VLM}, Y_{AR}^{(k)})$ | (14) | **VLM 条件噪声预测** |
+| $Y = Y_{AR}^{(k)} + \Delta Y_{k}$ | (10) | **残差轨迹表示** |
+| $P(Y \mid Y_{AR}^{(k)}, h_{VLM}) = P(\Delta Y_{k} \mid Y_{AR}^{(k)}, h_{VLM})$ | (11) | 残差空间条件分布 |
+| $\Delta Y_{k} = Y^* - Y_{AR}^{(k)}$ | (12) | 残差监督目标 |
+| $z_{t}^{(k)} = \sqrt{\bar{\alpha}_t} \Delta Y_{k} + \sqrt{1 - \bar{\alpha}_t} \epsilon$ | (13) | 前向扩散加噪 |
+| $\hat{\epsilon}^{(k)} = \epsilon_\theta(z_{t}^{(k)}, t, c_{ego}, h_{VLM}, Y_{AR}^{(k)})$ | (14) | **VLM 条件噪声预测** |
 | $\hat{Y}_k = Y_{AR}^{(k)} + \Delta \hat{Y}_k$ | (15) | DDIM 采样重建 |
-| $L_{\text{stage1}} = L_{\text{traj}} + \lambda_1 L_{\text{scorer}}$ | (16) | Stage I 损失 |
-| $L_{\text{stage2}} = \lambda_2 L_{\text{diff}} + \lambda_3 L_{\text{traj}} + \lambda_4 L_{\text{scorer}}$ | (17) | Stage II 损失 |
-| $k^* = \arg\min_k \lVert Y_{AR}^{(k)} - Y^*\rVert_2$ | (18) | 非对称 WTA 模式匹配 |
-| $L_{\text{diff}} = \lVert\epsilon - \hat{\epsilon}\rVert_2^2$ | (19) | 扩散去噪损失 |
+| $L_{\text{stage1}} = L_{\text{traj}} + \lambda_{1} L_{\text{scorer}}$ | (16) | Stage I 损失 |
+| $L_{\text{stage2}} = \lambda_{2} L_{\text{diff}} + \lambda_{3} L_{\text{traj}} + \lambda_{4} L_{\text{scorer}}$ | (17) | Stage II 损失 |
+| $k^* = \arg\min_{k} \lVert Y_{AR}^{(k)} - Y^*\rVert_{2}$ | (18) | 非对称 WTA 模式匹配 |
+| $L_{\text{diff}} = \lVert\epsilon - \hat{\epsilon}\rVert_{2}^2$ | (19) | 扩散去噪损失 |
 
 ---
 

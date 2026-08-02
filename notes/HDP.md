@@ -1,4 +1,4 @@
-# Hyper Diffusion Planner (HDP) 阅读笔记
+﻿# Hyper Diffusion Planner (HDP) 阅读笔记
 
 > **论文标题**: Unleashing the Potential of Diffusion Models for End-to-End Autonomous Driving
 > **arXiv**: 2602.22801v1, 2026-02-26
@@ -21,28 +21,28 @@
 
 ### 2.1 扩散模型基础
 
-扩散模型定义一个将条件轨迹数据分布 $q_0(\tau_0|C)$ 逐步转化为噪声分布的前向过程：
+扩散模型定义一个将条件轨迹数据分布 $q_{0}(\tau_{0}|C)$ 逐步转化为噪声分布的前向过程：
 
 $$q_{t0}(\tau_t|\tau_0) = \mathcal{N}(\tau_t | \alpha_t \tau_0, \sigma_t^2 I), \quad t \in [0, 1] \tag{1}$$
 
-- $\tau_0 \in \mathbb{R}^{L \times 4}$：规划轨迹，$L$ 个时间步，每步含自车中心航点坐标 $(x_l, y_l)$ 和航向的 cos/sin 值
+- $\tau_{0} \in \mathbb{R}^{L \times 4}$：规划轨迹，$L$ 个时间步，每步含自车中心航点坐标 $(x_{l}, y_{l})$ 和航向的 cos/sin 值
 - $C$：来自感知骨干的潜在表示（条件）
-- $\alpha_t, \sigma_t$：预定义的噪声调度 (Variance Preserving, VP)
+- $\alpha_{t}, \sigma_{t}$：预定义的噪声调度 (Variance Preserving, VP)
 - $t \to 1$ 时边缘分布趋近 $\mathcal{N}(0, I)$
 
 逆向去噪过程等价于扩散 ODE：
 
 $$\frac{d\tau_t}{dt} = f(t)\tau_t - \frac{1}{2}g^2(t)\nabla_{\tau_t}\log q_t(\tau_t) \tag{2}$$
 
-其中 $f(t) = \frac{d\log\alpha_t}{dt}$，$g^2(t) = \frac{d\sigma_t^2}{dt} - 2\frac{d\log\alpha_t}{dt}\sigma_t^2$。
+其中 $f(t) = \frac{d\log\alpha_{t}}{dt}$，$g^2(t) = \frac{d\sigma_{t}^2}{dt} - 2\frac{d\log\alpha_{t}}{dt}\sigma_{t}^2$。
 
 **标准扩散训练目标**（ϵ-matching）：
 
 $$\mathcal{L} = \mathbb{E}_{t,\tau_0,\tau_t,\epsilon}\left[\|\epsilon_\theta(\tau_t, t, C) - \epsilon\|^2_2\right] \tag{3}$$
 
-其中 $t \sim \mathcal{U}(0,1)$，$\tau_0 \sim q_0(\tau_0|C)$，$\tau_t \sim q_{t0}(\tau_t|\tau_0)$，$\epsilon \sim \mathcal{N}(0, I)$。
+其中 $t \sim \mathcal{U}(0,1)$，$\tau_{0} \sim q_{0}(\tau_{0}|C)$，$\tau_{t} \sim q_{t0}(\tau_{t}|\tau_{0})$，$\epsilon \sim \mathcal{N}(0, I)$。
 
-模型通过拟合噪声 $\epsilon$ 间接学习分数函数：$s_\theta(\tau_t, t, C) = -\epsilon_\theta(\tau_t, t, C) / \sigma_t$。生成时使用 ODE 求解器（实践中用 DPM-Solver 6 步）。
+模型通过拟合噪声 $\epsilon$ 间接学习分数函数：$s_\theta(\tau_{t}, t, C) = -\epsilon_\theta(\tau_{t}, t, C) / \sigma_{t}$。生成时使用 ODE 求解器（实践中用 DPM-Solver 6 步）。
 
 ---
 
@@ -54,16 +54,16 @@ $$\mathcal{L} = \mathbb{E}_{t,\tau_0,\tau_t,\epsilon}\left[\|\epsilon_\theta(\ta
 
 | 预测目标 | 含义 | 转换关系 |
 |----------|------|----------|
-| $\epsilon$ | 高斯噪声 | $\epsilon = (\tau_t - \alpha_t\tau_0)/\sigma_t$ |
-| $v_t$ | 流速度 (flow velocity) | $v_t = \alpha_t\epsilon - \sigma_t\tau_0$ |
-| $\tau_0$ | 干净数据 | $\tau_0 = (\tau_t - \sigma_t\epsilon)/\alpha_t$ |
+| $\epsilon$ | 高斯噪声 | $\epsilon = (\tau_{t} - \alpha_{t}\tau_{0})/\sigma_{t}$ |
+| $v_{t}$ | 流速度 (flow velocity) | $v_{t} = \alpha_{t}\epsilon - \sigma_{t}\tau_{0}$ |
+| $\tau_{0}$ | 干净数据 | $\tau_{0} = (\tau_{t} - \sigma_{t}\epsilon)/\alpha_{t}$ |
 
 这三种量可互相转换，因此有 **9 种预测-损失组合**：
 
-| 预测 ↓ / 损失 → | $\tau_0$-loss | $v$-loss | $\epsilon$-loss |
+| 预测 ↓ / 损失 → | $\tau_{0}$-loss | $v$-loss | $\epsilon$-loss |
 |:---:|:---:|:---:|:---:|
-| **$\tau_0$-pred** | $E[\lVert\tau_\theta - \tau_0\rVert^2]$ | — | — |
-| **$v$-pred** | — | $E[\lVert v_{\theta;t} - v_t\rVert^2]$ | — |
+| **$\tau_{0}$-pred** | $E[\lVert\tau_\theta - \tau_{0}\rVert^2]$ | — | — |
+| **$v$-pred** | — | $E[\lVert v_{\theta;t} - v_{t}\rVert^2]$ | — |
 | **$\epsilon$-pred** | — | — | $E[\lVert\epsilon_\theta - \epsilon\rVert^2]$ |
 
 其中各预测头与损失函数的转换关系（表 III）完整定义了模型的参数化和监督方式。例如参数化为输出 $\tau_\theta$ 但用 $\epsilon$-loss：
@@ -74,11 +74,11 @@ $$\mathcal{L} = \mathbb{E}_{\tau_0,t,\epsilon}\left\|\frac{\tau_t - \alpha_t\tau
 
 **τ₀-prediction + τ₀-loss 是最优组合**，原因有两方面：
 
-**① 快速收敛**：轨迹 $\tau_0$ 本身位于低维流形，神经网络可轻松捕捉；而 $\epsilon$ 和 $v$ 目标支撑在高维空间，需求更大模型容量。
+**① 快速收敛**：轨迹 $\tau_{0}$ 本身位于低维流形，神经网络可轻松捕捉；而 $\epsilon$ 和 $v$ 目标支撑在高维空间，需求更大模型容量。
 
-**② 高质量生成**：去噪末期（$t \to 0$，$\sigma_t \to 0$），$\epsilon$ 和 $v$ 预测难以估计微弱噪声信号，产生高频伪影和轨迹抖动；$\tau_0$ 预测直接输出干净轨迹，天然抑制噪声，生成运动学一致轨迹。
+**② 高质量生成**：去噪末期（$t \to 0$，$\sigma_{t} \to 0$），$\epsilon$ 和 $v$ 预测难以估计微弱噪声信号，产生高频伪影和轨迹抖动；$\tau_{0}$ 预测直接输出干净轨迹，天然抑制噪声，生成运动学一致轨迹。
 
-ϵ-prediction + τ₀-loss / v-loss **完全崩溃**的原因：训练目标中噪声目标被 $1/\alpha_t$ 缩放 → 低噪声阶段方差极大 → 训练不稳定。
+ϵ-prediction + τ₀-loss / v-loss **完全崩溃**的原因：训练目标中噪声目标被 $1/\alpha_{t}$ 缩放 → 低噪声阶段方差极大 → 训练不稳定。
 
 ---
 
@@ -88,8 +88,8 @@ $$\mathcal{L} = \mathbb{E}_{\tau_0,t,\epsilon}\left\|\frac{\tau_t - \alpha_t\tau
 
 | 表示方式 | 优势 | 劣势 |
 |----------|------|------|
-| **绝对航点** $\tau_0^x = \{(x_l, y_l)\}_{l=1}^{L}$ | 空间建模好，ADE 低 | 速度曲线严重抖动，局部时间一致性差 |
-| **速度表示** $\tau_0^v = \{(v_l^x, v_l^y)\}_{l=1}^{L}$ | 轨迹平滑，Comfort 高 | 全局几何建模稍弱 |
+| **绝对航点** $\tau_{0}^x = \{(x_{l}, y_{l})\}_{l=1}^{L}$ | 空间建模好，ADE 低 | 速度曲线严重抖动，局部时间一致性差 |
+| **速度表示** $\tau_{0}^v = \{(v_{l}^x, v_{l}^y)\}_{l=1}^{L}$ | 轨迹平滑，Comfort 高 | 全局几何建模稍弱 |
 
 速度表示下，推理时通过积分恢复绝对轨迹，数值分布更集中，学习更稳定。
 
@@ -110,8 +110,8 @@ $$\boxed{\mathcal{L}_{\text{hybrid}} = \mathcal{L}_{\text{velocity}} + \omega \c
 | 符号 | 含义 |
 |------|------|
 | $\tau_\theta^v$ | 模型输出的预测速度序列 |
-| $\tau_0^v$ | 真实速度序列 |
-| $\tau_0^x$ | 真实绝对航点序列 |
+| $\tau_{0}^v$ | 真实速度序列 |
+| $\tau_{0}^x$ | 真实绝对航点序列 |
 | $\Delta t$ | 相邻帧时间间隔 |
 | $M$ | 全 1 下三角矩阵，实现速度逐元素积分 → 航点 |
 | $\omega = 0.1$ | 平衡权重 |
@@ -132,7 +132,7 @@ $$= \mathbb{E}[(\tau_\theta^v - \tau_0^v)^T (I + \omega \Delta t^2 M^T M) (\tau_
 
 $$= \mathbb{E}[\|\tau_\theta^v - \tau_0^v\|^2_P] = \mathbb{E}[D_P(\tau_\theta^v, \tau_0^v)]$$
 
-其中 $D_P(u, v) = \|u - v\|^2_P$ 是 Bregman Divergence（$\Phi_P(u) = u^T P u$ 严格凸），因此提供无偏梯度学习边缘分数函数。
+其中 $D_{P}(u, v) = \|u - v\|^2_{P}$ 是 Bregman Divergence（$\Phi_{P}(u) = u^T P u$ 严格凸），因此提供无偏梯度学习边缘分数函数。
 
 **关键结论**：混合损失**不改变扩散训练的最优解**——这是区别于其他工作（如 VAD 的 L1 损失/辅助碰撞损失会引入偏差）的核心优势。
 
@@ -161,7 +161,7 @@ def detached_integral(v, W, dt):
 
 $$\text{Divergence Score} = \frac{1}{N_2}\sum_{i=1}^{N_2}\left\|P_L^i - \frac{1}{N_2}\sum_{i=1}^{N_2}P_L^i\right\|_2 \tag{7}$$
 
-其中 $P_L^i$ 是第 $i$ 条轨迹的终点，$N_2$ 为生成轨迹数。
+其中 $P_{L}^i$ 是第 $i$ 条轨迹的终点，$N_{2}$ 为生成轨迹数。
 
 **关键发现**：
 
@@ -180,10 +180,10 @@ $$\text{Divergence Score} = \frac{1}{N_2}\sum_{i=1}^{N_2}\left\|P_L^i - \frac{1}
 #### 问题形式化
 
 将扩散规划器形式化为策略 $\pi(a|s)$：
-- 动作 $a$：生成的轨迹 $\tau_0$
+- 动作 $a$：生成的轨迹 $\tau_{0}$
 - 状态 $s$：潜在表示 $C$
 
-**KL 正则化 RL 目标**（第 $k$ 次迭代时从 $\pi_{k-1}$ 出发优化 $\pi_k$）：
+**KL 正则化 RL 目标**（第 $k$ 次迭代时从 $\pi_{k-1}$ 出发优化 $\pi_{k}$）：
 
 $$\max_{\pi_k} \mathbb{E}_{s \sim \mathcal{D}}\left[\mathbb{E}_{a \sim \pi_k}[r(s, a)] - \frac{1}{\beta}D_{KL}(\pi_k \| \pi_{k-1})\right] \tag{8}$$
 
@@ -201,7 +201,7 @@ $$\boxed{\pi_k^{\star}(a|s) \propto \pi_{k-1}(a|s) \cdot \exp(\beta \cdot r(s, a
 
 $$\mathcal{L}_{RL} = \mathbb{E}_{t, \epsilon, (s,a) \sim \mathcal{D}}\left[\exp(\beta \cdot r(s, a)) \cdot \|\epsilon_\theta^k(a_t, t, s) - \epsilon\|^2_2\right] \tag{10}$$
 
-其中 $a_t = \alpha_t a + \sigma_t \epsilon$。
+其中 $a_{t} = \alpha_{t} a + \sigma_{t} \epsilon$。
 
 **本质**：在 IL 损失前乘以一个与奖励指数成正比的权重 $\exp(\beta r)$，好样本权重高、差样本权重低。
 
@@ -213,7 +213,7 @@ $$\boxed{\mathcal{L}_{RL-hybrid} = \mathbb{E}_{v, \epsilon, t}\left[\exp(\beta r
 
 #### Theorem V.1（加权扩散损失的理论保证）
 
-**定理内容**：公式 (9) 中的最优动作 $a \sim \pi_k^{\star}(a|s)$ 可以通过**优化公式 (11) 的加权扩散损失**、并用学习到的 $v^{k\star}$ 求解扩散逆过程来生成。
+**定理内容**：公式 (9) 中的最优动作 $a \sim \pi_{k}^{\star}(a|s)$ 可以通过**优化公式 (11) 的加权扩散损失**、并用学习到的 $v^{k\star}$ 求解扩散逆过程来生成。
 
 **证明概要**：
 
@@ -227,7 +227,7 @@ $$= \frac{1}{Z}\int_v \int_{\epsilon,t} \|v_\theta - v\|^2_P \cdot \pi_k^{\star}
 
 $$= \frac{1}{Z} \mathbb{E}_{v \sim \pi_k^{\star}, \epsilon, t}\left[\|v_\theta - v\|^2_P\right]$$
 
-其中 $Z = \int_v \exp(\beta r)\pi_{k-1}(v)dv$ 是归一化常数。加权回归等价于在最优策略分布上的标准分数匹配——这是**加权回归有效的数学基础**。
+其中 $Z = \int_{v} \exp(\beta r)\pi_{k-1}(v)dv$ 是归一化常数。加权回归等价于在最优策略分布上的标准分数匹配——这是**加权回归有效的数学基础**。
 
 #### 实际实现
 
@@ -235,7 +235,7 @@ $$= \frac{1}{Z} \mathbb{E}_{v \sim \pi_k^{\star}, \epsilon, t}\left[\|v_\theta -
 
   $$r_{\text{safety}} = 1 - \max_{l=1,\ldots,L} c_l$$
 
-  其中 $c_l$ 对主动碰撞罚 1.0，追尾衰减罚 0.3（减轻非反应性模拟的伪影）
+  其中 $c_{l}$ 对主动碰撞罚 1.0，追尾衰减罚 0.3（减轻非反应性模拟的伪影）
 
 - **Reward Group Normalization** [46]：稳定权重数值范围
 - **样本过滤**：丢弃所有动作获得相同奖励的样本
@@ -259,7 +259,7 @@ HDP 采用 E2E AD 标准架构，包含两个部分：
 
 基于 DiT [40] 的 vanilla Transformer：
 
-1. 噪声轨迹 $\tau_t$ 分割并投影为 $L$ 个 tokens → + 位置嵌入 + 速度嵌入
+1. 噪声轨迹 $\tau_{t}$ 分割并投影为 $L$ 个 tokens → + 位置嵌入 + 速度嵌入
 2. **Self-Attention Block**：噪声 token 间信息融合
 3. **Cross-Attention Block**：轨迹 token 与条件 $C$ (OD/LD/Navi) 交互
 4. **adaLN Block** (Adaptive Layer Normalization) [40]：注入扩散时间步 $t$
@@ -328,7 +328,7 @@ $$\mathcal{L}_{RL-hybrid} = \mathbb{E}_{v, \epsilon, t}\left[\exp(\beta r) \cdot
 |---|---|---|
 | **阶段** | IL 预训练 | RL 后训练 |
 | **核心结论** | 混合损失 = P-范数下无偏分数匹配 | 加权回归 = 最优策略分布上的标准分数匹配 |
-| **证明方法** | Bregman Divergence ($\Phi_P$ 严格凸) | 权重吸收 + 归一化常数 |
+| **证明方法** | Bregman Divergence ($\Phi_{P}$ 严格凸) | 权重吸收 + 归一化常数 |
 | **实践意义** | 混合损失不改变扩散最优解 | $\exp(\beta r)$ 权重是 RL 的有效实现 |
 
 ---
@@ -363,7 +363,7 @@ $$S_{Open-Loop} = (1 - CR) \times \sum_{m \in M} \omega_m S_m, \quad M = \{ADE, 
 
 $$\text{Success Rate} = w_1 s_1 + w_2 s_2 + w_3 s_3 + w_4 s_4 + w_5 s_5 + w_6 s_6$$
 
-| 场景 | $s_1$ 起步 | $s_2$ 跟车停车 | $s_3$ 导航变道 | $s_4$ 让行 VRU | $s_5$ 路口让行 | $s_6$ 左右转弯 |
+| 场景 | $s_{1}$ 起步 | $s_{2}$ 跟车停车 | $s_{3}$ 导航变道 | $s_{4}$ 让行 VRU | $s_{5}$ 路口让行 | $s_{6}$ 左右转弯 |
 |------|-----------|---------------|---------------|---------------|---------------|---------------|
 | 权重 $w$ | 0.1 | 0.25 | 0.25 | 0.1 | 0.1 | 0.2 |
 

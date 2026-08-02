@@ -1,4 +1,4 @@
-# TOAD: Test-Time Trajectory Optimization for Autonomous Driving 阅读笔记
+﻿# TOAD: Test-Time Trajectory Optimization for Autonomous Driving 阅读笔记
 
 > **论文标题**: Test-Time Trajectory Optimization for Autonomous Driving
 > **arXiv**: 2606.07170v1, 2026-06-05
@@ -20,7 +20,7 @@
 
 ### 2.1 评分器作为奖励函数
 
-**轨迹定义**：一个轨迹 $\tau = (p_1, \ldots, p_{n_p})$ 是 $n_p$ 个未来位姿的序列，每个位姿 $p_t = (x_t, y_t, \theta_t) \in \mathbb{R}^3$ 在自车坐标系中。
+**轨迹定义**：一个轨迹 $\tau = (p_{1}, \ldots, p_{n_{p}})$ 是 $n_{p}$ 个未来位姿的序列，每个位姿 $p_{t} = (x_{t}, y_{t}, \theta_{t}) \in \mathbb{R}^3$ 在自车坐标系中。
 
 **评分器** $S$：在给定观测 $o$（传感器输入 + 自车状态）和目标 $g$（目标/路线）的条件下，将完整轨迹映射为一个标量：
 
@@ -36,11 +36,11 @@ $S$ 是一个与基础规划器联合训练的神经网络。TOAD 将其视为**
 
 $$\mathbf{u} = (u_t)_{t=1}^{n_p}, \quad u_t = (a_t, \omega_t) \in \mathbb{R}^2 \tag{1}$$
 
-其中 $a_t$ 是纵向加速度，$\omega_t$ 是横摆角速度 (yaw rate)。
+其中 $a_{t}$ 是纵向加速度，$\omega_{t}$ 是横摆角速度 (yaw rate)。
 
 **自行车模型是可逆的**，因此控制量和轨迹表示等价：
-- 前向：$\tau = \text{BM}(\mathbf{u}, v_0)$，从控制序列 + 当前速度推出轨迹
-- 逆向：$\mathbf{u} = \text{BM}^{-1}(\tau, v_0)$，从轨迹恢复控制序列
+- 前向：$\tau = \text{BM}(\mathbf{u}, v_{0})$，从控制序列 + 当前速度推出轨迹
+- 逆向：$\mathbf{u} = \text{BM}^{-1}(\tau, v_{0})$，从轨迹恢复控制序列
 
 **在控制空间搜索的两大优势**：
 1. 每个采样天然平滑且动力学可行
@@ -56,7 +56,7 @@ $$\text{BasePlanner}(o, g) = (\mathcal{T}, \tau_{\text{base}}), \quad \tau_{\tex
 
 该公式**覆盖所有现有规划器**，包括单候选规划器（$\mathcal{T} = \{\tau_{\text{base}}\}$）。
 
-映射到控制空间：$\mathbf{U} = \{\mathbf{u}^{(i)} = \text{BM}^{-1}(\tau^{(i)}, v_0)\}_{i=1}^{N}$，选中的为 $\mathbf{u}_{\text{base}}$。
+映射到控制空间：$\mathbf{U} = \{\mathbf{u}^{(i)} = \text{BM}^{-1}(\tau^{(i)}, v_{0})\}_{i=1}^{N}$，选中的为 $\mathbf{u}_{\text{base}}$。
 
 信任域以 $\mathbf{u}_{\text{base}}$ 为锚点，$\mathbf{U}$ 的分布决定其范围。
 
@@ -70,7 +70,7 @@ $$\boxed{J(\mathbf{u}) = S\big(\text{BM}(\mathbf{u}, v_0); o, g\big) - \lambda_a
 
 | 项 | 公式 | 作用 |
 |-----|------|------|
-| **Scorer Reward** | $S(\text{BM}(\mathbf{u}, v_0); o, g)$ | 学习到的轨迹级奖励（主优化信号） |
+| **Scorer Reward** | $S(\text{BM}(\mathbf{u}, v_{0}); o, g)$ | 学习到的轨迹级奖励（主优化信号） |
 | **Anchor Regularizer** | $C_{\text{anchor}}(\mathbf{u}) = \lVert\mathbf{u} - \mathbf{u}_{\text{base}}\rVert^2$ | 约束搜索不远离锚点，保持在评分器可靠区域内 |
 | **Comfort Regularizer** | $C_{\text{comf}}$（闭式） | 累积违反标准运动学舒适限制的平方值：纵/横向加速度、jerk、yaw rate、yaw acceleration |
 
@@ -83,13 +83,13 @@ $C_{\text{comf}}$ 是精确的闭式表达式而非学习估计，提供评分�
 - 均值设为锚点：$\boldsymbol{\mu}_0 = \mathbf{u}_{\text{base}}$
 - 标准差由基础规划器自身提议的离散度决定：
   $$\boldsymbol{\sigma}_0 = \max\big(\beta \cdot \text{std}(\mathbf{U}), \epsilon\big)$$
-  其中 $\beta < 1$，$\epsilon$ 是防止探索完全崩溃的下界（$\epsilon_a = 0.1\ \text{m/s}^2$，$\epsilon_\omega = 0.025\ \text{rad/s}$）。
+  其中 $\beta < 1$，$\epsilon$ 是防止探索完全崩溃的下界（$\epsilon_{a} = 0.1\ \text{m/s}^2$，$\epsilon_\omega = 0.025\ \text{rad/s}$）。
 
 探索因此依赖于**规划器自身的不确定性**——这是一个优雅的设计。
 
 #### 迭代过程
 
-对迭代 $k = 1, \ldots, K$，在 $\mathbb{R}^{2n_p}$ 中使用高斯分布 $\mathcal{N}(\boldsymbol{\mu}_k, \text{diag}(\boldsymbol{\sigma}_k^2))$：
+对迭代 $k = 1, \ldots, K$，在 $\mathbb{R}^{2n_{p}}$ 中使用高斯分布 $\mathcal{N}(\boldsymbol{\mu}_k, \text{diag}(\boldsymbol{\sigma}_k^2))$：
 
 1. **采样**：抽取 $M$ 个控制序列
 2. **推演与评分**：通过 BM 推演轨迹，计算 $J(\mathbf{u})$
@@ -99,7 +99,7 @@ $C_{\text{comf}}$ 是精确的闭式表达式而非学习估计，提供评分�
 
 #### 最终轨迹选择
 
-CEM 收敛后，推演最终均值轨迹 $\tau_{\text{mean}} = \text{BM}(\boldsymbol{\mu}_K, v_0)$。最终输出取 $\tau_{\text{mean}}$ 和 $\tau_{\text{base}}$ 中评分更高的：
+CEM 收敛后，推演最终均值轨迹 $\tau_{\text{mean}} = \text{BM}(\boldsymbol{\mu}_K, v_{0})$。最终输出取 $\tau_{\text{mean}}$ 和 $\tau_{\text{base}}$ 中评分更高的：
 
 $$\boxed{\tau^{\star} = \arg\max_{\tau \in \{\tau_{\text{mean}}, \tau_{\text{base}}\}} S(\tau; o, g) - \lambda_c \ C_{\text{comf}}\big(\text{BM}^{-1}(\tau, v_0)\big)} \tag{4}$$
 
@@ -142,10 +142,10 @@ $$\boxed{\tau^{\star} = \arg\max_{\tau \in \{\tau_{\text{mean}}, \tau_{\text{bas
 | 每次候选数 $M$ | 64 | 平衡搜索质量与推理成本 |
 | 精英数 $E$ | $M/8 = 8$ | 实验最佳（候选预算 64 下） |
 | 初始标准差缩放 $\beta$ | 0.5 | |
-| 加速度下界 $\epsilon_a$ | 0.1 m/s² | |
+| 加速度下界 $\epsilon_{a}$ | 0.1 m/s² | |
 | 横摆角速度下界 $\epsilon_\omega$ | 0.025 rad/s | |
-| 舒适性权重 $\lambda_c$ | 0.05 | |
-| 锚点权重 $\lambda_a$ | 0.5 | |
+| 舒适性权重 $\lambda_{c}$ | 0.05 | |
+| 锚点权重 $\lambda_{a}$ | 0.5 | |
 
 ---
 

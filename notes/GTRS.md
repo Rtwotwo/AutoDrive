@@ -1,4 +1,4 @@
-# GTRS: Generalized Trajectory Scoring for End-to-end Multimodal Planning 阅读笔记
+﻿# GTRS: Generalized Trajectory Scoring for End-to-end Multimodal Planning 阅读笔记
 
 > **论文标题**: Generalized Trajectory Scoring for End-to-end Multimodal Planning
 > **arXiv**: 2506.06664v1, 2025-06-07
@@ -41,7 +41,7 @@
 
 #### 扩散公式
 
-**DDPM 前向过程**：逐步向真值轨迹 $\tau_0$ 添加高斯噪声
+**DDPM 前向过程**：逐步向真值轨迹 $\tau_{0}$ 添加高斯噪声
 
 $$q(\tau_t | \tau_{t-1}) = \mathcal{N}\left(\tau_t; \sqrt{1 - \beta_t}\tau_{t-1}, \beta_t I\right) \tag{2a}$$
 
@@ -49,7 +49,7 @@ $$q(\tau_t | \tau_{t-1}) = \mathcal{N}\left(\tau_t; \sqrt{1 - \beta_t}\tau_{t-1}
 
 $$\tau_t = \sqrt{\bar{\alpha}_t}\tau_0 + \sqrt{1 - \bar{\alpha}_t}\epsilon, \quad \epsilon \sim \mathcal{N}(0, I) \tag{2b}$$
 
-其中 $\bar{\alpha}_t = \prod_{s=1}^{t}(1 - \beta_s)$，$\beta_t$ 为 DDPM 噪声调度。
+其中 $\bar{\alpha}_t = \prod_{s=1}^{t}(1 - \beta_{s})$，$\beta_{t}$ 为 DDPM 噪声调度。
 
 **去噪网络训练目标**（ϵ-matching loss）：
 
@@ -65,7 +65,7 @@ $$\tau_0^{\text{input}} = \left\{(x_{l+1} - x_l,\ y_{l+1} - y_l)\right\}_{l=1}^{
 
 - **BEV 分割头**（遵循 Transfuser [5]）：对 BEV 特征提供辅助监督
 - **噪声调度**：DDPM scheduling [10]，100 步去噪
-- **推理生成**：从 $\mathcal{N}(0, I)$ 采样噪声 $\tau_T$，经 100 步 DDPM 去噪生成 100 条轨迹提案 $\mathcal{V}_{dp}$
+- **推理生成**：从 $\mathcal{N}(0, I)$ 采样噪声 $\tau_{T}$，经 100 步 DDPM 去噪生成 100 条轨迹提案 $\mathcal{V}_{dp}$
 - 使用后视图 + 后左 + 后右视图构建 BEV
 
 ---
@@ -146,7 +146,7 @@ $$\boxed{\tilde{y}_i^m = \hat{y}_i^m + \text{clip}\left(s_{i,\text{teacher}}^m -
 | $\tilde{y}_i^m$ | 精炼后的目标分数（用于监督精炼解码器） |
 | $\hat{y}_i^m$ | 真实标签分数 (ground-truth score) |
 | $s_{i,\text{teacher}}^m$ | Teacher 模型（EMA 副本）的预测分数 |
-| $y_i^m$ | 当前模型的分数 |
+| $y_{i}^m$ | 当前模型的分数 |
 | $\delta^m$ | 裁剪参数，确保精炼目标在真值合理范围内 |
 | $m$ | 指标索引（NC, DAC, TTC 等子指标） |
 

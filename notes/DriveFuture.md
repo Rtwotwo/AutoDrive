@@ -1,4 +1,4 @@
-# DriveFuture: Future-Aware Latent World Models for Autonomous Driving 阅读笔记
+﻿# DriveFuture: Future-Aware Latent World Models for Autonomous Driving 阅读笔记
 
 > **论文标题**: DriveFuture: Future-Aware Latent World Models for Autonomous Driving
 > **arXiv**: 2605.09701v1, 2026-05-10
@@ -76,15 +76,15 @@ DriveFuture 的训练和推理构成一个**统一的未来感知潜在动力学
 
 ### 3.1 Latent Dynamics Predictor（潜在动力学预测器）
 
-**功能**：给定当前场景潜在 $Z_t$ 和轨迹意图 $\tau$，预测未来 $t+T$ 时刻的场景潜在状态。
+**功能**：给定当前场景潜在 $Z_{t}$ 和轨迹意图 $\tau$，预测未来 $t+T$ 时刻的场景潜在状态。
 
 #### 轨迹条件化潜在预测
 
-将绝对轨迹 $\tau = \{(x_k, y_k, \theta_k)\}_{k=1}^{T}$ 编码为差分特征序列 $E_\tau$（使用归一化有限差分 + sin/cos 朝向嵌入），然后通过 Transformer Decoder 进行条件预测：
+将绝对轨迹 $\tau = \{(x_{k}, y_{k}, \theta_{k})\}_{k=1}^{T}$ 编码为差分特征序列 $E_\tau$（使用归一化有限差分 + sin/cos 朝向嵌入），然后通过 Transformer Decoder 进行条件预测：
 
 $$\boxed{\hat{Z}_{t+T} = f_\phi(Q_f; [Z_t \parallel E_\tau])} \tag{1}$$
 
-其中 $Q_f \in \mathbb{R}^{K \times d}$ 是可学习的未来查询 token（$K=16$），$[Z_t \parallel E_\tau]$ 是拼接的上下文。最终输出 $\hat{Z}_{t+T} \in \mathbb{R}^{K \times d}$ 是紧凑的 $K$ 个 token 的未来潜在预测。
+其中 $Q_{f} \in \mathbb{R}^{K \times d}$ 是可学习的未来查询 token（$K=16$），$[Z_{t} \parallel E_\tau]$ 是拼接的上下文。最终输出 $\hat{Z}_{t+T} \in \mathbb{R}^{K \times d}$ 是紧凑的 $K$ 个 token 的未来潜在预测。
 
 **设计要点**：$K=16$ 是有意为之的**瓶颈设计**——防止世界模型简单复制稠密的未来外观，迫使其编码对规划有高价值的未来信息。
 
@@ -102,7 +102,7 @@ $$\begin{cases} E_\tau \leftarrow \Psi(\tau_{gt}), & \text{w.p. } p_{gt}=0.4 \\ 
 **运动学推演** $\tau_{kin}$ 使用常加速度自车模型：
 $$\begin{aligned} x_k^{kin} &= v_x t_k + \frac{1}{2} a_x t_k^2 \\ y_k^{kin} &= v_y t_k + \frac{1}{2} a_y t_k^2 \\ \theta_k^{kin} &= \text{atan2}(v_y + a_y t_k, v_x + a_x t_k) \end{aligned} \tag{3}$$
 
-其中 $t_k = k\Delta t$。该推演并非精确规划器，而是提供一个**稳定、物理可行的意图方向**。
+其中 $t_{k} = k\Delta t$。该推演并非精确规划器，而是提供一个**稳定、物理可行的意图方向**。
 
 ---
 
@@ -143,7 +143,7 @@ $$\boxed{\tilde{Z}_{t+T}^c = \alpha(e) \cdot Z_{t+T}^c + (1 - \alpha(e)) \cdot \
 
 其中：
 - $e$：当前训练 epoch
-- $e_0$：退火拐点（如 $e_0 = 0.83E$）
+- $e_{0}$：退火拐点（如 $e_{0} = 0.83E$）
 - $\gamma$：温度参数（控制过渡陡峭程度）
 - $\alpha(e)$：从 1 → 0 衰减的混合系数
 
@@ -151,15 +151,15 @@ $$\boxed{\tilde{Z}_{t+T}^c = \alpha(e) \cdot Z_{t+T}^c + (1 - \alpha(e)) \cdot \
 
 | 训练阶段 | $\alpha(e)$ | 条件来源 | 效果 |
 |----------|-------------|----------|------|
-| **早期** ($e \ll e_0$) | $\approx 1$ | GT 未来潜在 | 稳定学习、快速建立语义基础 |
-| **晚期** ($e \gg e_0$) | $\approx 0$ | 自预测未来潜在 | 匹配推理分布、消除 gap |
-| **过渡期** ($e \approx e_0$) | $\approx 0.5$ | 混合 | 平滑过渡 |
+| **早期** ($e \ll e_{0}$) | $\approx 1$ | GT 未来潜在 | 稳定学习、快速建立语义基础 |
+| **晚期** ($e \gg e_{0}$) | $\approx 0$ | 自预测未来潜在 | 匹配推理分布、消除 gap |
+| **过渡期** ($e \approx e_{0}$) | $\approx 0.5$ | 混合 | 平滑过渡 |
 
 ---
 
 ### 3.3 Planning Decoder（规划解码器）
 
-**功能**：基于当前场景潜在 $Z_t$ 和未来感知潜在 $Z_{t+T}^c$ 进行条件扩散轨迹生成。
+**功能**：基于当前场景潜在 $Z_{t}$ 和未来感知潜在 $Z_{t+T}^c$ 进行条件扩散轨迹生成。
 
 #### 未来条件化扩散 Transformer (DiT)
 
@@ -170,7 +170,7 @@ $$a_s = \sqrt{\bar{\alpha}_s} a_0 + \sqrt{1 - \bar{\alpha}_s} \epsilon, \quad \e
 
 $$\boxed{\hat{\epsilon} = \epsilon_\theta\big(a_s, s, C_{scene}, Z_{t+T}^c\big)} \tag{8}$$
 
-其中 $C_{scene} = [e_s \parallel Z_t]$ 是场景上下文（时间步嵌入 + 当前潜在）。
+其中 $C_{scene} = [e_{s} \parallel Z_{t}]$ 是场景上下文（时间步嵌入 + 当前潜在）。
 
 **Cross-Attention 顺序设计**：每个 DiT Block 先 Cross-Attend 到 $C_{scene}$（环境几何），再 Cross-Attend 到 $Z_{t+T}^c$（未来语义修正）。**先理解当前环境，再应用未来修正**。
 
@@ -198,7 +198,7 @@ $$\boxed{L = \lambda_{plan} L_{plan} + \lambda_{bev} L_{bev}} \tag{11}$$
 
 | | 现有世界模型 | DriveFuture |
 |---|---|---|
-| 训练目标 | $\min \mathbb{E}[D(f(Z_t, a_t), Z_{t+T})]$ — 在特征空间中最小化预测误差 | $\min \mathbb{E}[\lVert\epsilon - \epsilon_\theta(a_s, s, Z_t, f(Z_t; E_\tau))\rVert^2]$ — 轨迹去噪损失的梯度**直接塑造世界模型** |
+| 训练目标 | $\min \mathbb{E}[D(f(Z_{t}, a_{t}), Z_{t+T})]$ — 在特征空间中最小化预测误差 | $\min \mathbb{E}[\lVert\epsilon - \epsilon_\theta(a_{s}, s, Z_{t}, f(Z_{t}; E_\tau))\rVert^2]$ — 轨迹去噪损失的梯度**直接塑造世界模型** |
 | 未来潜在的作用 | 被动的重建目标 | 主动的规划条件 |
 | 优化什么 | 未来状态能否被预测 | 未来信息是否改善轨迹去噪 |
 
@@ -250,7 +250,7 @@ $$w_{tw}(r) = \begin{cases} 0, & r \leq \beta \\ \frac{w_{tw}^{max}}{2}\left[1 -
 
 | 去噪阶段 | $r$ 范围 | 主导源 | 原因 |
 |----------|----------|--------|------|
-| **高噪声** | $r < \beta$ | $\tau_{kin}$（运动学） | $a_s$ 接近高斯，Tweedie 估计不稳定；运动学提供稳定低频先验 |
+| **高噪声** | $r < \beta$ | $\tau_{kin}$（运动学） | $a_{s}$ 接近高斯，Tweedie 估计不稳定；运动学提供稳定低频先验 |
 | **中噪声** | $\beta \approx r$ | 平滑交接 | 两源共存，运动学正则 + 自估计开始可靠 |
 | **低噪声** | $r > \beta$ | $\tau_{tw}$（Tweedie） | $\bar{\alpha}_s \approx 1$，自估计精确可信，主导最终精炼 |
 
@@ -309,9 +309,9 @@ $$w_{tw}(r) = \begin{cases} 0, & r \leq \beta \\ \frac{w_{tw}^{max}}{2}\left[1 -
 
 | 参数 | 最优值 | EPDMS | 过小/过大均导致性能下降 |
 |------|--------|-------|--------------------------|
-| 未来时域 $t_f$ | 1.5s | 34.6 | 0.5→30.2, 1.0→31.2 |
-| 查询数 $q_s$ | 16 | 34.6 | 4→28.2, 64→33.7 |
-| 退火拐点 $e_0$ | 0.83 | 34.6 | 0.75→29.2, 0.95→28.9 |
+| 未来时域 $t_{f}$ | 1.5s | 34.6 | 0.5→30.2, 1.0→31.2 |
+| 查询数 $q_{s}$ | 16 | 34.6 | 4→28.2, 64→33.7 |
+| 退火拐点 $e_{0}$ | 0.83 | 34.6 | 0.75→29.2, 0.95→28.9 |
 
 ### 6.4 与其他方法的相对提升 (Table 6)
 
@@ -364,26 +364,26 @@ $$w_{tw}(r) = \begin{cases} 0, & r \leq \beta \\ \frac{w_{tw}^{max}}{2}\left[1 -
 
 | 公式 | 编号 | 含义 |
 |------|------|------|
-| $\hat{Z}_{t+T} = f_\phi(Q_f; [Z_t \parallel E_\tau])$ | (1) | **轨迹条件化未来潜在预测** |
+| $\hat{Z}_{t+T} = f_\phi(Q_{f}; [Z_{t} \parallel E_\tau])$ | (1) | **轨迹条件化未来潜在预测** |
 | 三模条件采样 ($p_{gt}, p_{kin}, p_\varnothing$) | (2) | 条件源随机化 |
 | $\tau_{kin}$ 常加速度推演 | (3) | 运动学替代轨迹 |
 | $\tilde{Z}_{t+T} = \text{MHA}(\text{LN}(\hat{Z}_{t+T}), Z_{t+T}, Z_{t+T})$ | (4) | **Cross-Attention 未来锚定** |
 | 未来帧缺失 fallback | (5) | 选择性条件化 |
 | $\tilde{Z}_{t+T}^c = \alpha(e) Z_{t+T}^c + (1-\alpha(e)) \hat{Z}_{t+T}$ | (6) | **LatentAlign 退火混合** |
-| $a_s = \sqrt{\bar{\alpha}_s} a_0 + \sqrt{1-\bar{\alpha}_s} \epsilon$ | (7) | 前向扩散加噪 |
-| $\hat{\epsilon} = \epsilon_\theta(a_s, s, C_{scene}, Z_{t+T}^c)$ | (8) | **未来条件化噪声预测** |
-| $L_{plan} = \mathbb{E}[\lVert\epsilon - \hat{\epsilon}\rVert_2^2]$ | (9) | 扩散规划损失 |
+| $a_{s} = \sqrt{\bar{\alpha}_s} a_{0} + \sqrt{1-\bar{\alpha}_s} \epsilon$ | (7) | 前向扩散加噪 |
+| $\hat{\epsilon} = \epsilon_\theta(a_{s}, s, C_{scene}, Z_{t+T}^c)$ | (8) | **未来条件化噪声预测** |
+| $L_{plan} = \mathbb{E}[\lVert\epsilon - \hat{\epsilon}\rVert_{2}^2]$ | (9) | 扩散规划损失 |
 | $L_{bev} = \text{CE}(\hat{Y}_{bev}, Y_{bev})$ | (10) | BEV 语义辅助损失 |
 | $L = \lambda_{plan} L_{plan} + \lambda_{bev} L_{bev}$ | (11) | 总训练目标 |
-| $\hat{a}_0^{(s)} = (a_s - \sqrt{1-\bar{\alpha}_s}\hat{\epsilon})/\sqrt{\bar{\alpha}_s}$ | (12) | **Tweedie 公式自估计** |
+| $\hat{a}_0^{(s)} = (a_{s} - \sqrt{1-\bar{\alpha}_s}\hat{\epsilon})/\sqrt{\bar{\alpha}_s}$ | (12) | **Tweedie 公式自估计** |
 | 三 CFG 分支未来潜在 | (13) | PFG 条件计算 |
 | $\tilde{\epsilon} = \hat{\epsilon}_\varnothing + w_{kin}(\hat{\epsilon}_{kin} - \hat{\epsilon}_\varnothing) + w_{tw}(\hat{\epsilon}_{tw} - \hat{\epsilon}_\varnothing)$ | (14) | **PFG 引导噪声混合** |
 | $w_{kin}(r), w_{tw}(r)$ 余弦调度 | (15) | 相位自适应权重 |
-| $\tau^* = \arg\max_{\tau_i} \text{Score}_{PDM}(\tau_i)$ | (16) | PDM 轨迹选择 |
+| $\tau^* = \arg\max_{\tau_{i}} \text{Score}_{PDM}(\tau_{i})$ | (16) | PDM 轨迹选择 |
 | PDMS 计算公式 | (17) | NAVSIM-v1 评估指标 |
 | EPDMS 计算公式 | (18) | NAVSIM-v2 扩展评估指标 |
 | Navhard Stage-2 高斯加权聚合 | (19) | 两阶段评估聚合 |
-| $\text{EPDMS}_{navhard} = s_1 \cdot s_2$ | (20) | Navhard 最终得分 |
+| $\text{EPDMS}_{navhard} = s_{1} \cdot s_{2}$ | (20) | Navhard 最终得分 |
 
 ---
 
