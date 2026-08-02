@@ -127,7 +127,9 @@ $$\boxed{\mathcal{L}_{\text{hybrid}} = \mathbb{E}_{\tau_0^v, \epsilon, t}\left[\
 **证明概要**：
 
 $$\mathcal{L}_{\text{hybrid}} = \mathbb{E}[(\tau_\theta^v - \tau_0^v)^T(\tau_\theta^v - \tau_0^v)] + \omega \mathbb{E}[\Delta t^2 (\tau_\theta^v - \tau_0^v)^T M^T M (\tau_\theta^v - \tau_0^v)]$$
+
 $$= \mathbb{E}[(\tau_\theta^v - \tau_0^v)^T (I + \omega \Delta t^2 M^T M) (\tau_\theta^v - \tau_0^v)]$$
+
 $$= \mathbb{E}[\|\tau_\theta^v - \tau_0^v\|^2_P] = \mathbb{E}[D_P(\tau_\theta^v, \tau_0^v)]$$
 
 其中 $D_P(u, v) = \|u - v\|^2_P$ 是 Bregman Divergence（$\Phi_P(u) = u^T P u$ 严格凸），因此提供无偏梯度学习边缘分数函数。
@@ -216,9 +218,13 @@ $$\boxed{\mathcal{L}_{RL-hybrid} = \mathbb{E}_{v, \epsilon, t}\left[\exp(\beta r
 **证明概要**：
 
 $$\mathbb{E}_{v \sim \pi_{k-1}, \epsilon, t}\left[\exp(\beta r) \|v_\theta - v\|^2_P\right]$$
+
 $$= \int_v \int_{\epsilon,t} \exp(\beta r) \|v_\theta - v\|^2_P \cdot \pi_{k-1}(v) p_\epsilon(\epsilon) p_t(t) d\epsilon dt dv$$
+
 $$= \frac{1}{Z}\int_v \int_{\epsilon,t} \|v_\theta - v\|^2_P \cdot \exp(\beta r)\pi_{k-1}(v) \cdot p_\epsilon(\epsilon) p_t(t) d\epsilon dt dv$$
+
 $$= \frac{1}{Z}\int_v \int_{\epsilon,t} \|v_\theta - v\|^2_P \cdot \pi_k^{\star}(v) \cdot p_\epsilon(\epsilon) p_t(t) d\epsilon dt dv$$
+
 $$= \frac{1}{Z} \mathbb{E}_{v \sim \pi_k^{\star}, \epsilon, t}\left[\|v_\theta - v\|^2_P\right]$$
 
 其中 $Z = \int_v \exp(\beta r)\pi_{k-1}(v)dv$ 是归一化常数。加权回归等价于在最优策略分布上的标准分数匹配——这是**加权回归有效的数学基础**。
