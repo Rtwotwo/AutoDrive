@@ -6,10 +6,10 @@
   "description": "Curated autonomous-driving research tracker and public benchmark hub.",
   "scripts": {
     "validate": "node scripts/validate_data.mjs",
+    "sync:zotero": "node scripts/sync_zotero.mjs",
     "serve": "node scripts/serve.mjs"
   },
   "engines": {
     "node": ">=18"
   }
 }
-

@@ -1,44 +1,44 @@
 # Public Benchmark Submission Guide
 
-本目录定义 AutoDrive Research Hub 的公共排行榜提交格式。平台聚合公开基准的结果，但不会把不同协议换算成单一总分。
+This directory defines the submission format for the AutoDrive Research Hub leaderboard. The platform aggregates results from public benchmarks without converting incompatible protocols into a single score.
 
-## 提交内容
+## Submission Contents
 
-复制 `submissions/example.json`，并把文件名改成条目的唯一 `id`。提交内容需包括：
+Copy `submissions/example.json` and rename it to the entry's unique `id`. A submission must include:
 
-- `benchmarkId`：必须与 `data/benchmarks.json` 中的 ID 一致；
-- `method` 与 `team`：方法显示名和负责团队；
-- `split`：测试集、挑战赛或协议版本；
-- `score`：与该基准 `primaryMetric` 对应的数值；
-- `code`：公开实现、配置和 checkpoint；
-- `evidence`：原始日志、官方提交页或论文表格的稳定链接；
-- `notes`：传感器、骨干网络、训练数据、额外预训练和评测命令。
+- `benchmarkId`: an ID from `data/benchmarks.json`;
+- `method` and `team`: the display name and responsible organization;
+- `split`: the test split, challenge, and protocol version;
+- `score`: a value for the benchmark's `primaryMetric`;
+- `code`: a public implementation, configuration, and checkpoint;
+- `evidence`: a stable link to raw logs, an official submission page, or a paper table;
+- `notes`: sensors, backbone, training data, additional pretraining, and the evaluation command.
 
-## 状态
+## Status Values
 
-- `pending`：社区提交，尚未完成协议核对；
-- `published`：论文或官方项目中公开报告，尚未由维护者复跑；
-- `verified`：维护者按照公开配置复核或由基准官方确认。
+- `pending`: submitted by the community and awaiting protocol review;
+- `published`: reported in a paper or official project but not independently rerun;
+- `verified`: reproduced by maintainers or confirmed by the benchmark organizer.
 
-`published` 与 `verified` 不互相替代。网页会明确显示状态。
+`published` and `verified` describe different evidence levels. The website displays them separately.
 
-## 可复现性检查单
+## Reproducibility Checklist
 
-- [ ] 明确基准版本、测试划分和主指标。
-- [ ] 说明摄像头、LiDAR、地图、语言等输入模态。
-- [ ] 说明额外训练数据、预训练权重和闭源模型调用。
-- [ ] 固定随机种子或报告多次运行均值与方差（适用时）。
-- [ ] 提供评测命令、配置、环境版本和 checkpoint。
-- [ ] 原始证据中的分数与 JSON 完全一致。
+- [ ] State the benchmark version, test split, and primary metric.
+- [ ] List camera, LiDAR, map, language, and other input modalities.
+- [ ] Disclose additional training data, pretrained weights, and closed-source model calls.
+- [ ] Fix random seeds or report the mean and variance across runs when applicable.
+- [ ] Provide the evaluation command, configuration, environment versions, and checkpoint.
+- [ ] Ensure that the JSON score exactly matches the linked evidence.
 
-## 审核流程
+## Review Process
 
-1. 自动检查 JSON 格式、唯一 ID、URL 和基准引用。
-2. 人工核对数据划分、协议版本、传感器配置和证据。
-3. 对不可直接比较的配置新增子榜或在方法名中显式标注。
-4. 审核通过后把结果加入 `data/leaderboard.json`。
+1. Automated checks validate JSON structure, unique IDs, URLs, and benchmark references.
+2. A maintainer reviews the split, protocol version, sensor configuration, and evidence.
+3. Incomparable configurations receive separate sub-leaderboards or explicit method labels.
+4. Accepted results are added to `data/leaderboard.json`.
 
-## 科学边界
+## Scientific Scope
 
-排行榜只描述特定公开协议上的性能。开放环轨迹误差不能替代闭环安全评估，仿真成绩也不能直接推断真实道路部署表现。
+A leaderboard result describes performance under one public protocol. Open-loop trajectory errors do not replace closed-loop safety evaluation, and simulation results do not directly establish real-world deployment performance.
 

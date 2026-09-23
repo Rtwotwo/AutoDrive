@@ -23,6 +23,7 @@ unique(papers, 'papers'); unique(benchmarks, 'benchmarks'); unique(leaderboard, 
 const benchmarkIds = new Set(benchmarks.map((item) => item.id));
 for (const paper of papers) {
   if (!['e2e','world-model','vla'].includes(paper.track)) errors.push(`paper ${paper.id}: invalid track`);
+  if (!paper.category || typeof paper.category !== 'string') errors.push(`paper ${paper.id}: category required`);
   if (!Number.isInteger(paper.year) || paper.year < 1980 || paper.year > 2100) errors.push(`paper ${paper.id}: invalid year`);
   if (!Array.isArray(paper.tags) || !paper.tags.length) errors.push(`paper ${paper.id}: tags required`);
   for (const field of ['paper','code','project']) if (paper[field] && !https(paper[field])) errors.push(`paper ${paper.id}: ${field} must use https`);
@@ -48,4 +49,3 @@ for (const file of await readdir(submissionDir)) {
 
 if (errors.length) { console.error(`Validation failed (${errors.length})\n- ${errors.join('\n- ')}`); process.exit(1); }
 console.log(`Validation passed: ${papers.length} papers, ${benchmarks.length} benchmarks, ${leaderboard.length} leaderboard entries.`);
-

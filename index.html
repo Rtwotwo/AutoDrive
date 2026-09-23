@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="自动驾驶端到端、World Model 与 VLA 论文追踪及公开基准平台">
+  <meta name="description" content="Research tracker and public benchmark hub for end-to-end driving, world models, and vision-language-action models">
   <title>AutoDrive Research Hub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,58 +13,58 @@
 <body>
   <div class="noise" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="AutoDrive Research Hub 首页">
+    <a class="brand" href="#top" aria-label="AutoDrive Research Hub home">
       <span class="brand-mark">A<span>D</span></span>
       <span><strong>AutoDrive</strong><small>Research Hub</small></span>
     </a>
-    <nav aria-label="主导航">
-      <a href="#landscape">研究版图</a>
-      <a href="#papers">论文</a>
-      <a href="#benchmarks">基准</a>
-      <a href="#leaderboard">排行榜</a>
+    <nav aria-label="Primary navigation">
+      <a href="#landscape">Landscape</a>
+      <a href="#papers">Papers</a>
+      <a href="#benchmarks">Benchmarks</a>
+      <a href="#leaderboard">Leaderboard</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换明暗主题">◐</button>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">◐</button>
   </header>
 
   <main id="top">
     <section class="hero shell">
       <div class="eyebrow"><span></span> CURATED · REPRODUCIBLE · OPEN</div>
-      <h1>追踪下一代<br><em>自动驾驶智能</em></h1>
-      <p class="hero-copy">聚合端到端驾驶、World Model 与 Vision-Language-Action 的代表论文，并用公开协议连接数据、代码和可复现结果。</p>
+      <h1>Tracking the next<br><em>driving intelligence</em></h1>
+      <p class="hero-copy">A curated map of end-to-end driving, world models, and vision-language-action research, connected to public protocols, code, and reproducible results.</p>
       <div class="hero-actions">
-        <a class="button primary" href="#papers">浏览论文 <span>↘</span></a>
-        <a class="button secondary" href="#leaderboard">进入公共基准</a>
+        <a class="button primary" href="#papers">EXPLORE PAPERS <span>↘</span></a>
+        <a class="button secondary" href="#leaderboard">OPEN BENCHMARKS</a>
       </div>
-      <div class="hero-metrics" id="heroMetrics" aria-label="项目统计"></div>
+      <div class="hero-metrics" id="heroMetrics" aria-label="Project statistics"></div>
       <div class="hero-orbit" aria-hidden="true">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <span class="node node-a">E2E</span><span class="node node-b">WM</span><span class="node node-c">VLA</span>
       </div>
     </section>
 
-    <section class="ticker" aria-label="研究主题">
+    <section class="ticker" aria-label="Research topics">
       <div>PLANNING <span>✦</span> GENERATION <span>✦</span> REASONING <span>✦</span> CLOSED-LOOP <span>✦</span> SAFETY <span>✦</span> LANGUAGE-GROUNDED ACTION <span>✦</span></div>
     </section>
 
     <section class="section shell" id="landscape">
       <div class="section-heading">
         <div><span class="section-index">01</span><p class="kicker">RESEARCH LANDSCAPE</p></div>
-        <h2>三条研究主线，<br>一个可比较的实验入口</h2>
+        <h2>Three research tracks.<br>One evidence-based hub.</h2>
       </div>
       <div class="track-grid">
         <article class="track-card e2e">
           <span class="track-number">01</span><div class="track-icon">→</div>
-          <h3>End-to-End</h3><p>从传感器输入直接学习轨迹或控制，强调规划导向表示、闭环性能与实时性。</p>
+          <h3>End-to-End</h3><p>Learn trajectories or controls directly from sensor input, with planning-oriented representations, closed-loop performance, and real-time execution.</p>
           <div class="track-tags"><span>Planning</span><span>Imitation</span><span>Diffusion</span></div>
         </article>
         <article class="track-card world">
           <span class="track-number">02</span><div class="track-icon">◎</div>
-          <h3>World Model</h3><p>学习交通世界的时空动力学，用于视频生成、未来预测、数据扩增与策略学习。</p>
+          <h3>World Model</h3><p>Learn spatial-temporal driving dynamics for video generation, future prediction, data scaling, simulation, and policy learning.</p>
           <div class="track-tags"><span>Dynamics</span><span>Generation</span><span>Simulation</span></div>
         </article>
         <article class="track-card vla">
           <span class="track-number">03</span><div class="track-icon">⌁</div>
-          <h3>Vision · Language · Action</h3><p>将视觉理解、语言推理与驾驶动作统一，面向长尾场景、交互与可解释决策。</p>
+          <h3>Vision · Language · Action</h3><p>Unify visual understanding, language reasoning, and driving actions for long-tail scenarios, interaction, and interpretable decisions.</p>
           <div class="track-tags"><span>VLM</span><span>Reasoning</span><span>Action</span></div>
         </article>
       </div>
@@ -74,29 +74,29 @@
       <div class="shell">
         <div class="section-heading compact">
           <div><span class="section-index">02</span><p class="kicker">CURATED PAPERS</p></div>
-          <h2>优质论文索引</h2>
+          <h2>Curated paper index</h2>
         </div>
         <div class="paper-toolbar">
-          <div class="filter-group" id="trackFilters" role="group" aria-label="按方向筛选">
-            <button class="filter active" data-track="all">全部</button>
+          <div class="filter-group" id="trackFilters" role="group" aria-label="Filter by research track">
+            <button class="filter active" data-track="all">All</button>
             <button class="filter" data-track="e2e">End-to-End</button>
             <button class="filter" data-track="world-model">World Model</button>
             <button class="filter" data-track="vla">VLA</button>
           </div>
-          <label class="search"><span>⌕</span><input id="paperSearch" type="search" placeholder="搜索方法、标题、标签…" autocomplete="off"></label>
+          <label class="search"><span>⌕</span><input id="paperSearch" type="search" placeholder="Search methods, titles, categories…" autocomplete="off"></label>
         </div>
         <p class="result-count" id="paperCount"></p>
         <div class="paper-grid" id="paperGrid"></div>
-        <div class="empty-state" id="paperEmpty" hidden>没有匹配的论文，换一个关键词试试。</div>
+        <div class="empty-state" id="paperEmpty" hidden>No matching papers. Try another keyword.</div>
       </div>
     </section>
 
     <section class="section shell" id="benchmarks">
       <div class="section-heading">
         <div><span class="section-index">03</span><p class="kicker">PUBLIC BENCHMARKS</p></div>
-        <h2>从数据集到公开测试协议</h2>
+        <h2>From datasets to public protocols</h2>
       </div>
-      <p class="section-intro">每个榜单保留原始协议、数据划分和核心指标。不同基准之间不计算没有科学依据的“统一总分”。</p>
+      <p class="section-intro">Each leaderboard preserves its original protocol, data split, and primary metric. The platform does not invent a unified score across incompatible benchmarks.</p>
       <div class="benchmark-grid" id="benchmarkGrid"></div>
     </section>
 
@@ -104,22 +104,22 @@
       <div class="shell">
         <div class="section-heading compact light">
           <div><span class="section-index">04</span><p class="kicker">COMMUNITY LEADERBOARD</p></div>
-          <h2>可审计的公共排行榜</h2>
+          <h2>An auditable public leaderboard</h2>
         </div>
         <div class="leaderboard-controls">
-          <label>测试基准<select id="leaderboardBenchmark"></select></label>
-          <p>结果必须提供论文/代码、配置和原始评测证据。</p>
+          <label>BENCHMARK<select id="leaderboardBenchmark"></select></label>
+          <p>Every result must link to code, configuration, and primary evaluation evidence.</p>
         </div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>排名</th><th>方法</th><th>机构 / 团队</th><th>划分</th><th id="metricHeading">指标</th><th>状态</th><th>证据</th></tr></thead>
+            <thead><tr><th>RANK</th><th>METHOD</th><th>TEAM</th><th>SPLIT</th><th id="metricHeading">METRIC</th><th>STATUS</th><th>EVIDENCE</th></tr></thead>
             <tbody id="leaderboardBody"></tbody>
           </table>
         </div>
         <div class="submit-panel">
-          <div><span class="submit-label">SUBMIT YOUR RESULT</span><h3>让结果可复现，也让比较更可信。</h3></div>
-          <ol><li>复制 <code>benchmark/submissions/example.json</code></li><li>填写测试协议、分数与证据链接</li><li>运行 <code>npm run validate</code></li><li>通过 Pull Request 提交</li></ol>
-          <a class="button lime" href="benchmark/README.md">查看提交规范 ↗</a>
+          <div><span class="submit-label">SUBMIT YOUR RESULT</span><h3>Make results reproducible and comparisons trustworthy.</h3></div>
+          <ol><li>Copy <code>benchmark/submissions/example.json</code></li><li>Add the protocol, score, and evidence</li><li>Run <code>npm run validate</code></li><li>Open a pull request</li></ol>
+          <a class="button lime" href="benchmark/README.md">SUBMISSION GUIDE ↗</a>
         </div>
       </div>
     </section>
@@ -127,9 +127,9 @@
     <section class="section shell principles">
       <div><span class="section-index">05</span><p class="kicker">EDITORIAL POLICY</p></div>
       <div class="principle-grid">
-        <article><strong>01</strong><h3>来源可追溯</h3><p>优先收录 arXiv、会议主页、官方代码库与数据集主页。</p></article>
-        <article><strong>02</strong><h3>协议不混淆</h3><p>开放环、闭环、反应式与非反应式结果分开呈现。</p></article>
-        <article><strong>03</strong><h3>结果可审计</h3><p>排行榜条目必须关联配置、提交日期与评测证据。</p></article>
+        <article><strong>01</strong><h3>Traceable sources</h3><p>Prefer arXiv, conference pages, official repositories, and dataset websites.</p></article>
+        <article><strong>02</strong><h3>Protocol integrity</h3><p>Separate open-loop, closed-loop, reactive, and non-reactive evaluation.</p></article>
+        <article><strong>03</strong><h3>Auditable results</h3><p>Every leaderboard entry links its configuration, date, and evaluation evidence.</p></article>
       </div>
     </section>
   </main>
@@ -138,4 +138,3 @@
   <script type="module" src="assets/app.js"></script>
 </body>
 </html>
-

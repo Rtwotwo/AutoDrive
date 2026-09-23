@@ -11,7 +11,7 @@ async function loadData() {
   const [papers, benchmarks, leaderboard] = await Promise.all(
     Object.values(paths).map(async (path) => {
       const response = await fetch(path);
-      if (!response.ok) throw new Error(`无法读取 ${path}`);
+      if (!response.ok) throw new Error(`Unable to load ${path}`);
       return response.json();
     })
   );
@@ -23,10 +23,10 @@ async function loadData() {
 function renderMetrics() {
   const latest = Math.max(...state.papers.map((paper) => paper.year));
   $('#heroMetrics').innerHTML = [
-    [state.papers.length, '精选论文'],
-    [state.benchmarks.length, '公开基准'],
-    [new Set(state.papers.flatMap((paper) => paper.datasets || [])).size, '数据集'],
-    [latest, '更新至']
+    [state.papers.length, 'CURATED PAPERS'],
+    [state.benchmarks.length, 'PUBLIC BENCHMARKS'],
+    [new Set(state.papers.map((paper) => paper.category).filter(Boolean)).size, 'SUBCATEGORIES'],
+    [latest, 'LATEST YEAR']
   ].map(([value, label]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join('');
 }
 
@@ -39,7 +39,7 @@ function paperCard(paper) {
   ].filter(Boolean).join('');
   return `<article class="paper-card" data-track="${paper.track}">
     <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.venue || paper.year}</span></div>
-    <h3>${paper.name}</h3><p class="paper-title">${paper.title}</p>
+    <h3>${paper.name}</h3><p class="paper-category">${paper.category || ''}</p><p class="paper-title">${paper.title}</p>
     <div class="tag-list">${paper.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
     <div class="paper-footer"><span>${paper.year}</span><div>${links}</div></div>
   </article>`;
@@ -49,11 +49,11 @@ function renderPapers() {
   const query = state.query.trim().toLowerCase();
   const filtered = state.papers.filter((paper) => {
     const trackMatch = state.track === 'all' || paper.track === state.track;
-    const text = [paper.name, paper.title, paper.venue, ...(paper.tags || []), ...(paper.datasets || [])].join(' ').toLowerCase();
+    const text = [paper.name, paper.title, paper.venue, paper.category, ...(paper.tags || []), ...(paper.datasets || [])].join(' ').toLowerCase();
     return trackMatch && (!query || text.includes(query));
   });
   $('#paperGrid').innerHTML = filtered.map(paperCard).join('');
-  $('#paperCount').textContent = `显示 ${filtered.length} / ${state.papers.length} 篇`;
+  $('#paperCount').textContent = `Showing ${filtered.length} of ${state.papers.length} papers`;
   $('#paperEmpty').hidden = filtered.length !== 0;
 }
 
@@ -61,8 +61,8 @@ function benchmarkCard(item) {
   return `<article class="benchmark-card">
     <div class="benchmark-top"><span class="benchmark-track">${item.track}</span><span class="access ${item.access === 'Open' ? 'open' : ''}">${item.access}</span></div>
     <h3>${item.name}</h3><p>${item.description}</p>
-    <dl><div><dt>评测形态</dt><dd>${item.setting}</dd></div><div><dt>核心指标</dt><dd>${item.primaryMetric}</dd></div><div><dt>数据规模</dt><dd>${item.scale}</dd></div></dl>
-    <div class="benchmark-links"><a href="${item.homepage}" target="_blank" rel="noopener">主页 ↗</a>${item.paper ? `<a href="${item.paper}" target="_blank" rel="noopener">论文 ↗</a>` : ''}${item.code ? `<a href="${item.code}" target="_blank" rel="noopener">代码 ↗</a>` : ''}</div>
+    <dl><div><dt>SETTING</dt><dd>${item.setting}</dd></div><div><dt>PRIMARY METRIC</dt><dd>${item.primaryMetric}</dd></div><div><dt>SCALE</dt><dd>${item.scale}</dd></div></dl>
+    <div class="benchmark-links"><a href="${item.homepage}" target="_blank" rel="noopener">Homepage ↗</a>${item.paper ? `<a href="${item.paper}" target="_blank" rel="noopener">Paper ↗</a>` : ''}${item.code ? `<a href="${item.code}" target="_blank" rel="noopener">Code ↗</a>` : ''}</div>
   </article>`;
 }
 
@@ -80,17 +80,17 @@ function renderLeaderboard() {
   const entries = state.leaderboard
     .filter((entry) => entry.benchmarkId === benchmarkId)
     .sort((a, b) => (benchmark?.higherIsBetter === false ? a.score - b.score : b.score - a.score));
-  $('#metricHeading').textContent = benchmark?.primaryMetric || '指标';
+  $('#metricHeading').textContent = benchmark?.primaryMetric || 'METRIC';
   if (!entries.length) {
-    $('#leaderboardBody').innerHTML = '<tr><td colspan="7" class="no-results">暂无已审核结果。欢迎提交第一个可复现条目。</td></tr>';
+    $('#leaderboardBody').innerHTML = '<tr><td colspan="7" class="no-results">No reviewed results yet. Submit the first reproducible entry.</td></tr>';
     return;
   }
   $('#leaderboardBody').innerHTML = entries.map((entry, index) => `<tr>
     <td><span class="rank ${index < 3 ? `top-${index + 1}` : ''}">${String(index + 1).padStart(2, '0')}</span></td>
     <td><strong>${entry.method}</strong><small>${entry.date}</small></td>
     <td>${entry.team}</td><td>${entry.split}</td><td><strong>${entry.score}</strong></td>
-    <td><span class="status ${entry.status}">${entry.status === 'published' ? '论文结果' : entry.status === 'verified' ? '已复核' : '待复核'}</span></td>
-    <td><a href="${entry.evidence}" target="_blank" rel="noopener">查看 ↗</a></td>
+    <td><span class="status ${entry.status}">${entry.status === 'published' ? 'Published' : entry.status === 'verified' ? 'Verified' : 'Pending'}</span></td>
+    <td><a href="${entry.evidence}" target="_blank" rel="noopener">View ↗</a></td>
   </tr>`).join('');
 }
 
@@ -116,10 +116,9 @@ async function init() {
     await loadData();
     renderMetrics(); renderPapers(); renderBenchmarks(); renderLeaderboard(); bindEvents();
   } catch (error) {
-    document.body.insertAdjacentHTML('afterbegin', `<div class="load-error">${error.message}。请通过 <code>npm run serve</code> 启动本地服务器。</div>`);
+    document.body.insertAdjacentHTML('afterbegin', `<div class="load-error">${error.message}. Start the local server with <code>npm run serve</code>.</div>`);
     console.error(error);
   }
 }
 
 init();
-

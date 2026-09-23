@@ -10,6 +10,6 @@
   "paper": "https://arxiv.org/abs/0000.00000",
   "code": "https://github.com/your-org/your-repo",
   "evidence": "https://github.com/your-org/your-repo/blob/main/EVALUATION.md",
-  "notes": "写明模型配置、传感器输入、训练数据、checkpoint 与评测命令。"
+  "notes": "Describe the model configuration, sensors, training data, checkpoint, and evaluation command."
 }
 
