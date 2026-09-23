@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
 const papers = await readJson('data/papers.json');
+const datasets = await readJson('data/datasets.json');
 const benchmarks = await readJson('data/benchmarks.json');
 const leaderboard = await readJson('data/leaderboard.json');
 const errors = [];
@@ -19,14 +20,29 @@ function unique(items, label) {
   }
 }
 
-unique(papers, 'papers'); unique(benchmarks, 'benchmarks'); unique(leaderboard, 'leaderboard');
+unique(papers, 'papers'); unique(datasets, 'datasets'); unique(benchmarks, 'benchmarks'); unique(leaderboard, 'leaderboard');
 const benchmarkIds = new Set(benchmarks.map((item) => item.id));
 for (const paper of papers) {
   if (!['e2e','world-model','vla'].includes(paper.track)) errors.push(`paper ${paper.id}: invalid track`);
-  if (!paper.category || typeof paper.category !== 'string') errors.push(`paper ${paper.id}: category required`);
+  if ('category' in paper) errors.push(`paper ${paper.id}: subcategory field is not allowed`);
   if (!Number.isInteger(paper.year) || paper.year < 1980 || paper.year > 2100) errors.push(`paper ${paper.id}: invalid year`);
+  if (!/^\d{4}(?:-\d{2})?$/.test(paper.published || '')) errors.push(`paper ${paper.id}: invalid published date`);
   if (!Array.isArray(paper.tags) || !paper.tags.length) errors.push(`paper ${paper.id}: tags required`);
+  if (paper.openSource !== Boolean(paper.code)) errors.push(`paper ${paper.id}: openSource must match code availability`);
+  if (paper.stars !== null && (!Number.isInteger(paper.stars) || paper.stars < 0)) errors.push(`paper ${paper.id}: invalid stars`);
+  if (paper.code?.startsWith('https://github.com/') && !Number.isInteger(paper.stars)) errors.push(`paper ${paper.id}: GitHub code requires a star count`);
   for (const field of ['paper','code','project']) if (paper[field] && !https(paper[field])) errors.push(`paper ${paper.id}: ${field} must use https`);
+}
+for (const track of ['e2e','vla','world-model']) {
+  const items = papers.filter((paper) => paper.track === track);
+  for (let index = 1; index < items.length; index += 1) {
+    if (items[index].published > items[index - 1].published) errors.push(`${track}: papers must be sorted newest first`);
+  }
+}
+for (const dataset of datasets) {
+  if (!dataset.task || !dataset.scale || !dataset.access) errors.push(`dataset ${dataset.id}: task, scale, and access are required`);
+  if (!https(dataset.homepage)) errors.push(`dataset ${dataset.id}: homepage must use https`);
+  for (const field of ['paper','code']) if (dataset[field] && !https(dataset[field])) errors.push(`dataset ${dataset.id}: ${field} must use https`);
 }
 for (const benchmark of benchmarks) {
   if (!benchmark.primaryMetric || typeof benchmark.higherIsBetter !== 'boolean') errors.push(`benchmark ${benchmark.id}: metric metadata required`);
@@ -48,4 +64,4 @@ for (const file of await readdir(submissionDir)) {
 }
 
 if (errors.length) { console.error(`Validation failed (${errors.length})\n- ${errors.join('\n- ')}`); process.exit(1); }
-console.log(`Validation passed: ${papers.length} papers, ${benchmarks.length} benchmarks, ${leaderboard.length} leaderboard entries.`);
+console.log(`Validation passed: ${papers.length} papers, ${datasets.length} datasets, ${benchmarks.length} benchmarks, ${leaderboard.length} leaderboard entries.`);

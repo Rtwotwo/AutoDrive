@@ -83,7 +83,7 @@
             <button class="filter" data-track="world-model">World Model</button>
             <button class="filter" data-track="vla">VLA</button>
           </div>
-          <label class="search"><span>⌕</span><input id="paperSearch" type="search" placeholder="Search methods, titles, categories…" autocomplete="off"></label>
+          <label class="search"><span>⌕</span><input id="paperSearch" type="search" placeholder="Search methods, titles, tags…" autocomplete="off"></label>
         </div>
         <p class="result-count" id="paperCount"></p>
         <div class="paper-grid" id="paperGrid"></div>
@@ -93,10 +93,18 @@
 
     <section class="section shell" id="benchmarks">
       <div class="section-heading">
-        <div><span class="section-index">03</span><p class="kicker">PUBLIC BENCHMARKS</p></div>
-        <h2>From datasets to public protocols</h2>
+        <div><span class="section-index">03</span><p class="kicker">DATASETS &amp; BENCHMARKS</p></div>
+        <h2>Public resources with traceable protocols</h2>
       </div>
-      <p class="section-intro">Each leaderboard preserves its original protocol, data split, and primary metric. The platform does not invent a unified score across incompatible benchmarks.</p>
+      <div class="resource-group">
+        <div class="resource-heading"><p class="kicker">RECOGDRIVE DATA SOURCES</p><h3>Driving language and reasoning datasets</h3></div>
+        <p class="section-intro">These public resources follow the training-data inventory documented by ReCogDrive, spanning grounding, video QA, risk understanding, 3D reasoning, and planning.</p>
+        <div class="benchmark-grid" id="datasetGrid"></div>
+      </div>
+      <div class="resource-group benchmark-group">
+        <div class="resource-heading"><p class="kicker">EVALUATION PROTOCOLS</p><h3>Public test benchmarks</h3></div>
+        <p class="section-intro">Each leaderboard preserves its original protocol, data split, and primary metric. The platform does not invent a unified score across incompatible benchmarks.</p>
+      </div>
       <div class="benchmark-grid" id="benchmarkGrid"></div>
     </section>
 

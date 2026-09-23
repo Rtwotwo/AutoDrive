@@ -1,14 +1,15 @@
 const paths = {
   papers: 'data/papers.json',
+  datasets: 'data/datasets.json',
   benchmarks: 'data/benchmarks.json',
   leaderboard: 'data/leaderboard.json'
 };
 
-const state = { papers: [], benchmarks: [], leaderboard: [], track: 'all', query: '' };
+const state = { papers: [], datasets: [], benchmarks: [], leaderboard: [], track: 'all', query: '' };
 const $ = (selector) => document.querySelector(selector);
 
 async function loadData() {
-  const [papers, benchmarks, leaderboard] = await Promise.all(
+  const [papers, datasets, benchmarks, leaderboard] = await Promise.all(
     Object.values(paths).map(async (path) => {
       const response = await fetch(path);
       if (!response.ok) throw new Error(`Unable to load ${path}`);
@@ -16,6 +17,7 @@ async function loadData() {
     })
   );
   state.papers = papers;
+  state.datasets = datasets;
   state.benchmarks = benchmarks;
   state.leaderboard = leaderboard;
 }
@@ -25,23 +27,25 @@ function renderMetrics() {
   $('#heroMetrics').innerHTML = [
     [state.papers.length, 'CURATED PAPERS'],
     [state.benchmarks.length, 'PUBLIC BENCHMARKS'],
-    [new Set(state.papers.map((paper) => paper.category).filter(Boolean)).size, 'SUBCATEGORIES'],
+    [state.datasets.length, 'PUBLIC DATASETS'],
     [latest, 'LATEST YEAR']
   ].map(([value, label]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join('');
 }
 
 function paperCard(paper) {
   const trackLabel = { e2e: 'END-TO-END', 'world-model': 'WORLD MODEL', vla: 'VLA' }[paper.track];
+  const stars = Number.isInteger(paper.stars) ? new Intl.NumberFormat('en-US').format(paper.stars) : '—';
+  const sourceStatus = paper.openSource ? `OPEN SOURCE · ★ ${stars}` : 'NO PUBLIC CODE';
   const links = [
     paper.paper ? `<a href="${paper.paper}" target="_blank" rel="noopener">Paper ↗</a>` : '',
     paper.code ? `<a href="${paper.code}" target="_blank" rel="noopener">Code ↗</a>` : '',
     paper.project ? `<a href="${paper.project}" target="_blank" rel="noopener">Project ↗</a>` : ''
   ].filter(Boolean).join('');
   return `<article class="paper-card" data-track="${paper.track}">
-    <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.venue || paper.year}</span></div>
-    <h3>${paper.name}</h3><p class="paper-category">${paper.category || ''}</p><p class="paper-title">${paper.title}</p>
+    <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.published}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
+    <h3>${paper.name}</h3><p class="paper-title">${paper.title}</p>
     <div class="tag-list">${paper.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
-    <div class="paper-footer"><span>${paper.year}</span><div>${links}</div></div>
+    <div class="paper-footer"><span class="source-status ${paper.openSource ? 'available' : ''}">${sourceStatus}</span><div>${links}</div></div>
   </article>`;
 }
 
@@ -49,12 +53,30 @@ function renderPapers() {
   const query = state.query.trim().toLowerCase();
   const filtered = state.papers.filter((paper) => {
     const trackMatch = state.track === 'all' || paper.track === state.track;
-    const text = [paper.name, paper.title, paper.venue, paper.category, ...(paper.tags || []), ...(paper.datasets || [])].join(' ').toLowerCase();
+    const text = [paper.name, paper.title, paper.venue, ...(paper.tags || []), ...(paper.datasets || [])].join(' ').toLowerCase();
     return trackMatch && (!query || text.includes(query));
   });
   $('#paperGrid').innerHTML = filtered.map(paperCard).join('');
   $('#paperCount').textContent = `Showing ${filtered.length} of ${state.papers.length} papers`;
   $('#paperEmpty').hidden = filtered.length !== 0;
+}
+
+function datasetCard(item) {
+  const links = [
+    `<a href="${item.homepage}" target="_blank" rel="noopener">Homepage ↗</a>`,
+    item.paper ? `<a href="${item.paper}" target="_blank" rel="noopener">Paper ↗</a>` : '',
+    item.code ? `<a href="${item.code}" target="_blank" rel="noopener">Code ↗</a>` : ''
+  ].filter(Boolean).join('');
+  return `<article class="benchmark-card dataset-card">
+    <div class="benchmark-top"><span class="benchmark-track">${item.task}</span><span class="access ${item.access === 'Open' ? 'open' : ''}">${item.access}</span></div>
+    <h3>${item.name}</h3><p>${item.description}</p>
+    <dl><div><dt>ROLE</dt><dd>Training / Research</dd></div><div><dt>SCALE</dt><dd>${item.scale}</dd></div><div><dt>REFERENCE</dt><dd>ReCogDrive</dd></div></dl>
+    <div class="benchmark-links">${links}</div>
+  </article>`;
+}
+
+function renderDatasets() {
+  $('#datasetGrid').innerHTML = state.datasets.map(datasetCard).join('');
 }
 
 function benchmarkCard(item) {
@@ -114,7 +136,7 @@ async function init() {
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
   try {
     await loadData();
-    renderMetrics(); renderPapers(); renderBenchmarks(); renderLeaderboard(); bindEvents();
+    renderMetrics(); renderPapers(); renderDatasets(); renderBenchmarks(); renderLeaderboard(); bindEvents();
   } catch (error) {
     document.body.insertAdjacentHTML('afterbegin', `<div class="load-error">${error.message}. Start the local server with <code>npm run serve</code>.</div>`);
     console.error(error);

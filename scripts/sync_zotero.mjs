@@ -10,6 +10,12 @@ if (!bibPath) {
 
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const source = await readFile(resolve(bibPath), 'utf8');
+let starCache = { repositories: {} };
+try {
+  starCache = JSON.parse(await readFile(resolve(root, 'data/github-stars.json'), 'utf8'));
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error;
+}
 
 function parseBibtex(text) {
   const entries = [];
@@ -102,6 +108,11 @@ function extractLinks(entry) {
   };
 }
 
+function githubRepository(url = '') {
+  const match = url.match(/^https:\/\/github\.com\/([^/]+)\/([^/#?]+)/i);
+  return match ? `${match[1]}/${match[2].replace(/\.git$/i, '')}` : '';
+}
+
 function methodName(entry, title) {
   const short = clean(entry.shorttitle || '');
   if (short && short.length <= 48 && !/^(towards|end-to-end|a |the )/i.test(short)) return short;
@@ -154,7 +165,7 @@ function classify(title, abstract, year) {
   return ['e2e', 'Unified Perception-Prediction-Planning'];
 }
 
-function tagsFor(title, abstract, category) {
+function tagsFor(title, abstract, track) {
   const text = `${title} ${abstract}`.toLowerCase();
   const candidates = [
     ['Diffusion', 'diffusion'],
@@ -180,7 +191,8 @@ function tagsFor(title, abstract, category) {
     .filter(([, pattern]) => new RegExp(pattern).test(text))
     .map(([tag]) => tag)
     .slice(0, 3);
-  return tags.length ? tags : [category.split(/[,&]/)[0].trim()];
+  const fallback = { e2e: 'End-to-End', vla: 'VLA', 'world-model': 'World Model' }[track];
+  return tags.length ? tags : [fallback];
 }
 
 const rawEntries = parseBibtex(source);
@@ -197,13 +209,20 @@ for (const entry of rawEntries) {
   seen.add(dedupeKey);
 
   const abstract = clean(entry.abstract || '');
-  const [track, category] = classify(title, abstract, year);
+  const [track] = classify(title, abstract, year);
   const extra = extractLinks(entry);
+  const repository = githubRepository(extra.code);
+  const stars = repository && Number.isInteger(starCache.repositories?.[repository]?.stars)
+    ? starCache.repositories[repository].stars
+    : null;
+  const code = extra.code && (!repository || Number.isInteger(stars)) ? extra.code : undefined;
   const knownPaperUrls = {
     'FlowAD: Ego-Scene Interactive Modeling for Autonomous Driving': 'https://arxiv.org/abs/2603.13399'
   };
   const fallbackUrl = entry.url ? https(entry.url) : entry.doi ? `https://doi.org/${clean(entry.doi)}` : '';
   const paperUrl = arxiv ? `https://arxiv.org/abs/${arxiv}` : knownPaperUrls[title] || fallbackUrl;
+  const resolvedArxiv = arxiv || paperUrl.match(/arxiv\.org\/abs\/(\d{4}\.\d{4,5})/i)?.[1] || '';
+  const published = resolvedArxiv ? `20${resolvedArxiv.slice(0, 2)}-${resolvedArxiv.slice(2, 4)}` : String(year);
   const venueMatch = clean(entry.annote || '').match(/\b(CVPR|ICCV|ECCV|NeurIPS|ICLR|ICML|CoRL|AAAI|IROS|ICRA)\s*(\d{4})\b/i);
   const venueNote = venueMatch ? `${venueMatch[1].toUpperCase()} ${venueMatch[2]}` : '';
   const id = (arxiv || entry.key)
@@ -216,13 +235,15 @@ for (const entry of rawEntries) {
     name: methodName(entry, title),
     title,
     track,
-    category,
     year,
+    published,
     venue: venueNote ? clean(venueNote) : String(year),
-    tags: tagsFor(title, abstract, category),
+    tags: tagsFor(title, abstract, track),
     datasets: [],
     paper: paperUrl || undefined,
-    code: extra.code,
+    code,
+    openSource: Boolean(code),
+    stars,
     project: extra.project && extra.project !== paperUrl ? extra.project : undefined,
     zoteroKey: entry.key
   });
@@ -231,42 +252,10 @@ for (const entry of rawEntries) {
 const trackOrder = { e2e: 0, vla: 1, 'world-model': 2 };
 papers.sort((a, b) =>
   trackOrder[a.track] - trackOrder[b.track]
-  || a.category.localeCompare(b.category)
-  || b.year - a.year
+  || b.published.localeCompare(a.published)
+  || b.id.localeCompare(a.id, undefined, { numeric: true })
   || a.name.localeCompare(b.name)
 );
-
-const categoryOrder = {
-  e2e: [
-    'Imitation, Distillation & Privileged Learning',
-    'Unified Perception-Prediction-Planning',
-    'Sparse, Vector & Token Representations',
-    'Trajectory Scoring & Selection',
-    'Diffusion, Flow & Generative Planning',
-    'Reinforcement Learning & Post-Training',
-    'Robustness, Safety & Test-Time Adaptation',
-    'Cooperative & Multi-Agent Driving',
-    'Driving Datasets, Benchmarks & Evaluation'
-  ],
-  'world-model': [
-    'Video Generation & Neural Rendering',
-    'BEV, Occupancy & 3D World Modeling',
-    'Latent World Models',
-    'World-Action Models',
-    'Simulation, Data Generation & Scaling',
-    'World Foundation Models',
-    'World Model Benchmarks & Surveys'
-  ],
-  vla: [
-    'Driving VLMs & Scene Reasoning',
-    'End-to-End VLA',
-    'Dual-System VLM + Planner',
-    'VLA Reasoning & Reinforcement Learning',
-    'Spatial, Temporal & 3D Grounding',
-    'Efficient VLA & Deployment',
-    'VLA Datasets, Benchmarks & Surveys'
-  ]
-};
 
 const trackTitles = {
   e2e: 'End-to-End Autonomous Driving',
@@ -281,32 +270,44 @@ let readme = '# Awesome Autonomous Driving Research\n\n';
 readme += `A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, and public evaluation benchmarks. The catalog is built from a Zotero library and currently contains **${papers.length} unique papers**.\n\n`;
 const updatedAt = new Date().toISOString().slice(0, 10);
 readme += `Last updated: ${updatedAt}. Paper metadata should be checked against the latest arXiv or publisher version before citation.\n\n`;
+if (starCache.updatedAt) readme += `GitHub star counts are a snapshot from ${starCache.updatedAt.slice(0, 10)} and can be refreshed with \`npm run update:stars\`.\n\n`;
 readme += '## Table of Contents\n\n- [Papers](#papers)\n';
 for (const title of Object.values(trackTitles)) readme += `  - [${title}](#${anchor(title)})\n`;
-readme += '- [Public Datasets and Benchmarks](#public-datasets-and-benchmarks)\n';
+readme += '- [Public Datasets](#public-datasets)\n';
+readme += '- [Public Evaluation Benchmarks](#public-evaluation-benchmarks)\n';
 readme += '- [Leaderboard](#leaderboard)\n- [Contributing](#contributing)\n- [License](#license)\n\n';
 readme += '## Papers\n\n';
 
 for (const [track, title] of Object.entries(trackTitles)) {
   readme += `### ${title}\n\n`;
-  for (const category of categoryOrder[track]) {
-    const items = papers.filter((paper) => paper.track === track && paper.category === category);
-    if (!items.length) continue;
-    readme += `#### ${category}\n\n`;
-    readme += '| Method | Year / Venue | Tags | Paper | Code | Project |\n';
-    readme += '|---|---|---|---|---|---|\n';
-    for (const paper of items) {
-      const method = paper.name.replace(/\|/g, '\\|');
-      const paperTitle = paper.title.replace(/\|/g, '\\|');
-      const tags = paper.tags.map((tag) => `\`${tag}\``).join(' · ');
-      readme += `| **${method}** — ${paperTitle} | ${paper.venue} | ${tags} | ${link('Paper', paper.paper)} | ${link('Code', paper.code)} | ${link('Project', paper.project)} |\n`;
-    }
-    readme += '\n';
+  const items = papers.filter((paper) => paper.track === track);
+  readme += '| Date / Venue | Method | Paper | Open Source | GitHub Stars | Project |\n';
+  readme += '|---|---|---|---|---:|---|\n';
+  for (const paper of items) {
+    const method = paper.name.replace(/\|/g, '\\|');
+    const paperTitle = paper.title.replace(/\|/g, '\\|');
+    const openSource = paper.code ? link('Yes', paper.code) : 'No public code';
+    const stars = Number.isInteger(paper.stars) ? paper.stars.toLocaleString('en-US') : '—';
+    const dateVenue = paper.venue === String(paper.year) ? paper.published : `${paper.published} · ${paper.venue}`;
+    readme += `| ${dateVenue} | **${method}** — ${paperTitle} | ${link('Paper', paper.paper)} | ${openSource} | ${stars} | ${link('Project', paper.project)} |\n`;
   }
+  readme += '\n';
+}
+
+const datasets = JSON.parse(await readFile(resolve(root, 'data/datasets.json'), 'utf8'));
+readme += '## Public Datasets\n\n';
+readme += 'The dataset index follows the training and evaluation resources documented by ReCogDrive. Access conditions remain those of each original provider.\n\n';
+readme += '| Dataset | Task | Scale | Access | Resources |\n';
+readme += '|---|---|---|---|---|\n';
+for (const item of datasets) {
+  const resources = [link('Homepage', item.homepage), link('Paper', item.paper), link('Code', item.code)]
+    .filter((item) => item !== '—')
+    .join(' · ');
+  readme += `| **${item.name}** | ${item.task} | ${item.scale} | ${item.access} | ${resources} |\n`;
 }
 
 const benchmarks = JSON.parse(await readFile(resolve(root, 'data/benchmarks.json'), 'utf8'));
-readme += '## Public Datasets and Benchmarks\n\n';
+readme += '\n## Public Evaluation Benchmarks\n\n';
 readme += '| Benchmark | Track | Evaluation Setting | Primary Metric | Resources |\n';
 readme += '|---|---|---|---|---|\n';
 for (const item of benchmarks) {

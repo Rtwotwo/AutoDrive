@@ -1,0 +1,131 @@
+[
+  {
+    "id": "talk2car",
+    "name": "Talk2Car",
+    "task": "Language Grounding",
+    "description": "Natural-language commands grounded in nuScenes driving scenes for object referral and command understanding.",
+    "scale": "11,959 commands · 850 videos",
+    "access": "Open",
+    "homepage": "https://github.com/talk2car/Talk2Car",
+    "paper": "https://arxiv.org/abs/1909.10838",
+    "code": "https://github.com/talk2car/Talk2Car"
+  },
+  {
+    "id": "sutd-trafficqa",
+    "name": "SUTD-TrafficQA",
+    "task": "Traffic Video QA",
+    "description": "Video question answering for causal inference and event understanding in diverse real-world traffic scenes.",
+    "scale": "10,080 videos · 62,535 QA pairs",
+    "access": "Request",
+    "homepage": "https://github.com/sutdcv/SUTD-TrafficQA",
+    "paper": "https://arxiv.org/abs/2103.15538",
+    "code": "https://github.com/sutdcv/SUTD-TrafficQA"
+  },
+  {
+    "id": "drama",
+    "name": "DRAMA",
+    "task": "Risk Localization & Captioning",
+    "description": "Interactive driving scenarios annotated for risk localization and natural-language explanations.",
+    "scale": "17,785 scenarios",
+    "access": "Open",
+    "homepage": "https://usa.honda-ri.com/drama",
+    "paper": "https://arxiv.org/abs/2209.10767"
+  },
+  {
+    "id": "nuscenes-qa",
+    "name": "NuScenes-QA",
+    "task": "Multimodal Driving QA",
+    "description": "Multi-frame, multimodal visual question answering over complex autonomous-driving scenes.",
+    "scale": "34,149 scenes · 459,941 QA pairs",
+    "access": "Open",
+    "homepage": "https://github.com/qiantianwen/NuScenes-QA",
+    "paper": "https://arxiv.org/abs/2305.14836",
+    "code": "https://github.com/qiantianwen/NuScenes-QA"
+  },
+  {
+    "id": "drivegpt4-data",
+    "name": "DriveGPT4 / BDD-X",
+    "task": "Instruction Tuning & Control",
+    "description": "Driving instruction data derived from BDD-X with language explanations and vehicle control signals.",
+    "scale": "16,803 train · 2,123 test clips",
+    "access": "Project",
+    "homepage": "https://tonyxuqaq.github.io/projects/DriveGPT4/",
+    "paper": "https://arxiv.org/abs/2310.01412"
+  },
+  {
+    "id": "lingoqa",
+    "name": "LingoQA",
+    "task": "Driving Video QA",
+    "description": "Video question answering for driving behavior, scenery, perception, and response truthfulness.",
+    "scale": "28K scenarios · 419K annotations",
+    "access": "Open",
+    "homepage": "https://github.com/wayveai/LingoQA",
+    "paper": "https://arxiv.org/abs/2312.14115",
+    "code": "https://github.com/wayveai/LingoQA"
+  },
+  {
+    "id": "drivelm-data",
+    "name": "DriveLM",
+    "task": "Graph Visual QA",
+    "description": "Graph-structured question answering connecting perception, prediction, behavior, and planning.",
+    "scale": "4,072 train · 799 validation frames",
+    "access": "Open",
+    "homepage": "https://github.com/OpenDriveLab/DriveLM",
+    "paper": "https://arxiv.org/abs/2312.14150",
+    "code": "https://github.com/OpenDriveLab/DriveLM"
+  },
+  {
+    "id": "maplm",
+    "name": "MAPLM",
+    "task": "Map & Traffic Understanding",
+    "description": "Point-cloud BEV projections and surround-view images with element-, lane-, and road-level descriptions.",
+    "scale": "2M point clouds · panoramic imagery",
+    "access": "Open",
+    "homepage": "https://github.com/LLVM-AD/MAPLM",
+    "code": "https://github.com/LLVM-AD/MAPLM"
+  },
+  {
+    "id": "nuinstruct",
+    "name": "NuInstruct",
+    "task": "Multi-view Instruction QA",
+    "description": "Multi-view video instruction-response data covering perception, prediction, risk, and planning with reasoning.",
+    "scale": "91K pairs · 17 subtasks",
+    "access": "Open",
+    "homepage": "https://github.com/xmed-lab/NuInstruct",
+    "paper": "https://arxiv.org/abs/2401.00988",
+    "code": "https://github.com/xmed-lab/NuInstruct"
+  },
+  {
+    "id": "coda-lm",
+    "name": "CODA-LM",
+    "task": "Corner-case Evaluation",
+    "description": "Textual annotations for critical road entities and safety-oriented driving suggestions in corner cases.",
+    "scale": "9,768 scenarios · 63K+ annotations",
+    "access": "Open",
+    "homepage": "https://coda-dataset.github.io/coda-lm/",
+    "paper": "https://arxiv.org/abs/2404.10595",
+    "code": "https://github.com/DLUT-LYZ/CODA-LM"
+  },
+  {
+    "id": "omnidrive",
+    "name": "OmniDrive-nuScenes",
+    "task": "3D Perception & Reasoning",
+    "description": "Holistic VQA for 3D perception, grounding, counterfactual reasoning, decision making, and planning.",
+    "scale": "nuScenes-derived · offline and online QA",
+    "access": "Open",
+    "homepage": "https://github.com/NVlabs/OmniDrive",
+    "paper": "https://arxiv.org/abs/2405.01533",
+    "code": "https://github.com/NVlabs/OmniDrive"
+  },
+  {
+    "id": "senna-qa",
+    "name": "Senna Planning QA",
+    "task": "Planning-oriented QA",
+    "description": "Planning-oriented questions for scene description, traffic signals, vulnerable users, motion intent, meta-actions, and explanations.",
+    "scale": "Generated from nuScenes",
+    "access": "Generation Scripts",
+    "homepage": "https://github.com/hustvl/Senna",
+    "paper": "https://arxiv.org/abs/2410.22313",
+    "code": "https://github.com/hustvl/Senna"
+  }
+]
