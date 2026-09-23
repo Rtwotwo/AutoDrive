@@ -7,6 +7,7 @@
   "scripts": {
     "validate": "node scripts/validate_data.mjs",
     "sync:zotero": "node scripts/sync_zotero.mjs",
+    "readme": "node scripts/render_readme.mjs",
     "update:stars": "node scripts/update_github_stars.mjs",
     "serve": "node scripts/serve.mjs"
   },

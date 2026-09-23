@@ -37,9 +37,9 @@ function paperCard(paper) {
   const stars = Number.isInteger(paper.stars) ? new Intl.NumberFormat('en-US').format(paper.stars) : '—';
   const sourceStatus = paper.openSource ? `OPEN SOURCE · ★ ${stars}` : 'NO PUBLIC CODE';
   const links = [
-    paper.paper ? `<a href="${paper.paper}" target="_blank" rel="noopener">Paper ↗</a>` : '',
-    paper.code ? `<a href="${paper.code}" target="_blank" rel="noopener">Code ↗</a>` : '',
-    paper.project ? `<a href="${paper.project}" target="_blank" rel="noopener">Project ↗</a>` : ''
+    paper.paper ? `<a href="${paper.paper}" title="Paper" aria-label="Paper" target="_blank" rel="noopener">📄</a>` : '',
+    paper.code ? `<a href="${paper.code}" title="Open-source code" aria-label="Open-source code" target="_blank" rel="noopener">💻</a>` : '',
+    paper.project ? `<a href="${paper.project}" title="Project page" aria-label="Project page" target="_blank" rel="noopener">🌐</a>` : ''
   ].filter(Boolean).join('');
   return `<article class="paper-card" data-track="${paper.track}">
     <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.published}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
@@ -63,20 +63,29 @@ function renderPapers() {
 
 function datasetCard(item) {
   const links = [
-    `<a href="${item.homepage}" target="_blank" rel="noopener">Homepage ↗</a>`,
-    item.paper ? `<a href="${item.paper}" target="_blank" rel="noopener">Paper ↗</a>` : '',
-    item.code ? `<a href="${item.code}" target="_blank" rel="noopener">Code ↗</a>` : ''
+    `<a href="${item.homepage}" title="Dataset page" aria-label="Dataset page" target="_blank" rel="noopener">📦</a>`,
+    item.paper ? `<a href="${item.paper}" title="Paper" aria-label="Paper" target="_blank" rel="noopener">📄</a>` : '',
+    item.code ? `<a href="${item.code}" title="Dataset download or code" aria-label="Dataset download or code" target="_blank" rel="noopener">💾</a>` : ''
   ].filter(Boolean).join('');
   return `<article class="benchmark-card dataset-card">
     <div class="benchmark-top"><span class="benchmark-track">${item.task}</span><span class="access ${item.access === 'Open' ? 'open' : ''}">${item.access}</span></div>
-    <h3>${item.name}</h3><p>${item.description}</p>
+    <h3>${item.name}</h3><p class="dataset-paper-title">${item.paperTitle || ''}</p><p>${item.description}</p>
     <dl><div><dt>ROLE</dt><dd>Training / Research</dd></div><div><dt>SCALE</dt><dd>${item.scale}</dd></div><div><dt>REFERENCE</dt><dd>ReCogDrive</dd></div></dl>
     <div class="benchmark-links">${links}</div>
   </article>`;
 }
 
 function renderDatasets() {
-  $('#datasetGrid').innerHTML = state.datasets.map(datasetCard).join('');
+  const groups = new Map();
+  for (const item of state.datasets) {
+    if (!groups.has(item.group)) groups.set(item.group, []);
+    groups.get(item.group).push(item);
+  }
+  $('#datasetGrid').innerHTML = [...groups.entries()].map(([group, items]) => `
+    <section class="dataset-group">
+      <h4>${group}</h4>
+      <div class="benchmark-grid">${items.map(datasetCard).join('')}</div>
+    </section>`).join('');
 }
 
 function benchmarkCard(item) {

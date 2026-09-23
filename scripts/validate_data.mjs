@@ -41,6 +41,7 @@ for (const track of ['e2e','vla','world-model']) {
 }
 for (const dataset of datasets) {
   if (!dataset.task || !dataset.scale || !dataset.access) errors.push(`dataset ${dataset.id}: task, scale, and access are required`);
+  if (!dataset.group || !dataset.paperTitle) errors.push(`dataset ${dataset.id}: group and paperTitle are required`);
   if (!https(dataset.homepage)) errors.push(`dataset ${dataset.id}: homepage must use https`);
   for (const field of ['paper','code']) if (dataset[field] && !https(dataset[field])) errors.push(`dataset ${dataset.id}: ${field} must use https`);
 }

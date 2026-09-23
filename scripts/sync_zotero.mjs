@@ -257,77 +257,14 @@ papers.sort((a, b) =>
   || a.name.localeCompare(b.name)
 );
 
-const trackTitles = {
+await writeFile(resolve(root, 'data/papers.json'), `${JSON.stringify(papers, null, 2)}\n`, 'utf8');
+await import('./render_readme.mjs');
+
+console.log(`Imported ${papers.length} unique papers from ${rawEntries.length} Zotero entries.`);
+for (const [track, title] of Object.entries({
   e2e: 'End-to-End Autonomous Driving',
   vla: 'Vision-Language-Action Models',
   'world-model': 'Driving World Models'
-};
-
-const link = (label, url) => url ? `[${label}](${url})` : '—';
-const anchor = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-
-let readme = '# Awesome Autonomous Driving Research\n\n';
-readme += `A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, and public evaluation benchmarks. The catalog is built from a Zotero library and currently contains **${papers.length} unique papers**.\n\n`;
-const updatedAt = new Date().toISOString().slice(0, 10);
-readme += `Last updated: ${updatedAt}. Paper metadata should be checked against the latest arXiv or publisher version before citation.\n\n`;
-if (starCache.updatedAt) readme += `GitHub star counts are a snapshot from ${starCache.updatedAt.slice(0, 10)} and can be refreshed with \`npm run update:stars\`.\n\n`;
-readme += '## Table of Contents\n\n- [Papers](#papers)\n';
-for (const title of Object.values(trackTitles)) readme += `  - [${title}](#${anchor(title)})\n`;
-readme += '- [Public Datasets](#public-datasets)\n';
-readme += '- [Public Evaluation Benchmarks](#public-evaluation-benchmarks)\n';
-readme += '- [Leaderboard](#leaderboard)\n- [Contributing](#contributing)\n- [License](#license)\n\n';
-readme += '## Papers\n\n';
-
-for (const [track, title] of Object.entries(trackTitles)) {
-  readme += `### ${title}\n\n`;
-  const items = papers.filter((paper) => paper.track === track);
-  readme += '| Date / Venue | Method | Paper | Open Source | GitHub Stars | Project |\n';
-  readme += '|---|---|---|---|---:|---|\n';
-  for (const paper of items) {
-    const method = paper.name.replace(/\|/g, '\\|');
-    const paperTitle = paper.title.replace(/\|/g, '\\|');
-    const openSource = paper.code ? link('Yes', paper.code) : 'No public code';
-    const stars = Number.isInteger(paper.stars) ? paper.stars.toLocaleString('en-US') : '—';
-    const dateVenue = paper.venue === String(paper.year) ? paper.published : `${paper.published} · ${paper.venue}`;
-    readme += `| ${dateVenue} | **${method}** — ${paperTitle} | ${link('Paper', paper.paper)} | ${openSource} | ${stars} | ${link('Project', paper.project)} |\n`;
-  }
-  readme += '\n';
-}
-
-const datasets = JSON.parse(await readFile(resolve(root, 'data/datasets.json'), 'utf8'));
-readme += '## Public Datasets\n\n';
-readme += 'The dataset index follows the training and evaluation resources documented by ReCogDrive. Access conditions remain those of each original provider.\n\n';
-readme += '| Dataset | Task | Scale | Access | Resources |\n';
-readme += '|---|---|---|---|---|\n';
-for (const item of datasets) {
-  const resources = [link('Homepage', item.homepage), link('Paper', item.paper), link('Code', item.code)]
-    .filter((item) => item !== '—')
-    .join(' · ');
-  readme += `| **${item.name}** | ${item.task} | ${item.scale} | ${item.access} | ${resources} |\n`;
-}
-
-const benchmarks = JSON.parse(await readFile(resolve(root, 'data/benchmarks.json'), 'utf8'));
-readme += '\n## Public Evaluation Benchmarks\n\n';
-readme += '| Benchmark | Track | Evaluation Setting | Primary Metric | Resources |\n';
-readme += '|---|---|---|---|---|\n';
-for (const item of benchmarks) {
-  const resources = [link('Homepage', item.homepage), link('Paper', item.paper), link('Code', item.code)]
-    .filter((item) => item !== '—')
-    .join(' · ');
-  readme += `| **${item.name}** | ${item.track} | ${item.setting} | ${item.primaryMetric} | ${resources} |\n`;
-}
-
-readme += '\n## Leaderboard\n\n';
-readme += 'Benchmark results are stored in [data/leaderboard.json](data/leaderboard.json). Submission requirements and reproducibility checks are documented in [benchmark/README.md](benchmark/README.md). Results from different protocol versions, sensor configurations, or data splits are not ranked together.\n\n';
-readme += '## Contributing\n\n';
-readme += 'Please read [CONTRIBUTING.md](CONTRIBUTING.md) before adding papers, benchmarks, or leaderboard results. Run `npm run validate` before opening a pull request.\n\n';
-readme += '## License\n\n';
-readme += 'This project is released under the [Apache License 2.0](LICENSE).\n';
-
-await writeFile(resolve(root, 'data/papers.json'), `${JSON.stringify(papers, null, 2)}\n`, 'utf8');
-await writeFile(resolve(root, 'README.md'), readme, 'utf8');
-
-console.log(`Imported ${papers.length} unique papers from ${rawEntries.length} Zotero entries.`);
-for (const [track, title] of Object.entries(trackTitles)) {
+})) {
   console.log(`${title}: ${papers.filter((paper) => paper.track === track).length}`);
 }
