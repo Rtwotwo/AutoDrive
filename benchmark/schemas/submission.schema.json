@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/autodrive/submission.schema.json",
+  "title": "AutoDrive Benchmark Submission",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "benchmarkId", "method", "team", "split", "score", "status", "date", "code", "evidence", "notes"],
+  "properties": {
+    "id": {"type":"string","pattern":"^[a-z0-9][a-z0-9-]+$"},
+    "benchmarkId": {"type":"string"},
+    "method": {"type":"string","minLength":2},
+    "team": {"type":"string","minLength":2},
+    "split": {"type":"string","minLength":2},
+    "score": {"type":"number"},
+    "status": {"enum":["pending","verified","published"]},
+    "date": {"type":"string","format":"date"},
+    "paper": {"type":"string","format":"uri"},
+    "code": {"type":"string","format":"uri"},
+    "evidence": {"type":"string","format":"uri"},
+    "notes": {"type":"string","minLength":20}
+  }
+}
+

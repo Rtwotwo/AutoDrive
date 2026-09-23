@@ -1,0 +1,15 @@
+{
+  "id": "navsim-yourmethod-r34",
+  "benchmarkId": "navsim",
+  "method": "YourMethod (R34)",
+  "team": "Your Lab",
+  "split": "NAVSIM benchmark",
+  "score": 0.0,
+  "status": "pending",
+  "date": "2026-09-23",
+  "paper": "https://arxiv.org/abs/0000.00000",
+  "code": "https://github.com/your-org/your-repo",
+  "evidence": "https://github.com/your-org/your-repo/blob/main/EVALUATION.md",
+  "notes": "写明模型配置、传感器输入、训练数据、checkpoint 与评测命令。"
+}
+

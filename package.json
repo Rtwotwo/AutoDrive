@@ -1,0 +1,15 @@
+{
+  "name": "autodrive-research-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Curated autonomous-driving research tracker and public benchmark hub.",
+  "scripts": {
+    "validate": "node scripts/validate_data.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

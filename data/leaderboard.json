@@ -1,0 +1,4 @@
+[
+  {"id":"navsim-diffusiondrive-r34","benchmarkId":"navsim","method":"DiffusionDrive (R34)","team":"HUST / Horizon Robotics","split":"NAVSIM benchmark","score":88.1,"status":"published","date":"2024-11-22","paper":"https://arxiv.org/abs/2411.15139","code":"https://github.com/hustvl/DiffusionDrive","evidence":"https://arxiv.org/abs/2411.15139","notes":"作者论文报告值；使用前请核对论文版本和 NAVSIM 协议版本。"}
+]
+

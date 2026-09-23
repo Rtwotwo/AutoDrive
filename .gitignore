@@ -1,8 +1,5 @@
-# ignore clones and papers file
-clones/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
 
-# ignore workshop logs
-logs/
-
-# ignore workshop papers
-papers/
