@@ -8,9 +8,9 @@
     "published": "2026-09",
     "venue": "2026",
     "tags": [
-      "3D Occupancy",
-      "Sparse Representation",
-      "Reasoning"
+      "Occupancy Representation",
+      "Token Representation",
+      "Risk-Aware Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2609.21486",
@@ -27,14 +27,16 @@
     "published": "2026-06",
     "venue": "ECCV 2026",
     "tags": [
-      "End-to-End"
+      "Geospatial Priors",
+      "Anticipatory Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.31830",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 61,
     "project": "https://ori-mrg.github.io/PriorEye",
-    "zoteroKey": "yeon_prioreye_2026"
+    "zoteroKey": "yeon_prioreye_2026",
+    "code": "https://github.com/ori-mrg/PriorEye"
   },
   {
     "id": "2606-19836",
@@ -45,28 +47,29 @@
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "Reinforcement Learning",
-      "Safety"
+      "Post-Training",
+      "Interactive Simulation",
+      "Long-Tail Safety"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.19836",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 506,
     "project": "https://opendrivelab.com/WorldEngine/",
-    "zoteroKey": "li_world_2026"
+    "zoteroKey": "li_world_2026",
+    "code": "https://github.com/OpenDriveLab/WorldEngine"
   },
   {
     "id": "2606-19641",
     "name": "Gigapixel",
-    "title": "Gigapixel: Scaling Self-Play for End-to-End Driving",
+    "title": "Scaling Self-Play for End-to-End Driving",
     "track": "e2e",
     "year": 2026,
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "Closed-Loop",
-      "BEV",
-      "Simulation"
+      "Self-Play",
+      "Closed-Loop Reinforcement Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.19641",
@@ -77,14 +80,15 @@
   {
     "id": "2606-07464",
     "name": "COMPACT-VA",
-    "title": "COMPACT-VA: Planning-aligned Token Compression for Long-Context Autonomous Driving",
+    "title": "Planning-aligned Token Compression for Long-Context Autonomous Driving",
     "track": "e2e",
     "year": 2026,
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "Closed-Loop",
-      "Distillation"
+      "Token Compression",
+      "Long-Context Memory",
+      "Planning-Aware Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.07464",
@@ -95,14 +99,14 @@
   {
     "id": "2606-07170",
     "name": "TOAD",
-    "title": "TOAD: Test-Time Trajectory Optimization for Autonomous Driving",
+    "title": "Test-Time Trajectory Optimization for Autonomous Driving",
     "track": "e2e",
     "year": 2026,
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "Closed-Loop",
-      "Trajectory Scoring"
+      "Test-Time Optimization",
+      "Trajectory Refinement"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.07170",
@@ -120,8 +124,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Trajectory Scoring",
-      "Distillation"
+      "Scene Tokenization",
+      "Perception-Free Planning",
+      "Reconstruction Supervision"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.31116",
@@ -138,9 +143,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Closed-Loop",
-      "Trajectory Scoring",
-      "Distillation"
+      "Trajectory Ranking",
+      "Planning Metrics",
+      "Closed-Loop Evaluation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.15120",
@@ -158,8 +163,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Reinforcement Learning",
-      "Multi-Modal"
+      "Driving Data Library",
+      "Multi-Modal Datasets",
+      "Data Standardization"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.08084",
@@ -177,8 +183,8 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "Reinforcement Learning"
+      "Discrete Diffusion",
+      "Trajectory Editing"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.04647",
@@ -189,15 +195,15 @@
   {
     "id": "2604-15308",
     "name": "RAD-2",
-    "title": "RADV2: Scaling Reinforcement Learning in a Generator-Discriminator Framework",
+    "title": "RAD-2: Scaling Reinforcement Learning in a Generator-Discriminator Framework",
     "track": "e2e",
     "year": 2026,
     "published": "2026-04",
     "venue": "2026",
     "tags": [
-      "Diffusion",
+      "Diffusion Planning",
       "Reinforcement Learning",
-      "Closed-Loop"
+      "Closed-Loop Adaptation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.15308",
@@ -208,13 +214,15 @@
   {
     "id": "2604-08366",
     "name": "MOSAIC",
-    "title": "MOSAIC: Scaling-Aware Data Selection for End-to-End Autonomous Driving Systems",
+    "title": "Scaling-Aware Data Selection for End-to-End Autonomous Driving Systems",
     "track": "e2e",
     "year": 2026,
     "published": "2026-04",
     "venue": "CVPR 2026",
     "tags": [
-      "End-to-End"
+      "Data Selection",
+      "Data Scaling",
+      "Evaluation Alignment"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.08366",
@@ -231,14 +239,16 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "Simulation",
-      "Sparse Representation"
+      "Ego-Scene Interaction",
+      "Scene Flow",
+      "Closed-Loop Evaluation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.13399",
-    "openSource": false,
-    "stars": null,
-    "zoteroKey": "guo_flowad_2026"
+    "openSource": true,
+    "stars": 18,
+    "zoteroKey": "guo_flowad_2026",
+    "code": "https://github.com/AutoLab-SAI-SJTU/FlowAD"
   },
   {
     "id": "2603-29163",
@@ -250,8 +260,8 @@
     "venue": "2026",
     "tags": [
       "Trajectory Scoring",
-      "Sparse Representation",
-      "Multi-Modal"
+      "Sparse Proposals",
+      "Multi-Modal Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.29163",
@@ -263,15 +273,14 @@
   {
     "id": "2602-22801",
     "name": "HDP",
-    "title": "HDP: Unleashing the Potential of Diffusion Models for End-to-End Autonomous Driving",
+    "title": "Unleashing the Potential of Diffusion Models for End-to-End Autonomous Driving",
     "track": "e2e",
     "year": 2026,
     "published": "2026-02",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "Reinforcement Learning",
-      "Simulation"
+      "Diffusion Planning",
+      "Real-World Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.22801",
@@ -289,8 +298,8 @@
     "venue": "CVPR 2026",
     "tags": [
       "Flow Matching",
-      "Closed-Loop",
-      "Multi-Modal"
+      "One-Step Planning",
+      "Multi-Modal Trajectories"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.20060",
@@ -302,13 +311,15 @@
   {
     "id": "2602-13936",
     "name": "PCM",
-    "title": "PCM: A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving",
+    "title": "A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving",
     "track": "e2e",
     "year": 2026,
     "published": "2026-02",
     "venue": "ICRA 2026",
     "tags": [
-      "End-to-End"
+      "Causal Modeling",
+      "Motion Prediction",
+      "Domain Generalization"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.13936",
@@ -326,9 +337,9 @@
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "Reinforcement Learning",
-      "Closed-Loop"
+      "Reinforcement Fine-Tuning",
+      "Diffusion Planning",
+      "Adaptive Trajectories"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.12901",
@@ -339,15 +350,15 @@
   {
     "id": "2601-05083",
     "name": "DrivoR",
-    "title": "DrivoR: Driving on Registers",
+    "title": "Driving on Registers",
     "track": "e2e",
     "year": 2026,
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "Closed-Loop",
-      "Trajectory Scoring",
-      "Safety"
+      "Register Tokens",
+      "Efficient Scene Encoding",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.05083",
@@ -364,8 +375,9 @@
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "Reasoning",
-      "Safety"
+      "Spatio-Temporal Reasoning",
+      "Interaction-Aware Planning",
+      "Speed Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.01762",
@@ -376,20 +388,21 @@
   {
     "id": "2512-20563",
     "name": "LEAD",
-    "title": "LEAD & LTFv6: Minimizing Learner-Expert Asymmetry in End-to-End Driving",
+    "title": "LEAD: Minimizing Learner-Expert Asymmetry in End-to-End Driving",
     "track": "e2e",
     "year": 2025,
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "Closed-Loop",
-      "Simulation"
+      "Imitation Learning",
+      "Privileged Learning",
+      "Closed-Loop Evaluation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.20563",
-    "code": "https://github.com/autonomousvision/lead",
+    "code": "https://github.com/kesai-labs/lead",
     "openSource": true,
-    "stars": 229,
+    "stars": 230,
     "zoteroKey": "nguyen_lead_2025"
   },
   {
@@ -401,47 +414,50 @@
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "Diffusion",
+      "Diffusion Planning",
       "Reinforcement Learning",
-      "Closed-Loop"
+      "Diverse Trajectories"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.07745",
     "code": "https://github.com/hustvl/DiffusionDriveV2",
     "openSource": true,
-    "stars": 371,
+    "stars": 372,
     "zoteroKey": "zou_diffusiondrivev2_2025"
   },
   {
     "id": "2512-06865",
     "name": "Spatial Retrieval AD",
-    "title": "Spatial Retrieval AD: Spatial Retrieval Augmented Autonomous Driving",
+    "title": "Spatial Retrieval Augmented Autonomous Driving",
     "track": "e2e",
     "year": 2025,
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "End-to-End"
+      "Spatial Retrieval",
+      "Geospatial Priors",
+      "Robust Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.06865",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 3,
     "project": "https://spatialretrievalad.github.io/",
-    "zoteroKey": "jia_spatial_2025"
+    "zoteroKey": "jia_spatial_2025",
+    "code": "https://github.com/SpatialRetrievalAD/End2End-Planning"
   },
   {
     "id": "2512-00470",
     "name": "LAP",
     "title": "LAP: Fast LAtent Diffusion Planner for Autonomous Driving",
     "track": "e2e",
-    "year": 2026,
-    "published": "2025-12",
-    "venue": "2026",
+    "year": 2025,
+    "published": "2025-11",
+    "venue": "2025",
     "tags": [
-      "Diffusion",
-      "Closed-Loop",
-      "Multi-Modal"
+      "Latent Action Planning",
+      "Diffusion Planning",
+      "Multi-Modal Trajectories"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.00470",
@@ -454,13 +470,12 @@
     "name": "GuideFlow",
     "title": "GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Autonomous Driving",
     "track": "e2e",
-    "year": 2026,
+    "year": 2025,
     "published": "2025-11",
-    "venue": "2026",
+    "venue": "2025",
     "tags": [
       "Flow Matching",
-      "Multi-Modal",
-      "Safety"
+      "Safety-Constrained Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.18729",
@@ -478,7 +493,8 @@
     "published": "2025-11",
     "venue": "AAAI 2026",
     "tags": [
-      "Diffusion"
+      "Diffusion Planning",
+      "Trajectory Refinement"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.17150",
@@ -491,11 +507,13 @@
     "name": "MiMo-Embodied",
     "title": "MiMo-Embodied: X-Embodied Foundation Model Technical Report",
     "track": "e2e",
-    "year": 2026,
+    "year": 2025,
     "published": "2025-11",
-    "venue": "2026",
+    "venue": "2025",
     "tags": [
-      "End-to-End"
+      "Embodied Foundation Model",
+      "Cross-Embodiment Transfer",
+      "Autonomous Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.16518",
@@ -514,7 +532,9 @@
     "published": "2025-11",
     "venue": "2025",
     "tags": [
-      "BEV"
+      "Cooperative Driving",
+      "Multi-Agent Planning",
+      "V2X"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.09013",
@@ -531,9 +551,9 @@
     "published": "2025-11",
     "venue": "2025",
     "tags": [
-      "3D Occupancy",
-      "BEV",
-      "Multi-Modal"
+      "LiDAR",
+      "Multi-View Fusion",
+      "Efficient Transformers"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.01768",
@@ -545,15 +565,15 @@
   {
     "id": "2510-24108",
     "name": "ZTRS",
-    "title": "ZTRS: Zero-Imitation End-to-end Autonomous Driving with Trajectory Scoring",
+    "title": "Zero-Human Demonstration End-to-end Autonomous Driving with Trajectory Scorer",
     "track": "e2e",
     "year": 2025,
     "published": "2025-10",
     "venue": "2025",
     "tags": [
-      "Reinforcement Learning",
-      "Closed-Loop",
-      "Trajectory Scoring"
+      "Trajectory Scoring",
+      "Zero-Shot Planning",
+      "Policy Optimization"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2510.24108",
@@ -571,9 +591,9 @@
     "published": "2025-08",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "Reinforcement Learning",
-      "Closed-Loop"
+      "Evolutionary Reinforcement Learning",
+      "Iterative Planning",
+      "Closed-Loop Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2508.09158",
@@ -590,9 +610,8 @@
     "published": "2025-08",
     "venue": "2025",
     "tags": [
-      "Reinforcement Learning",
-      "Closed-Loop",
-      "Distillation"
+      "Knowledge Distillation",
+      "Planning-Centric Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2508.05402",
@@ -610,13 +629,13 @@
     "published": "2025-08",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "BEV",
-      "Multi-Modal"
+      "HD Map Generation",
+      "BEV Semantics",
+      "Sensor Fusion"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2508.01778",
-    "code": "https://github.com/SunZhigang7/DiffSemanticFusion",
+    "code": "https://github.com/SunZhigang7/DiffSemanticFusion_MaplessQCNet",
     "openSource": true,
     "stars": 56,
     "zoteroKey": "sun_diffsemanticfusion_2025"
@@ -630,7 +649,9 @@
     "published": "2025-07",
     "venue": "2025",
     "tags": [
-      "Closed-Loop"
+      "Mixture-of-Experts",
+      "Driving Skills",
+      "Adaptive Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2507.14456",
@@ -649,15 +670,16 @@
     "venue": "IROS 2025",
     "tags": [
       "Flow Matching",
-      "Trajectory Scoring",
-      "Multi-Modal"
+      "Motion Prediction",
+      "Multi-Modal Forecasting"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.08541",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 83,
     "project": "https://traj-flow.github.io/",
-    "zoteroKey": "yan_trajflow_2025"
+    "zoteroKey": "yan_trajflow_2025",
+    "code": "https://github.com/DSL-Lab/TrajFlow"
   },
   {
     "id": "2506-07725",
@@ -668,7 +690,9 @@
     "published": "2025-06",
     "venue": "ICCV 2025",
     "tags": [
-      "End-to-End"
+      "Dual-System VLM",
+      "Fast-Slow Planning",
+      "Inference Efficiency"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.07725",
@@ -680,21 +704,20 @@
   {
     "id": "2506-06664",
     "name": "GTRS",
-    "title": "GTRS: Generalized Trajectory Scoring for End-to-end Multimodal Planning",
+    "title": "Generalized Trajectory Scoring for End-to-end Multimodal Planning",
     "track": "e2e",
     "year": 2025,
     "published": "2025-06",
     "venue": "CVPR 2025",
     "tags": [
-      "Diffusion",
       "Trajectory Scoring",
-      "Multi-Modal"
+      "Multi-Modal Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.06664",
     "code": "https://github.com/NVlabs/GTRS",
     "openSource": true,
-    "stars": 287,
+    "stars": 288,
     "zoteroKey": "li_gtrs_2025"
   },
   {
@@ -706,9 +729,9 @@
     "published": "2025-06",
     "venue": "AAAI 2026",
     "tags": [
-      "Trajectory Scoring",
-      "Distillation",
-      "Safety"
+      "Trajectory Selection",
+      "Safety Scoring",
+      "Imitation Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.06659",
@@ -719,21 +742,21 @@
   {
     "id": "2506-04218",
     "name": "NAVSIM",
-    "title": "NAVSIM: Pseudo-Simulation for Autonomous Driving",
+    "title": "Pseudo-Simulation for Autonomous Driving",
     "track": "e2e",
     "year": 2025,
     "published": "2025-06",
     "venue": "CORL 2025",
     "tags": [
-      "Closed-Loop",
-      "Simulation",
-      "Safety"
+      "Evaluation Benchmark",
+      "Pseudo-Simulation",
+      "Open-Loop Metrics"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.04218",
     "code": "https://github.com/autonomousvision/navsim",
     "openSource": true,
-    "stars": 1108,
+    "stars": 1109,
     "zoteroKey": "cao_navsim_2025"
   },
   {
@@ -742,11 +765,12 @@
     "title": "GaussianFusion: Gaussian-Based Multi-Sensor Fusion for End-to-End Autonomous Driving",
     "track": "e2e",
     "year": 2025,
-    "published": "2025-06",
+    "published": "2025-05",
     "venue": "NEURIPS 2025",
     "tags": [
-      "BEV",
-      "Multi-Modal"
+      "Multi-Sensor Fusion",
+      "Gaussian Representation",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.00034",
@@ -764,8 +788,9 @@
     "published": "2025-05",
     "venue": "2025",
     "tags": [
-      "BEV",
-      "Safety"
+      "Proposal-Centric Planning",
+      "Iterative Refinement",
+      "Sparse Representation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2505.15111",
@@ -783,9 +808,9 @@
     "published": "2025-05",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "Closed-Loop",
-      "Multi-Modal"
+      "Diffusion Planning",
+      "Multi-Modal Trajectories",
+      "Trajectory Diversity"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2505.09315",
@@ -795,16 +820,16 @@
   },
   {
     "id": "2503-14182",
-    "name": "Bridging Past and Future",
-    "title": "BridgeAD: Bridging Past and Future End-to-End Autonomous Driving with Historical Prediction and Planning",
+    "name": "BridgeAD",
+    "title": "Bridging Past and Future: End-to-End Autonomous Driving with Historical Prediction and Planning",
     "track": "e2e",
     "year": 2025,
     "published": "2025-03",
     "venue": "CVPR 2025",
     "tags": [
-      "Closed-Loop",
-      "BEV",
-      "Sparse Representation"
+      "Temporal Memory",
+      "Historical Prediction",
+      "Trajectory Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.14182",
@@ -821,27 +846,28 @@
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "Distillation"
+      "Knowledge Distillation",
+      "Expert-Guided Planning",
+      "Multi-Head Policy"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.12820",
-    "code": "https://github.com/NVlabs/Hydra-MDP",
-    "openSource": true,
-    "stars": 417,
+    "openSource": false,
+    "stars": null,
     "zoteroKey": "li_hydra-mdp_2025"
   },
   {
     "id": "2503-10434",
     "name": "TrajHF",
-    "title": "TrajHF: Learning Personalized Driving Styles via Reinforcement Learning from Human Feedback",
+    "title": "Learning Personalized Driving Styles via Reinforcement Learning from Human Feedback",
     "track": "e2e",
     "year": 2025,
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "Reinforcement Learning",
-      "Multi-Modal",
-      "Safety"
+      "Human Feedback",
+      "Personalized Driving Styles",
+      "Trajectory Generation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.10434",
@@ -858,8 +884,8 @@
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "Closed-Loop",
-      "BEV"
+      "Hierarchical Planning",
+      "Multi-Granularity Queries"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.08612",
@@ -876,9 +902,8 @@
     "published": "2025-03",
     "venue": "ICLR 2025",
     "tags": [
-      "Closed-Loop",
-      "BEV",
-      "Sparse Representation"
+      "Unified Perception-Prediction-Planning",
+      "Transformer Architecture"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.07656",
@@ -895,9 +920,9 @@
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "Diffusion",
       "Flow Matching",
-      "Trajectory Scoring"
+      "Goal-Conditioned Planning",
+      "Multi-Modal Trajectories"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.05689",
@@ -908,14 +933,16 @@
   },
   {
     "id": "2503-03125",
-    "name": "Don't Shake the Wheel",
-    "title": "MomAD: Don't Shake the Wheel Momentum-Aware Planning in End-to-End Autonomous Driving",
+    "name": "MomAD",
+    "title": "Don't Shake the Wheel: Momentum-Aware Planning in End-to-End Autonomous Driving",
     "track": "e2e",
     "year": 2025,
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "End-to-End"
+      "Trajectory Momentum",
+      "Occlusion Robustness",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.03125",
@@ -927,19 +954,21 @@
   {
     "id": "2411-15139",
     "name": "DiffusionDrive",
-    "title": "DiffusionDriveV1: Truncated Diffusion Model for End-to-End Autonomous Driving",
+    "title": "DiffusionDrive: Truncated Diffusion Model for End-to-End Autonomous Driving",
     "track": "e2e",
-    "year": 2025,
+    "year": 2024,
     "published": "2024-11",
     "venue": "CVPR 2025",
     "tags": [
-      "Diffusion"
+      "Diffusion Policy",
+      "Real-Time Planning",
+      "Multi-Modal Trajectories"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2411.15139",
     "code": "https://github.com/hustvl/DiffusionDrive",
     "openSource": true,
-    "stars": 1501,
+    "stars": 1503,
     "zoteroKey": "liao_diffusiondrivev1_2025"
   },
   {
@@ -951,15 +980,15 @@
     "published": "2024-06",
     "venue": "NEURIPS 2024",
     "tags": [
-      "Closed-Loop",
-      "BEV",
-      "Simulation"
+      "Benchmarking",
+      "Non-Reactive Simulation",
+      "Data-Driven Evaluation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2406.15349",
     "code": "https://github.com/autonomousvision/navsim",
     "openSource": true,
-    "stars": 1108,
+    "stars": 1109,
     "zoteroKey": "dauner_navsim_2024"
   },
   {
@@ -971,34 +1000,35 @@
     "published": "2024-06",
     "venue": "CVPR 2024",
     "tags": [
-      "Distillation",
-      "Multi-Modal"
+      "Knowledge Distillation",
+      "Multi-Teacher Learning",
+      "Trajectory Selection"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2406.06978",
-    "code": "https://github.com/NVlabs/Hydra-MDP",
-    "openSource": true,
-    "stars": 417,
-    "zoteroKey": "li_hydra-mdp_2024"
+    "openSource": false,
+    "stars": null,
+    "zoteroKey": "li_hydra-mdp_2024",
+    "project": "https://github.com/NVlabs/Hydra-MDP"
   },
   {
     "id": "2405-19620",
     "name": "SparseDrive",
-    "title": "SparseDriveV1: End-to-End Autonomous Driving via Sparse Scene Representation",
+    "title": "SparseDrive: End-to-End Autonomous Driving via Sparse Scene Representation",
     "track": "e2e",
     "year": 2024,
     "published": "2024-05",
     "venue": "2024",
     "tags": [
-      "BEV",
-      "Sparse Representation",
-      "Multi-Modal"
+      "Sparse Scene Representation",
+      "Multi-Task Learning",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2405.19620",
     "code": "https://github.com/swc-17/SparseDrive",
     "openSource": true,
-    "stars": 1004,
+    "stars": 1005,
     "zoteroKey": "sun_sparsedrivev1_2024"
   },
   {
@@ -1010,25 +1040,28 @@
     "published": "2024-02",
     "venue": "2024",
     "tags": [
-      "Closed-Loop"
+      "Vectorized Scene Representation",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2402.13243",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 1374,
     "project": "https://hgao-cv.github.io/VADv2",
-    "zoteroKey": "chen_vadv2_2024"
+    "zoteroKey": "chen_vadv2_2024",
+    "code": "https://github.com/hustvl/VAD"
   },
   {
     "id": "2312-03031",
     "name": "BEV-Planner",
-    "title": "BEV-Planner: Is Ego Status All You Need for Open-Loop End-to-End Autonomous Driving?",
+    "title": "Is Ego Status All You Need for Open-Loop End-to-End Autonomous Driving?",
     "track": "e2e",
-    "year": 2024,
+    "year": 2023,
     "published": "2023-12",
     "venue": "CVPR 2024",
     "tags": [
-      "BEV"
+      "BEV Representation",
+      "Trajectory Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2312.03031",
@@ -1046,8 +1079,8 @@
     "published": "2023-03",
     "venue": "ICCV 2023",
     "tags": [
-      "3D Occupancy",
-      "Safety"
+      "Vectorized Scene Representation",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2303.12077",
@@ -1059,13 +1092,14 @@
   {
     "id": "2212-10156",
     "name": "UniAD",
-    "title": "UniAD: Planning-oriented Autonomous Driving",
+    "title": "Planning-oriented Autonomous Driving",
     "track": "e2e",
-    "year": 2023,
+    "year": 2022,
     "published": "2022-12",
     "venue": "CVPR 2023",
     "tags": [
-      "End-to-End"
+      "Unified Autonomous Driving",
+      "Planning-Oriented Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2212.10156",
@@ -1083,9 +1117,9 @@
     "published": "2022-07",
     "venue": "ECCV 2022",
     "tags": [
-      "Closed-Loop",
-      "BEV",
-      "Simulation"
+      "Spatial-Temporal Learning",
+      "End-to-End Planning",
+      "Closed-Loop Evaluation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2207.07601",
@@ -1103,7 +1137,9 @@
     "published": "2022-05",
     "venue": "2022",
     "tags": [
-      "BEV"
+      "Sensor Fusion",
+      "Imitation Learning",
+      "End-to-End Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2205.15997",
@@ -1117,12 +1153,12 @@
     "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
     "track": "vla",
     "year": 2026,
-    "published": "2026-09",
+    "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "VLM",
-      "Closed-Loop",
-      "3D Occupancy"
+      "Vision-Language Foundation Model",
+      "3D Perception",
+      "Joint Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2609.00111",
@@ -1134,15 +1170,14 @@
   {
     "id": "2608-18035",
     "name": "Plug-and-Play",
-    "title": "Plug-and-Play: Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
+    "title": "Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
     "track": "vla",
     "year": 2026,
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "VLA",
-      "Trajectory Scoring"
+      "Traffic Element Conditioning",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.18035",
@@ -1159,9 +1194,9 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "VLA",
-      "Reasoning"
+      "VLA-WAM Integration",
+      "Predictive Dynamics",
+      "Joint Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.12854",
@@ -1178,8 +1213,9 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Reasoning"
+      "Failure Memory",
+      "Retrieval Augmentation",
+      "Distribution Shift"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.10413",
@@ -1197,9 +1233,9 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "VLM",
-      "Closed-Loop",
-      "Reasoning"
+      "Spatial Reasoning",
+      "Reasoning Optimization",
+      "Trajectory Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.09591",
@@ -1210,15 +1246,14 @@
   {
     "id": "2608-01755",
     "name": "DEFT-RLVR",
-    "title": "DEFT-RLVR: Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs",
+    "title": "Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs",
     "track": "vla",
     "year": 2026,
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "VLM",
-      "Reasoning"
+      "Reinforcement Learning with Verifiable Rewards",
+      "Reasoning Supervision"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.01755",
@@ -1235,9 +1270,9 @@
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "Reinforcement Learning",
-      "VLM",
-      "Reasoning"
+      "Work-Zone Reasoning",
+      "VLM Planning",
+      "Robustness"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.14727",
@@ -1247,40 +1282,42 @@
   },
   {
     "id": "2607-08072",
-    "name": "Post-Training in End-to-End Autonomous Driving",
+    "name": "Post-Training Survey",
     "title": "Post-Training in End-to-End Autonomous Driving",
     "track": "vla",
     "year": 2026,
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Multi-Modal",
-      "Safety"
+      "Survey",
+      "Post-Training",
+      "Policy Optimization"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.08072",
-    "code": "https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers",
-    "openSource": true,
-    "stars": 35,
-    "zoteroKey": "yang_post-training_2026"
+    "openSource": false,
+    "stars": null,
+    "zoteroKey": "yang_post-training_2026",
+    "project": "https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers"
   },
   {
     "id": "2607-06403",
-    "name": "From Foundation to Application",
-    "title": "LingBot-VLA 2.0: From Foundation to Application: Improving VLA Models in Practice",
+    "name": "LingBot-VLA 2.0",
+    "title": "From Foundation to Application: Improving VLA Models in Practice",
     "track": "vla",
     "year": 2026,
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "Reasoning"
+      "Generalist VLA",
+      "Data Scaling",
+      "Real-World Deployment"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.06403",
     "code": "https://github.com/robbyant/lingbot-vla-v2",
     "openSource": true,
-    "stars": 947,
+    "stars": 954,
     "project": "https://technology.robbyant.com/lingbot-vla-v2",
     "zoteroKey": "wu_lingbot-vla_2026"
   },
@@ -1293,9 +1330,8 @@
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Closed-Loop",
-      "Reasoning"
+      "Navigation-Conditioned Planning",
+      "Continuous Actions"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.03182",
@@ -1306,35 +1342,33 @@
   {
     "id": "2607-01658",
     "name": "DriveTeach-VLA",
-    "title": "DriveTeach-VLA: Teaching Vision-Language-Action Models What to See and Where to Look",
+    "title": "Teaching Vision-Language-Action Models What to See and Where to Look",
     "track": "vla",
     "year": 2026,
     "published": "2026-07",
     "venue": "ECCV 2026",
     "tags": [
-      "VLA",
-      "Distillation",
-      "Reasoning"
+      "Spatial Grounding",
+      "Action-Grounded Supervision"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.01658",
     "code": "https://github.com/ShivaTeam/DriveTeach-VLA",
     "openSource": true,
-    "stars": 28,
+    "stars": 29,
     "zoteroKey": "yang_driveteach-vla_2026"
   },
   {
     "id": "2606-24742",
     "name": "WVM",
-    "title": "WVM: World Value Models for Robotic Manipulation",
+    "title": "World Value Models for Robotic Manipulation",
     "track": "vla",
     "year": 2026,
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "VLM",
-      "Sparse Representation"
+      "Cross-Domain Robotics",
+      "World-Value Modeling"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.24742",
@@ -1351,9 +1385,9 @@
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "Reinforcement Learning",
-      "VLM",
-      "Closed-Loop"
+      "Reward Modeling",
+      "Trajectory Selection",
+      "Data Scaling"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.08525",
@@ -1370,9 +1404,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "VLM",
-      "Reasoning"
+      "Causal Flow Matching",
+      "Trajectory Generation",
+      "Global Consistency"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.23270",
@@ -1384,14 +1418,15 @@
   {
     "id": "2605-21061",
     "name": "IKN",
-    "title": "IKN: Grounding Driving VLA via Inverse Kinematics",
+    "title": "Grounding Driving VLA via Inverse Kinematics",
     "track": "vla",
     "year": 2026,
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "Closed-Loop"
+      "Inverse Kinematics",
+      "Future-State Grounding",
+      "Trajectory Recovery"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.21061",
@@ -1408,16 +1443,17 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Reinforcement Learning",
-      "VLA",
-      "Closed-Loop"
+      "Counterfactual Learning",
+      "Interactive Reinforcement Learning",
+      "Policy Fine-Tuning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.04470",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 21,
     "project": "https://currychen77.github.io/CRAFT",
-    "zoteroKey": "chen_craft_2026"
+    "zoteroKey": "chen_craft_2026",
+    "code": "https://github.com/CurryChen77/CraftPolicy"
   },
   {
     "id": "2604-17915",
@@ -1428,9 +1464,9 @@
     "published": "2026-04",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "VLM",
-      "Closed-Loop"
+      "Unified Multimodal Decoding",
+      "Structured Actions",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.17915",
@@ -1448,9 +1484,9 @@
     "published": "2026-04",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "VLM",
-      "Closed-Loop"
+      "Joint Perception and Planning",
+      "3D Grounding",
+      "VLA"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.02190",
@@ -1468,9 +1504,9 @@
     "published": "2026-04",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Closed-Loop",
-      "Sparse Representation"
+      "Vision-Geometry-Action",
+      "3D Geometry",
+      "Action Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.00813",
@@ -1481,16 +1517,16 @@
   },
   {
     "id": "2603-28116",
-    "name": "AutoDrivetextbackslashtext-Ptextasciicircum3",
-    "title": "AutoDrive-Ptextasciicircum3: Unified Chain of Perception-Prediction-Planning Thought via Reinforcement Fine-Tuning",
+    "name": "AutoDrive-P3",
+    "title": "$AutoDrive\\text{-}P^3$: Unified Chain of Perception-Prediction-Planning Thought via Reinforcement Fine-Tuning",
     "track": "vla",
     "year": 2026,
     "published": "2026-03",
     "venue": "ICLR 2026",
     "tags": [
-      "Reinforcement Learning",
-      "VLM",
-      "Closed-Loop"
+      "Chain-of-Thought",
+      "Reinforcement Fine-Tuning",
+      "Unified Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.28116",
@@ -1502,15 +1538,15 @@
   {
     "id": "2603-14972",
     "name": "Learning from Mistakes",
-    "title": "TakeVLA: Learning from Mistakes: Post-Training for Driving VLA with Takeover Data",
+    "title": "Learning from Mistakes: Post-Training for Driving VLA with Takeover Data",
     "track": "vla",
     "year": 2026,
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "Reinforcement Learning",
-      "VLA",
-      "Closed-Loop"
+      "Takeover Learning",
+      "Post-Training",
+      "Distribution Shift"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.14972",
@@ -1527,16 +1563,17 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "VLM",
-      "Closed-Loop"
+      "Asynchronous VLA",
+      "Mixture-of-Transformers",
+      "Efficient Inference"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.14851",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 61,
     "project": "https://automot-website.github.io/",
-    "zoteroKey": "huang_automot_2026"
+    "zoteroKey": "huang_automot_2026",
+    "code": "https://github.com/OscarHuangWind/AutoMoT"
   },
   {
     "id": "2603-11041",
@@ -1547,14 +1584,17 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "Reasoning"
+      "World Dynamics Reasoning",
+      "Dynamics Tokens",
+      "Action Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.11041",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 58,
     "project": "https://yaoyao-jpg.github.io/dynvla",
-    "zoteroKey": "shang_dynvla_2026"
+    "zoteroKey": "shang_dynvla_2026",
+    "code": "https://github.com/yaoyao-jpg/DynamicsVLA"
   },
   {
     "id": "2603-09465",
@@ -1565,9 +1605,8 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Closed-Loop",
-      "Distillation"
+      "Knowledge Distillation",
+      "Perception-Planning Alignment"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.09465",
@@ -1578,18 +1617,20 @@
   },
   {
     "id": "2603-06049",
-    "name": "Devil is in Narrow Policy",
-    "title": "CuriousVLA: Devil is in Narrow Policy Unleashing Exploration in Driving VLA Models",
+    "name": "Curious-VLA",
+    "title": "Devil is in Narrow Policy: Unleashing Exploration in Driving VLA Models",
     "track": "vla",
     "year": 2026,
     "published": "2026-03",
     "venue": "CVPR 2026",
     "tags": [
-      "Reinforcement Learning"
+      "Exploration",
+      "Reinforcement Learning",
+      "Policy Improvement"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.06049",
-    "code": "https://github.com/Mashiroln/curious_vla.git",
+    "code": "https://github.com/Mashiroln/curious_vla",
     "openSource": true,
     "stars": 133,
     "zoteroKey": "chen_curiousvla_2026"
@@ -1603,9 +1644,8 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "Reinforcement Learning",
-      "World Model",
-      "VLA"
+      "Latent Reasoning",
+      "Spatio-Temporal Grounding"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.01928",
@@ -1616,15 +1656,14 @@
   {
     "id": "2603-01441",
     "name": "LinkVLA",
-    "title": "LinkVLA: Unifying Language-Action Understanding and Generation for Autonomous Driving",
+    "title": "Unifying Language-Action Understanding and Generation for Autonomous Driving",
     "track": "vla",
     "year": 2026,
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Closed-Loop",
-      "Multi-Modal"
+      "Language-Action Alignment",
+      "Parallel Action Generation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.01441",
@@ -1635,15 +1674,15 @@
   {
     "id": "2603-01063",
     "name": "ELF-VLA",
-    "title": "ELF-VLA: Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures",
+    "title": "Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures",
     "track": "vla",
     "year": 2026,
     "published": "2026-03",
     "venue": "2026",
     "tags": [
+      "Learning from Failures",
       "Reinforcement Learning",
-      "VLA",
-      "Sparse Representation"
+      "Long-Tail Exploration"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.01063",
@@ -1660,14 +1699,16 @@
     "published": "2026-02",
     "venue": "CVPR 2026",
     "tags": [
-      "VLA",
-      "Reasoning"
+      "Data Efficiency",
+      "Reasoning-Free VLA",
+      "Driving Policy"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.21172",
-    "openSource": false,
-    "stars": null,
-    "zoteroKey": "rawal_nord_2026"
+    "openSource": true,
+    "stars": 12,
+    "zoteroKey": "rawal_nord_2026",
+    "code": "https://github.com/Applied-Intuition-Open-Source/nord"
   },
   {
     "id": "2602-20794",
@@ -1678,6 +1719,8 @@
     "published": "2026-02",
     "venue": "CVPR 2026",
     "tags": [
+      "Cross-View Geometry",
+      "3D Grounding",
       "VLM"
     ],
     "datasets": [],
@@ -1695,9 +1738,9 @@
     "published": "2026-02",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Closed-Loop",
-      "Reasoning"
+      "Hierarchical Planning",
+      "Spatio-Temporal Reasoning",
+      "3D Grounding"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.13329",
@@ -1707,15 +1750,16 @@
   },
   {
     "id": "2602-10719",
-    "name": "HybridDriveVLA",
-    "title": "HybridDriveVLA: From Representational Complementarity to Dual Systems: Synergizing VLM and Vision-Only Backbones for End-to-End Driving",
+    "name": "Dual-System Driving",
+    "title": "From Representational Complementarity to Dual Systems: Synergizing VLM and Vision-Only Backbones for End-to-End Driving",
     "track": "vla",
     "year": 2026,
     "published": "2026-02",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "VLA"
+      "Dual-System VLM",
+      "Vision-Only Backbones",
+      "Representation Complementarity"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.10719",
@@ -1732,9 +1776,9 @@
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "VLA",
-      "VLM"
+      "Sparse Occupancy",
+      "4D Scene Understanding",
+      "Unified Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.06474",
@@ -1751,9 +1795,9 @@
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "VLM",
-      "Reasoning",
-      "Safety"
+      "Scene-to-Goal Reasoning",
+      "Hierarchical Planning",
+      "3D Grounding"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.05640",
@@ -1763,16 +1807,16 @@
   },
   {
     "id": "2601-05611",
-    "name": "LatentVLA",
-    "title": "LatentVLA: Efficient Vision-Language Models for Autonomous Driving via Latent Action Prediction",
+    "name": "FLARE",
+    "title": "FLARE: Learning Future-Aware Latent Representations from Vision-Language Models for Autonomous Driving",
     "track": "vla",
     "year": 2026,
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "VLM",
-      "Distillation"
+      "Latent Future Representation",
+      "VLM Transfer",
+      "Trajectory Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.05611",
@@ -1789,8 +1833,9 @@
     "published": "2026",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Reasoning"
+      "Visual Chain-of-Thought",
+      "Waypoint Evaluation",
+      "Safety and Comfort"
     ],
     "datasets": [],
     "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
@@ -1803,20 +1848,21 @@
     "name": "ColaVLA",
     "title": "ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving",
     "track": "vla",
-    "year": 2026,
+    "year": 2025,
     "published": "2025-12",
     "venue": "CVPR 2026",
     "tags": [
-      "VLA",
-      "VLM",
-      "Closed-Loop"
+      "Latent Reasoning",
+      "Hierarchical Planning",
+      "Parallel Trajectories"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.22939",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 67,
     "project": "https://pqh22.github.io/projects/ColaVLA/index.html",
-    "zoteroKey": "peng_colavla_2026"
+    "zoteroKey": "peng_colavla_2026",
+    "code": "https://github.com/pqh22/ColaVLA"
   },
   {
     "id": "2512-10719",
@@ -1827,14 +1873,16 @@
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "Closed-Loop",
-      "Reasoning"
+      "Spatial Awareness",
+      "3D Reasoning",
+      "VLM Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.10719",
-    "openSource": false,
-    "stars": null,
-    "zoteroKey": "li_spacedrive_2025"
+    "openSource": true,
+    "stars": 93,
+    "zoteroKey": "li_spacedrive_2025",
+    "code": "https://github.com/zhenghao2519/SpaceDrive"
   },
   {
     "id": "2512-06112",
@@ -1845,9 +1893,9 @@
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "Flow Matching",
-      "VLA"
+      "Discrete Flow Matching",
+      "Parallel Planning",
+      "Structured Actions"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.06112",
@@ -1865,9 +1913,9 @@
     "published": "2025-12",
     "venue": "2025",
     "tags": [
+      "Reasoning Fine-Tuning",
       "Reinforcement Learning",
-      "VLM",
-      "Reasoning"
+      "Driving Policy"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.01830",
@@ -1880,13 +1928,13 @@
     "name": "Alpamayo-R1",
     "title": "Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail",
     "track": "vla",
-    "year": 2026,
-    "published": "2025-11",
-    "venue": "2026",
+    "year": 2025,
+    "published": "2025-10",
+    "venue": "2025",
     "tags": [
-      "Diffusion",
-      "Reinforcement Learning",
-      "VLM"
+      "Causal Reasoning",
+      "Trajectory Planning",
+      "Long-Tail Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.00088",
@@ -1898,16 +1946,16 @@
   },
   {
     "id": "2511-00062",
-    "name": "World",
+    "name": "Cosmos-Predict2.5",
     "title": "World Simulation with Video Foundation Models for Physical AI",
     "track": "vla",
-    "year": 2026,
-    "published": "2025-11",
-    "venue": "2026",
+    "year": 2025,
+    "published": "2025-10",
+    "venue": "2025",
     "tags": [
-      "Reinforcement Learning",
-      "VLM",
-      "Closed-Loop"
+      "World Foundation Model",
+      "Video Generation",
+      "Flow-Based Modeling"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.00062",
@@ -1919,15 +1967,15 @@
   {
     "id": "2509-20109",
     "name": "ReflectDrive-1",
-    "title": "ReflectDrive-1: Discrete Diffusion for Reflective Vision-Language-Action Models in Autonomous Driving",
+    "title": "Discrete Diffusion for Reflective Vision-Language-Action Models in Autonomous Driving",
     "track": "vla",
     "year": 2025,
     "published": "2025-09",
     "venue": "2025",
     "tags": [
-      "Diffusion",
       "Reinforcement Learning",
-      "VLA"
+      "Physical Reasoning",
+      "Trajectory Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2509.20109",
@@ -1944,9 +1992,9 @@
     "published": "2025-09",
     "venue": "2025",
     "tags": [
-      "VLA",
-      "3D Occupancy",
-      "Reasoning"
+      "Occupancy Grounding",
+      "3D Spatial Understanding",
+      "VLA"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2509.05578",
@@ -1963,8 +2011,9 @@
     "published": "2025-07",
     "venue": "AAAI 2026",
     "tags": [
-      "VLA",
-      "Reasoning"
+      "Visual Token Pruning",
+      "Efficient Inference",
+      "VLA"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2507.23318",
@@ -1981,16 +2030,17 @@
     "published": "2025-06",
     "venue": "NEURIPS 2025",
     "tags": [
-      "Reinforcement Learning",
-      "VLA",
-      "Closed-Loop"
+      "Joint Reasoning and Action",
+      "Autoregressive VLA",
+      "Reinforcement Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.13757",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 655,
     "project": "https://autovla.github.io/",
-    "zoteroKey": "zhou_autovla_2025"
+    "zoteroKey": "zhou_autovla_2025",
+    "code": "https://github.com/ucla-mobility/AutoVLA"
   },
   {
     "id": "2506-08052",
@@ -2001,9 +2051,9 @@
     "published": "2025-06",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "VLM",
-      "Safety"
+      "Cognitive Planning",
+      "Action Tokenization",
+      "Reinforcement Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.08052",
@@ -2021,9 +2071,9 @@
     "published": "2025-05",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "BEV",
-      "Sparse Representation"
+      "Diffusion Planning",
+      "BEV Efficiency",
+      "Action Diversity"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2505.19381",
@@ -2040,28 +2090,30 @@
     "published": "2025-05",
     "venue": "2025",
     "tags": [
-      "VLA",
-      "Closed-Loop"
+      "Mixture-of-Experts",
+      "Scenario Specialization",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2505.16278",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 234,
     "project": "https://thinklab-sjtu.github.io/DriveMoE/",
-    "zoteroKey": "yang_drivemoe_2025"
+    "zoteroKey": "yang_drivemoe_2025",
+    "code": "https://github.com/Thinklab-SJTU/DriveMoE"
   },
   {
     "id": "2505-00284",
     "name": "LightEMMA",
-    "title": "LightEMMA: Lightweight End-to-End Multimodal Model for Autonomous Driving",
+    "title": "LightEMMA: A Longitudinal Evaluation of Vision-Language Models for Autonomous Driving",
     "track": "vla",
     "year": 2025,
     "published": "2025-05",
     "venue": "2025",
     "tags": [
-      "VLM",
-      "Reasoning",
-      "Multi-Modal"
+      "VLM Evaluation",
+      "Open-Loop Benchmarking",
+      "Inference Cost"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2505.00284",
@@ -2079,7 +2131,9 @@
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "Multi-Modal"
+      "Spatially Grounded Actions",
+      "Language-Conditioned Driving",
+      "VLA"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.23463",
@@ -2096,9 +2150,8 @@
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "Reinforcement Learning",
-      "Reasoning",
-      "Multi-Modal"
+      "Physical Reasoning",
+      "Embodied Foundation Model"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.15558",
@@ -2116,9 +2169,9 @@
     "published": "2025-03",
     "venue": "2025",
     "tags": [
+      "VLM Reasoning",
       "Reinforcement Learning",
-      "VLM",
-      "Reasoning"
+      "Long-Tail Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.07608",
@@ -2136,9 +2189,8 @@
     "published": "2026-09",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "VLA",
-      "Closed-Loop"
+      "Driving World Model",
+      "Controllable Simulation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2609.21712",
@@ -2155,9 +2207,8 @@
     "published": "2026-09",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "World-Action",
-      "Closed-Loop"
+      "Multimodal Future Prediction",
+      "World Modeling"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2609.20377",
@@ -2174,9 +2225,8 @@
     "published": "2026-09",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "World-Action",
-      "Closed-Loop"
+      "World-Action Model",
+      "Semantic Video Representation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2609.03602",
@@ -2186,15 +2236,16 @@
   },
   {
     "id": "2608-28404",
-    "name": "How Far Can 5,500 Hours of Driving Take You?",
-    "title": "NATIX: How Far Can 5,500 Hours of Driving Take You? A Scaling Law Analysis of Video Diffusion Models",
+    "name": "VATIX",
+    "title": "How Far Can 5,500 Hours of Driving Take You? A Scaling Law Analysis of Video Diffusion Models",
     "track": "world-model",
     "year": 2026,
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "Video Generation"
+      "Video Diffusion",
+      "Driving Data Scaling",
+      "World Generation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.28404",
@@ -2212,6 +2263,8 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
+      "Behavior-Conditioned Generation",
+      "Driving Simulation",
       "World Model"
     ],
     "datasets": [],
@@ -2229,15 +2282,15 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "Flow Matching",
-      "World-Action",
-      "Closed-Loop"
+      "Video JEPA",
+      "World-Action Modeling",
+      "Self-Supervised Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.20974",
     "code": "https://github.com/AFARI-Research/WA-JEPA",
     "openSource": true,
-    "stars": 63,
+    "stars": 64,
     "zoteroKey": "wang_wa-jepa_2026"
   },
   {
@@ -2249,7 +2302,8 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "Safety"
+      "World-Action Modeling",
+      "Action-Conditioned Prediction"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.20430",
@@ -2266,9 +2320,8 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Trajectory Scoring",
-      "Safety"
+      "World-Action Modeling",
+      "Latent Dynamics"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.19085",
@@ -2285,8 +2338,8 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "World-Action"
+      "World-Action Modeling",
+      "4D Scene Representation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.10107",
@@ -2303,15 +2356,15 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "Flow Matching",
-      "Reinforcement Learning",
-      "World-Action"
+      "World-Action Model",
+      "Training-Time Prediction",
+      "End-to-End Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.07468",
-    "code": "https://github.com/H-EmbodVis/SimWAM/",
+    "code": "https://github.com/H-EmbodVis/SimWAM",
     "openSource": true,
-    "stars": 181,
+    "stars": 182,
     "zoteroKey": "zhao_simwam_2026"
   },
   {
@@ -2323,7 +2376,9 @@
     "published": "2026-08",
     "venue": "2026",
     "tags": [
-      "Video Generation"
+      "Video Generation",
+      "Scene Understanding",
+      "End-to-End Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.03084",
@@ -2341,9 +2396,9 @@
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "3D Occupancy",
-      "BEV"
+      "Action-Centered JEPA",
+      "Latent Dynamics",
+      "Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.29031",
@@ -2360,7 +2415,9 @@
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "World Model"
+      "Intent-to-Action",
+      "JEPA",
+      "Reward-Free Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.26056",
@@ -2377,9 +2434,9 @@
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "VLA",
-      "Reasoning"
+      "VLA-WAM Integration",
+      "Latent World Modeling",
+      "Driving Policy"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.20988",
@@ -2396,8 +2453,9 @@
     "published": "2026-07",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Safety"
+      "Geometric Grounding",
+      "3D Scene Modeling",
+      "Future-Aware Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.17521",
@@ -2414,9 +2472,9 @@
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "World Model",
-      "3D Occupancy"
+      "Temporal Causal Dynamics",
+      "World Modeling",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.30421",
@@ -2433,9 +2491,9 @@
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "World-Action",
-      "VLA",
-      "Video Generation"
+      "World-Action Modeling",
+      "Efficient Inference",
+      "Decoupled Video and Action"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.15869",
@@ -2452,9 +2510,9 @@
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "World Model",
-      "World-Action"
+      "Interactive Simulation",
+      "Closed-Loop Evaluation",
+      "Long-Tail Scenarios"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.03159",
@@ -2471,15 +2529,15 @@
     "published": "2026-06",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "World-Action",
-      "VLM"
+      "Omnimodal Foundation Model",
+      "World Generation",
+      "Physical AI"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.02800",
     "code": "https://github.com/nvidia/cosmos",
     "openSource": true,
-    "stars": 11893,
+    "stars": 11900,
     "project": "https://huggingface.co/collections/nvidia/cosmos3",
     "zoteroKey": "nvidia_cosmos_2026"
   },
@@ -2492,8 +2550,8 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "World Model",
+      "Video-Based World Modeling",
+      "Future Reasoning",
       "VLA"
     ],
     "datasets": [],
@@ -2505,15 +2563,15 @@
   {
     "id": "2605-18137",
     "name": "Xiaomi EV World Model",
-    "title": "Xiaomi EV World Model: A Joint World Model Integrating Reconstruction and Generation for Autonomous Driving",
+    "title": "Xiaomi Auto World Model: A Joint World Model Integrating Reconstruction and Generation for Autonomous Driving",
     "track": "world-model",
     "year": 2026,
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Closed-Loop",
-      "Simulation"
+      "3D Reconstruction",
+      "World Generation",
+      "Autonomous Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.18137",
@@ -2530,8 +2588,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "3D Occupancy"
+      "Occupancy Forecasting",
+      "3D Scene Dynamics",
+      "Motion Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.17682",
@@ -2548,9 +2607,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Flow Matching",
       "World Model",
-      "Reasoning"
+      "Data-Efficient Planning",
+      "Annotation-Free Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.14696",
@@ -2567,28 +2626,28 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Closed-Loop",
-      "Simulation"
+      "Autoregressive Simulation",
+      "Long-Horizon Rollout",
+      "Self-Correction"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.11596",
-    "openSource": false,
-    "stars": null,
-    "zoteroKey": "zhang_horizondrive_2026"
+    "openSource": true,
+    "stars": 57,
+    "zoteroKey": "zhang_horizondrive_2026",
+    "code": "https://github.com/zcliangyue/HorizonDrive"
   },
   {
     "id": "2605-11550",
     "name": "DAWN",
-    "title": "DAWN: The DAWN of World-Action Interactive Models",
+    "title": "The DAWN of World-Action Interactive Models",
     "track": "world-model",
     "year": 2026,
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "World-Action",
-      "Safety"
+      "World-Action Co-Modeling",
+      "Joint Prediction and Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.11550",
@@ -2605,9 +2664,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "VLM",
-      "Closed-Loop"
+      "Latent-State Prediction",
+      "Long-Horizon World Modeling",
+      "VLM Reasoning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.10564",
@@ -2625,9 +2684,9 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "World Model",
-      "VLA"
+      "Latent World Reasoning",
+      "Planning-Oriented VLA",
+      "3D Grounding"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.10426",
@@ -2645,8 +2704,8 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "World Model"
+      "Latent World Model",
+      "Future-Conditioned Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.09701",
@@ -2664,9 +2723,9 @@
     "published": "2026-04",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "Reinforcement Learning",
-      "World Model"
+      "Real-Time Simulation",
+      "Autoregressive Video Generation",
+      "Inference Efficiency"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.20289",
@@ -2683,9 +2742,9 @@
     "published": "2026-04",
     "venue": "ECCV 2026",
     "tags": [
-      "World Model",
-      "Video Generation",
-      "Multi-Modal"
+      "World-Model Planning",
+      "Domain Generalization",
+      "Robustness"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.04198",
@@ -2702,9 +2761,9 @@
     "published": "2026-04",
     "venue": "ECCV 2026",
     "tags": [
+      "Policy Exploration",
       "Reinforcement Learning",
-      "World Model",
-      "VLA"
+      "World Modeling"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.02714",
@@ -2722,16 +2781,16 @@
     "published": "2026-04",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "World-Action",
-      "VLA"
+      "Geometry-Grounded World Model",
+      "Unified Generation and Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.01765",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 59,
     "project": "https://drivedreamer-policy.github.io/",
-    "zoteroKey": "zhou_drivedreamer-policy_2026"
+    "zoteroKey": "zhou_drivedreamer-policy_2026",
+    "code": "https://github.com/youngzhou1999/DriveDreamer-Policy"
   },
   {
     "id": "2603-27287",
@@ -2742,9 +2801,8 @@
     "published": "2026-03",
     "venue": "ECCV 2026",
     "tags": [
-      "World Model",
-      "VLA",
-      "Closed-Loop"
+      "Unified VLA and World Model",
+      "Closed-Loop Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.27287",
@@ -2761,8 +2819,9 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Distillation"
+      "Latent World-Action Model",
+      "Spatial Representation",
+      "Temporal Dynamics"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.24581",
@@ -2779,9 +2838,9 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Simulation",
-      "Video Generation"
+      "Simulation Benchmark",
+      "VLA Evaluation",
+      "Controllable Scenarios"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.19979",
@@ -2798,28 +2857,30 @@
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "VLA",
-      "Simulation"
+      "World-Action Model",
+      "Training-Time Imagination",
+      "Inference Efficiency"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.16666",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 1500,
     "project": "https://yuantianyuan01.github.io/FastWAM/",
-    "zoteroKey": "yuan_fast-wam_2026"
+    "zoteroKey": "yuan_fast-wam_2026",
+    "code": "https://github.com/yuantianyuan01/FastWAM"
   },
   {
     "id": "2603-14948",
-    "name": "Bridging Scene Generation and Planning",
-    "title": "WorldDrive: Bridging Scene Generation and Planning Driving with World Model via Unifying Vision and Motion Representation",
+    "name": "WorldDrive",
+    "title": "Bridging Scene Generation and Planning: Driving with World Model via Unifying Vision and Motion Representation",
     "track": "world-model",
     "year": 2026,
     "published": "2026-03",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Distillation",
-      "Video Generation"
+      "WorldDrive",
+      "Scene Generation",
+      "Motion Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.14948",
@@ -2837,13 +2898,12 @@
     "published": "2026-02",
     "venue": "ICLR 2026",
     "tags": [
-      "World Model",
-      "BEV",
-      "Sparse Representation"
+      "Temporal Residual Dynamics",
+      "World-Model Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.10884",
-    "code": "https://github.com/mengtan00/ResWorld.git",
+    "code": "https://github.com/mengtan00/ResWorld",
     "openSource": true,
     "stars": 63,
     "zoteroKey": "zhang_resworld_2026"
@@ -2857,13 +2917,13 @@
     "published": "2026-02",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "VLA",
-      "Closed-Loop"
+      "Unified VLA and World Model",
+      "Latent Dynamics",
+      "Joint Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.06521",
-    "code": "https://github.com/liulin815/DriveWorld-VLA.git",
+    "code": "https://github.com/liulin815/DriveWorld-VLA",
     "openSource": true,
     "stars": 127,
     "zoteroKey": "jia_driveworld-vla_2026"
@@ -2877,9 +2937,8 @@
     "published": "2026-02",
     "venue": "2026",
     "tags": [
-      "Diffusion",
-      "World Model",
-      "Reasoning"
+      "Unified Driving World Model",
+      "Geometry and Dynamics"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.01536",
@@ -2896,9 +2955,9 @@
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Distillation",
-      "Multi-Modal"
+      "JEPA",
+      "Self-Supervised Video Learning",
+      "Planning Representation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.22032",
@@ -2909,14 +2968,15 @@
   {
     "id": "2601-04453",
     "name": "UniDrive-WM",
-    "title": "UniDrive-WM: Unified Understanding, Planning and Generation World Model For Autonomous Driving",
+    "title": "UniDrive-WM: Unified Understanding, Planning and Generation World Model for Autonomous Driving",
     "track": "world-model",
     "year": 2026,
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "World Model",
-      "Reasoning"
+      "Unified VLM Planning",
+      "World Modeling",
+      "End-to-End Driving"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.04453",
@@ -2934,9 +2994,9 @@
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "World Model",
-      "Video Generation"
+      "World-Action Model",
+      "Video Generation",
+      "Joint Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.23421",
@@ -2953,9 +3013,9 @@
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "Reinforcement Learning",
-      "World Model"
+      "Reinforcement Fine-Tuning",
+      "Latent World Model",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.19133",
@@ -2972,9 +3032,9 @@
     "published": "2025-12",
     "venue": "2025",
     "tags": [
-      "World Model",
-      "VLM",
-      "Simulation"
+      "Trajectory Scoring",
+      "World-Model Planning",
+      "Multi-Modal Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.04441",
@@ -2991,15 +3051,17 @@
     "published": "2025-11",
     "venue": "2025",
     "tags": [
-      "Simulation",
-      "Safety"
+      "Driving Simulation",
+      "Synthetic Data Generation",
+      "Policy Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.23369",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 327,
     "project": "https://opendrivelab.com/SimScale",
-    "zoteroKey": "tian_simscale_2025"
+    "zoteroKey": "tian_simscale_2025",
+    "code": "https://github.com/OpenDriveLab/SimScale"
   },
   {
     "id": "2510-12796",
@@ -3010,9 +3072,9 @@
     "published": "2025-10",
     "venue": "2025",
     "tags": [
-      "Diffusion",
-      "World Model",
-      "VLA"
+      "VLA Data Scaling",
+      "Self-Supervised Supervision",
+      "Action Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2510.12796",
@@ -3029,31 +3091,37 @@
     "published": "2025-10",
     "venue": "2025",
     "tags": [
-      "World Model"
+      "3D Reconstruction",
+      "Geometric Foundation Model",
+      "World Representation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2510.10726",
-    "openSource": false,
-    "stars": null,
-    "zoteroKey": "liu_worldmirror_2025"
+    "openSource": true,
+    "stars": 1200,
+    "zoteroKey": "liu_worldmirror_2025",
+    "code": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror"
   },
   {
     "id": "2510-04333",
     "name": "RAP",
     "title": "RAP: 3D Rasterization Augmented End-to-End Planning",
     "track": "world-model",
-    "year": 2026,
+    "year": 2025,
     "published": "2025-10",
-    "venue": "2026",
+    "venue": "2025",
     "tags": [
-      "Closed-Loop"
+      "Alternative-Trajectory Generation",
+      "Closed-Loop Recovery",
+      "World Modeling"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2510.04333",
-    "openSource": false,
-    "stars": null,
+    "openSource": true,
+    "stars": 164,
     "project": "https://alan-lanfeng.github.io/RAP/",
-    "zoteroKey": "feng_rap_2026"
+    "zoteroKey": "feng_rap_2026",
+    "code": "https://github.com/vita-epfl/RAP"
   },
   {
     "id": "2508-06571",
@@ -3064,8 +3132,8 @@
     "published": "2025-08",
     "venue": "2025",
     "tags": [
-      "Reinforcement Learning",
-      "World Model",
+      "Inverse Reinforcement Learning",
+      "Policy Post-Training",
       "VLA"
     ],
     "datasets": [],
@@ -3083,9 +3151,8 @@
     "published": "2025-07",
     "venue": "ICCV 2025",
     "tags": [
-      "World Model",
-      "Closed-Loop",
-      "Multi-Modal"
+      "Self-Supervised World Model",
+      "Annotation-Free Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2507.00603",
@@ -3096,20 +3163,20 @@
   },
   {
     "id": "2506-24113",
-    "name": "Epona",
-    "title": "EponaV1: Autoregressive Diffusion World Model for Autonomous Driving",
+    "name": "EponaV1",
+    "title": "Epona: Autoregressive Diffusion World Model for Autonomous Driving",
     "track": "world-model",
     "year": 2025,
     "published": "2025-06",
     "venue": "ICCV 2025",
     "tags": [
-      "Diffusion",
-      "World Model",
-      "Video Generation"
+      "Autoregressive Video Diffusion",
+      "Long-Horizon Prediction",
+      "Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.24113",
-    "code": "https://github.com/Kevin-thu/Epona/",
+    "code": "https://github.com/Kevin-thu/Epona",
     "openSource": true,
     "stars": 388,
     "project": "https://kevin-thu.github.io/Epona/",
@@ -3118,15 +3185,15 @@
   {
     "id": "2504-01941",
     "name": "WoTE",
-    "title": "WoTE: End-to-End Driving with Online Trajectory Evaluation via BEV World Model",
+    "title": "End-to-End Driving with Online Trajectory Evaluation via BEV World Model",
     "track": "world-model",
     "year": 2025,
     "published": "2025-04",
     "venue": "2025",
     "tags": [
-      "World Model",
-      "Closed-Loop",
-      "BEV"
+      "Online Trajectory Evaluation",
+      "BEV World Model",
+      "Closed-Loop Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2504.01941",
@@ -3144,8 +3211,9 @@
     "published": "2025-03",
     "venue": "2025",
     "tags": [
-      "Simulation",
-      "Multi-Modal"
+      "Controllable World Generation",
+      "Multi-Modal Conditioning",
+      "Simulation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.14492",
@@ -3163,9 +3231,9 @@
     "published": "2025-01",
     "venue": "ICCV 2025",
     "tags": [
-      "World Model",
-      "BEV",
-      "Reasoning"
+      "3D Scene Understanding",
+      "World Generation",
+      "Unified World Model"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2501.14729",
@@ -3183,7 +3251,9 @@
     "published": "2025-01",
     "venue": "2025",
     "tags": [
-      "World Model"
+      "World Foundation Model",
+      "Video Generation",
+      "Physical AI"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2501.03575",
@@ -3201,9 +3271,9 @@
     "published": "2024-12",
     "venue": "2024",
     "tags": [
-      "3D Occupancy",
-      "BEV",
-      "Sparse Representation"
+      "Gaussian Representation",
+      "3D Scene Modeling",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2412.10371",
@@ -3215,14 +3285,15 @@
   {
     "id": "2406-08481",
     "name": "LAW",
-    "title": "LAW: Enhancing End-to-End Autonomous Driving with Latent World Model",
+    "title": "Enhancing End-to-End Autonomous Driving with Latent World Model",
     "track": "world-model",
-    "year": 2025,
+    "year": 2024,
     "published": "2024-06",
     "venue": "ICLR 2025",
     "tags": [
-      "World Model",
-      "Closed-Loop"
+      "Latent World Model",
+      "Self-Supervised Representation",
+      "End-to-End Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2406.08481",
@@ -3240,7 +3311,9 @@
     "published": "2024-05",
     "venue": "NEURIPS 2024",
     "tags": [
-      "World Model"
+      "Driving World Model",
+      "Controllable Generation",
+      "Generalization"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2405.17398",
@@ -3259,9 +3332,9 @@
     "published": "2023-11",
     "venue": "2023",
     "tags": [
-      "World Model",
-      "3D Occupancy",
-      "Sparse Representation"
+      "Occupancy World Model",
+      "3D Scene Forecasting",
+      "Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2311.16038",

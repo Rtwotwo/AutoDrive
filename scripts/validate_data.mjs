@@ -30,7 +30,8 @@ for (const paper of papers) {
   if (!Array.isArray(paper.tags) || !paper.tags.length) errors.push(`paper ${paper.id}: tags required`);
   if (paper.openSource !== Boolean(paper.code)) errors.push(`paper ${paper.id}: openSource must match code availability`);
   if (paper.stars !== null && (!Number.isInteger(paper.stars) || paper.stars < 0)) errors.push(`paper ${paper.id}: invalid stars`);
-  if (paper.code?.startsWith('https://github.com/') && !Number.isInteger(paper.stars)) errors.push(`paper ${paper.id}: GitHub code requires a star count`);
+  // The README's GitHub badge loads the current star count live. The JSON
+  // snapshot may be null when a repository has not yet been cached.
   for (const field of ['paper','code','project']) if (paper[field] && !https(paper[field])) errors.push(`paper ${paper.id}: ${field} must use https`);
 }
 for (const track of ['e2e','vla','world-model']) {

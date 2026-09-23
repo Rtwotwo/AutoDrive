@@ -19,19 +19,25 @@ const datasetGroups = [
   'Simulation and Closed-Loop Evaluation',
   'Language and VLA'
 ];
+const iconText = {
+  method: '\u{1F9E0}', year: '\u{1F5D3}\uFE0F', tags: '\u{1F3F7}\uFE0F',
+  paper: '\u{1F4C4}', github: '\u{1F4BB}', project: '\u{1F310}',
+  dataset: '\u{1F30D}'
+};
+const dash = '\u2014';
 const esc = (value) => String(value ?? '').replaceAll('|', '\\|');
 const html = (value) => esc(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
-const icon = (emoji, url, title) => url ? `[${emoji}](${url} "${title}")` : '—';
-const badgeLink = (alt, badgeUrl, targetUrl) => targetUrl ? `[![${alt}](${badgeUrl})](${targetUrl})` : '—';
+const icon = (emoji, url, title) => url ? `[${emoji}](${url} "${title}")` : dash;
+const badgeLink = (alt, badgeUrl, targetUrl) => targetUrl ? `[![${alt}](${badgeUrl})](${targetUrl})` : dash;
 const paperBadge = (url) => {
-  if (!url) return '—';
+  if (!url) return dash;
   const arxivId = url.match(/arxiv\.org\/abs\/([^/?#]+)/i)?.[1]?.replace(/v\d+$/, '');
   const label = arxivId ? `arXiv-${arxivId}` : 'Paper-Open';
   const color = arxivId ? 'b31b1b' : '2457a7';
   return badgeLink(arxivId ? 'arXiv' : 'Paper', `https://img.shields.io/badge/${label}-${color}?style=flat-square`, url);
 };
 const githubBadge = (url) => {
-  if (!url) return '—';
+  if (!url) return dash;
   try {
     const parsed = new URL(url);
     if (parsed.hostname.toLowerCase() === 'github.com') {
@@ -45,32 +51,37 @@ const githubBadge = (url) => {
   return badgeLink('Code', 'https://img.shields.io/badge/Code-Open-source-181717?logo=github&style=flat-square', url);
 };
 const resources = (item) => [
-  icon('🌐', item.homepage, 'Dataset homepage'),
-  icon('📄', item.paper, 'Paper'),
-  icon('💾', item.code, 'Dataset, download, or code')
-].filter((value) => value !== '—').join(' ');
+  icon(iconText.dataset, item.homepage, 'Dataset homepage'),
+  icon(iconText.paper, item.paper, 'Paper'),
+  icon(iconText.github, item.code, 'Dataset, download, or code')
+].filter((value) => value !== dash).join(' ');
 
 let readme = '# Awesome Autonomous Driving Research\n\n';
 readme += `A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, public datasets, and reproducible evaluation. The catalog currently contains **${papers.length} papers** across three research tracks.\n\n`;
-readme += `Last updated: ${new Date().toISOString().slice(0, 10)}. Verify paper metadata against the latest arXiv or publisher version before citation.\n\n`;
+const reviewDate = new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10);
+readme += `Last updated: ${reviewDate}. Verify paper metadata against the latest arXiv or publisher version before citation.\n\n`;
 readme += '## Table of Contents\n\n- [Papers](#papers)\n';
 for (const [, title] of tracks) readme += `  - [${title}](#${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')})\n`;
 readme += '- [Public Datasets](#public-datasets)\n- [Public Evaluation Benchmarks](#public-evaluation-benchmarks)\n- [Leaderboard](#leaderboard)\n- [License](#license)\n\n';
 readme += '## Papers\n\n';
+readme += 'GitHub links point to public code repositories checked against the paper or its official project page. A dash means no public author/team code repository was identified in this review. GitHub badges display live star counts.\n\n';
 
 for (const [track, title] of tracks) {
-  readme += `### ${title}\n\n`;
   const trackPapers = papers.filter((item) => item.track === track);
+  const codeCount = trackPapers.filter((paper) => paper.openSource && paper.code).length;
+  readme += `### ${title}\n\n`;
+  readme += `_${trackPapers.length} papers; ${codeCount} with a verified public code link._\n\n`;
   const years = [...new Set(trackPapers.map((paper) => paper.year))].sort((a, b) => b - a);
   for (const year of years) {
     readme += `<details open>\n<summary>${year}</summary>\n\n`;
-    readme += '| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |\n';
+    readme += `| ${iconText.method} **Method** | ${iconText.year} **Year / Venue** | ${iconText.tags} **Tags** | ${iconText.paper} **Paper** | ${iconText.github} **GitHub** | ${iconText.project} **Project** |\n`;
     readme += '|---|---|---|---|---|---|\n';
     for (const paper of trackPapers.filter((item) => item.year === year)) {
       const yearVenue = paper.venue === String(paper.year) ? String(paper.year) : esc(paper.venue);
       const methodTitle = `**${esc(paper.name)}**<br><sub>${html(paper.title)}</sub>`;
       const tags = paper.tags.map((tag) => `\`${esc(tag)}\``).join(' · ');
-      readme += `| ${methodTitle} | ${yearVenue} | ${tags} | ${paperBadge(paper.paper)} | ${githubBadge(paper.code)} | ${paper.project ? `[Project](${paper.project})` : '—'} |\n`;
+      const project = paper.project ? icon(iconText.project, paper.project, 'Official project page') : dash;
+      readme += `| ${methodTitle} | ${yearVenue} | ${tags} | ${paperBadge(paper.paper)} | ${githubBadge(paper.code)} | ${project} |\n`;
     }
     readme += '\n</details>\n\n';
   }
@@ -95,10 +106,10 @@ readme += '## Public Evaluation Benchmarks\n\n';
 readme += '| Benchmark | Track | Evaluation Setting | Primary Metric | Resources |\n|---|---|---|---|:---:|\n';
 for (const item of benchmarks) {
   const links = [
-    icon('🌐', item.homepage, 'Benchmark homepage'),
-    icon('📄', item.paper, 'Paper'),
-    icon('💻', item.code, 'Code')
-  ].filter((value) => value !== '—').join(' ');
+    icon(iconText.dataset, item.homepage, 'Benchmark homepage'),
+    icon(iconText.paper, item.paper, 'Paper'),
+    icon(iconText.github, item.code, 'Code')
+  ].filter((value) => value !== dash).join(' ');
   readme += `| **${esc(item.name)}** | ${esc(item.track)} | ${esc(item.setting)} | ${esc(item.primaryMetric)} | ${links} |\n`;
 }
 

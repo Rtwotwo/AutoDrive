@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T03:57:29.6221935Z",
+  "updatedAt": "2026-09-23T16:19:33.966Z",
   "repositories": {
     "adept-thu/MomAD": {
       "stars": 450,
@@ -14,19 +14,15 @@
       "url": "https://github.com/AFARI-Research/CoWorld-VLA"
     },
     "AFARI-Research/WA-JEPA": {
-      "stars": 63,
+      "stars": 64,
       "url": "https://github.com/AFARI-Research/WA-JEPA"
     },
     "ASH-2046/SUV": {
       "stars": 20,
       "url": "https://github.com/ASH-2046/SUV"
     },
-    "autonomousvision/lead": {
-      "stars": 229,
-      "url": "https://github.com/autonomousvision/lead"
-    },
     "autonomousvision/navsim": {
-      "stars": 1108,
+      "stars": 1109,
       "url": "https://github.com/autonomousvision/navsim"
     },
     "BraveGroup/LAW": {
@@ -38,7 +34,7 @@
       "url": "https://github.com/fudan-generative-vision/WAM-Flow"
     },
     "H-EmbodVis/SimWAM": {
-      "stars": 181,
+      "stars": 182,
       "url": "https://github.com/H-EmbodVis/SimWAM"
     },
     "haha-yuki-haha/AutoDrive-P3": {
@@ -62,11 +58,11 @@
       "url": "https://github.com/hustvl/AlphaDrive"
     },
     "hustvl/DiffusionDrive": {
-      "stars": 1501,
+      "stars": 1503,
       "url": "https://github.com/hustvl/DiffusionDrive"
     },
     "hustvl/DiffusionDriveV2": {
-      "stars": 371,
+      "stars": 372,
       "url": "https://github.com/hustvl/DiffusionDriveV2"
     },
     "hustvl/VAD": {
@@ -129,12 +125,8 @@
       "stars": 826,
       "url": "https://github.com/nvidia-cosmos/cosmos-transfer1"
     },
-    "nvidia-cosmos/cosmos-transfer2.5": {
-      "stars": 742,
-      "url": "https://github.com/nvidia-cosmos/cosmos-transfer2.5"
-    },
     "nvidia/cosmos": {
-      "stars": 11893,
+      "stars": 11900,
       "url": "https://github.com/nvidia/cosmos"
     },
     "NVlabs/alpamayo": {
@@ -146,12 +138,8 @@
       "url": "https://github.com/NVlabs/BEV-Planner"
     },
     "NVlabs/GTRS": {
-      "stars": 287,
+      "stars": 288,
       "url": "https://github.com/NVlabs/GTRS"
-    },
-    "NVlabs/Hydra-MDP": {
-      "stars": 417,
-      "url": "https://github.com/NVlabs/Hydra-MDP"
     },
     "opendrivelab/ETA": {
       "stars": 48,
@@ -170,27 +158,19 @@
       "url": "https://github.com/QwenLM/Qwen-Drive-1.0"
     },
     "robbyant/lingbot-vla-v2": {
-      "stars": 947,
+      "stars": 954,
       "url": "https://github.com/robbyant/lingbot-vla-v2"
-    },
-    "RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers": {
-      "stars": 35,
-      "url": "https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers"
     },
     "Say2L/GaussianFusion": {
       "stars": 96,
       "url": "https://github.com/Say2L/GaussianFusion"
     },
     "ShivaTeam/DriveTeach-VLA": {
-      "stars": 28,
+      "stars": 29,
       "url": "https://github.com/ShivaTeam/DriveTeach-VLA"
     },
-    "SunZhigang7/DiffSemanticFusion": {
-      "stars": 56,
-      "url": "https://github.com/SunZhigang7/DiffSemanticFusion"
-    },
     "swc-17/SparseDrive": {
-      "stars": 1004,
+      "stars": 1005,
       "url": "https://github.com/swc-17/SparseDrive"
     },
     "swc-17/SparseDriveV2": {
@@ -268,6 +248,111 @@
     "Mashiroln/curious_vla": {
       "stars": 133,
       "url": "https://github.com/Mashiroln/curious_vla"
+    },
+    "ori-mrg/PriorEye": {
+      "stars": 61,
+      "url": "https://github.com/ori-mrg/PriorEye",
+      "checkedAt": "2026-09-24"
+    },
+    "OpenDriveLab/WorldEngine": {
+      "stars": 506,
+      "url": "https://github.com/OpenDriveLab/WorldEngine",
+      "checkedAt": "2026-09-24"
+    },
+    "SpatialRetrievalAD/End2End-Planning": {
+      "stars": 3,
+      "url": "https://github.com/SpatialRetrievalAD/End2End-Planning",
+      "checkedAt": "2026-09-24"
+    },
+    "DSL-Lab/TrajFlow": {
+      "stars": 83,
+      "url": "https://github.com/DSL-Lab/TrajFlow",
+      "checkedAt": "2026-09-24"
+    },
+    "CurryChen77/CraftPolicy": {
+      "stars": 21,
+      "url": "https://github.com/CurryChen77/CraftPolicy",
+      "checkedAt": "2026-09-24"
+    },
+    "OscarHuangWind/AutoMoT": {
+      "stars": 61,
+      "url": "https://github.com/OscarHuangWind/AutoMoT",
+      "checkedAt": "2026-09-24"
+    },
+    "yaoyao-jpg/DynamicsVLA": {
+      "stars": 58,
+      "url": "https://github.com/yaoyao-jpg/DynamicsVLA",
+      "checkedAt": "2026-09-24"
+    },
+    "Applied-Intuition-Open-Source/nord": {
+      "stars": 12,
+      "url": "https://github.com/Applied-Intuition-Open-Source/nord",
+      "checkedAt": "2026-09-24"
+    },
+    "pqh22/ColaVLA": {
+      "stars": 67,
+      "url": "https://github.com/pqh22/ColaVLA",
+      "checkedAt": "2026-09-24"
+    },
+    "zhenghao2519/SpaceDrive": {
+      "stars": 93,
+      "url": "https://github.com/zhenghao2519/SpaceDrive",
+      "checkedAt": "2026-09-24"
+    },
+    "ucla-mobility/AutoVLA": {
+      "stars": 655,
+      "url": "https://github.com/ucla-mobility/AutoVLA",
+      "checkedAt": "2026-09-24"
+    },
+    "Thinklab-SJTU/DriveMoE": {
+      "stars": 234,
+      "url": "https://github.com/Thinklab-SJTU/DriveMoE",
+      "checkedAt": "2026-09-24"
+    },
+    "zcliangyue/HorizonDrive": {
+      "stars": 57,
+      "url": "https://github.com/zcliangyue/HorizonDrive",
+      "checkedAt": "2026-09-24"
+    },
+    "youngzhou1999/DriveDreamer-Policy": {
+      "stars": 59,
+      "url": "https://github.com/youngzhou1999/DriveDreamer-Policy",
+      "checkedAt": "2026-09-24"
+    },
+    "yuantianyuan01/FastWAM": {
+      "stars": 1500,
+      "url": "https://github.com/yuantianyuan01/FastWAM",
+      "checkedAt": "2026-09-24"
+    },
+    "OpenDriveLab/SimScale": {
+      "stars": 327,
+      "url": "https://github.com/OpenDriveLab/SimScale",
+      "checkedAt": "2026-09-24"
+    },
+    "Tencent-Hunyuan/HunyuanWorld-Mirror": {
+      "stars": 1200,
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
+      "checkedAt": "2026-09-24"
+    },
+    "vita-epfl/RAP": {
+      "stars": 164,
+      "url": "https://github.com/vita-epfl/RAP",
+      "checkedAt": "2026-09-24"
+    },
+    "AutoLab-SAI-SJTU/FlowAD": {
+      "stars": 18,
+      "url": "https://github.com/AutoLab-SAI-SJTU/FlowAD",
+      "checkedAt": "2026-09-24"
+    },
+    "kesai-labs/lead": {
+      "stars": 230,
+      "url": "https://github.com/kesai-labs/lead",
+      "checkedAt": "2026-09-24"
+    },
+    "SunZhigang7/DiffSemanticFusion_MaplessQCNet": {
+      "stars": 56,
+      "url": "https://github.com/SunZhigang7/DiffSemanticFusion_MaplessQCNet",
+      "checkedAt": "2026-09-24"
     }
   }
 }

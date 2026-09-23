@@ -16,6 +16,18 @@ try {
 } catch (error) {
   if (error.code !== 'ENOENT') throw error;
 }
+let existingPapers = [];
+try {
+  existingPapers = JSON.parse(await readFile(resolve(root, 'data/papers.json'), 'utf8'));
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error;
+}
+
+const existingById = new Map(existingPapers.map((paper) => [paper.id, paper]));
+const existingByArxiv = new Map(existingPapers.flatMap((paper) => {
+  const id = paper.paper?.match(/arxiv\.org\/abs\/(\d{4}\.\d{4,5})/i)?.[1];
+  return id ? [[id, paper]] : [];
+}));
 
 function parseBibtex(text) {
   const entries = [];
@@ -95,15 +107,14 @@ function arxivId(entry) {
 }
 
 function extractLinks(entry) {
-  // Zotero's annotation field usually preserves author-provided project URLs
-  // more faithfully than abstracts copied from publisher pages.
+  // Only retain non-GitHub project links from Zotero. GitHub links are copied
+  // from the existing, manually audited catalog rather than guessed from an
+  // arbitrary link in an annotation or bibliography.
   const text = [entry.annote, entry.abstract, entry.url].filter(Boolean).join(' ');
   const links = [...text.matchAll(/https?:\/\/[^\s}<)]+/g)]
     .map((match) => match[0].replace(/[.,;]+$/, ''));
-  const code = links.find((link) => /github\.com\//i.test(link));
   const project = links.find((link) => !/github\.com|arxiv\.org/i.test(link));
   return {
-    code: code ? https(code) : undefined,
     project: project ? https(project) : undefined
   };
 }
@@ -209,42 +220,49 @@ for (const entry of rawEntries) {
   seen.add(dedupeKey);
 
   const abstract = clean(entry.abstract || '');
-  const [track] = classify(title, abstract, year);
+  const [classifiedTrack] = classify(title, abstract, year);
   const extra = extractLinks(entry);
-  const repository = githubRepository(extra.code);
-  const stars = repository && Number.isInteger(starCache.repositories?.[repository]?.stars)
-    ? starCache.repositories[repository].stars
-    : null;
-  const code = extra.code && (!repository || Number.isInteger(stars)) ? extra.code : undefined;
   const knownPaperUrls = {
     'FlowAD: Ego-Scene Interactive Modeling for Autonomous Driving': 'https://arxiv.org/abs/2603.13399'
   };
   const fallbackUrl = entry.url ? https(entry.url) : entry.doi ? `https://doi.org/${clean(entry.doi)}` : '';
-  const paperUrl = arxiv ? `https://arxiv.org/abs/${arxiv}` : knownPaperUrls[title] || fallbackUrl;
+  const generatedPaperUrl = arxiv ? `https://arxiv.org/abs/${arxiv}` : knownPaperUrls[title] || fallbackUrl;
+  const existing = (arxiv && existingByArxiv.get(arxiv)) || existingById.get(
+    (arxiv || entry.key).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+  );
+  const track = existing?.track || classifiedTrack;
+  const paperUrl = existing?.paper || generatedPaperUrl;
   const resolvedArxiv = arxiv || paperUrl.match(/arxiv\.org\/abs\/(\d{4}\.\d{4,5})/i)?.[1] || '';
-  const published = resolvedArxiv ? `20${resolvedArxiv.slice(0, 2)}-${resolvedArxiv.slice(2, 4)}` : String(year);
+  const generatedPublished = resolvedArxiv ? `20${resolvedArxiv.slice(0, 2)}-${resolvedArxiv.slice(2, 4)}` : String(year);
+  const published = existing?.published || generatedPublished;
+  const canonicalYear = existing?.year || Number.parseInt(published.slice(0, 4), 10) || year;
   const venueMatch = clean(entry.annote || '').match(/\b(CVPR|ICCV|ECCV|NeurIPS|ICLR|ICML|CoRL|AAAI|IROS|ICRA)\s*(\d{4})\b/i);
   const venueNote = venueMatch ? `${venueMatch[1].toUpperCase()} ${venueMatch[2]}` : '';
   const id = (arxiv || entry.key)
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
+  const repository = githubRepository(existing?.code);
+  const stars = repository && Number.isInteger(starCache.repositories?.[repository]?.stars)
+    ? starCache.repositories[repository].stars
+    : existing?.stars ?? null;
+  const code = existing?.code;
 
   papers.push({
     id,
-    name: methodName(entry, title),
-    title,
+    name: existing?.name || methodName(entry, title),
+    title: existing?.title || title,
     track,
-    year,
+    year: canonicalYear,
     published,
-    venue: venueNote ? clean(venueNote) : String(year),
-    tags: tagsFor(title, abstract, track),
-    datasets: [],
+    venue: existing?.venue || (venueNote ? clean(venueNote) : String(canonicalYear)),
+    tags: existing?.tags || ['Needs review'],
+    datasets: existing?.datasets || [],
     paper: paperUrl || undefined,
     code,
     openSource: Boolean(code),
     stars,
-    project: extra.project && extra.project !== paperUrl ? extra.project : undefined,
+    project: existing?.project || (extra.project && extra.project !== paperUrl ? extra.project : undefined),
     zoteroKey: entry.key
   });
 }
