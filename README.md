@@ -1,6 +1,6 @@
 # Awesome Autonomous Driving Research
 
-A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, recursive self-improvement, public datasets, and reproducible evaluation. The catalog currently contains **183 papers** across four research tracks.
+A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, recursive self-improvement, public datasets, and reproducible evaluation. The catalog currently contains **217 papers** across four research tracks.
 
 Last updated: 2026-09-26. Verify paper metadata against the latest arXiv or publisher version before citation.
 
@@ -31,7 +31,7 @@ The RSI track groups autonomous-driving research with an explicit iterative impr
 
 ### End-to-End Autonomous Driving
 
-_59 papers; 44 with a verified public code link._
+_67 papers; 48 with a verified public code link._
 
 <details open>
 <summary>2026</summary>
@@ -132,9 +132,33 @@ _59 papers; 44 with a verified public code link._
 
 </details>
 
+<details open>
+<summary>2021</summary>
+
+| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **NEAT**<br><sub>NEAT: Neural Attention Fields for End-to-End Autonomous Driving</sub> | ICCV 2021 | `Neural Attention Fields` · `Bird’s-Eye View` · `Imitation Learning` | [![arXiv](https://img.shields.io/badge/arXiv-2109.04456-b31b1b?style=flat-square)](https://arxiv.org/abs/2109.04456) | [![GitHub stars](https://img.shields.io/github/stars/autonomousvision/neat?style=social)](https://github.com/autonomousvision/neat) | — |
+| **Roach**<br><sub>End-to-End Urban Driving by Imitating a Reinforcement Learning Coach</sub> | ICCV 2021 | `Imitation Learning` · `Reinforcement Learning` · `CARLA` | [![arXiv](https://img.shields.io/badge/arXiv-2108.08265-b31b1b?style=flat-square)](https://arxiv.org/abs/2108.08265) | [![GitHub stars](https://img.shields.io/github/stars/zhejz/carla-roach?style=social)](https://github.com/zhejz/carla-roach) | — |
+| **IVMP**<br><sub>Learning Interpretable End-to-End Vision-Based Motion Planning for Autonomous Driving with Optical Flow Distillation</sub> | ICRA 2021 | `Vision-Based Planning` · `Optical Flow Distillation` · `Interpretability` | [![arXiv](https://img.shields.io/badge/arXiv-2104.12861-b31b1b?style=flat-square)](https://arxiv.org/abs/2104.12861) | — | [🌐](https://sites.google.com/view/ivmp "Official project page") |
+| **TransFuser**<br><sub>Multi-Modal Fusion Transformer for End-to-End Autonomous Driving</sub> | CVPR 2021 | `Transformer` · `Sensor Fusion` · `Imitation Learning` | [![arXiv](https://img.shields.io/badge/arXiv-2104.09224-b31b1b?style=flat-square)](https://arxiv.org/abs/2104.09224) | [![GitHub stars](https://img.shields.io/github/stars/autonomousvision/transfuser?style=social)](https://github.com/autonomousvision/transfuser) | — |
+| **MP3**<br><sub>MP3: A Unified Model to Map, Perceive, Predict and Plan</sub> | CVPR 2021 | `Mapless Driving` · `Online Mapping` · `Neural Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2101.06806-b31b1b?style=flat-square)](https://arxiv.org/abs/2101.06806) | — | — |
+
+</details>
+
+<details open>
+<summary>2020</summary>
+
+| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **P3**<br><sub>Perceive, Predict, and Plan: Safe Motion Planning Through Interpretable Semantic Representations</sub> | ECCV 2020 | `Semantic Occupancy` · `Joint Planning` · `Interpretability` | [![arXiv](https://img.shields.io/badge/arXiv-2008.05930-b31b1b?style=flat-square)](https://arxiv.org/abs/2008.05930) | — | — |
+| **Data Aggregation**<br><sub>Exploring Data Aggregation in Policy Learning for Vision-Based Urban Autonomous Driving</sub> | CVPR 2020 | `DAgger` · `Imitation Learning` · `Policy Generalization` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://openaccess.thecvf.com/content_CVPR_2020/html/Prakash_Exploring_Data_Aggregation_in_Policy_Learning_for_Vision-Based_Urban_Autonomous_CVPR_2020_paper.html) | [![GitHub stars](https://img.shields.io/github/stars/autonomousvision/data_aggregation?style=social)](https://github.com/autonomousvision/data_aggregation) | — |
+| **Implicit Affordances**<br><sub>End-to-End Model-Free Reinforcement Learning for Urban Driving Using Implicit Affordances</sub> | CVPR 2020 | `Reinforcement Learning` · `Implicit Affordances` · `Urban Driving` | [![arXiv](https://img.shields.io/badge/arXiv-1911.10868-b31b1b?style=flat-square)](https://arxiv.org/abs/1911.10868) | — | — |
+
+</details>
+
 ### Vision-Language-Action Models
 
-_53 papers; 37 with a verified public code link._
+_69 papers; 47 with a verified public code link._
 
 <details open>
 <summary>2026</summary>
@@ -205,9 +229,49 @@ _53 papers; 37 with a verified public code link._
 
 </details>
 
+<details open>
+<summary>2024</summary>
+
+| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **EMMA**<br><sub>EMMA: End-to-End Multimodal Model for Autonomous Driving</sub> | 2024 | `Multimodal Foundation Model` · `Trajectory Generation` · `Joint Driving Tasks` | [![arXiv](https://img.shields.io/badge/arXiv-2410.23262-b31b1b?style=flat-square)](https://arxiv.org/abs/2410.23262) | — | [🌐](https://waymo.com/research/emma/ "Official project page") |
+| **DriVLMe**<br><sub>DriVLMe: Enhancing LLM-Based Autonomous Driving Agents with Embodied and Social Experiences</sub> | IROS 2024 | `Embodied Experience` · `Social Reasoning` · `Driving Agents` | [![arXiv](https://img.shields.io/badge/arXiv-2406.03008-b31b1b?style=flat-square)](https://arxiv.org/abs/2406.03008) | [![GitHub stars](https://img.shields.io/github/stars/sled-group/driVLMe?style=social)](https://github.com/sled-group/driVLMe) | — |
+| **DriveVLM**<br><sub>DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models</sub> | CoRL 2024 | `Vision-Language Models` · `Hierarchical Planning` · `Hybrid Driving System` | [![arXiv](https://img.shields.io/badge/arXiv-2402.12289-b31b1b?style=flat-square)](https://arxiv.org/abs/2402.12289) | — | [🌐](https://tsinghua-mars-lab.github.io/DriveVLM/ "Official project page") |
+| **VLP**<br><sub>VLP: Vision Language Planning for Autonomous Driving</sub> | CVPR 2024 | `Vision-Language Planning` · `Long-Tail Reasoning` · `Motion Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2401.05577-b31b1b?style=flat-square)](https://arxiv.org/abs/2401.05577) | — | — |
+| **DriveLM**<br><sub>DriveLM: Driving with Graph Visual Question Answering</sub> | ECCV 2024 | `Graph VQA` · `Driving Reasoning` · `End-to-End Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2312.14150-b31b1b?style=flat-square)](https://arxiv.org/abs/2312.14150) | [![GitHub stars](https://img.shields.io/github/stars/OpenDriveLab/DriveLM?style=social)](https://github.com/OpenDriveLab/DriveLM) | [🌐](https://opendrivelab.com/DriveLM/ "Official project page") |
+| **LMDrive**<br><sub>LMDrive: Closed-Loop End-to-End Driving with Large Language Models</sub> | CVPR 2024 | `Language-Guided Driving` · `Closed-Loop Control` · `Instruction Following` | [![arXiv](https://img.shields.io/badge/arXiv-2312.07488-b31b1b?style=flat-square)](https://arxiv.org/abs/2312.07488) | [![GitHub stars](https://img.shields.io/github/stars/opendilab/LMDrive?style=social)](https://github.com/opendilab/LMDrive) | — |
+| **Dolphins**<br><sub>Dolphins: Multimodal Language Model for Driving</sub> | ECCV 2024 | `Vision-Language Model` · `Driving Instruction Tuning` · `In-Context Learning` | [![arXiv](https://img.shields.io/badge/arXiv-2312.00438-b31b1b?style=flat-square)](https://arxiv.org/abs/2312.00438) | [![GitHub stars](https://img.shields.io/github/stars/SaFo-Lab/Dolphins?style=social)](https://github.com/SaFo-Lab/Dolphins) | [🌐](https://vlm-driver.github.io/ "Official project page") |
+| **On the Road with GPT-4V**<br><sub>On the Road with GPT-4V(ision): Early Explorations of Visual-Language Model on Autonomous Driving</sub> | ICLR 2024 | `Vision-Language Models` · `Driving Reasoning` · `Open-World Scenarios` | [![arXiv](https://img.shields.io/badge/arXiv-2311.05332-b31b1b?style=flat-square)](https://arxiv.org/abs/2311.05332) | [![GitHub stars](https://img.shields.io/github/stars/PJLab-ADG/GPT4V-AD-Exploration?style=social)](https://github.com/PJLab-ADG/GPT4V-AD-Exploration) | — |
+| **LLM-Driver**<br><sub>Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving</sub> | ICRA 2024 | `Large Language Models` · `Vectorized Scene Inputs` · `Explainable Driving` | [![arXiv](https://img.shields.io/badge/arXiv-2310.01957-b31b1b?style=flat-square)](https://arxiv.org/abs/2310.01957) | [![GitHub stars](https://img.shields.io/github/stars/wayveai/Driving-with-LLMs?style=social)](https://github.com/wayveai/Driving-with-LLMs) | — |
+| **DriveGPT4**<br><sub>DriveGPT4: Interpretable End-to-End Autonomous Driving via Large Language Model</sub> | IEEE RA-L 2024 | `Multimodal LLM` · `End-to-End Control` · `Driving Explanations` | [![arXiv](https://img.shields.io/badge/arXiv-2310.01412-b31b1b?style=flat-square)](https://arxiv.org/abs/2310.01412) | [![Code](https://img.shields.io/badge/Code-Open-source-181717?logo=github&style=flat-square)](https://cloud.tsinghua.edu.cn/d/adbc8fa3a2fc420ca7bc/) | [🌐](https://tonyxuqaq.github.io/projects/DriveGPT4/ "Official project page") |
+| **DiLu**<br><sub>DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models</sub> | ICLR 2024 | `Large Language Models` · `Knowledge and Memory` · `Self-Evolving Driving` | [![arXiv](https://img.shields.io/badge/arXiv-2309.16292-b31b1b?style=flat-square)](https://arxiv.org/abs/2309.16292) | [![GitHub stars](https://img.shields.io/github/stars/PJLab-ADG/DiLu?style=social)](https://github.com/PJLab-ADG/DiLu) | [🌐](https://pjlab-adg.github.io/DiLu/ "Official project page") |
+
+</details>
+
+<details open>
+<summary>2023</summary>
+
+| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **DriveMLM**<br><sub>DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving</sub> | 2023 | `Multimodal LLM` · `Behavior Planning` · `Closed-Loop Driving` | [![arXiv](https://img.shields.io/badge/arXiv-2312.09245-b31b1b?style=flat-square)](https://arxiv.org/abs/2312.09245) | [![Code pending](https://img.shields.io/badge/Code-pending-d99b00?logo=github&style=flat-square)](https://github.com/OpenGVLab/DriveMLM) [![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/DriveMLM?style=social)](https://github.com/OpenGVLab/DriveMLM) | — |
+| **LanguageMPC**<br><sub>LanguageMPC: Large Language Models as Decision Makers for Autonomous Driving</sub> | 2023 | `Large Language Models` · `Motion Planning` · `Decision Making` | [![arXiv](https://img.shields.io/badge/arXiv-2310.03026-b31b1b?style=flat-square)](https://arxiv.org/abs/2310.03026) | — | [🌐](https://sites.google.com/view/llm-mpc "Official project page") |
+| **GPT-Driver**<br><sub>GPT-Driver: Learning to Drive with GPT</sub> | NeurIPS 2023 Workshop | `Large Language Models` · `Trajectory Planning` · `Numerical Reasoning` | [![arXiv](https://img.shields.io/badge/arXiv-2310.01415-b31b1b?style=flat-square)](https://arxiv.org/abs/2310.01415) | [![GitHub stars](https://img.shields.io/github/stars/PointsCoder/GPT-Driver?style=social)](https://github.com/PointsCoder/GPT-Driver) | [🌐](https://pointscoder.github.io/projects/gpt_driver/index.html "Official project page") |
+| **Drive as You Speak**<br><sub>Drive as You Speak: Enabling Human-Like Interaction with Large Language Models in Autonomous Vehicles</sub> | 2023 | `Large Language Models` · `Human-Vehicle Interaction` · `Decision Making` | [![arXiv](https://img.shields.io/badge/arXiv-2309.10228-b31b1b?style=flat-square)](https://arxiv.org/abs/2309.10228) | — | — |
+
+</details>
+
+<details open>
+<summary>2022</summary>
+
+| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **DOROTHIE**<br><sub>DOROTHIE: Spoken Dialogue for Handling Unexpected Situations in Interactive Autonomous Driving Agents</sub> | Findings of EMNLP 2022 | `Spoken Dialogue` · `Interactive Driving` · `Human-Agent Collaboration` | [![arXiv](https://img.shields.io/badge/arXiv-2210.12511-b31b1b?style=flat-square)](https://arxiv.org/abs/2210.12511) | [![GitHub stars](https://img.shields.io/github/stars/sled-group/DOROTHIE?style=social)](https://github.com/sled-group/DOROTHIE) | [🌐](https://sled.eecs.umich.edu/publication/ma-2022-emnlp-dorothie/ "Official project page") |
+
+</details>
+
 ### Driving World Models
 
-_60 papers; 37 with a verified public code link._
+_70 papers; 42 with a verified public code link._
 
 <details open>
 <summary>2026</summary>
@@ -289,6 +353,11 @@ _60 papers; 37 with a verified public code link._
 | **GaussianAD**<br><sub>GaussianAD: Gaussian-Centric End-to-End Autonomous Driving</sub> | 2024 | `Gaussian Representation` · `3D Scene Modeling` · `End-to-End Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2412.10371-b31b1b?style=flat-square)](https://arxiv.org/abs/2412.10371) | [![GitHub stars](https://img.shields.io/github/stars/wzzheng/GaussianAD?style=social)](https://github.com/wzzheng/GaussianAD) | — |
 | **LAW**<br><sub>Enhancing End-to-End Autonomous Driving with Latent World Model</sub> | ICLR 2025 | `Latent World Model` · `Self-Supervised Representation` · `End-to-End Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2406.08481-b31b1b?style=flat-square)](https://arxiv.org/abs/2406.08481) | [![GitHub stars](https://img.shields.io/github/stars/BraveGroup/LAW?style=social)](https://github.com/BraveGroup/LAW) | — |
 | **Vista**<br><sub>Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability</sub> | NEURIPS 2024 | `Driving World Model` · `Controllable Generation` · `Generalization` | [![arXiv](https://img.shields.io/badge/arXiv-2405.17398-b31b1b?style=flat-square)](https://arxiv.org/abs/2405.17398) | [![GitHub stars](https://img.shields.io/github/stars/OpenDriveLab/Vista?style=social)](https://github.com/OpenDriveLab/Vista) | [🌐](https://vista-demo.github.io "Official project page") |
+| **GenAD**<br><sub>Generalized Predictive Model for Autonomous Driving</sub> | CVPR 2024 | `Driving Video Prediction` · `Large-Scale Pretraining` · `Zero-Shot Generalization` | [![arXiv](https://img.shields.io/badge/arXiv-2403.09630-b31b1b?style=flat-square)](https://arxiv.org/abs/2403.09630) | — | [🌐](https://github.com/OpenDriveLab/DriveAGI "Official project page") |
+| **WoVoGen**<br><sub>WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation</sub> | ECCV 2024 | `World Volume` · `Multi-Camera Generation` · `Diffusion Model` | [![arXiv](https://img.shields.io/badge/arXiv-2312.02934-b31b1b?style=flat-square)](https://arxiv.org/abs/2312.02934) | [![GitHub stars](https://img.shields.io/github/stars/fudan-zvg/WoVoGen?style=social)](https://github.com/fudan-zvg/WoVoGen) | — |
+| **Drive-WM**<br><sub>Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving</sub> | CVPR 2024 | `Multi-View Forecasting` · `Counterfactual Planning` · `World Model` | [![arXiv](https://img.shields.io/badge/arXiv-2311.17918-b31b1b?style=flat-square)](https://arxiv.org/abs/2311.17918) | [![Code pending](https://img.shields.io/badge/Code-pending-d99b00?logo=github&style=flat-square)](https://github.com/BraveGroup/Drive-WM) [![GitHub stars](https://img.shields.io/github/stars/BraveGroup/Drive-WM?style=social)](https://github.com/BraveGroup/Drive-WM) | [🌐](https://drive-wm.github.io/ "Official project page") |
+| **DrivingDiffusion**<br><sub>DrivingDiffusion: Layout-Guided multi-view driving scene video generation with latent diffusion model</sub> | ECCV 2024 | `Latent Diffusion` · `Multi-View Video` · `Layout Control` | [![arXiv](https://img.shields.io/badge/arXiv-2310.07771-b31b1b?style=flat-square)](https://arxiv.org/abs/2310.07771) | [![Code pending](https://img.shields.io/badge/Code-pending-d99b00?logo=github&style=flat-square)](https://github.com/shalfun/DrivingDiffusion) [![GitHub stars](https://img.shields.io/github/stars/shalfun/DrivingDiffusion?style=social)](https://github.com/shalfun/DrivingDiffusion) | — |
+| **DriveDreamer**<br><sub>DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving</sub> | ECCV 2024 | `Diffusion World Model` · `Real-World Driving` · `Controllable Generation` | [![arXiv](https://img.shields.io/badge/arXiv-2309.09777-b31b1b?style=flat-square)](https://arxiv.org/abs/2309.09777) | [![GitHub stars](https://img.shields.io/github/stars/JeffWang987/DriveDreamer?style=social)](https://github.com/JeffWang987/DriveDreamer) | — |
 
 </details>
 
@@ -298,6 +367,27 @@ _60 papers; 37 with a verified public code link._
 | 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
 |---|---|---|---|---|---|
 | **OccWorld**<br><sub>OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving</sub> | 2023 | `Occupancy World Model` · `3D Scene Forecasting` · `Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2311.16038-b31b1b?style=flat-square)](https://arxiv.org/abs/2311.16038) | [![GitHub stars](https://img.shields.io/github/stars/wzzheng/OccWorld?style=social)](https://github.com/wzzheng/OccWorld) | — |
+| **ADriver-I**<br><sub>ADriver-I: A General World Model for Autonomous Driving</sub> | 2023 | `Vision-Action Modeling` · `Autoregressive Prediction` · `Driving Control` | [![arXiv](https://img.shields.io/badge/arXiv-2311.13549-b31b1b?style=flat-square)](https://arxiv.org/abs/2311.13549) | — | — |
+| **GAIA-1**<br><sub>GAIA-1: A Generative World Model for Autonomous Driving</sub> | 2023 | `Generative World Model` · `Video Prediction` · `Action Conditioning` | [![arXiv](https://img.shields.io/badge/arXiv-2309.17080-b31b1b?style=flat-square)](https://arxiv.org/abs/2309.17080) | — | — |
+
+</details>
+
+<details open>
+<summary>2022</summary>
+
+| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **MILE**<br><sub>Model-Based Imitation Learning for Urban Driving</sub> | NeurIPS 2022 | `Latent Dynamics` · `Model-Based Imitation` · `Urban Driving` | [![arXiv](https://img.shields.io/badge/arXiv-2210.07729-b31b1b?style=flat-square)](https://arxiv.org/abs/2210.07729) | [![GitHub stars](https://img.shields.io/github/stars/wayveai/mile?style=social)](https://github.com/wayveai/mile) | — |
+
+</details>
+
+<details open>
+<summary>2021</summary>
+
+| 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
+|---|---|---|---|---|---|
+| **World on Rails**<br><sub>Learning to Drive from a World on Rails</sub> | ICCV 2021 | `Factorized World Model` · `Model-Based Imitation` · `CARLA` | [![arXiv](https://img.shields.io/badge/arXiv-2105.00636-b31b1b?style=flat-square)](https://arxiv.org/abs/2105.00636) | [![GitHub stars](https://img.shields.io/github/stars/dotchen/WorldOnRails?style=social)](https://github.com/dotchen/WorldOnRails) | [🌐](https://dotchen.github.io/world_on_rails/ "Official project page") |
+| **DriveGAN**<br><sub>DriveGAN: Towards a Controllable High-Quality Neural Simulation</sub> | CVPR 2021 | `Controllable Simulation` · `Action-Conditioned Generation` · `Neural World Model` | [![arXiv](https://img.shields.io/badge/arXiv-2104.15060-b31b1b?style=flat-square)](https://arxiv.org/abs/2104.15060) | [![GitHub stars](https://img.shields.io/github/stars/nv-tlabs/DriveGAN_code?style=social)](https://github.com/nv-tlabs/DriveGAN_code) | — |
 
 </details>
 

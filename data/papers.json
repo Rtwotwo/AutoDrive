@@ -1223,6 +1223,163 @@
     "codeStatus": "not-found"
   },
   {
+    "id": "2109-04456",
+    "name": "NEAT",
+    "title": "NEAT: Neural Attention Fields for End-to-End Autonomous Driving",
+    "track": "e2e",
+    "year": 2021,
+    "published": "2021-09",
+    "venue": "ICCV 2021",
+    "tags": [
+      "Neural Attention Fields",
+      "Bird’s-Eye View",
+      "Imitation Learning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2109.04456",
+    "code": "https://github.com/autonomousvision/neat",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2108-08265",
+    "name": "Roach",
+    "title": "End-to-End Urban Driving by Imitating a Reinforcement Learning Coach",
+    "track": "e2e",
+    "year": 2021,
+    "published": "2021-08",
+    "venue": "ICCV 2021",
+    "tags": [
+      "Imitation Learning",
+      "Reinforcement Learning",
+      "CARLA"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2108.08265",
+    "code": "https://github.com/zhejz/carla-roach",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2104-12861",
+    "name": "IVMP",
+    "title": "Learning Interpretable End-to-End Vision-Based Motion Planning for Autonomous Driving with Optical Flow Distillation",
+    "track": "e2e",
+    "year": 2021,
+    "published": "2021-04",
+    "venue": "ICRA 2021",
+    "tags": [
+      "Vision-Based Planning",
+      "Optical Flow Distillation",
+      "Interpretability"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2104.12861",
+    "project": "https://sites.google.com/view/ivmp",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2104-09224",
+    "name": "TransFuser",
+    "title": "Multi-Modal Fusion Transformer for End-to-End Autonomous Driving",
+    "track": "e2e",
+    "year": 2021,
+    "published": "2021-04",
+    "venue": "CVPR 2021",
+    "tags": [
+      "Transformer",
+      "Sensor Fusion",
+      "Imitation Learning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2104.09224",
+    "code": "https://github.com/autonomousvision/transfuser",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2101-06806",
+    "name": "MP3",
+    "title": "MP3: A Unified Model to Map, Perceive, Predict and Plan",
+    "track": "e2e",
+    "year": 2021,
+    "published": "2021-01",
+    "venue": "CVPR 2021",
+    "tags": [
+      "Mapless Driving",
+      "Online Mapping",
+      "Neural Planning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2101.06806",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2008-05930",
+    "name": "P3",
+    "title": "Perceive, Predict, and Plan: Safe Motion Planning Through Interpretable Semantic Representations",
+    "track": "e2e",
+    "year": 2020,
+    "published": "2020-08",
+    "venue": "ECCV 2020",
+    "tags": [
+      "Semantic Occupancy",
+      "Joint Planning",
+      "Interpretability"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2008.05930",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "cvpr2020-data-aggregation",
+    "name": "Data Aggregation",
+    "title": "Exploring Data Aggregation in Policy Learning for Vision-Based Urban Autonomous Driving",
+    "track": "e2e",
+    "year": 2020,
+    "published": "2020-06",
+    "venue": "CVPR 2020",
+    "tags": [
+      "DAgger",
+      "Imitation Learning",
+      "Policy Generalization"
+    ],
+    "datasets": [],
+    "paper": "https://openaccess.thecvf.com/content_CVPR_2020/html/Prakash_Exploring_Data_Aggregation_in_Policy_Learning_for_Vision-Based_Urban_Autonomous_CVPR_2020_paper.html",
+    "code": "https://github.com/autonomousvision/data_aggregation",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "1911-10868",
+    "name": "Implicit Affordances",
+    "title": "End-to-End Model-Free Reinforcement Learning for Urban Driving Using Implicit Affordances",
+    "track": "e2e",
+    "year": 2020,
+    "published": "2019-11",
+    "venue": "CVPR 2020",
+    "tags": [
+      "Reinforcement Learning",
+      "Implicit Affordances",
+      "Urban Driving"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/1911.10868",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
     "id": "2609-00111",
     "name": "Qwen-Drive-1.0",
     "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
@@ -2317,6 +2474,330 @@
     "openSource": true,
     "stars": 334,
     "zoteroKey": "jiang_alphadrive_2025",
+    "codeStatus": "released"
+  },
+  {
+    "id": "2410-23262",
+    "name": "EMMA",
+    "title": "EMMA: End-to-End Multimodal Model for Autonomous Driving",
+    "track": "vla",
+    "year": 2024,
+    "published": "2024-10",
+    "venue": "2024",
+    "tags": [
+      "Multimodal Foundation Model",
+      "Trajectory Generation",
+      "Joint Driving Tasks"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2410.23262",
+    "project": "https://waymo.com/research/emma/",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2406-03008",
+    "name": "DriVLMe",
+    "title": "DriVLMe: Enhancing LLM-Based Autonomous Driving Agents with Embodied and Social Experiences",
+    "track": "vla",
+    "year": 2024,
+    "published": "2024-06",
+    "venue": "IROS 2024",
+    "tags": [
+      "Embodied Experience",
+      "Social Reasoning",
+      "Driving Agents"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2406.03008",
+    "code": "https://github.com/sled-group/driVLMe",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2402-12289",
+    "name": "DriveVLM",
+    "title": "DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models",
+    "track": "vla",
+    "year": 2024,
+    "published": "2024-02",
+    "venue": "CoRL 2024",
+    "tags": [
+      "Vision-Language Models",
+      "Hierarchical Planning",
+      "Hybrid Driving System"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2402.12289",
+    "project": "https://tsinghua-mars-lab.github.io/DriveVLM/",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2401-05577",
+    "name": "VLP",
+    "title": "VLP: Vision Language Planning for Autonomous Driving",
+    "track": "vla",
+    "year": 2024,
+    "published": "2024-01",
+    "venue": "CVPR 2024",
+    "tags": [
+      "Vision-Language Planning",
+      "Long-Tail Reasoning",
+      "Motion Planning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2401.05577",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2312-09245",
+    "name": "DriveMLM",
+    "title": "DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving",
+    "track": "vla",
+    "year": 2023,
+    "published": "2023-12",
+    "venue": "2023",
+    "tags": [
+      "Multimodal LLM",
+      "Behavior Planning",
+      "Closed-Loop Driving"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2312.09245",
+    "code": "https://github.com/OpenGVLab/DriveMLM",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "pending"
+  },
+  {
+    "id": "2312-14150",
+    "name": "DriveLM",
+    "title": "DriveLM: Driving with Graph Visual Question Answering",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-12",
+    "venue": "ECCV 2024",
+    "tags": [
+      "Graph VQA",
+      "Driving Reasoning",
+      "End-to-End Planning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2312.14150",
+    "code": "https://github.com/OpenDriveLab/DriveLM",
+    "project": "https://opendrivelab.com/DriveLM/",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2312-07488",
+    "name": "LMDrive",
+    "title": "LMDrive: Closed-Loop End-to-End Driving with Large Language Models",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-12",
+    "venue": "CVPR 2024",
+    "tags": [
+      "Language-Guided Driving",
+      "Closed-Loop Control",
+      "Instruction Following"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2312.07488",
+    "code": "https://github.com/opendilab/LMDrive",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2312-00438",
+    "name": "Dolphins",
+    "title": "Dolphins: Multimodal Language Model for Driving",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-12",
+    "venue": "ECCV 2024",
+    "tags": [
+      "Vision-Language Model",
+      "Driving Instruction Tuning",
+      "In-Context Learning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2312.00438",
+    "code": "https://github.com/SaFo-Lab/Dolphins",
+    "project": "https://vlm-driver.github.io/",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2311-05332",
+    "name": "On the Road with GPT-4V",
+    "title": "On the Road with GPT-4V(ision): Early Explorations of Visual-Language Model on Autonomous Driving",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-11",
+    "venue": "ICLR 2024",
+    "tags": [
+      "Vision-Language Models",
+      "Driving Reasoning",
+      "Open-World Scenarios"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2311.05332",
+    "code": "https://github.com/PJLab-ADG/GPT4V-AD-Exploration",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2310-03026",
+    "name": "LanguageMPC",
+    "title": "LanguageMPC: Large Language Models as Decision Makers for Autonomous Driving",
+    "track": "vla",
+    "year": 2023,
+    "published": "2023-10",
+    "venue": "2023",
+    "tags": [
+      "Large Language Models",
+      "Motion Planning",
+      "Decision Making"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2310.03026",
+    "project": "https://sites.google.com/view/llm-mpc",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2310-01415",
+    "name": "GPT-Driver",
+    "title": "GPT-Driver: Learning to Drive with GPT",
+    "track": "vla",
+    "year": 2023,
+    "published": "2023-10",
+    "venue": "NeurIPS 2023 Workshop",
+    "tags": [
+      "Large Language Models",
+      "Trajectory Planning",
+      "Numerical Reasoning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2310.01415",
+    "code": "https://github.com/PointsCoder/GPT-Driver",
+    "project": "https://pointscoder.github.io/projects/gpt_driver/index.html",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2310-01957",
+    "name": "LLM-Driver",
+    "title": "Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-10",
+    "venue": "ICRA 2024",
+    "tags": [
+      "Large Language Models",
+      "Vectorized Scene Inputs",
+      "Explainable Driving"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2310.01957",
+    "code": "https://github.com/wayveai/Driving-with-LLMs",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2310-01412",
+    "name": "DriveGPT4",
+    "title": "DriveGPT4: Interpretable End-to-End Autonomous Driving via Large Language Model",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-10",
+    "venue": "IEEE RA-L 2024",
+    "tags": [
+      "Multimodal LLM",
+      "End-to-End Control",
+      "Driving Explanations"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2310.01412",
+    "project": "https://tonyxuqaq.github.io/projects/DriveGPT4/",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released",
+    "code": "https://cloud.tsinghua.edu.cn/d/adbc8fa3a2fc420ca7bc/"
+  },
+  {
+    "id": "2309-10228",
+    "name": "Drive as You Speak",
+    "title": "Drive as You Speak: Enabling Human-Like Interaction with Large Language Models in Autonomous Vehicles",
+    "track": "vla",
+    "year": 2023,
+    "published": "2023-09",
+    "venue": "2023",
+    "tags": [
+      "Large Language Models",
+      "Human-Vehicle Interaction",
+      "Decision Making"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2309.10228",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2309-16292",
+    "name": "DiLu",
+    "title": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-09",
+    "venue": "ICLR 2024",
+    "tags": [
+      "Large Language Models",
+      "Knowledge and Memory",
+      "Self-Evolving Driving"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2309.16292",
+    "code": "https://github.com/PJLab-ADG/DiLu",
+    "project": "https://pjlab-adg.github.io/DiLu/",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2210-12511",
+    "name": "DOROTHIE",
+    "title": "DOROTHIE: Spoken Dialogue for Handling Unexpected Situations in Interactive Autonomous Driving Agents",
+    "track": "vla",
+    "year": 2022,
+    "published": "2022-10",
+    "venue": "Findings of EMNLP 2022",
+    "tags": [
+      "Spoken Dialogue",
+      "Interactive Driving",
+      "Human-Agent Collaboration"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2210.12511",
+    "code": "https://github.com/sled-group/DOROTHIE",
+    "project": "https://sled.eecs.umich.edu/publication/ma-2022-emnlp-dorothie/",
+    "openSource": true,
+    "stars": null,
     "codeStatus": "released"
   },
   {
@@ -3536,6 +4017,46 @@
     "codeStatus": "released"
   },
   {
+    "id": "2403-09630",
+    "name": "GenAD",
+    "title": "Generalized Predictive Model for Autonomous Driving",
+    "track": "world-model",
+    "year": 2024,
+    "published": "2024-03",
+    "venue": "CVPR 2024",
+    "tags": [
+      "Driving Video Prediction",
+      "Large-Scale Pretraining",
+      "Zero-Shot Generalization"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2403.09630",
+    "project": "https://github.com/OpenDriveLab/DriveAGI",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2312-02934",
+    "name": "WoVoGen",
+    "title": "WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation",
+    "track": "world-model",
+    "year": 2024,
+    "published": "2023-12",
+    "venue": "ECCV 2024",
+    "tags": [
+      "World Volume",
+      "Multi-Camera Generation",
+      "Diffusion Model"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2312.02934",
+    "code": "https://github.com/fudan-zvg/WoVoGen",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
     "id": "2311-16038",
     "name": "OccWorld",
     "title": "OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving",
@@ -3554,6 +4075,166 @@
     "openSource": true,
     "stars": 587,
     "zoteroKey": "zheng_occworld_2023",
+    "codeStatus": "released"
+  },
+  {
+    "id": "2311-13549",
+    "name": "ADriver-I",
+    "title": "ADriver-I: A General World Model for Autonomous Driving",
+    "track": "world-model",
+    "year": 2023,
+    "published": "2023-11",
+    "venue": "2023",
+    "tags": [
+      "Vision-Action Modeling",
+      "Autoregressive Prediction",
+      "Driving Control"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2311.13549",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2311-17918",
+    "name": "Drive-WM",
+    "title": "Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving",
+    "track": "world-model",
+    "year": 2024,
+    "published": "2023-11",
+    "venue": "CVPR 2024",
+    "tags": [
+      "Multi-View Forecasting",
+      "Counterfactual Planning",
+      "World Model"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2311.17918",
+    "code": "https://github.com/BraveGroup/Drive-WM",
+    "project": "https://drive-wm.github.io/",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "pending"
+  },
+  {
+    "id": "2310-07771",
+    "name": "DrivingDiffusion",
+    "title": "DrivingDiffusion: Layout-Guided multi-view driving scene video generation with latent diffusion model",
+    "track": "world-model",
+    "year": 2024,
+    "published": "2023-10",
+    "venue": "ECCV 2024",
+    "tags": [
+      "Latent Diffusion",
+      "Multi-View Video",
+      "Layout Control"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2310.07771",
+    "code": "https://github.com/shalfun/DrivingDiffusion",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "pending"
+  },
+  {
+    "id": "2309-17080",
+    "name": "GAIA-1",
+    "title": "GAIA-1: A Generative World Model for Autonomous Driving",
+    "track": "world-model",
+    "year": 2023,
+    "published": "2023-09",
+    "venue": "2023",
+    "tags": [
+      "Generative World Model",
+      "Video Prediction",
+      "Action Conditioning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2309.17080",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2309-09777",
+    "name": "DriveDreamer",
+    "title": "DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving",
+    "track": "world-model",
+    "year": 2024,
+    "published": "2023-09",
+    "venue": "ECCV 2024",
+    "tags": [
+      "Diffusion World Model",
+      "Real-World Driving",
+      "Controllable Generation"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2309.09777",
+    "code": "https://github.com/JeffWang987/DriveDreamer",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2210-07729",
+    "name": "MILE",
+    "title": "Model-Based Imitation Learning for Urban Driving",
+    "track": "world-model",
+    "year": 2022,
+    "published": "2022-10",
+    "venue": "NeurIPS 2022",
+    "tags": [
+      "Latent Dynamics",
+      "Model-Based Imitation",
+      "Urban Driving"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2210.07729",
+    "code": "https://github.com/wayveai/mile",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2105-00636",
+    "name": "World on Rails",
+    "title": "Learning to Drive from a World on Rails",
+    "track": "world-model",
+    "year": 2021,
+    "published": "2021-05",
+    "venue": "ICCV 2021",
+    "tags": [
+      "Factorized World Model",
+      "Model-Based Imitation",
+      "CARLA"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2105.00636",
+    "code": "https://github.com/dotchen/WorldOnRails",
+    "project": "https://dotchen.github.io/world_on_rails/",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2104-15060",
+    "name": "DriveGAN",
+    "title": "DriveGAN: Towards a Controllable High-Quality Neural Simulation",
+    "track": "world-model",
+    "year": 2021,
+    "published": "2021-04",
+    "venue": "CVPR 2021",
+    "tags": [
+      "Controllable Simulation",
+      "Action-Conditioned Generation",
+      "Neural World Model"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2104.15060",
+    "code": "https://github.com/nv-tlabs/DriveGAN_code",
+    "openSource": true,
+    "stars": null,
     "codeStatus": "released"
   },
   {
