@@ -15,25 +15,25 @@ const reviewedTags = {
   '2606-19836': ['Post-Training', 'Interactive Simulation', 'Long-Tail Safety'],
   '2606-19641': ['Self-Play', 'Closed-Loop Reinforcement Learning'],
   '2606-07464': ['Token Compression', 'Long-Context Memory', 'Planning-Aware Learning'],
-  '2606-07170': ['Test-Time Optimization', 'Trajectory Refinement'],
+  '2606-07170': ['Test-Time Optimization', 'Cross-Entropy Search', 'Trajectory Scoring'],
   '2605-31116': ['Scene Tokenization', 'Perception-Free Planning', 'Reconstruction Supervision'],
-  '2605-15120': ['Trajectory Ranking', 'Planning Metrics', 'Closed-Loop Evaluation'],
+  '2605-15120': ['Closed-Loop Self-Distillation', 'Trajectory Scoring', 'Multi-Metric Planning'],
   '2605-08084': ['Driving Data Library', 'Multi-Modal Datasets', 'Data Standardization'],
   '2605-04647': ['Discrete Diffusion', 'Trajectory Editing'],
   '2604-15308': ['Diffusion Planning', 'Reinforcement Learning', 'Closed-Loop Adaptation'],
   '2604-08366': ['Data Selection', 'Data Scaling', 'Evaluation Alignment'],
   'guo-flowad-2026': ['Ego-Scene Interaction', 'Scene Flow', 'Closed-Loop Evaluation'],
   '2603-29163': ['Trajectory Scoring', 'Sparse Proposals', 'Multi-Modal Planning'],
-  '2602-22801': ['Diffusion Planning', 'Real-World Driving'],
+  '2602-22801': ['Diffusion Planning', 'Reinforcement Learning', 'Real-World Validation'],
   '2602-20060': ['Flow Matching', 'One-Step Planning', 'Multi-Modal Trajectories'],
   '2602-13936': ['Causal Modeling', 'Motion Prediction', 'Domain Generalization'],
   '2601-12901': ['Reinforcement Fine-Tuning', 'Diffusion Planning', 'Adaptive Trajectories'],
-  '2601-05083': ['Register Tokens', 'Efficient Scene Encoding', 'End-to-End Planning'],
-  '2601-01762': ['Spatio-Temporal Reasoning', 'Interaction-Aware Planning', 'Speed Planning'],
+  '2601-05083': ['Register Tokens', 'Vision Transformer Backbone', 'Trajectory Scoring'],
+  '2601-01762': ['Lateral-Longitudinal Planning', 'Path-Conditioned Planning'],
   '2512-20563': ['Imitation Learning', 'Privileged Learning', 'Closed-Loop Evaluation'],
   '2512-07745': ['Diffusion Planning', 'Reinforcement Learning', 'Diverse Trajectories'],
   '2512-06865': ['Spatial Retrieval', 'Geospatial Priors', 'Robust Planning'],
-  '2512-00470': ['Latent Action Planning', 'Diffusion Planning', 'Multi-Modal Trajectories'],
+  '2512-00470': ['Latent-Space Diffusion', 'Intent-Kinematics Disentanglement', 'Feature Alignment'],
   '2511-18729': ['Flow Matching', 'Safety-Constrained Planning'],
   '2511-17150': ['Diffusion Planning', 'Trajectory Refinement'],
   '2511-16518': ['Embodied Foundation Model', 'Cross-Embodiment Transfer', 'Autonomous Driving'],
@@ -112,7 +112,7 @@ const reviewedTags = {
   '2512-01830': ['Reasoning Fine-Tuning', 'Reinforcement Learning', 'Driving Policy'],
   '2511-00088': ['Causal Reasoning', 'Trajectory Planning', 'Long-Tail Driving'],
   '2511-00062': ['World Foundation Model', 'Video Generation', 'Flow-Based Modeling'],
-  '2509-20109': ['Reinforcement Learning', 'Physical Reasoning', 'Trajectory Planning'],
+  '2509-20109': ['Discrete Diffusion', 'Reflective Reasoning', 'Trajectory Generation'],
   '2509-05578': ['Occupancy Grounding', '3D Spatial Understanding', 'VLA'],
   '2507-23318': ['Visual Token Pruning', 'Efficient Inference', 'VLA'],
   '2506-13757': ['Joint Reasoning and Action', 'Autoregressive VLA', 'Reinforcement Learning'],
@@ -170,7 +170,7 @@ const reviewedTags = {
   '2512-19133': ['Reinforcement Fine-Tuning', 'Latent World Model', 'End-to-End Planning'],
   '2512-04441': ['Trajectory Scoring', 'World-Model Planning', 'Multi-Modal Planning'],
   '2511-23369': ['Driving Simulation', 'Synthetic Data Generation', 'Policy Learning'],
-  '2510-12796': ['VLA Data Scaling', 'Self-Supervised Supervision', 'Action Learning'],
+  '2510-12796': ['World-Model Pretraining', 'Data Scaling Laws', 'Policy Learning'],
   '2510-10726': ['3D Reconstruction', 'Geometric Foundation Model', 'World Representation'],
   '2510-04333': ['Alternative-Trajectory Generation', 'Closed-Loop Recovery', 'World Modeling'],
   '2508-06571': ['Inverse Reinforcement Learning', 'Policy Post-Training', 'VLA'],
@@ -206,10 +206,53 @@ const countAliases = {
   'DSL-Lab/TrajFlow': 'qiyan98/TrajFlow',
   'SunZhigang7/DiffSemanticFusion_MaplessQCNet': 'SunZhigang7/DiffSemanticFusion'
 };
-const unreleasedCodeIds = new Set([
-  '2601-04453', // This URL points to an academic project-page template.
-  '2604-02714' // The authors say the model/training code is coming soon.
-]);
+const pendingCodeRepositories = {
+  '2606-19641': 'https://github.com/montrealrobotics/gigapixel',
+  '2604-02714': 'https://github.com/zihaosheng/ExploreVLA'
+};
+const verifiedProjectPages = {
+  '2602-22801': 'https://zhengyinan-air.github.io/Hyper-Diffusion-Planner/',
+  '2601-05083': 'https://valeoai.github.io/driving-on-registers/',
+  '2601-01762': 'https://yanhaowu.github.io/AlignDrive/',
+  '2512-23421': 'https://wm-research.github.io/DriveLaW/',
+  '2512-04441': 'https://xiaomi-mlab.github.io/MindDrive/',
+  '2604-15308': 'https://hgao-cv.github.io/RAD/'
+};
+const verifiedCodeRepositories = {
+  '2606-07170': 'https://github.com/valeoai/TOAD',
+  '2602-22801': 'https://github.com/ZhengYinan-AIR/Hyper-Diffusion-Planner',
+  '2601-05083': 'https://github.com/valeoai/DrivoR',
+  '2601-01762': 'https://github.com/YanhaoWu/AlignDrive',
+  '2601-22032': 'https://github.com/linhanwang/Drive-JEPA',
+  '2608-18035': 'https://github.com/ZZongzheng0918/TE-Aware-E2E-AD',
+  '2608-01755': 'https://github.com/hzx122/DEFT-RLVR',
+  '2607-26056': 'https://github.com/zju3dv/INTACT-JEPA',
+  '2606-15869': 'https://github.com/LogosRoboticsGroup/Metis',
+  '2605-14696': 'https://github.com/JiaweiXu8/EponaV2',
+  '2605-11550': 'https://github.com/COOWAI/DAWN',
+  '2604-04198': 'https://github.com/xiaomi-mlab/DriveVA',
+  '2603-27287': 'https://github.com/LogosRoboticsGroup/UniWorldVLA',
+  '2603-01928': 'https://github.com/luo-yc17/LaST-VLA',
+  '2603-01063': 'https://github.com/luo-yc17/ELF-VLA',
+  '2602-20794': 'https://github.com/WJ-CV/VGGDrive',
+  '2601-06474': 'https://github.com/MSunDYY/SparseOccVLA',
+  '2601-05640': 'https://github.com/LogosRoboticsGroup/SGDrive',
+  '2512-23421': 'https://github.com/wm-research/DriveLaW',
+  '2512-04441': 'https://github.com/xiaomi-mlab/MindDrive',
+  '2512-01830': 'https://github.com/wyddmw/OpenREAD',
+  '2512-00470': 'https://github.com/jhz1192/Latent-Planner',
+  '2511-09013': 'https://github.com/Souig/UniMM-V2X',
+  '2510-12796': 'https://github.com/BraveGroup/DriveVLA-W0',
+  '2509-20109': 'https://github.com/pixeli99/ReflectDrive',
+  '2508-06571': 'https://github.com/IRL-VLA/IRL-VLA',
+  '2506-06659': 'https://github.com/William-Yao-2000/DriveSuprim',
+  '2505-19381': 'https://github.com/boschresearch/DiffVLA',
+  '2503-23463': 'https://github.com/DriveVLA/OpenDriveVLA',
+  '2503-14182': 'https://github.com/fudan-zvg/BridgeAD',
+  '2503-08612': 'https://github.com/nullmax-vision/HiP-AD',
+  '2503-07656': 'https://github.com/Thinklab-SJTU/DriveTransformer',
+  '2406-06978': 'https://github.com/NVlabs/Hydra-MDP'
+};
 const starData = JSON.parse(await readFile(join(root, 'data', 'github-stars.json'), 'utf8'));
 const reviewedStarCounts = {
   'ori-mrg/PriorEye': 61,
@@ -263,7 +306,11 @@ for (const paper of papers) {
   const currentRepo = paper.code?.match(/^https:\/\/github\.com\/([^/]+\/[^/#?]+)/i)?.[1]?.replace(/\.git$/i, '');
   if (currentRepo && redirects[currentRepo]) paper.code = redirects[currentRepo];
   if (paper.id === 'guo-flowad-2026') paper.code = 'https://github.com/AutoLab-SAI-SJTU/FlowAD';
-  if (unreleasedCodeIds.has(paper.id)) paper.code = undefined;
+  if (verifiedCodeRepositories[paper.id]) paper.code = verifiedCodeRepositories[paper.id];
+  if (pendingCodeRepositories[paper.id]) paper.code = pendingCodeRepositories[paper.id];
+  if (paper.id === '2601-04453') paper.code = undefined; // Project URL is a template, not an implementation.
+  if (verifiedProjectPages[paper.id]) paper.project = verifiedProjectPages[paper.id];
+  if (paper.id === '2406-06978' && paper.project === paper.code) paper.project = undefined;
   if (paper.id === '2608-07468') paper.code = 'https://github.com/H-EmbodVis/SimWAM';
   if (paper.id === '2603-06049') paper.code = 'https://github.com/Mashiroln/curious_vla';
   if (paper.id === '2602-10884') paper.code = 'https://github.com/mengtan00/ResWorld';
@@ -273,8 +320,9 @@ for (const paper of papers) {
   const repo = paper.code?.match(/^https:\/\/github\.com\/([^/]+\/[^/#?]+)/i)?.[1]?.replace(/\.git$/i, '');
   const cached = repo && (starData.repositories[repo] || starData.repositories[countAliases[repo]]);
   if (cached && Number.isInteger(cached.stars)) paper.stars = cached.stars;
-  if (!paper.code) paper.stars = null;
-  paper.openSource = Boolean(paper.code);
+  if (!paper.code || pendingCodeRepositories[paper.id]) paper.stars = null;
+  paper.codeStatus = pendingCodeRepositories[paper.id] ? 'pending' : paper.code ? 'released' : 'not-found';
+  paper.openSource = paper.codeStatus === 'released';
 }
 
 if (unresolved.length) {

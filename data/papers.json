@@ -16,7 +16,8 @@
     "paper": "https://arxiv.org/abs/2609.21486",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "chen_driving_2026"
+    "zoteroKey": "chen_driving_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2606-31830",
@@ -36,7 +37,8 @@
     "stars": 61,
     "project": "https://ori-mrg.github.io/PriorEye",
     "zoteroKey": "yeon_prioreye_2026",
-    "code": "https://github.com/ori-mrg/PriorEye"
+    "code": "https://github.com/ori-mrg/PriorEye",
+    "codeStatus": "released"
   },
   {
     "id": "2606-19836",
@@ -57,7 +59,8 @@
     "stars": 506,
     "project": "https://opendrivelab.com/WorldEngine/",
     "zoteroKey": "li_world_2026",
-    "code": "https://github.com/OpenDriveLab/WorldEngine"
+    "code": "https://github.com/OpenDriveLab/WorldEngine",
+    "codeStatus": "released"
   },
   {
     "id": "2606-19641",
@@ -75,7 +78,9 @@
     "paper": "https://arxiv.org/abs/2606.19641",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "rowe_gigapixel_2026"
+    "zoteroKey": "rowe_gigapixel_2026",
+    "code": "https://github.com/montrealrobotics/gigapixel",
+    "codeStatus": "pending"
   },
   {
     "id": "2606-07464",
@@ -94,7 +99,8 @@
     "paper": "https://arxiv.org/abs/2606.07464",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "liang_compact-va_2026"
+    "zoteroKey": "liang_compact-va_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2606-07170",
@@ -106,14 +112,17 @@
     "venue": "2026",
     "tags": [
       "Test-Time Optimization",
-      "Trajectory Refinement"
+      "Cross-Entropy Search",
+      "Trajectory Scoring"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.07170",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
     "project": "https://valeoai.github.io/TOAD/",
-    "zoteroKey": "xu_toad_2026"
+    "zoteroKey": "xu_toad_2026",
+    "code": "https://github.com/valeoai/TOAD",
+    "codeStatus": "released"
   },
   {
     "id": "2605-31116",
@@ -132,7 +141,8 @@
     "paper": "https://arxiv.org/abs/2605.31116",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "li_ntr_2026"
+    "zoteroKey": "li_ntr_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2605-15120",
@@ -143,16 +153,17 @@
     "published": "2026-05",
     "venue": "2026",
     "tags": [
-      "Trajectory Ranking",
-      "Planning Metrics",
-      "Closed-Loop Evaluation"
+      "Closed-Loop Self-Distillation",
+      "Trajectory Scoring",
+      "Multi-Metric Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.15120",
     "code": "https://github.com/WilliamXuanYu/CLOVER",
     "openSource": true,
     "stars": 12,
-    "zoteroKey": "ang_clover_2026"
+    "zoteroKey": "ang_clover_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2605-08084",
@@ -172,7 +183,8 @@
     "code": "https://github.com/kesai-labs/py123d",
     "openSource": true,
     "stars": 396,
-    "zoteroKey": "dauner_123d_2026"
+    "zoteroKey": "dauner_123d_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2605-04647",
@@ -190,7 +202,8 @@
     "paper": "https://arxiv.org/abs/2605.04647",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "wang_reflectdrive-2_2026"
+    "zoteroKey": "wang_reflectdrive-2_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2604-15308",
@@ -209,7 +222,9 @@
     "paper": "https://arxiv.org/abs/2604.15308",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "gao_radv2_2026"
+    "zoteroKey": "gao_radv2_2026",
+    "project": "https://hgao-cv.github.io/RAD/",
+    "codeStatus": "not-found"
   },
   {
     "id": "2604-08366",
@@ -228,7 +243,8 @@
     "paper": "https://arxiv.org/abs/2604.08366",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "dimlioglu_mosaic_2026"
+    "zoteroKey": "dimlioglu_mosaic_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "guo-flowad-2026",
@@ -248,7 +264,8 @@
     "openSource": true,
     "stars": 18,
     "zoteroKey": "guo_flowad_2026",
-    "code": "https://github.com/AutoLab-SAI-SJTU/FlowAD"
+    "code": "https://github.com/AutoLab-SAI-SJTU/FlowAD",
+    "codeStatus": "released"
   },
   {
     "id": "2603-29163",
@@ -268,7 +285,8 @@
     "code": "https://github.com/swc-17/SparseDriveV2",
     "openSource": true,
     "stars": 255,
-    "zoteroKey": "sun_sparsedrivev2_2026"
+    "zoteroKey": "sun_sparsedrivev2_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2602-22801",
@@ -280,13 +298,17 @@
     "venue": "2026",
     "tags": [
       "Diffusion Planning",
-      "Real-World Driving"
+      "Reinforcement Learning",
+      "Real-World Validation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.22801",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "zheng_hdp_2026"
+    "zoteroKey": "zheng_hdp_2026",
+    "code": "https://github.com/ZhengYinan-AIR/Hyper-Diffusion-Planner",
+    "project": "https://zhengyinan-air.github.io/Hyper-Diffusion-Planner/",
+    "codeStatus": "released"
   },
   {
     "id": "2602-20060",
@@ -306,7 +328,8 @@
     "code": "https://github.com/wjl2244/MeanFuser",
     "openSource": true,
     "stars": 107,
-    "zoteroKey": "wang_meanfuser_2026"
+    "zoteroKey": "wang_meanfuser_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2602-13936",
@@ -326,7 +349,8 @@
     "code": "https://github.com/ZY-Zong/Physics-guided-Causal-Model",
     "openSource": true,
     "stars": 8,
-    "zoteroKey": "zong_pcm_2026"
+    "zoteroKey": "zong_pcm_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2601-12901",
@@ -345,7 +369,8 @@
     "paper": "https://arxiv.org/abs/2601.12901",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "li_plannerrft_2026"
+    "zoteroKey": "li_plannerrft_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2601-05083",
@@ -357,14 +382,17 @@
     "venue": "2026",
     "tags": [
       "Register Tokens",
-      "Efficient Scene Encoding",
-      "End-to-End Planning"
+      "Vision Transformer Backbone",
+      "Trajectory Scoring"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.05083",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "kirby_drivor_2026"
+    "zoteroKey": "kirby_drivor_2026",
+    "code": "https://github.com/valeoai/DrivoR",
+    "project": "https://valeoai.github.io/driving-on-registers/",
+    "codeStatus": "released"
   },
   {
     "id": "2601-01762",
@@ -375,15 +403,17 @@
     "published": "2026-01",
     "venue": "2026",
     "tags": [
-      "Spatio-Temporal Reasoning",
-      "Interaction-Aware Planning",
-      "Speed Planning"
+      "Lateral-Longitudinal Planning",
+      "Path-Conditioned Planning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.01762",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "wu_aligndrive_2026"
+    "zoteroKey": "wu_aligndrive_2026",
+    "code": "https://github.com/YanhaoWu/AlignDrive",
+    "project": "https://yanhaowu.github.io/AlignDrive/",
+    "codeStatus": "released"
   },
   {
     "id": "2512-20563",
@@ -403,7 +433,8 @@
     "code": "https://github.com/kesai-labs/lead",
     "openSource": true,
     "stars": 230,
-    "zoteroKey": "nguyen_lead_2025"
+    "zoteroKey": "nguyen_lead_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2512-07745",
@@ -423,7 +454,8 @@
     "code": "https://github.com/hustvl/DiffusionDriveV2",
     "openSource": true,
     "stars": 372,
-    "zoteroKey": "zou_diffusiondrivev2_2025"
+    "zoteroKey": "zou_diffusiondrivev2_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2512-06865",
@@ -444,7 +476,8 @@
     "stars": 3,
     "project": "https://spatialretrievalad.github.io/",
     "zoteroKey": "jia_spatial_2025",
-    "code": "https://github.com/SpatialRetrievalAD/End2End-Planning"
+    "code": "https://github.com/SpatialRetrievalAD/End2End-Planning",
+    "codeStatus": "released"
   },
   {
     "id": "2512-00470",
@@ -455,15 +488,17 @@
     "published": "2025-11",
     "venue": "2025",
     "tags": [
-      "Latent Action Planning",
-      "Diffusion Planning",
-      "Multi-Modal Trajectories"
+      "Latent-Space Diffusion",
+      "Intent-Kinematics Disentanglement",
+      "Feature Alignment"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.00470",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "zhang_lap_2026"
+    "zoteroKey": "zhang_lap_2026",
+    "code": "https://github.com/jhz1192/Latent-Planner",
+    "codeStatus": "released"
   },
   {
     "id": "2511-18729",
@@ -482,7 +517,8 @@
     "code": "https://github.com/liulin815/GuideFlow",
     "openSource": true,
     "stars": 31,
-    "zoteroKey": "liu_guideflow_2026"
+    "zoteroKey": "liu_guideflow_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2511-17150",
@@ -500,7 +536,8 @@
     "paper": "https://arxiv.org/abs/2511.17150",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "yin_diffrefiner_2025"
+    "zoteroKey": "yin_diffrefiner_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2511-16518",
@@ -521,7 +558,8 @@
     "openSource": true,
     "stars": 408,
     "project": "https://huggingface.co/XiaomiMiMo/MiMo-Embodied-7B",
-    "zoteroKey": "hao_mimo-embodied_2026"
+    "zoteroKey": "hao_mimo-embodied_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2511-09013",
@@ -538,9 +576,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2511.09013",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "song_unimm-v2x_2025"
+    "zoteroKey": "song_unimm-v2x_2025",
+    "code": "https://github.com/Souig/UniMM-V2X",
+    "codeStatus": "released"
   },
   {
     "id": "2511-01768",
@@ -560,7 +600,8 @@
     "code": "https://github.com/happinesslz/UniLION",
     "openSource": true,
     "stars": 61,
-    "zoteroKey": "liu_unilion_2025"
+    "zoteroKey": "liu_unilion_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2510-24108",
@@ -580,7 +621,8 @@
     "code": "https://github.com/woxihuanjiangguo/ZTRS",
     "openSource": true,
     "stars": 77,
-    "zoteroKey": "li_ztrs_2025"
+    "zoteroKey": "li_ztrs_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2508-09158",
@@ -599,7 +641,8 @@
     "paper": "https://arxiv.org/abs/2508.09158",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "jiao_evadrive_2025"
+    "zoteroKey": "jiao_evadrive_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2508-05402",
@@ -618,7 +661,8 @@
     "code": "https://github.com/YuruiAI/DistillDrive",
     "openSource": true,
     "stars": 128,
-    "zoteroKey": "yu_distilldrive_2025"
+    "zoteroKey": "yu_distilldrive_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2508-01778",
@@ -638,7 +682,8 @@
     "code": "https://github.com/SunZhigang7/DiffSemanticFusion_MaplessQCNet",
     "openSource": true,
     "stars": 56,
-    "zoteroKey": "sun_diffsemanticfusion_2025"
+    "zoteroKey": "sun_diffsemanticfusion_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2507-14456",
@@ -658,7 +703,8 @@
     "code": "https://github.com/newbrains1/GEMINUS",
     "openSource": true,
     "stars": 18,
-    "zoteroKey": "wan_geminus_2025"
+    "zoteroKey": "wan_geminus_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2506-08541",
@@ -679,7 +725,8 @@
     "stars": 83,
     "project": "https://traj-flow.github.io/",
     "zoteroKey": "yan_trajflow_2025",
-    "code": "https://github.com/DSL-Lab/TrajFlow"
+    "code": "https://github.com/DSL-Lab/TrajFlow",
+    "codeStatus": "released"
   },
   {
     "id": "2506-07725",
@@ -699,7 +746,8 @@
     "code": "https://github.com/opendrivelab/ETA",
     "openSource": true,
     "stars": 48,
-    "zoteroKey": "hamdan_eta_2025"
+    "zoteroKey": "hamdan_eta_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2506-06664",
@@ -718,7 +766,8 @@
     "code": "https://github.com/NVlabs/GTRS",
     "openSource": true,
     "stars": 288,
-    "zoteroKey": "li_gtrs_2025"
+    "zoteroKey": "li_gtrs_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2506-06659",
@@ -735,9 +784,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2506.06659",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "yao_drivesuprim_2025"
+    "zoteroKey": "yao_drivesuprim_2025",
+    "code": "https://github.com/William-Yao-2000/DriveSuprim",
+    "codeStatus": "released"
   },
   {
     "id": "2506-04218",
@@ -757,7 +808,8 @@
     "code": "https://github.com/autonomousvision/navsim",
     "openSource": true,
     "stars": 1109,
-    "zoteroKey": "cao_navsim_2025"
+    "zoteroKey": "cao_navsim_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2506-00034",
@@ -777,7 +829,8 @@
     "code": "https://github.com/Say2L/GaussianFusion",
     "openSource": true,
     "stars": 96,
-    "zoteroKey": "liu_gaussianfusion_2025"
+    "zoteroKey": "liu_gaussianfusion_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2505-15111",
@@ -797,7 +850,8 @@
     "code": "https://github.com/Kguo-cs/iPad",
     "openSource": true,
     "stars": 144,
-    "zoteroKey": "guo_ipad_2025"
+    "zoteroKey": "guo_ipad_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2505-09315",
@@ -816,7 +870,8 @@
     "paper": "https://arxiv.org/abs/2505.09315",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "jiang_transdiffuser_2025"
+    "zoteroKey": "jiang_transdiffuser_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2503-14182",
@@ -833,9 +888,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.14182",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "zhang_bridgead_2025"
+    "zoteroKey": "zhang_bridgead_2025",
+    "code": "https://github.com/fudan-zvg/BridgeAD",
+    "codeStatus": "released"
   },
   {
     "id": "2503-12820",
@@ -854,7 +911,8 @@
     "paper": "https://arxiv.org/abs/2503.12820",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "li_hydra-mdp_2025"
+    "zoteroKey": "li_hydra-mdp_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2503-10434",
@@ -873,7 +931,8 @@
     "paper": "https://arxiv.org/abs/2503.10434",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "li_trajhf_2025"
+    "zoteroKey": "li_trajhf_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2503-08612",
@@ -889,9 +948,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.08612",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "tang_hip-ad_2025"
+    "zoteroKey": "tang_hip-ad_2025",
+    "code": "https://github.com/nullmax-vision/HiP-AD",
+    "codeStatus": "released"
   },
   {
     "id": "2503-07656",
@@ -907,9 +968,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.07656",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "jia_drivetransformer_2025"
+    "zoteroKey": "jia_drivetransformer_2025",
+    "code": "https://github.com/Thinklab-SJTU/DriveTransformer",
+    "codeStatus": "released"
   },
   {
     "id": "2503-05689",
@@ -929,7 +992,8 @@
     "code": "https://github.com/YvanYin/GoalFlow",
     "openSource": true,
     "stars": 425,
-    "zoteroKey": "xing_goalflow_2025"
+    "zoteroKey": "xing_goalflow_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2503-03125",
@@ -949,7 +1013,8 @@
     "code": "https://github.com/adept-thu/MomAD",
     "openSource": true,
     "stars": 450,
-    "zoteroKey": "song_momad_2025"
+    "zoteroKey": "song_momad_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2411-15139",
@@ -969,7 +1034,8 @@
     "code": "https://github.com/hustvl/DiffusionDrive",
     "openSource": true,
     "stars": 1503,
-    "zoteroKey": "liao_diffusiondrivev1_2025"
+    "zoteroKey": "liao_diffusiondrivev1_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2406-15349",
@@ -989,7 +1055,8 @@
     "code": "https://github.com/autonomousvision/navsim",
     "openSource": true,
     "stars": 1109,
-    "zoteroKey": "dauner_navsim_2024"
+    "zoteroKey": "dauner_navsim_2024",
+    "codeStatus": "released"
   },
   {
     "id": "2406-06978",
@@ -1006,10 +1073,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2406.06978",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
     "zoteroKey": "li_hydra-mdp_2024",
-    "project": "https://github.com/NVlabs/Hydra-MDP"
+    "code": "https://github.com/NVlabs/Hydra-MDP",
+    "codeStatus": "released"
   },
   {
     "id": "2405-19620",
@@ -1029,7 +1097,8 @@
     "code": "https://github.com/swc-17/SparseDrive",
     "openSource": true,
     "stars": 1005,
-    "zoteroKey": "sun_sparsedrivev1_2024"
+    "zoteroKey": "sun_sparsedrivev1_2024",
+    "codeStatus": "released"
   },
   {
     "id": "2402-13243",
@@ -1049,7 +1118,8 @@
     "stars": 1374,
     "project": "https://hgao-cv.github.io/VADv2",
     "zoteroKey": "chen_vadv2_2024",
-    "code": "https://github.com/hustvl/VAD"
+    "code": "https://github.com/hustvl/VAD",
+    "codeStatus": "released"
   },
   {
     "id": "2312-03031",
@@ -1068,7 +1138,8 @@
     "code": "https://github.com/NVlabs/BEV-Planner",
     "openSource": true,
     "stars": 260,
-    "zoteroKey": "li_bev-planner_2024"
+    "zoteroKey": "li_bev-planner_2024",
+    "codeStatus": "released"
   },
   {
     "id": "2303-12077",
@@ -1087,7 +1158,8 @@
     "code": "https://github.com/hustvl/VAD",
     "openSource": true,
     "stars": 1374,
-    "zoteroKey": "jiang_vad_2023"
+    "zoteroKey": "jiang_vad_2023",
+    "codeStatus": "released"
   },
   {
     "id": "2212-10156",
@@ -1106,7 +1178,8 @@
     "openSource": false,
     "stars": null,
     "project": "https://opendrivelab.github.io/UniAD/",
-    "zoteroKey": "hu_uniad_2023"
+    "zoteroKey": "hu_uniad_2023",
+    "codeStatus": "not-found"
   },
   {
     "id": "2207-07601",
@@ -1126,7 +1199,8 @@
     "code": "https://github.com/OpenPerceptionX/ST-P3",
     "openSource": true,
     "stars": 13,
-    "zoteroKey": "hu_st-p3_2022"
+    "zoteroKey": "hu_st-p3_2022",
+    "codeStatus": "released"
   },
   {
     "id": "2205-15997",
@@ -1145,7 +1219,8 @@
     "paper": "https://arxiv.org/abs/2205.15997",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "chitta_transfuser_2022"
+    "zoteroKey": "chitta_transfuser_2022",
+    "codeStatus": "not-found"
   },
   {
     "id": "2609-00111",
@@ -1165,7 +1240,8 @@
     "code": "https://github.com/QwenLM/Qwen-Drive-1.0",
     "openSource": true,
     "stars": 468,
-    "zoteroKey": "zhou_qwen-drive-10_2026"
+    "zoteroKey": "zhou_qwen-drive-10_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2608-18035",
@@ -1181,9 +1257,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.18035",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "zhang_plug-and-play_2026"
+    "zoteroKey": "zhang_plug-and-play_2026",
+    "code": "https://github.com/ZZongzheng0918/TE-Aware-E2E-AD",
+    "codeStatus": "released"
   },
   {
     "id": "2608-12854",
@@ -1202,7 +1280,8 @@
     "paper": "https://arxiv.org/abs/2608.12854",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "zhan_brainwam_2026"
+    "zoteroKey": "zhan_brainwam_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-10413",
@@ -1222,7 +1301,8 @@
     "code": "https://github.com/ZebinX/DriveVLA-M0",
     "openSource": true,
     "stars": 32,
-    "zoteroKey": "xing_drivevla-m0_2026"
+    "zoteroKey": "xing_drivevla-m0_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2608-09591",
@@ -1241,7 +1321,8 @@
     "paper": "https://arxiv.org/abs/2608.09591",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "huang_factordrive_2026"
+    "zoteroKey": "huang_factordrive_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-01755",
@@ -1257,9 +1338,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2608.01755",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "huang_deft-rlvr_2026"
+    "zoteroKey": "huang_deft-rlvr_2026",
+    "code": "https://github.com/hzx122/DEFT-RLVR",
+    "codeStatus": "released"
   },
   {
     "id": "2607-14727",
@@ -1278,7 +1361,8 @@
     "paper": "https://arxiv.org/abs/2607.14727",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "jiang_workdrive_2026"
+    "zoteroKey": "jiang_workdrive_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2607-08072",
@@ -1298,7 +1382,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "yang_post-training_2026",
-    "project": "https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers"
+    "project": "https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers",
+    "codeStatus": "not-found"
   },
   {
     "id": "2607-06403",
@@ -1319,7 +1404,8 @@
     "openSource": true,
     "stars": 954,
     "project": "https://technology.robbyant.com/lingbot-vla-v2",
-    "zoteroKey": "wu_lingbot-vla_2026"
+    "zoteroKey": "wu_lingbot-vla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2607-03182",
@@ -1337,7 +1423,8 @@
     "paper": "https://arxiv.org/abs/2607.03182",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "liu_anchorvla_2026"
+    "zoteroKey": "liu_anchorvla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2607-01658",
@@ -1356,7 +1443,8 @@
     "code": "https://github.com/ShivaTeam/DriveTeach-VLA",
     "openSource": true,
     "stars": 29,
-    "zoteroKey": "yang_driveteach-vla_2026"
+    "zoteroKey": "yang_driveteach-vla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2606-24742",
@@ -1374,7 +1462,8 @@
     "paper": "https://arxiv.org/abs/2606.24742",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "wang_wvm_2026"
+    "zoteroKey": "wang_wvm_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2606-08525",
@@ -1393,7 +1482,8 @@
     "paper": "https://arxiv.org/abs/2606.08525",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "chen_drivereward_2026"
+    "zoteroKey": "chen_drivereward_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2605-23270",
@@ -1413,7 +1503,8 @@
     "code": "https://github.com/AFARI-Research/ChainFlow-VLA",
     "openSource": true,
     "stars": 50,
-    "zoteroKey": "wang_chainflow-vla_2026"
+    "zoteroKey": "wang_chainflow-vla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2605-21061",
@@ -1432,7 +1523,8 @@
     "paper": "https://arxiv.org/abs/2605.21061",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "park_ikn_2026"
+    "zoteroKey": "park_ikn_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2605-04470",
@@ -1453,7 +1545,8 @@
     "stars": 21,
     "project": "https://currychen77.github.io/CRAFT",
     "zoteroKey": "chen_craft_2026",
-    "code": "https://github.com/CurryChen77/CraftPolicy"
+    "code": "https://github.com/CurryChen77/CraftPolicy",
+    "codeStatus": "released"
   },
   {
     "id": "2604-17915",
@@ -1473,7 +1566,8 @@
     "code": "https://github.com/Z1zyw/OneDrive",
     "openSource": true,
     "stars": 19,
-    "zoteroKey": "zhang_onedrive_2026"
+    "zoteroKey": "zhang_onedrive_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2604-02190",
@@ -1493,7 +1587,8 @@
     "code": "https://github.com/xiaomi-research/unidrivevla",
     "openSource": true,
     "stars": 246,
-    "zoteroKey": "li_unidrivevla_2026"
+    "zoteroKey": "li_unidrivevla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2604-00813",
@@ -1513,7 +1608,8 @@
     "code": "https://github.com/wzzheng/DVGT",
     "openSource": true,
     "stars": 362,
-    "zoteroKey": "zuo_dvgt-2_2026"
+    "zoteroKey": "zuo_dvgt-2_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2603-28116",
@@ -1533,7 +1629,8 @@
     "code": "https://github.com/haha-yuki-haha/AutoDrive-P3",
     "openSource": true,
     "stars": 20,
-    "zoteroKey": "ye_autodrive-p3_2026"
+    "zoteroKey": "ye_autodrive-p3_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2603-14972",
@@ -1552,7 +1649,8 @@
     "paper": "https://arxiv.org/abs/2603.14972",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "gao_takevla_2026"
+    "zoteroKey": "gao_takevla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2603-14851",
@@ -1573,7 +1671,8 @@
     "stars": 61,
     "project": "https://automot-website.github.io/",
     "zoteroKey": "huang_automot_2026",
-    "code": "https://github.com/OscarHuangWind/AutoMoT"
+    "code": "https://github.com/OscarHuangWind/AutoMoT",
+    "codeStatus": "released"
   },
   {
     "id": "2603-11041",
@@ -1594,7 +1693,8 @@
     "stars": 58,
     "project": "https://yaoyao-jpg.github.io/dynvla",
     "zoteroKey": "shang_dynvla_2026",
-    "code": "https://github.com/yaoyao-jpg/DynamicsVLA"
+    "code": "https://github.com/yaoyao-jpg/DynamicsVLA",
+    "codeStatus": "released"
   },
   {
     "id": "2603-09465",
@@ -1613,7 +1713,8 @@
     "code": "https://github.com/hey-cjj/EvoDriveVLA",
     "openSource": true,
     "stars": 50,
-    "zoteroKey": "cao_evodrivevla_2026"
+    "zoteroKey": "cao_evodrivevla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2603-06049",
@@ -1633,7 +1734,8 @@
     "code": "https://github.com/Mashiroln/curious_vla",
     "openSource": true,
     "stars": 133,
-    "zoteroKey": "chen_curiousvla_2026"
+    "zoteroKey": "chen_curiousvla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2603-01928",
@@ -1649,9 +1751,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.01928",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "luoLaSTVLAThinkingLatent2026"
+    "zoteroKey": "luoLaSTVLAThinkingLatent2026",
+    "code": "https://github.com/luo-yc17/LaST-VLA",
+    "codeStatus": "released"
   },
   {
     "id": "2603-01441",
@@ -1669,7 +1773,8 @@
     "paper": "https://arxiv.org/abs/2603.01441",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "wang_linkvla_2026"
+    "zoteroKey": "wang_linkvla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2603-01063",
@@ -1686,9 +1791,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.01063",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "luo_elf-vla_2026"
+    "zoteroKey": "luo_elf-vla_2026",
+    "code": "https://github.com/luo-yc17/ELF-VLA",
+    "codeStatus": "released"
   },
   {
     "id": "2602-21172",
@@ -1708,7 +1815,8 @@
     "openSource": true,
     "stars": 12,
     "zoteroKey": "rawal_nord_2026",
-    "code": "https://github.com/Applied-Intuition-Open-Source/nord"
+    "code": "https://github.com/Applied-Intuition-Open-Source/nord",
+    "codeStatus": "released"
   },
   {
     "id": "2602-20794",
@@ -1725,9 +1833,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2602.20794",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "wang_vggdrive_2026"
+    "zoteroKey": "wang_vggdrive_2026",
+    "code": "https://github.com/WJ-CV/VGGDrive",
+    "codeStatus": "released"
   },
   {
     "id": "2602-13329",
@@ -1746,7 +1856,8 @@
     "paper": "https://arxiv.org/abs/2602.13329",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "wang_hist-vla_2026"
+    "zoteroKey": "wang_hist-vla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2602-10719",
@@ -1765,7 +1876,8 @@
     "paper": "https://arxiv.org/abs/2602.10719",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "ang_hybriddrivevla_2026"
+    "zoteroKey": "ang_hybriddrivevla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2601-06474",
@@ -1782,9 +1894,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.06474",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "dang_sparseoccvla_2026"
+    "zoteroKey": "dang_sparseoccvla_2026",
+    "code": "https://github.com/MSunDYY/SparseOccVLA",
+    "codeStatus": "released"
   },
   {
     "id": "2601-05640",
@@ -1801,9 +1915,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.05640",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "li_sgdrive_2026"
+    "zoteroKey": "li_sgdrive_2026",
+    "code": "https://github.com/LogosRoboticsGroup/SGDrive",
+    "codeStatus": "released"
   },
   {
     "id": "2601-05611",
@@ -1822,7 +1938,8 @@
     "paper": "https://arxiv.org/abs/2601.05611",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "xie_latentvla_2026"
+    "zoteroKey": "xie_latentvla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "bassole-hybriddrivevla-2026",
@@ -1841,7 +1958,8 @@
     "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "bassole_hybriddrivevla_2026"
+    "zoteroKey": "bassole_hybriddrivevla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2512-22939",
@@ -1862,7 +1980,8 @@
     "stars": 67,
     "project": "https://pqh22.github.io/projects/ColaVLA/index.html",
     "zoteroKey": "peng_colavla_2026",
-    "code": "https://github.com/pqh22/ColaVLA"
+    "code": "https://github.com/pqh22/ColaVLA",
+    "codeStatus": "released"
   },
   {
     "id": "2512-10719",
@@ -1882,7 +2001,8 @@
     "openSource": true,
     "stars": 93,
     "zoteroKey": "li_spacedrive_2025",
-    "code": "https://github.com/zhenghao2519/SpaceDrive"
+    "code": "https://github.com/zhenghao2519/SpaceDrive",
+    "codeStatus": "released"
   },
   {
     "id": "2512-06112",
@@ -1902,7 +2022,8 @@
     "code": "https://github.com/fudan-generative-vision/WAM-Flow",
     "openSource": true,
     "stars": 367,
-    "zoteroKey": "xu_wam-flow_2025"
+    "zoteroKey": "xu_wam-flow_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2512-01830",
@@ -1919,9 +2040,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.01830",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "zhang_openread_2025"
+    "zoteroKey": "zhang_openread_2025",
+    "code": "https://github.com/wyddmw/OpenREAD",
+    "codeStatus": "released"
   },
   {
     "id": "2511-00088",
@@ -1942,7 +2065,8 @@
     "openSource": true,
     "stars": 2025,
     "project": "https://huggingface.co/nvidia/Alpamayo-R1-10B",
-    "zoteroKey": "nvidia_alpamayo-r1_2026"
+    "zoteroKey": "nvidia_alpamayo-r1_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2511-00062",
@@ -1962,7 +2086,8 @@
     "code": "https://github.com/nvidia-cosmos/cosmos-predict2.5",
     "openSource": true,
     "stars": 1372,
-    "zoteroKey": "nvidia_world_2026"
+    "zoteroKey": "nvidia_world_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2509-20109",
@@ -1973,15 +2098,17 @@
     "published": "2025-09",
     "venue": "2025",
     "tags": [
-      "Reinforcement Learning",
-      "Physical Reasoning",
-      "Trajectory Planning"
+      "Discrete Diffusion",
+      "Reflective Reasoning",
+      "Trajectory Generation"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2509.20109",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "li_reflectdrive-1_2025"
+    "zoteroKey": "li_reflectdrive-1_2025",
+    "code": "https://github.com/pixeli99/ReflectDrive",
+    "codeStatus": "released"
   },
   {
     "id": "2509-05578",
@@ -2000,7 +2127,8 @@
     "paper": "https://arxiv.org/abs/2509.05578",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "liu_occvla_2025"
+    "zoteroKey": "liu_occvla_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2507-23318",
@@ -2019,7 +2147,8 @@
     "paper": "https://arxiv.org/abs/2507.23318",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "cao_fastdrivevla_2025"
+    "zoteroKey": "cao_fastdrivevla_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2506-13757",
@@ -2040,7 +2169,8 @@
     "stars": 655,
     "project": "https://autovla.github.io/",
     "zoteroKey": "zhou_autovla_2025",
-    "code": "https://github.com/ucla-mobility/AutoVLA"
+    "code": "https://github.com/ucla-mobility/AutoVLA",
+    "codeStatus": "released"
   },
   {
     "id": "2506-08052",
@@ -2060,7 +2190,8 @@
     "code": "https://github.com/xiaomi-research/recogdrive",
     "openSource": true,
     "stars": 611,
-    "zoteroKey": "li_recogdrive_2025"
+    "zoteroKey": "li_recogdrive_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2505-19381",
@@ -2077,9 +2208,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2505.19381",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "jiang_diffvla_2025"
+    "zoteroKey": "jiang_diffvla_2025",
+    "code": "https://github.com/boschresearch/DiffVLA",
+    "codeStatus": "released"
   },
   {
     "id": "2505-16278",
@@ -2100,7 +2233,8 @@
     "stars": 234,
     "project": "https://thinklab-sjtu.github.io/DriveMoE/",
     "zoteroKey": "yang_drivemoe_2025",
-    "code": "https://github.com/Thinklab-SJTU/DriveMoE"
+    "code": "https://github.com/Thinklab-SJTU/DriveMoE",
+    "codeStatus": "released"
   },
   {
     "id": "2505-00284",
@@ -2120,7 +2254,8 @@
     "code": "https://github.com/michigan-traffic-lab/LightEMMA",
     "openSource": true,
     "stars": 145,
-    "zoteroKey": "qiao_lightemma_2025"
+    "zoteroKey": "qiao_lightemma_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2503-23463",
@@ -2137,9 +2272,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2503.23463",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "zhou_opendrivevla_2025"
+    "zoteroKey": "zhou_opendrivevla_2025",
+    "code": "https://github.com/DriveVLA/OpenDriveVLA",
+    "codeStatus": "released"
   },
   {
     "id": "2503-15558",
@@ -2158,7 +2295,8 @@
     "code": "https://github.com/nvidia-cosmos/cosmos-reason1",
     "openSource": true,
     "stars": 962,
-    "zoteroKey": "nvidia_cosmos-reason1_2025"
+    "zoteroKey": "nvidia_cosmos-reason1_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2503-07608",
@@ -2178,7 +2316,8 @@
     "code": "https://github.com/hustvl/AlphaDrive",
     "openSource": true,
     "stars": 334,
-    "zoteroKey": "jiang_alphadrive_2025"
+    "zoteroKey": "jiang_alphadrive_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2609-21712",
@@ -2196,7 +2335,8 @@
     "paper": "https://arxiv.org/abs/2609.21712",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "hu_zyt-world_2026"
+    "zoteroKey": "hu_zyt-world_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2609-20377",
@@ -2214,7 +2354,8 @@
     "paper": "https://arxiv.org/abs/2609.20377",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "liu_mm-future_2026"
+    "zoteroKey": "liu_mm-future_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2609-03602",
@@ -2232,7 +2373,8 @@
     "paper": "https://arxiv.org/abs/2609.03602",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "wang_sv-wam_2026"
+    "zoteroKey": "wang_sv-wam_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-28404",
@@ -2252,7 +2394,8 @@
     "code": "https://github.com/valeoai/VATIX",
     "openSource": true,
     "stars": 21,
-    "zoteroKey": "besnier_natix_2026"
+    "zoteroKey": "besnier_natix_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2608-22187",
@@ -2271,7 +2414,8 @@
     "paper": "https://arxiv.org/abs/2608.22187",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "wang_behaviorworldgen_2026"
+    "zoteroKey": "wang_behaviorworldgen_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-20974",
@@ -2291,7 +2435,8 @@
     "code": "https://github.com/AFARI-Research/WA-JEPA",
     "openSource": true,
     "stars": 64,
-    "zoteroKey": "wang_wa-jepa_2026"
+    "zoteroKey": "wang_wa-jepa_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2608-20430",
@@ -2309,7 +2454,8 @@
     "paper": "https://arxiv.org/abs/2608.20430",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "lu_rise_2026"
+    "zoteroKey": "lu_rise_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-19085",
@@ -2327,7 +2473,8 @@
     "paper": "https://arxiv.org/abs/2608.19085",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "zhong_da-wam_2026"
+    "zoteroKey": "zhong_da-wam_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-10107",
@@ -2345,7 +2492,8 @@
     "paper": "https://arxiv.org/abs/2608.10107",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "fu_4d-wam_2026"
+    "zoteroKey": "fu_4d-wam_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-07468",
@@ -2365,7 +2513,8 @@
     "code": "https://github.com/H-EmbodVis/SimWAM",
     "openSource": true,
     "stars": 182,
-    "zoteroKey": "zhao_simwam_2026"
+    "zoteroKey": "zhao_simwam_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2608-03084",
@@ -2385,7 +2534,8 @@
     "code": "https://github.com/ASH-2046/SUV",
     "openSource": true,
     "stars": 20,
-    "zoteroKey": "yuan_suv_2026"
+    "zoteroKey": "yuan_suv_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2607-29031",
@@ -2404,7 +2554,8 @@
     "paper": "https://arxiv.org/abs/2607.29031",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "yang_auto-jepa_2026"
+    "zoteroKey": "yang_auto-jepa_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2607-26056",
@@ -2421,9 +2572,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2607.26056",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "sun_intact_2026"
+    "zoteroKey": "sun_intact_2026",
+    "code": "https://github.com/zju3dv/INTACT-JEPA",
+    "codeStatus": "released"
   },
   {
     "id": "2607-20988",
@@ -2442,7 +2595,8 @@
     "paper": "https://arxiv.org/abs/2607.20988",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "yu_hyworldvla_2026"
+    "zoteroKey": "yu_hyworldvla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2607-17521",
@@ -2461,7 +2615,8 @@
     "paper": "https://arxiv.org/abs/2607.17521",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "zhang_geoworldad_2026"
+    "zoteroKey": "zhang_geoworldad_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2606-30421",
@@ -2480,7 +2635,8 @@
     "paper": "https://arxiv.org/abs/2606.30421",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "cheng_owmdrive_2026"
+    "zoteroKey": "cheng_owmdrive_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2606-15869",
@@ -2497,9 +2653,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2606.15869",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "li_metis_2026"
+    "zoteroKey": "li_metis_2026",
+    "code": "https://github.com/LogosRoboticsGroup/Metis",
+    "codeStatus": "released"
   },
   {
     "id": "2606-03159",
@@ -2518,7 +2676,8 @@
     "paper": "https://arxiv.org/abs/2606.03159",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "nvidia_nvidia_2026"
+    "zoteroKey": "nvidia_nvidia_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2606-02800",
@@ -2539,7 +2698,8 @@
     "openSource": true,
     "stars": 11900,
     "project": "https://huggingface.co/collections/nvidia/cosmos3",
-    "zoteroKey": "nvidia_cosmos_2026"
+    "zoteroKey": "nvidia_cosmos_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2605-24892",
@@ -2558,7 +2718,8 @@
     "paper": "https://arxiv.org/abs/2605.24892",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "li_x-foresight_2026"
+    "zoteroKey": "li_x-foresight_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2605-18137",
@@ -2577,7 +2738,8 @@
     "paper": "https://arxiv.org/abs/2605.18137",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "zhou_xiaomi_2026"
+    "zoteroKey": "zhou_xiaomi_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2605-17682",
@@ -2596,7 +2758,8 @@
     "paper": "https://arxiv.org/abs/2605.17682",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "chen_gem_2026"
+    "zoteroKey": "chen_gem_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2605-14696",
@@ -2613,9 +2776,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.14696",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "xu_eponav2_2026"
+    "zoteroKey": "xu_eponav2_2026",
+    "code": "https://github.com/JiaweiXu8/EponaV2",
+    "codeStatus": "released"
   },
   {
     "id": "2605-11596",
@@ -2635,7 +2800,8 @@
     "openSource": true,
     "stars": 57,
     "zoteroKey": "zhang_horizondrive_2026",
-    "code": "https://github.com/zcliangyue/HorizonDrive"
+    "code": "https://github.com/zcliangyue/HorizonDrive",
+    "codeStatus": "released"
   },
   {
     "id": "2605-11550",
@@ -2651,9 +2817,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2605.11550",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "lu_dawn_2026"
+    "zoteroKey": "lu_dawn_2026",
+    "code": "https://github.com/COOWAI/DAWN",
+    "codeStatus": "released"
   },
   {
     "id": "2605-10564",
@@ -2673,7 +2841,8 @@
     "code": "https://github.com/hotdogcheesewhite/DeepSight",
     "openSource": true,
     "stars": 31,
-    "zoteroKey": "zhang_deepsight_2026"
+    "zoteroKey": "zhang_deepsight_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2605-10426",
@@ -2693,7 +2862,8 @@
     "code": "https://github.com/AFARI-Research/CoWorld-VLA",
     "openSource": true,
     "stars": 10,
-    "zoteroKey": "huang_coworld-vla_2026"
+    "zoteroKey": "huang_coworld-vla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2605-09701",
@@ -2712,7 +2882,8 @@
     "openSource": false,
     "stars": null,
     "project": "https://huggingface.co/spaces/AGC2025/e2e-driving-navhard",
-    "zoteroKey": "hong_drivefuture_2026"
+    "zoteroKey": "hong_drivefuture_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2604-20289",
@@ -2731,7 +2902,8 @@
     "paper": "https://arxiv.org/abs/2604.20289",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "zeng_x-cache_2026"
+    "zoteroKey": "zeng_x-cache_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2604-04198",
@@ -2748,9 +2920,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2604.04198",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "liu_driveva_2026"
+    "zoteroKey": "liu_driveva_2026",
+    "code": "https://github.com/xiaomi-mlab/DriveVA",
+    "codeStatus": "released"
   },
   {
     "id": "2604-02714",
@@ -2770,7 +2944,9 @@
     "openSource": false,
     "stars": null,
     "project": "https://zihaosheng.github.io/ExploreVLA/",
-    "zoteroKey": "sheng_explorevla_2026"
+    "zoteroKey": "sheng_explorevla_2026",
+    "code": "https://github.com/zihaosheng/ExploreVLA",
+    "codeStatus": "pending"
   },
   {
     "id": "2604-01765",
@@ -2790,7 +2966,8 @@
     "stars": 59,
     "project": "https://drivedreamer-policy.github.io/",
     "zoteroKey": "zhou_drivedreamer-policy_2026",
-    "code": "https://github.com/youngzhou1999/DriveDreamer-Policy"
+    "code": "https://github.com/youngzhou1999/DriveDreamer-Policy",
+    "codeStatus": "released"
   },
   {
     "id": "2603-27287",
@@ -2806,9 +2983,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2603.27287",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "liu_uni-world_2026"
+    "zoteroKey": "liu_uni-world_2026",
+    "code": "https://github.com/LogosRoboticsGroup/UniWorldVLA",
+    "codeStatus": "released"
   },
   {
     "id": "2603-24581",
@@ -2827,7 +3006,8 @@
     "paper": "https://arxiv.org/abs/2603.24581",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "wang_latent-wam_2026"
+    "zoteroKey": "wang_latent-wam_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2603-19979",
@@ -2846,7 +3026,8 @@
     "paper": "https://arxiv.org/abs/2603.19979",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "zheng_x-world_2026"
+    "zoteroKey": "zheng_x-world_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2603-16666",
@@ -2867,7 +3048,8 @@
     "stars": 1500,
     "project": "https://yuantianyuan01.github.io/FastWAM/",
     "zoteroKey": "yuan_fast-wam_2026",
-    "code": "https://github.com/yuantianyuan01/FastWAM"
+    "code": "https://github.com/yuantianyuan01/FastWAM",
+    "codeStatus": "released"
   },
   {
     "id": "2603-14948",
@@ -2887,7 +3069,8 @@
     "code": "https://github.com/TabGuigui/WorldDrive",
     "openSource": true,
     "stars": 80,
-    "zoteroKey": "gui_worlddrive_2026"
+    "zoteroKey": "gui_worlddrive_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2602-10884",
@@ -2906,7 +3089,8 @@
     "code": "https://github.com/mengtan00/ResWorld",
     "openSource": true,
     "stars": 63,
-    "zoteroKey": "zhang_resworld_2026"
+    "zoteroKey": "zhang_resworld_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2602-06521",
@@ -2926,7 +3110,8 @@
     "code": "https://github.com/liulin815/DriveWorld-VLA",
     "openSource": true,
     "stars": 127,
-    "zoteroKey": "jia_driveworld-vla_2026"
+    "zoteroKey": "jia_driveworld-vla_2026",
+    "codeStatus": "released"
   },
   {
     "id": "2602-01536",
@@ -2944,7 +3129,8 @@
     "paper": "https://arxiv.org/abs/2602.01536",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "liu_unidwm_2026"
+    "zoteroKey": "liu_unidwm_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2601-22032",
@@ -2961,9 +3147,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2601.22032",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "wang_drive-jepa_2026"
+    "zoteroKey": "wang_drive-jepa_2026",
+    "code": "https://github.com/linhanwang/Drive-JEPA",
+    "codeStatus": "released"
   },
   {
     "id": "2601-04453",
@@ -2983,7 +3171,8 @@
     "openSource": false,
     "stars": null,
     "project": "https://unidrive-wm.github.io/UniDrive-WM",
-    "zoteroKey": "xiong_unidrive-wm_2026"
+    "zoteroKey": "xiong_unidrive-wm_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2512-23421",
@@ -3000,9 +3189,12 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.23421",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "xia_drivelawunifying_2025"
+    "zoteroKey": "xia_drivelawunifying_2025",
+    "code": "https://github.com/wm-research/DriveLaW",
+    "project": "https://wm-research.github.io/DriveLaW/",
+    "codeStatus": "released"
   },
   {
     "id": "2512-19133",
@@ -3021,7 +3213,8 @@
     "paper": "https://arxiv.org/abs/2512.19133",
     "openSource": false,
     "stars": null,
-    "zoteroKey": "yang_worldrft_2025"
+    "zoteroKey": "yang_worldrft_2025",
+    "codeStatus": "not-found"
   },
   {
     "id": "2512-04441",
@@ -3038,9 +3231,12 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2512.04441",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "sun_minddrive_2025"
+    "zoteroKey": "sun_minddrive_2025",
+    "code": "https://github.com/xiaomi-mlab/MindDrive",
+    "project": "https://xiaomi-mlab.github.io/MindDrive/",
+    "codeStatus": "released"
   },
   {
     "id": "2511-23369",
@@ -3061,7 +3257,8 @@
     "stars": 327,
     "project": "https://opendrivelab.com/SimScale",
     "zoteroKey": "tian_simscale_2025",
-    "code": "https://github.com/OpenDriveLab/SimScale"
+    "code": "https://github.com/OpenDriveLab/SimScale",
+    "codeStatus": "released"
   },
   {
     "id": "2510-12796",
@@ -3072,15 +3269,17 @@
     "published": "2025-10",
     "venue": "2025",
     "tags": [
-      "VLA Data Scaling",
-      "Self-Supervised Supervision",
-      "Action Learning"
+      "World-Model Pretraining",
+      "Data Scaling Laws",
+      "Policy Learning"
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2510.12796",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "li_drivevla-w0_2025"
+    "zoteroKey": "li_drivevla-w0_2025",
+    "code": "https://github.com/BraveGroup/DriveVLA-W0",
+    "codeStatus": "released"
   },
   {
     "id": "2510-10726",
@@ -3100,7 +3299,8 @@
     "openSource": true,
     "stars": 1200,
     "zoteroKey": "liu_worldmirror_2025",
-    "code": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror"
+    "code": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
+    "codeStatus": "released"
   },
   {
     "id": "2510-04333",
@@ -3121,7 +3321,8 @@
     "stars": 164,
     "project": "https://alan-lanfeng.github.io/RAP/",
     "zoteroKey": "feng_rap_2026",
-    "code": "https://github.com/vita-epfl/RAP"
+    "code": "https://github.com/vita-epfl/RAP",
+    "codeStatus": "released"
   },
   {
     "id": "2508-06571",
@@ -3138,9 +3339,11 @@
     ],
     "datasets": [],
     "paper": "https://arxiv.org/abs/2508.06571",
-    "openSource": false,
+    "openSource": true,
     "stars": null,
-    "zoteroKey": "jiang_irl-vla_2025"
+    "zoteroKey": "jiang_irl-vla_2025",
+    "code": "https://github.com/IRL-VLA/IRL-VLA",
+    "codeStatus": "released"
   },
   {
     "id": "2507-00603",
@@ -3159,7 +3362,8 @@
     "code": "https://github.com/ucaszyp/World4Drive",
     "openSource": true,
     "stars": 111,
-    "zoteroKey": "zheng_world4drive_2025"
+    "zoteroKey": "zheng_world4drive_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2506-24113",
@@ -3180,7 +3384,8 @@
     "openSource": true,
     "stars": 388,
     "project": "https://kevin-thu.github.io/Epona/",
-    "zoteroKey": "zhang_eponav1_2025"
+    "zoteroKey": "zhang_eponav1_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2504-01941",
@@ -3200,7 +3405,8 @@
     "code": "https://github.com/liyingyanUCAS/WoTE",
     "openSource": true,
     "stars": 270,
-    "zoteroKey": "li_wote_2025"
+    "zoteroKey": "li_wote_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2503-14492",
@@ -3220,7 +3426,8 @@
     "code": "https://github.com/nvidia-cosmos/cosmos-transfer1",
     "openSource": true,
     "stars": 826,
-    "zoteroKey": "nvidia_cosmos-transfer1_2025"
+    "zoteroKey": "nvidia_cosmos-transfer1_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2501-14729",
@@ -3240,7 +3447,8 @@
     "code": "https://github.com/LMD0311/HERMES",
     "openSource": true,
     "stars": 264,
-    "zoteroKey": "zhou_hermes_2025"
+    "zoteroKey": "zhou_hermes_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2501-03575",
@@ -3260,7 +3468,8 @@
     "code": "https://github.com/nvidia-cosmos/cosmos-predict1",
     "openSource": true,
     "stars": 473,
-    "zoteroKey": "nvidia_cosmos_2025"
+    "zoteroKey": "nvidia_cosmos_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2412-10371",
@@ -3280,7 +3489,8 @@
     "code": "https://github.com/wzzheng/GaussianAD",
     "openSource": true,
     "stars": 130,
-    "zoteroKey": "zheng_gaussianad_2024"
+    "zoteroKey": "zheng_gaussianad_2024",
+    "codeStatus": "released"
   },
   {
     "id": "2406-08481",
@@ -3300,7 +3510,8 @@
     "code": "https://github.com/BraveGroup/LAW",
     "openSource": true,
     "stars": 391,
-    "zoteroKey": "li_law_2025"
+    "zoteroKey": "li_law_2025",
+    "codeStatus": "released"
   },
   {
     "id": "2405-17398",
@@ -3321,7 +3532,8 @@
     "openSource": true,
     "stars": 901,
     "project": "https://vista-demo.github.io",
-    "zoteroKey": "gao_vista_2024"
+    "zoteroKey": "gao_vista_2024",
+    "codeStatus": "released"
   },
   {
     "id": "2311-16038",
@@ -3341,6 +3553,7 @@
     "code": "https://github.com/wzzheng/OccWorld",
     "openSource": true,
     "stars": 587,
-    "zoteroKey": "zheng_occworld_2023"
+    "zoteroKey": "zheng_occworld_2023",
+    "codeStatus": "released"
   }
 ]

@@ -13,12 +13,18 @@ const tracks = [
   ['vla', 'Vision-Language-Action Models'],
   ['world-model', 'Driving World Models']
 ];
-const datasetGroups = [
-  'Perception and Scene Understanding',
-  'Motion and Cooperative Driving',
-  'Simulation and Closed-Loop Evaluation',
-  'Language and VLA'
+const datasetCategories = [
+  'Perception and Multimodal Understanding',
+  'Motion, Planning, and Cooperative Driving',
+  'Simulation and Synthetic Data'
 ];
+const benchmarkCategories = [
+  'Closed-Loop Planning',
+  'Open-Loop and Non-Reactive Planning',
+  'VLA and Driving Reasoning',
+  'Reliability and Robustness'
+];
+const anchor = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const iconText = {
   method: '\u{1F9E0}', year: '\u{1F5D3}\uFE0F', tags: '\u{1F3F7}\uFE0F',
   paper: '\u{1F4C4}', github: '\u{1F4BB}', project: '\u{1F310}',
@@ -36,7 +42,7 @@ const paperBadge = (url) => {
   const color = arxivId ? 'b31b1b' : '2457a7';
   return badgeLink(arxivId ? 'arXiv' : 'Paper', `https://img.shields.io/badge/${label}-${color}?style=flat-square`, url);
 };
-const githubBadge = (url) => {
+const githubBadge = (url, status = 'released') => {
   if (!url) return dash;
   try {
     const parsed = new URL(url);
@@ -44,7 +50,12 @@ const githubBadge = (url) => {
       const [owner, repo] = parsed.pathname.split('/').filter(Boolean);
       if (owner && repo) {
         const cleanRepo = repo.replace(/\.git$/, '');
-        return badgeLink('GitHub stars', `https://img.shields.io/github/stars/${owner}/${cleanRepo}?style=social`, url);
+        const stars = badgeLink('GitHub stars', `https://img.shields.io/github/stars/${owner}/${cleanRepo}?style=social`, url);
+        if (status === 'pending') {
+          const pending = badgeLink('Code pending', 'https://img.shields.io/badge/Code-pending-d99b00?logo=github&style=flat-square', url);
+          return `${pending} ${stars}`;
+        }
+        return stars;
       }
     }
   } catch {}
@@ -63,8 +74,10 @@ readme += `Last updated: ${reviewDate}. Verify paper metadata against the latest
 readme += '## Table of Contents\n\n- [Papers](#papers)\n';
 for (const [, title] of tracks) readme += `  - [${title}](#${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')})\n`;
 readme += '- [Public Datasets](#public-datasets)\n- [Public Evaluation Benchmarks](#public-evaluation-benchmarks)\n- [Leaderboard](#leaderboard)\n- [License](#license)\n\n';
+for (const category of datasetCategories) readme = readme.replace('- [Public Evaluation Benchmarks]', `  - [${category}](#${anchor(category)})\n- [Public Evaluation Benchmarks]`);
+for (const category of benchmarkCategories) readme = readme.replace('- [Leaderboard]', `  - [${category}](#${anchor(category)})\n- [Leaderboard]`);
 readme += '## Papers\n\n';
-readme += 'GitHub links point to public code repositories checked against the paper or its official project page. A dash means no public author/team code repository was identified in this review. GitHub badges display live star counts.\n\n';
+readme += 'Tags were checked against paper titles, abstracts, and method descriptions. GitHub star badges link to author/team implementations verified against the paper or an official project page. **Code pending** marks an official repository that announces a future release; a dash means no released author/team implementation was found after searching. Star counts are live.\n\n';
 
 for (const [track, title] of tracks) {
   const trackPapers = papers.filter((item) => item.track === track);
@@ -81,18 +94,18 @@ for (const [track, title] of tracks) {
       const methodTitle = `**${esc(paper.name)}**<br><sub>${html(paper.title)}</sub>`;
       const tags = paper.tags.map((tag) => `\`${esc(tag)}\``).join(' · ');
       const project = paper.project ? icon(iconText.project, paper.project, 'Official project page') : dash;
-      readme += `| ${methodTitle} | ${yearVenue} | ${tags} | ${paperBadge(paper.paper)} | ${githubBadge(paper.code)} | ${project} |\n`;
+      readme += `| ${methodTitle} | ${yearVenue} | ${tags} | ${paperBadge(paper.paper)} | ${githubBadge(paper.code, paper.codeStatus)} | ${project} |\n`;
     }
     readme += '\n</details>\n\n';
   }
 }
 
 readme += '## Public Datasets\n\n';
-readme += 'The catalog combines datasets and data resources from [GE2EAD](https://github.com/AutoLab-SAI-SJTU/GE2EAD), [GenAI4AD](https://github.com/taco-group/GenAI4AD), and [ReCogDrive](https://github.com/xiaomi-research/recogdrive). Dataset availability and access requirements follow the original providers.\n\n';
-for (const group of datasetGroups) {
-  const items = datasets.filter((item) => item.group === group);
+readme += 'Dataset access terms and releases follow the original providers. The source and inspiration repositories are listed in Acknowledgements.\n\n';
+for (const category of datasetCategories) {
+  const items = datasets.filter((item) => item.category === category);
   if (!items.length) continue;
-  readme += `### ${group}\n\n`;
+  readme += `### ${category}\n\n_${items.length} datasets._\n\n`;
   readme += '| Dataset / Method and Paper Title | Task | Scale | Access | Resources |\n';
   readme += '|---|---|---|---|:---:|\n';
   for (const item of items) {
@@ -103,19 +116,28 @@ for (const group of datasetGroups) {
 }
 
 readme += '## Public Evaluation Benchmarks\n\n';
-readme += '| Benchmark | Track | Evaluation Setting | Primary Metric | Resources |\n|---|---|---|---|:---:|\n';
-for (const item of benchmarks) {
-  const links = [
-    icon(iconText.dataset, item.homepage, 'Benchmark homepage'),
-    icon(iconText.paper, item.paper, 'Paper'),
-    icon(iconText.github, item.code, 'Code')
-  ].filter((value) => value !== dash).join(' ');
-  readme += `| **${esc(item.name)}** | ${esc(item.track)} | ${esc(item.setting)} | ${esc(item.primaryMetric)} | ${links} |\n`;
+readme += 'Benchmarks are grouped by evaluation protocol and research task; scores from different protocols remain separate.\n\n';
+for (const category of benchmarkCategories) {
+  const items = benchmarks.filter((item) => item.category === category);
+  if (!items.length) continue;
+  readme += `### ${category}\n\n_${items.length} benchmark${items.length === 1 ? '' : 's'}._\n\n`;
+  readme += '| Benchmark | Track | Evaluation Setting | Primary Metric | Resources |\n|---|---|---|---|:---:|\n';
+  for (const item of items) {
+    const links = [
+      icon(iconText.dataset, item.homepage, 'Benchmark homepage'),
+      icon(iconText.paper, item.paper, 'Paper'),
+      icon(iconText.github, item.code, 'Code')
+    ].filter((value) => value !== dash).join(' ');
+    readme += `| **${esc(item.name)}** | ${esc(item.track)} | ${esc(item.setting)} | ${esc(item.primaryMetric)} | ${links} |\n`;
+  }
+  readme += '\n';
 }
 
 readme += '\n## Leaderboard\n\n';
 readme += 'Benchmark results are stored in [data/leaderboard.json](data/leaderboard.json). Each entry preserves its evaluation protocol, data split, and reproducibility evidence. Results from incompatible protocols are not ranked together.\n\n';
 readme += '## License\n\nThis project is released under the [Apache License 2.0](LICENSE).\n';
+readme += '\n## Acknowledgements\n\n';
+readme += 'We thank the maintainers of [GE2EAD](https://github.com/AutoLab-SAI-SJTU/GE2EAD), [GenAI4AD](https://github.com/taco-group/GenAI4AD), and [ReCogDrive](https://github.com/xiaomi-research/recogdrive) for their research collections and dataset references, which helped inform this catalog. Please consult the original projects for their own licenses and access terms.\n';
 
 await writeFile(join(root, 'README.md'), readme, 'utf8');
 console.log(`Rendered README for ${papers.length} papers, ${datasets.length} datasets, and ${benchmarks.length} benchmarks.`);

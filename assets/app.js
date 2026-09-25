@@ -6,6 +6,17 @@ const paths = {
 };
 
 const state = { papers: [], datasets: [], benchmarks: [], leaderboard: [], track: 'all', query: '' };
+const datasetCategories = [
+  'Perception and Multimodal Understanding',
+  'Motion, Planning, and Cooperative Driving',
+  'Simulation and Synthetic Data'
+];
+const benchmarkCategories = [
+  'Closed-Loop Planning',
+  'Open-Loop and Non-Reactive Planning',
+  'VLA and Driving Reasoning',
+  'Reliability and Robustness'
+];
 const $ = (selector) => document.querySelector(selector);
 
 async function loadData() {
@@ -76,16 +87,15 @@ function datasetCard(item) {
 }
 
 function renderDatasets() {
-  const groups = new Map();
-  for (const item of state.datasets) {
-    if (!groups.has(item.group)) groups.set(item.group, []);
-    groups.get(item.group).push(item);
-  }
-  $('#datasetGrid').innerHTML = [...groups.entries()].map(([group, items]) => `
+  $('#datasetGrid').innerHTML = datasetCategories.map((category) => {
+    const items = state.datasets.filter((item) => item.category === category);
+    if (!items.length) return '';
+    return `
     <section class="dataset-group">
-      <h4>${group}</h4>
+      <h4>${category} <span class="category-count">${items.length}</span></h4>
       <div class="benchmark-grid">${items.map(datasetCard).join('')}</div>
-    </section>`).join('');
+    </section>`;
+  }).join('');
 }
 
 function benchmarkCard(item) {
@@ -98,7 +108,14 @@ function benchmarkCard(item) {
 }
 
 function renderBenchmarks() {
-  $('#benchmarkGrid').innerHTML = state.benchmarks.map(benchmarkCard).join('');
+  $('#benchmarkGrid').innerHTML = benchmarkCategories.map((category) => {
+    const items = state.benchmarks.filter((item) => item.category === category);
+    if (!items.length) return '';
+    return `<section class="benchmark-category">
+      <h4>${category} <span class="category-count">${items.length}</span></h4>
+      <div class="benchmark-grid">${items.map(benchmarkCard).join('')}</div>
+    </section>`;
+  }).join('');
   const select = $('#leaderboardBenchmark');
   select.innerHTML = state.benchmarks.map((item) => `<option value="${item.id}">${item.name}</option>`).join('');
   const firstWithResults = state.leaderboard[0]?.benchmarkId || state.benchmarks[0]?.id;

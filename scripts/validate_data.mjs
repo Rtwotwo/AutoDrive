@@ -10,6 +10,17 @@ const benchmarks = await readJson('data/benchmarks.json');
 const leaderboard = await readJson('data/leaderboard.json');
 const errors = [];
 const https = (value) => typeof value === 'string' && value.startsWith('https://');
+const datasetCategories = new Set([
+  'Perception and Multimodal Understanding',
+  'Motion, Planning, and Cooperative Driving',
+  'Simulation and Synthetic Data'
+]);
+const benchmarkCategories = new Set([
+  'Closed-Loop Planning',
+  'Open-Loop and Non-Reactive Planning',
+  'VLA and Driving Reasoning',
+  'Reliability and Robustness'
+]);
 
 function unique(items, label) {
   const seen = new Set();
@@ -28,7 +39,9 @@ for (const paper of papers) {
   if (!Number.isInteger(paper.year) || paper.year < 1980 || paper.year > 2100) errors.push(`paper ${paper.id}: invalid year`);
   if (!/^\d{4}(?:-\d{2})?$/.test(paper.published || '')) errors.push(`paper ${paper.id}: invalid published date`);
   if (!Array.isArray(paper.tags) || !paper.tags.length) errors.push(`paper ${paper.id}: tags required`);
-  if (paper.openSource !== Boolean(paper.code)) errors.push(`paper ${paper.id}: openSource must match code availability`);
+  if (!['released', 'pending', 'not-found'].includes(paper.codeStatus)) errors.push(`paper ${paper.id}: invalid codeStatus`);
+  if (paper.openSource !== (paper.codeStatus === 'released')) errors.push(`paper ${paper.id}: openSource must match released code status`);
+  if ((paper.codeStatus === 'released' || paper.codeStatus === 'pending') !== Boolean(paper.code)) errors.push(`paper ${paper.id}: code link must match released/pending status`);
   if (paper.stars !== null && (!Number.isInteger(paper.stars) || paper.stars < 0)) errors.push(`paper ${paper.id}: invalid stars`);
   // The README's GitHub badge loads the current star count live. The JSON
   // snapshot may be null when a repository has not yet been cached.
@@ -42,12 +55,14 @@ for (const track of ['e2e','vla','world-model']) {
 }
 for (const dataset of datasets) {
   if (!dataset.task || !dataset.scale || !dataset.access) errors.push(`dataset ${dataset.id}: task, scale, and access are required`);
-  if (!dataset.group || !dataset.paperTitle) errors.push(`dataset ${dataset.id}: group and paperTitle are required`);
+  if (!datasetCategories.has(dataset.category) || 'group' in dataset) errors.push(`dataset ${dataset.id}: invalid category (or legacy group field)`);
+  if (!dataset.paperTitle) errors.push(`dataset ${dataset.id}: paperTitle is required`);
   if (!https(dataset.homepage)) errors.push(`dataset ${dataset.id}: homepage must use https`);
   for (const field of ['paper','code']) if (dataset[field] && !https(dataset[field])) errors.push(`dataset ${dataset.id}: ${field} must use https`);
 }
 for (const benchmark of benchmarks) {
   if (!benchmark.primaryMetric || typeof benchmark.higherIsBetter !== 'boolean') errors.push(`benchmark ${benchmark.id}: metric metadata required`);
+  if (!benchmarkCategories.has(benchmark.category)) errors.push(`benchmark ${benchmark.id}: invalid category`);
   if (!https(benchmark.homepage)) errors.push(`benchmark ${benchmark.id}: homepage must use https`);
 }
 function checkEntry(entry, source) {

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T16:19:33.966Z",
+  "updatedAt": "2026-09-24T05:15:13.521Z",
   "repositories": {
     "adept-thu/MomAD": {
       "stars": 450,
@@ -352,6 +352,11 @@
     "SunZhigang7/DiffSemanticFusion_MaplessQCNet": {
       "stars": 56,
       "url": "https://github.com/SunZhigang7/DiffSemanticFusion_MaplessQCNet",
+      "checkedAt": "2026-09-24"
+    },
+    "zihaosheng/ExploreVLA": {
+      "stars": 29,
+      "url": "https://github.com/zihaosheng/ExploreVLA",
       "checkedAt": "2026-09-24"
     }
   }

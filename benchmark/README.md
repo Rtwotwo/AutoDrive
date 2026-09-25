@@ -2,6 +2,15 @@
 
 This directory defines the submission format for the AutoDrive Research Hub leaderboard. The platform aggregates results from public benchmarks without converting incompatible protocols into a single score.
 
+## Benchmark Categories
+
+The catalog in `data/benchmarks.json` is organized into four groups so that results can be read in the context of their evaluation protocol:
+
+- **Closed-Loop Planning:** Bench2Drive, nuPlan, and CARLA Leaderboard 2.0 evaluate interactive or reactive driving in simulation.
+- **Open-Loop and Non-Reactive Planning:** NAVSIM and nuScenes Planning use log-based or non-reactive evaluation; interpret their scores separately from interactive closed-loop results.
+- **VLA and Driving Reasoning:** DriveLM and Reason2Drive evaluate language-grounded scene understanding and reasoning.
+- **Reliability and Robustness:** DriveBench evaluates driving VLM behavior under varied and degraded inputs.
+
 ## Submission Contents
 
 Copy `submissions/example.json` and rename it to the entry's unique `id`. A submission must include:
@@ -41,4 +50,3 @@ Copy `submissions/example.json` and rename it to the entry's unique `id`. A subm
 ## Scientific Scope
 
 A leaderboard result describes performance under one public protocol. Open-loop trajectory errors do not replace closed-loop safety evaluation, and simulation results do not directly establish real-world deployment performance.
-
