@@ -267,7 +267,20 @@ for (const entry of rawEntries) {
   });
 }
 
-const trackOrder = { e2e: 0, vla: 1, 'world-model': 2 };
+// Preserve the manually curated RSI reading list even when those papers are
+// not present in the Zotero export yet.
+const normalizeTitle = (value = '') => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+for (const paper of existingPapers.filter((item) => item.track === 'rsi')) {
+  const imported = papers.find((item) => item.id === paper.id || normalizeTitle(item.title) === normalizeTitle(paper.title));
+  if (imported) {
+    const zoteroKey = imported.zoteroKey;
+    Object.assign(imported, paper, { zoteroKey });
+  } else {
+    papers.push(paper);
+  }
+}
+
+const trackOrder = { e2e: 0, vla: 1, 'world-model': 2, rsi: 3 };
 papers.sort((a, b) =>
   trackOrder[a.track] - trackOrder[b.track]
   || b.published.localeCompare(a.published)
@@ -282,7 +295,8 @@ console.log(`Imported ${papers.length} unique papers from ${rawEntries.length} Z
 for (const [track, title] of Object.entries({
   e2e: 'End-to-End Autonomous Driving',
   vla: 'Vision-Language-Action Models',
-  'world-model': 'Driving World Models'
+  'world-model': 'Driving World Models',
+  rsi: 'Recursive Self-Improvement for Autonomous Driving'
 })) {
   console.log(`${title}: ${papers.filter((paper) => paper.track === track).length}`);
 }

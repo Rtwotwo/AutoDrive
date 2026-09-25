@@ -44,7 +44,7 @@ function renderMetrics() {
 }
 
 function paperCard(paper) {
-  const trackLabel = { e2e: 'END-TO-END', 'world-model': 'WORLD MODEL', vla: 'VLA' }[paper.track];
+  const trackLabel = { e2e: 'END-TO-END', 'world-model': 'WORLD MODEL', vla: 'VLA', rsi: 'RSI' }[paper.track];
   const stars = Number.isInteger(paper.stars) ? new Intl.NumberFormat('en-US').format(paper.stars) : '—';
   const sourceStatus = paper.openSource ? `OPEN SOURCE · ★ ${stars}` : 'NO PUBLIC CODE';
   const links = [
@@ -53,7 +53,7 @@ function paperCard(paper) {
     paper.project ? `<a href="${paper.project}" title="Project page" aria-label="Project page" target="_blank" rel="noopener">🌐</a>` : ''
   ].filter(Boolean).join('');
   return `<article class="paper-card" data-track="${paper.track}">
-    <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.published}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
+    <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.year}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
     <h3>${paper.name}</h3><p class="paper-title">${paper.title}</p>
     <div class="tag-list">${paper.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
     <div class="paper-footer"><span class="source-status ${paper.openSource ? 'available' : ''}">${sourceStatus}</span><div>${links}</div></div>

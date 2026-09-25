@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Research tracker and public benchmark hub for end-to-end driving, world models, and vision-language-action models">
+  <meta name="description" content="Research tracker and public benchmark hub for end-to-end driving, world models, VLA, and recursive self-improvement">
   <title>AutoDrive Research Hub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
     <section class="section shell" id="landscape">
       <div class="section-heading">
         <div><span class="section-index">01</span><p class="kicker">RESEARCH LANDSCAPE</p></div>
-        <h2>Three research tracks.<br>One evidence-based hub.</h2>
+        <h2>Four research tracks.<br>One evidence-based hub.</h2>
       </div>
       <div class="track-grid">
         <article class="track-card e2e">
@@ -67,6 +67,11 @@
           <h3>Vision · Language · Action</h3><p>Unify visual understanding, language reasoning, and driving actions for long-tail scenarios, interaction, and interpretable decisions.</p>
           <div class="track-tags"><span>VLM</span><span>Reasoning</span><span>Action</span></div>
         </article>
+        <article class="track-card rsi">
+          <span class="track-number">04</span><div class="track-icon">↻</div>
+          <h3>Recursive Self-Improvement</h3><p>Study driving policies and agents that improve through repeated feedback, safe learning, real-world experience, and evolving scenarios.</p>
+          <div class="track-tags"><span>Self-Evolving</span><span>Safe RL</span><span>Feedback</span></div>
+        </article>
       </div>
     </section>
 
@@ -82,6 +87,7 @@
             <button class="filter" data-track="e2e">End-to-End</button>
             <button class="filter" data-track="world-model">World Model</button>
             <button class="filter" data-track="vla">VLA</button>
+            <button class="filter" data-track="rsi">RSI</button>
           </div>
           <label class="search"><span>⌕</span><input id="paperSearch" type="search" placeholder="Search methods, titles, tags…" autocomplete="off"></label>
         </div>

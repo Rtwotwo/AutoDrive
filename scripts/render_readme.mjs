@@ -11,7 +11,8 @@ const [papers, datasets, benchmarks] = await Promise.all([
 const tracks = [
   ['e2e', 'End-to-End Autonomous Driving'],
   ['vla', 'Vision-Language-Action Models'],
-  ['world-model', 'Driving World Models']
+  ['world-model', 'Driving World Models'],
+  ['rsi', 'Recursive Self-Improvement for Autonomous Driving']
 ];
 const datasetCategories = [
   'Perception and Multimodal Understanding',
@@ -68,7 +69,7 @@ const resources = (item) => [
 ].filter((value) => value !== dash).join(' ');
 
 let readme = '# Awesome Autonomous Driving Research\n\n';
-readme += `A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, public datasets, and reproducible evaluation. The catalog currently contains **${papers.length} papers** across three research tracks.\n\n`;
+readme += `A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, recursive self-improvement, public datasets, and reproducible evaluation. The catalog currently contains **${papers.length} papers** across four research tracks.\n\n`;
 const reviewDate = new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10);
 readme += `Last updated: ${reviewDate}. Verify paper metadata against the latest arXiv or publisher version before citation.\n\n`;
 readme += '## Table of Contents\n\n- [Papers](#papers)\n';
@@ -78,6 +79,7 @@ for (const category of datasetCategories) readme = readme.replace('- [Public Eva
 for (const category of benchmarkCategories) readme = readme.replace('- [Leaderboard]', `  - [${category}](#${anchor(category)})\n- [Leaderboard]`);
 readme += '## Papers\n\n';
 readme += 'Tags were checked against paper titles, abstracts, and method descriptions. GitHub star badges link to author/team implementations verified against the paper or an official project page. **Code pending** marks an official repository that announces a future release; a dash means no released author/team implementation was found after searching. Star counts are live.\n\n';
+readme += 'The RSI track groups autonomous-driving research with an explicit iterative improvement loop. Papers may describe this as self-improving, self-evolving, safe online learning, or agentic evolution; inclusion does not imply that a fully general recursively self-modifying system has been demonstrated.\n\n';
 
 for (const [track, title] of tracks) {
   const trackPapers = papers.filter((item) => item.track === track);

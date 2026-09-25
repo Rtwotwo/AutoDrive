@@ -34,7 +34,7 @@ function unique(items, label) {
 unique(papers, 'papers'); unique(datasets, 'datasets'); unique(benchmarks, 'benchmarks'); unique(leaderboard, 'leaderboard');
 const benchmarkIds = new Set(benchmarks.map((item) => item.id));
 for (const paper of papers) {
-  if (!['e2e','world-model','vla'].includes(paper.track)) errors.push(`paper ${paper.id}: invalid track`);
+  if (!['e2e','world-model','vla','rsi'].includes(paper.track)) errors.push(`paper ${paper.id}: invalid track`);
   if ('category' in paper) errors.push(`paper ${paper.id}: subcategory field is not allowed`);
   if (!Number.isInteger(paper.year) || paper.year < 1980 || paper.year > 2100) errors.push(`paper ${paper.id}: invalid year`);
   if (!/^\d{4}(?:-\d{2})?$/.test(paper.published || '')) errors.push(`paper ${paper.id}: invalid published date`);
@@ -47,7 +47,7 @@ for (const paper of papers) {
   // snapshot may be null when a repository has not yet been cached.
   for (const field of ['paper','code','project']) if (paper[field] && !https(paper[field])) errors.push(`paper ${paper.id}: ${field} must use https`);
 }
-for (const track of ['e2e','vla','world-model']) {
+for (const track of ['e2e','vla','world-model','rsi']) {
   const items = papers.filter((paper) => paper.track === track);
   for (let index = 1; index < items.length; index += 1) {
     if (items[index].published > items[index - 1].published) errors.push(`${track}: papers must be sorted newest first`);

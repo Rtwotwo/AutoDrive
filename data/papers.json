@@ -485,7 +485,7 @@
     "title": "LAP: Fast LAtent Diffusion Planner for Autonomous Driving",
     "track": "e2e",
     "year": 2025,
-    "published": "2025-11",
+    "published": "2025-12",
     "venue": "2025",
     "tags": [
       "Latent-Space Diffusion",
@@ -817,7 +817,7 @@
     "title": "GaussianFusion: Gaussian-Based Multi-Sensor Fusion for End-to-End Autonomous Driving",
     "track": "e2e",
     "year": 2025,
-    "published": "2025-05",
+    "published": "2025-06",
     "venue": "NEURIPS 2025",
     "tags": [
       "Multi-Sensor Fusion",
@@ -1228,7 +1228,7 @@
     "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
     "track": "vla",
     "year": 2026,
-    "published": "2026-08",
+    "published": "2026-09",
     "venue": "2026",
     "tags": [
       "Vision-Language Foundation Model",
@@ -1343,6 +1343,26 @@
     "zoteroKey": "huang_deft-rlvr_2026",
     "code": "https://github.com/hzx122/DEFT-RLVR",
     "codeStatus": "released"
+  },
+  {
+    "id": "bassole-hybriddrivevla-2026",
+    "name": "HybridDriveVLA",
+    "title": "HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving",
+    "track": "vla",
+    "year": 2026,
+    "published": "2026-08",
+    "venue": "2026",
+    "tags": [
+      "Visual Chain-of-Thought",
+      "Waypoint Evaluation",
+      "Safety and Comfort"
+    ],
+    "datasets": [],
+    "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
+    "openSource": false,
+    "stars": null,
+    "zoteroKey": "bassole_hybriddrivevla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2607-14727",
@@ -1942,26 +1962,6 @@
     "codeStatus": "not-found"
   },
   {
-    "id": "bassole-hybriddrivevla-2026",
-    "name": "HybridDriveVLA",
-    "title": "HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving",
-    "track": "vla",
-    "year": 2026,
-    "published": "2026",
-    "venue": "2026",
-    "tags": [
-      "Visual Chain-of-Thought",
-      "Waypoint Evaluation",
-      "Safety and Comfort"
-    ],
-    "datasets": [],
-    "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
-    "openSource": false,
-    "stars": null,
-    "zoteroKey": "bassole_hybriddrivevla_2026",
-    "codeStatus": "not-found"
-  },
-  {
     "id": "2512-22939",
     "name": "ColaVLA",
     "title": "ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving",
@@ -2052,7 +2052,7 @@
     "title": "Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail",
     "track": "vla",
     "year": 2025,
-    "published": "2025-10",
+    "published": "2025-11",
     "venue": "2025",
     "tags": [
       "Causal Reasoning",
@@ -2074,7 +2074,7 @@
     "title": "World Simulation with Video Foundation Models for Physical AI",
     "track": "vla",
     "year": 2025,
-    "published": "2025-10",
+    "published": "2025-11",
     "venue": "2025",
     "tags": [
       "World Foundation Model",
@@ -3555,5 +3555,218 @@
     "stars": 587,
     "zoteroKey": "zheng_occworld_2023",
     "codeStatus": "released"
+  },
+  {
+    "id": "self-improving-autonomous-vehicles-real-world-rl-2026",
+    "name": "Self-Improving Autonomous Vehicles",
+    "title": "Self-Improving Autonomous Vehicles via Real-World Reinforcement Learning",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-08",
+    "venue": "IJCAI 2026",
+    "tags": [
+      "Real-World Reinforcement Learning",
+      "Informative Scenario Collection",
+      "Safety-Aware Exploration"
+    ],
+    "datasets": [],
+    "paper": "https://www.ijcai.org/proceedings/2026/493",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2606-03678",
+    "name": "EvoDrive",
+    "title": "EvoDrive: Pareto Evolution for Safety-Critical Autonomous Driving via Self-Improving LLM Agents",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-06",
+    "venue": "arXiv 2026",
+    "tags": [
+      "Agentic Evolution",
+      "Safety-Critical Scenario Generation",
+      "Pareto Optimization"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2606.03678",
+    "code": "https://github.com/tongnie/EvoDrive",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "pending"
+  },
+  {
+    "id": "agentic-ai-driving-skillbank-2026",
+    "name": "Agentic AI + SkillBank",
+    "title": "Agentic AI in Autonomous Driving: LLM-Enhanced RL with Reusable Skills and Adaptive Exploration for Enhanced Safety",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-03",
+    "venue": "ICAART 2026",
+    "tags": [
+      "LLM-Guided Reinforcement Learning",
+      "Reusable Driving Skills",
+      "Continual Self-Improvement"
+    ],
+    "datasets": [],
+    "paper": "https://doi.org/10.5220/0014358100004052",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "uncertainty-safe-evolving-rl-2025",
+    "name": "Safe-Evolving RL",
+    "title": "An Uncertainty-Aware Safe-Evolving Reinforcement Learning Algorithm for Decision-Making and Control in Highway Autonomous Driving",
+    "track": "rsi",
+    "year": 2025,
+    "published": "2025-12",
+    "venue": "Eng. Appl. Artif. Intell. 2025",
+    "tags": [
+      "Safe Online Reinforcement Learning",
+      "Policy Improvement Stability",
+      "Uncertainty-Aware Control"
+    ],
+    "datasets": [],
+    "paper": "https://doi.org/10.1016/j.engappai.2025.112108",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "2408-12187",
+    "name": "Mechanism-Experience Learning",
+    "title": "A Safe and Efficient Self-Evolving Algorithm for Decision-Making and Control of Autonomous Driving Systems",
+    "track": "rsi",
+    "year": 2025,
+    "published": "2025-08",
+    "venue": "IEEE T-ITS 2025",
+    "tags": [
+      "Self-Evolving Driving Policy",
+      "Mechanism-Experience Learning",
+      "Safety-Constrained Optimization"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2408.12187",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "expert-agent-positive-feedback-2025",
+    "name": "Expert-Agent Feedback",
+    "title": "Integrating Expert-Agent Bi-Directional Positive Feedback for Autonomous Driving Through Reinforcement Learning",
+    "track": "rsi",
+    "year": 2025,
+    "published": "2025-07",
+    "venue": "Intelligent Transportation Engineering 2025",
+    "tags": [
+      "Expert-Agent Co-Evolution",
+      "Online Interaction Data",
+      "Reinforcement Learning"
+    ],
+    "datasets": [],
+    "paper": "https://doi.org/10.3233/ATDE250441",
+    "code": "https://github.com/giant-ape/expert-against-rl",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2408-12805",
+    "name": "Safe Self-Evolution with Risk Quantification",
+    "title": "A Safe Self-Evolution Algorithm for Autonomous Driving Based on Data-Driven Risk Quantification Model",
+    "track": "rsi",
+    "year": 2025,
+    "published": "2025-05",
+    "venue": "Accid. Anal. Prev. 2025",
+    "tags": [
+      "Risk-Aware Self-Evolution",
+      "Safe Driving Policy",
+      "Simulation and Real-Vehicle Testing"
+    ],
+    "datasets": [],
+    "paper": "https://doi.org/10.1016/j.aap.2025.107941",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "human-feedback-self-evolving-driving-2024",
+    "name": "Human Feedback for Intelligent Driving",
+    "title": "Human Feedback Enhanced Autonomous Intelligent Systems: A Perspective from Intelligent Driving",
+    "track": "rsi",
+    "year": 2024,
+    "published": "2024-06",
+    "venue": "Autonomous Intelligent Systems 2024",
+    "tags": [
+      "Human Feedback",
+      "Self-Evolving Intelligent Driving",
+      "Interactive Reinforcement Learning"
+    ],
+    "datasets": [],
+    "paper": "https://doi.org/10.1007/s43684-024-00071-z",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
+    "id": "dcar-l-dynamic-confidence-2023",
+    "name": "DCARL",
+    "title": "Continuous Improvement of Self-Driving Cars Using Dynamic Confidence-Aware Reinforcement Learning",
+    "track": "rsi",
+    "year": 2023,
+    "published": "2023-02",
+    "venue": "Nat. Mach. Intell. 2023",
+    "tags": [
+      "Confidence-Aware Reinforcement Learning",
+      "Continuous Policy Improvement",
+      "Real-World Driving"
+    ],
+    "datasets": [],
+    "paper": "https://doi.org/10.1038/s42256-023-00610-y",
+    "code": "https://github.com/dcarl-opensource/DCARL",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "2210-16575",
+    "name": "Self-Improving Safety RL",
+    "title": "Self-Improving Safety Performance of Reinforcement Learning Based Driving with Black-Box Verification Algorithms",
+    "track": "rsi",
+    "year": 2022,
+    "published": "2022-10",
+    "venue": "arXiv 2022",
+    "tags": [
+      "Black-Box Verification",
+      "Failure-Driven Policy Updates",
+      "Safety-Critical Scenarios"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2210.16575",
+    "code": "https://github.com/data-and-decision-lab/self-improving-RL",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
+    "id": "trustworthy-safety-improvement-rl-2022",
+    "name": "Trustworthy Improvement RL",
+    "title": "Trustworthy Safety Improvement for Autonomous Driving Using Reinforcement Learning",
+    "track": "rsi",
+    "year": 2022,
+    "published": "2022-05",
+    "venue": "Transp. Res. Part C 2022",
+    "tags": [
+      "Trustworthy Reinforcement Learning",
+      "Baseline-Guarded Improvement",
+      "Highway Safety"
+    ],
+    "datasets": [],
+    "paper": "https://doi.org/10.1016/j.trc.2022.103656",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
   }
 ]
