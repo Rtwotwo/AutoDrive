@@ -1,8 +1,8 @@
 # Awesome Autonomous Driving Research
 
-A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, recursive self-improvement, public datasets, and reproducible evaluation. The catalog currently contains **217 papers** across four research tracks.
+A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, recursive self-improvement, public datasets, and reproducible evaluation. The catalog currently contains **227 papers** across four research tracks.
 
-Last updated: 2026-09-26. Verify paper metadata against the latest arXiv or publisher version before citation.
+Last updated: 2026-09-29. Verify paper metadata against the latest arXiv or publisher version before citation.
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ The RSI track groups autonomous-driving research with an explicit iterative impr
 
 ### End-to-End Autonomous Driving
 
-_67 papers; 48 with a verified public code link._
+_69 papers; 49 with a verified public code link._
 
 <details open>
 <summary>2026</summary>
@@ -39,6 +39,8 @@ _67 papers; 48 with a verified public code link._
 | 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
 |---|---|---|---|---|---|
 | **Driving on Registers, Reasoning on Risk**<br><sub>Driving on Registers, Reasoning on Risk: Risk-Aware Occupancy for Register-Based End-to-End Autonomous Driving</sub> | 2026 | `Occupancy Representation` · `Token Representation` · `Risk-Aware Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2609.21486-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.21486) | — | — |
+| **AD-Diff Bench**<br><sub>Understanding Autonomous Driving Datasets by Describing Differences between Image Subsets in Natural Language</sub> | 2026 | `Dataset Understanding` · `Benchmark` · `Domain Shift` | [![arXiv](https://img.shields.io/badge/arXiv-2609.03677-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.03677) | [![GitHub stars](https://img.shields.io/github/stars/KIT-MRT/AD-Diff?style=social)](https://github.com/KIT-MRT/AD-Diff) | — |
+| **CrashDiffuser**<br><sub>CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation</sub> | 2026 | `Scenario Generation` · `VLM-Guided Reasoning` · `Safety Evaluation` | [![arXiv](https://img.shields.io/badge/arXiv-2609.02270-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.02270) | — | — |
 | **PriorEye**<br><sub>PriorEye: Geospatial Visual Priors for End-to-End Autonomous Driving</sub> | ECCV 2026 | `Geospatial Priors` · `Anticipatory Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2606.31830-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.31830) | [![GitHub stars](https://img.shields.io/github/stars/ori-mrg/PriorEye?style=social)](https://github.com/ori-mrg/PriorEye) | [🌐](https://ori-mrg.github.io/PriorEye "Official project page") |
 | **World Engine**<br><sub>World Engine: Towards the Era of Post-Training for Autonomous Driving</sub> | 2026 | `Post-Training` · `Interactive Simulation` · `Long-Tail Safety` | [![arXiv](https://img.shields.io/badge/arXiv-2606.19836-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.19836) | [![GitHub stars](https://img.shields.io/github/stars/OpenDriveLab/WorldEngine?style=social)](https://github.com/OpenDriveLab/WorldEngine) | [🌐](https://opendrivelab.com/WorldEngine/ "Official project page") |
 | **Gigapixel**<br><sub>Scaling Self-Play for End-to-End Driving</sub> | 2026 | `Self-Play` · `Closed-Loop Reinforcement Learning` | [![arXiv](https://img.shields.io/badge/arXiv-2606.19641-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.19641) | [![Code pending](https://img.shields.io/badge/Code-pending-d99b00?logo=github&style=flat-square)](https://github.com/montrealrobotics/gigapixel) [![GitHub stars](https://img.shields.io/github/stars/montrealrobotics/gigapixel?style=social)](https://github.com/montrealrobotics/gigapixel) | — |
@@ -158,20 +160,22 @@ _67 papers; 48 with a verified public code link._
 
 ### Vision-Language-Action Models
 
-_69 papers; 47 with a verified public code link._
+_71 papers; 47 with a verified public code link._
 
 <details open>
 <summary>2026</summary>
 
 | 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
 |---|---|---|---|---|---|
+| **iDriveVLA**<br><sub>Evaluation Is All You Need for Multi-Modal Autonomous Driving</sub> | 2026 | `Multi-Modal Planning` · `Trajectory Scoring` · `VLM Guidance` | [![arXiv](https://img.shields.io/badge/arXiv-2609.30818-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.30818) | — | — |
+| **Run-then-Walk**<br><sub>Sometimes You Gotta Run Before You Can Walk: Run-then-Walk Scheduling Strategy for VLM Autonomous Driving</sub> | 2026 | `VLM Planning` · `Reinforcement Learning` · `Safety` | [![arXiv](https://img.shields.io/badge/arXiv-2609.25831-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.25831) | — | — |
 | **Qwen-Drive-1.0**<br><sub>Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving</sub> | 2026 | `Vision-Language Foundation Model` · `3D Perception` · `Joint Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2609.00111-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.00111) | [![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen-Drive-1.0?style=social)](https://github.com/QwenLM/Qwen-Drive-1.0) | — |
+| **HybridDriveVLA**<br><sub>HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving</sub> | 2026 | `Visual Chain-of-Thought` · `Waypoint Evaluation` · `Safety and Comfort` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html) | — | — |
 | **Plug-and-Play**<br><sub>Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving</sub> | 2026 | `Traffic Element Conditioning` · `End-to-End Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2608.18035-b31b1b?style=flat-square)](https://arxiv.org/abs/2608.18035) | [![GitHub stars](https://img.shields.io/github/stars/ZZongzheng0918/TE-Aware-E2E-AD?style=social)](https://github.com/ZZongzheng0918/TE-Aware-E2E-AD) | — |
 | **BrainWAM**<br><sub>BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving</sub> | 2026 | `VLA-WAM Integration` · `Predictive Dynamics` · `Joint Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2608.12854-b31b1b?style=flat-square)](https://arxiv.org/abs/2608.12854) | — | — |
 | **DriveVLA-M0**<br><sub>DriveVLA-M0: Failure-Aware Memory Augmentation for Autonomous Driving</sub> | 2026 | `Failure Memory` · `Retrieval Augmentation` · `Distribution Shift` | [![arXiv](https://img.shields.io/badge/arXiv-2608.10413-b31b1b?style=flat-square)](https://arxiv.org/abs/2608.10413) | [![GitHub stars](https://img.shields.io/github/stars/ZebinX/DriveVLA-M0?style=social)](https://github.com/ZebinX/DriveVLA-M0) | — |
 | **FactorDrive**<br><sub>FactorDrive: Adaptive Multi-Step Reasoning Driven by Planning-Critical Factors for End-to-End Autonomous Driving</sub> | 2026 | `Spatial Reasoning` · `Reasoning Optimization` · `Trajectory Planning` | [![arXiv](https://img.shields.io/badge/arXiv-2608.09591-b31b1b?style=flat-square)](https://arxiv.org/abs/2608.09591) | — | — |
 | **DEFT-RLVR**<br><sub>Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs</sub> | 2026 | `Reinforcement Learning with Verifiable Rewards` · `Reasoning Supervision` | [![arXiv](https://img.shields.io/badge/arXiv-2608.01755-b31b1b?style=flat-square)](https://arxiv.org/abs/2608.01755) | [![GitHub stars](https://img.shields.io/github/stars/hzx122/DEFT-RLVR?style=social)](https://github.com/hzx122/DEFT-RLVR) | — |
-| **HybridDriveVLA**<br><sub>HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving</sub> | 2026 | `Visual Chain-of-Thought` · `Waypoint Evaluation` · `Safety and Comfort` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html) | — | — |
 | **WorkDrive**<br><sub>WorkDrive: Roadwork Chain of Causation for Autonomous Driving</sub> | 2026 | `Work-Zone Reasoning` · `VLM Planning` · `Robustness` | [![arXiv](https://img.shields.io/badge/arXiv-2607.14727-b31b1b?style=flat-square)](https://arxiv.org/abs/2607.14727) | — | — |
 | **Post-Training Survey**<br><sub>Post-Training in End-to-End Autonomous Driving</sub> | 2026 | `Survey` · `Post-Training` · `Policy Optimization` | [![arXiv](https://img.shields.io/badge/arXiv-2607.08072-b31b1b?style=flat-square)](https://arxiv.org/abs/2607.08072) | — | [🌐](https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers "Official project page") |
 | **LingBot-VLA 2.0**<br><sub>From Foundation to Application: Improving VLA Models in Practice</sub> | 2026 | `Generalist VLA` · `Data Scaling` · `Real-World Deployment` | [![arXiv](https://img.shields.io/badge/arXiv-2607.06403-b31b1b?style=flat-square)](https://arxiv.org/abs/2607.06403) | [![GitHub stars](https://img.shields.io/github/stars/robbyant/lingbot-vla-v2?style=social)](https://github.com/robbyant/lingbot-vla-v2) | [🌐](https://technology.robbyant.com/lingbot-vla-v2 "Official project page") |
@@ -271,13 +275,14 @@ _69 papers; 47 with a verified public code link._
 
 ### Driving World Models
 
-_70 papers; 42 with a verified public code link._
+_71 papers; 42 with a verified public code link._
 
 <details open>
 <summary>2026</summary>
 
 | 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
 |---|---|---|---|---|---|
+| **DreamStream**<br><sub>DreamStream: Towards Policy-Oriented Generative Simulation for End-to-End Driving</sub> | CoRL 2026 | `Generative Simulation` · `Closed-Loop Evaluation` · `Policy-Oriented Fidelity` | [![arXiv](https://img.shields.io/badge/arXiv-2609.26792-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.26792) | [![Code pending](https://img.shields.io/badge/Code-pending-d99b00?logo=github&style=flat-square)](https://github.com/VAIL-UCLA/DreamStream) [![GitHub stars](https://img.shields.io/github/stars/VAIL-UCLA/DreamStream?style=social)](https://github.com/VAIL-UCLA/DreamStream) | [🌐](https://vail-ucla.github.io/DreamStream/ "Official project page") |
 | **ZYT-World**<br><sub>ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation</sub> | 2026 | `Driving World Model` · `Controllable Simulation` | [![arXiv](https://img.shields.io/badge/arXiv-2609.21712-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.21712) | — | — |
 | **MM-Future**<br><sub>MM-Future: Multi-Mode Joint World-Action Modeling for Autonomous Driving</sub> | 2026 | `Multimodal Future Prediction` · `World Modeling` | [![arXiv](https://img.shields.io/badge/arXiv-2609.20377-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.20377) | — | — |
 | **SV-WAM**<br><sub>SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving</sub> | 2026 | `World-Action Model` · `Semantic Video Representation` | [![arXiv](https://img.shields.io/badge/arXiv-2609.03602-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.03602) | — | — |
@@ -393,16 +398,20 @@ _70 papers; 42 with a verified public code link._
 
 ### Recursive Self-Improvement for Autonomous Driving
 
-_11 papers; 3 with a verified public code link._
+_16 papers; 5 with a verified public code link._
 
 <details open>
 <summary>2026</summary>
 
 | 🧠 **Method** | 🗓️ **Year / Venue** | 🏷️ **Tags** | 📄 **Paper** | 💻 **GitHub** | 🌐 **Project** |
 |---|---|---|---|---|---|
+| **OPTED**<br><sub>OPTED: On-Policy Fine-Tuning for End-to-End Driving using a Render-Free Teacher</sub> | 2026 | `On-Policy Fine-Tuning` · `Privileged Teacher` · `Reinforcement Learning` | [![arXiv](https://img.shields.io/badge/arXiv-2609.20756-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.20756) | — | [🌐](https://01dami23.github.io/opted/ "Official project page") |
 | **Self-Improving Autonomous Vehicles**<br><sub>Self-Improving Autonomous Vehicles via Real-World Reinforcement Learning</sub> | IJCAI 2026 | `Real-World Reinforcement Learning` · `Informative Scenario Collection` · `Safety-Aware Exploration` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://www.ijcai.org/proceedings/2026/493) | — | — |
+| **CL4AD**<br><sub>Scaling Curriculum Learning For Autonomous Driving</sub> | Under review at NeurIPS 2026 | `Curriculum Learning` · `Reinforcement Learning` · `Sample Efficiency` | [![arXiv](https://img.shields.io/badge/arXiv-2608.22549-b31b1b?style=flat-square)](https://arxiv.org/abs/2608.22549) | [![Code](https://img.shields.io/badge/Code-Open-source-181717?logo=github&style=flat-square)](https://anonymous.4open.science/r/gpudrive-37D3/README.md) | — |
+| **AlignADV**<br><sub>From Attacks to Curricula: Learnability-Guided Adversarial Training for Safe Autonomous Driving</sub> | 2026 | `Adversarial Training` · `Curriculum Learning` · `Safety` | [![arXiv](https://img.shields.io/badge/arXiv-2606.14032-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.14032) | — | [🌐](https://meiyuewen.github.io/AlignADV/ "Official project page") |
 | **EvoDrive**<br><sub>EvoDrive: Pareto Evolution for Safety-Critical Autonomous Driving via Self-Improving LLM Agents</sub> | arXiv 2026 | `Agentic Evolution` · `Safety-Critical Scenario Generation` · `Pareto Optimization` | [![arXiv](https://img.shields.io/badge/arXiv-2606.03678-b31b1b?style=flat-square)](https://arxiv.org/abs/2606.03678) | [![Code pending](https://img.shields.io/badge/Code-pending-d99b00?logo=github&style=flat-square)](https://github.com/tongnie/EvoDrive) [![GitHub stars](https://img.shields.io/github/stars/tongnie/EvoDrive?style=social)](https://github.com/tongnie/EvoDrive) | — |
 | **Agentic AI + SkillBank**<br><sub>Agentic AI in Autonomous Driving: LLM-Enhanced RL with Reusable Skills and Adaptive Exploration for Enhanced Safety</sub> | ICAART 2026 | `LLM-Guided Reinforcement Learning` · `Reusable Driving Skills` · `Continual Self-Improvement` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://doi.org/10.5220/0014358100004052) | — | — |
+| **Dense Learning**<br><sub>Breaking through safety performance stagnation in autonomous vehicles with dense learning</sub> | Nature Communications 2026 | `Dense Reinforcement Learning` · `Safety-Critical Learning` · `Real-World Testing` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://www.nature.com/articles/s41467-026-69761-x) | [![GitHub stars](https://img.shields.io/github/stars/michigan-traffic-lab/Dense-Learning-for-AV-Training?style=social)](https://github.com/michigan-traffic-lab/Dense-Learning-for-AV-Training) | — |
 
 </details>
 
@@ -415,6 +424,7 @@ _11 papers; 3 with a verified public code link._
 | **Mechanism-Experience Learning**<br><sub>A Safe and Efficient Self-Evolving Algorithm for Decision-Making and Control of Autonomous Driving Systems</sub> | IEEE T-ITS 2025 | `Self-Evolving Driving Policy` · `Mechanism-Experience Learning` · `Safety-Constrained Optimization` | [![arXiv](https://img.shields.io/badge/arXiv-2408.12187-b31b1b?style=flat-square)](https://arxiv.org/abs/2408.12187) | — | — |
 | **Expert-Agent Feedback**<br><sub>Integrating Expert-Agent Bi-Directional Positive Feedback for Autonomous Driving Through Reinforcement Learning</sub> | Intelligent Transportation Engineering 2025 | `Expert-Agent Co-Evolution` · `Online Interaction Data` · `Reinforcement Learning` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://doi.org/10.3233/ATDE250441) | [![GitHub stars](https://img.shields.io/github/stars/giant-ape/expert-against-rl?style=social)](https://github.com/giant-ape/expert-against-rl) | — |
 | **Safe Self-Evolution with Risk Quantification**<br><sub>A Safe Self-Evolution Algorithm for Autonomous Driving Based on Data-Driven Risk Quantification Model</sub> | Accid. Anal. Prev. 2025 | `Risk-Aware Self-Evolution` · `Safe Driving Policy` · `Simulation and Real-Vehicle Testing` | [![Paper](https://img.shields.io/badge/Paper-Open-2457a7?style=flat-square)](https://doi.org/10.1016/j.aap.2025.107941) | — | — |
+| **Gigaflow**<br><sub>Robust Autonomy Emerges from Self-Play</sub> | ICML 2025 | `Self-Play` · `Closed-Loop Reinforcement Learning` · `Large-Scale Simulation` | [![arXiv](https://img.shields.io/badge/arXiv-2502.03349-b31b1b?style=flat-square)](https://arxiv.org/abs/2502.03349) | — | [🌐](https://machinelearning.apple.com/research/robust-autonomy-emerges "Official project page") |
 
 </details>
 

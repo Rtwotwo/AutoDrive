@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T05:15:13.521Z",
+  "updatedAt": "2026-09-29T13:11:11.000Z",
   "repositories": {
     "adept-thu/MomAD": {
       "stars": 450,
@@ -358,6 +358,21 @@
       "stars": 29,
       "url": "https://github.com/zihaosheng/ExploreVLA",
       "checkedAt": "2026-09-24"
+    },
+    "VAIL-UCLA/DreamStream": {
+      "stars": 10,
+      "url": "https://github.com/VAIL-UCLA/DreamStream",
+      "checkedAt": "2026-09-29"
+    },
+    "KIT-MRT/AD-Diff": {
+      "stars": 1,
+      "url": "https://github.com/KIT-MRT/AD-Diff",
+      "checkedAt": "2026-09-29"
+    },
+    "michigan-traffic-lab/Dense-Learning-for-AV-Training": {
+      "stars": 7,
+      "url": "https://github.com/michigan-traffic-lab/Dense-Learning-for-AV-Training",
+      "checkedAt": "2026-09-29"
     }
   }
 }

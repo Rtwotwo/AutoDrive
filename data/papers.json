@@ -20,6 +20,54 @@
     "codeStatus": "not-found"
   },
   {
+    "id": "2609-03677",
+    "name": "AD-Diff Bench",
+    "title": "Understanding Autonomous Driving Datasets by Describing Differences between Image Subsets in Natural Language",
+    "track": "e2e",
+    "year": 2026,
+    "published": "2026-09",
+    "venue": "2026",
+    "tags": [
+      "Dataset Understanding",
+      "Benchmark",
+      "Domain Shift"
+    ],
+    "datasets": [
+      "KITTI",
+      "nuImages",
+      "Waymo Open Perception Dataset"
+    ],
+    "paper": "https://arxiv.org/abs/2609.03677",
+    "code": "https://github.com/KIT-MRT/AD-Diff",
+    "openSource": true,
+    "stars": 1,
+    "codeStatus": "released",
+    "zoteroKey": "truetsch_ad-diff_2026"
+  },
+  {
+    "id": "2609-02270",
+    "name": "CrashDiffuser",
+    "title": "CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation",
+    "track": "e2e",
+    "year": 2026,
+    "published": "2026-09",
+    "venue": "2026",
+    "tags": [
+      "Scenario Generation",
+      "VLM-Guided Reasoning",
+      "Safety Evaluation"
+    ],
+    "datasets": [
+      "Waymo Open Motion Dataset"
+    ],
+    "paper": "https://arxiv.org/abs/2609.02270",
+    "code": null,
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found",
+    "zoteroKey": "zhang_crashdiffuser_2026"
+  },
+  {
     "id": "2606-31830",
     "name": "PriorEye",
     "title": "PriorEye: Geospatial Visual Priors for End-to-End Autonomous Driving",
@@ -1380,6 +1428,55 @@
     "codeStatus": "not-found"
   },
   {
+    "id": "2609-30818",
+    "name": "iDriveVLA",
+    "title": "Evaluation Is All You Need for Multi-Modal Autonomous Driving",
+    "track": "vla",
+    "year": 2026,
+    "published": "2026-09",
+    "venue": "2026",
+    "tags": [
+      "Multi-Modal Planning",
+      "Trajectory Scoring",
+      "VLM Guidance"
+    ],
+    "datasets": [
+      "NAVSIM v1"
+    ],
+    "paper": "https://arxiv.org/abs/2609.30818",
+    "code": null,
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found",
+    "zoteroKey": "he_evaluation_2026"
+  },
+  {
+    "id": "2609-25831",
+    "name": "Run-then-Walk",
+    "title": "Sometimes You Gotta Run Before You Can Walk: Run-then-Walk Scheduling Strategy for VLM Autonomous Driving",
+    "track": "vla",
+    "year": 2026,
+    "published": "2026-09",
+    "venue": "2026",
+    "tags": [
+      "VLM Planning",
+      "Reinforcement Learning",
+      "Safety"
+    ],
+    "datasets": [
+      "NAVSIM v1",
+      "NAVSIM v2",
+      "Navhard",
+      "nuScenes"
+    ],
+    "paper": "https://arxiv.org/abs/2609.25831",
+    "code": null,
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found",
+    "zoteroKey": "ye_run-then-walk_2026"
+  },
+  {
     "id": "2609-00111",
     "name": "Qwen-Drive-1.0",
     "title": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
@@ -1399,6 +1496,26 @@
     "stars": 468,
     "zoteroKey": "zhou_qwen-drive-10_2026",
     "codeStatus": "released"
+  },
+  {
+    "id": "bassole-hybriddrivevla-2026",
+    "name": "HybridDriveVLA",
+    "title": "HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving",
+    "track": "vla",
+    "year": 2026,
+    "published": "2026-08",
+    "venue": "2026",
+    "tags": [
+      "Visual Chain-of-Thought",
+      "Waypoint Evaluation",
+      "Safety and Comfort"
+    ],
+    "datasets": [],
+    "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
+    "openSource": false,
+    "stars": null,
+    "zoteroKey": "bassole_hybriddrivevla_2026",
+    "codeStatus": "not-found"
   },
   {
     "id": "2608-18035",
@@ -1500,26 +1617,6 @@
     "zoteroKey": "huang_deft-rlvr_2026",
     "code": "https://github.com/hzx122/DEFT-RLVR",
     "codeStatus": "released"
-  },
-  {
-    "id": "bassole-hybriddrivevla-2026",
-    "name": "HybridDriveVLA",
-    "title": "HybridDriveVLA: Vision-Language-Action Model with Visual CoT reasoning and ToT Evaluation for Autonomous Driving",
-    "track": "vla",
-    "year": 2026,
-    "published": "2026-08",
-    "venue": "2026",
-    "tags": [
-      "Visual Chain-of-Thought",
-      "Waypoint Evaluation",
-      "Safety and Comfort"
-    ],
-    "datasets": [],
-    "paper": "https://openaccess.thecvf.com/content/CVPR2026/html/Bassole_HybridDriveVLA_Vision-Language-Action_Model_with_Visual_CoT_reasoning_and_ToT_Evaluation_CVPR_2026_paper.html",
-    "openSource": false,
-    "stars": null,
-    "zoteroKey": "bassole_hybriddrivevla_2026",
-    "codeStatus": "not-found"
   },
   {
     "id": "2607-14727",
@@ -2556,26 +2653,6 @@
     "codeStatus": "not-found"
   },
   {
-    "id": "2312-09245",
-    "name": "DriveMLM",
-    "title": "DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving",
-    "track": "vla",
-    "year": 2023,
-    "published": "2023-12",
-    "venue": "2023",
-    "tags": [
-      "Multimodal LLM",
-      "Behavior Planning",
-      "Closed-Loop Driving"
-    ],
-    "datasets": [],
-    "paper": "https://arxiv.org/abs/2312.09245",
-    "code": "https://github.com/OpenGVLab/DriveMLM",
-    "openSource": false,
-    "stars": null,
-    "codeStatus": "pending"
-  },
-  {
     "id": "2312-14150",
     "name": "DriveLM",
     "title": "DriveLM: Driving with Graph Visual Question Answering",
@@ -2595,6 +2672,26 @@
     "openSource": true,
     "stars": null,
     "codeStatus": "released"
+  },
+  {
+    "id": "2312-09245",
+    "name": "DriveMLM",
+    "title": "DriveMLM: Aligning Multi-Modal Large Language Models with Behavioral Planning States for Autonomous Driving",
+    "track": "vla",
+    "year": 2023,
+    "published": "2023-12",
+    "venue": "2023",
+    "tags": [
+      "Multimodal LLM",
+      "Behavior Planning",
+      "Closed-Loop Driving"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2312.09245",
+    "code": "https://github.com/OpenGVLab/DriveMLM",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "pending"
   },
   {
     "id": "2312-07488",
@@ -2678,6 +2775,26 @@
     "codeStatus": "not-found"
   },
   {
+    "id": "2310-01957",
+    "name": "LLM-Driver",
+    "title": "Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving",
+    "track": "vla",
+    "year": 2024,
+    "published": "2023-10",
+    "venue": "ICRA 2024",
+    "tags": [
+      "Large Language Models",
+      "Vectorized Scene Inputs",
+      "Explainable Driving"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2310.01957",
+    "code": "https://github.com/wayveai/Driving-with-LLMs",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released"
+  },
+  {
     "id": "2310-01415",
     "name": "GPT-Driver",
     "title": "GPT-Driver: Learning to Drive with GPT",
@@ -2694,26 +2811,6 @@
     "paper": "https://arxiv.org/abs/2310.01415",
     "code": "https://github.com/PointsCoder/GPT-Driver",
     "project": "https://pointscoder.github.io/projects/gpt_driver/index.html",
-    "openSource": true,
-    "stars": null,
-    "codeStatus": "released"
-  },
-  {
-    "id": "2310-01957",
-    "name": "LLM-Driver",
-    "title": "Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving",
-    "track": "vla",
-    "year": 2024,
-    "published": "2023-10",
-    "venue": "ICRA 2024",
-    "tags": [
-      "Large Language Models",
-      "Vectorized Scene Inputs",
-      "Explainable Driving"
-    ],
-    "datasets": [],
-    "paper": "https://arxiv.org/abs/2310.01957",
-    "code": "https://github.com/wayveai/Driving-with-LLMs",
     "openSource": true,
     "stars": null,
     "codeStatus": "released"
@@ -2740,25 +2837,6 @@
     "code": "https://cloud.tsinghua.edu.cn/d/adbc8fa3a2fc420ca7bc/"
   },
   {
-    "id": "2309-10228",
-    "name": "Drive as You Speak",
-    "title": "Drive as You Speak: Enabling Human-Like Interaction with Large Language Models in Autonomous Vehicles",
-    "track": "vla",
-    "year": 2023,
-    "published": "2023-09",
-    "venue": "2023",
-    "tags": [
-      "Large Language Models",
-      "Human-Vehicle Interaction",
-      "Decision Making"
-    ],
-    "datasets": [],
-    "paper": "https://arxiv.org/abs/2309.10228",
-    "openSource": false,
-    "stars": null,
-    "codeStatus": "not-found"
-  },
-  {
     "id": "2309-16292",
     "name": "DiLu",
     "title": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
@@ -2780,6 +2858,25 @@
     "codeStatus": "released"
   },
   {
+    "id": "2309-10228",
+    "name": "Drive as You Speak",
+    "title": "Drive as You Speak: Enabling Human-Like Interaction with Large Language Models in Autonomous Vehicles",
+    "track": "vla",
+    "year": 2023,
+    "published": "2023-09",
+    "venue": "2023",
+    "tags": [
+      "Large Language Models",
+      "Human-Vehicle Interaction",
+      "Decision Making"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2309.10228",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found"
+  },
+  {
     "id": "2210-12511",
     "name": "DOROTHIE",
     "title": "DOROTHIE: Spoken Dialogue for Handling Unexpected Situations in Interactive Autonomous Driving Agents",
@@ -2799,6 +2896,31 @@
     "openSource": true,
     "stars": null,
     "codeStatus": "released"
+  },
+  {
+    "id": "2609-26792",
+    "name": "DreamStream",
+    "title": "DreamStream: Towards Policy-Oriented Generative Simulation for End-to-End Driving",
+    "track": "world-model",
+    "year": 2026,
+    "published": "2026-09",
+    "venue": "CoRL 2026",
+    "tags": [
+      "Generative Simulation",
+      "Closed-Loop Evaluation",
+      "Policy-Oriented Fidelity"
+    ],
+    "datasets": [
+      "nuScenes",
+      "NAVSIM"
+    ],
+    "paper": "https://arxiv.org/abs/2609.26792",
+    "code": "https://github.com/VAIL-UCLA/DreamStream",
+    "openSource": false,
+    "stars": 10,
+    "codeStatus": "pending",
+    "project": "https://vail-ucla.github.io/DreamStream/",
+    "zoteroKey": "leng_dreamstream_2026"
   },
   {
     "id": "2609-21712",
@@ -4057,6 +4179,27 @@
     "codeStatus": "released"
   },
   {
+    "id": "2311-17918",
+    "name": "Drive-WM",
+    "title": "Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving",
+    "track": "world-model",
+    "year": 2024,
+    "published": "2023-11",
+    "venue": "CVPR 2024",
+    "tags": [
+      "Multi-View Forecasting",
+      "Counterfactual Planning",
+      "World Model"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2311.17918",
+    "code": "https://github.com/BraveGroup/Drive-WM",
+    "project": "https://drive-wm.github.io/",
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "pending"
+  },
+  {
     "id": "2311-16038",
     "name": "OccWorld",
     "title": "OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving",
@@ -4095,27 +4238,6 @@
     "openSource": false,
     "stars": null,
     "codeStatus": "not-found"
-  },
-  {
-    "id": "2311-17918",
-    "name": "Drive-WM",
-    "title": "Driving into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving",
-    "track": "world-model",
-    "year": 2024,
-    "published": "2023-11",
-    "venue": "CVPR 2024",
-    "tags": [
-      "Multi-View Forecasting",
-      "Counterfactual Planning",
-      "World Model"
-    ],
-    "datasets": [],
-    "paper": "https://arxiv.org/abs/2311.17918",
-    "code": "https://github.com/BraveGroup/Drive-WM",
-    "project": "https://drive-wm.github.io/",
-    "openSource": false,
-    "stars": null,
-    "codeStatus": "pending"
   },
   {
     "id": "2310-07771",
@@ -4238,6 +4360,28 @@
     "codeStatus": "released"
   },
   {
+    "id": "2609-20756",
+    "name": "OPTED",
+    "title": "OPTED: On-Policy Fine-Tuning for End-to-End Driving using a Render-Free Teacher",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-09",
+    "venue": "2026",
+    "tags": [
+      "On-Policy Fine-Tuning",
+      "Privileged Teacher",
+      "Reinforcement Learning"
+    ],
+    "datasets": [],
+    "paper": "https://arxiv.org/abs/2609.20756",
+    "code": null,
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found",
+    "project": "https://01dami23.github.io/opted/",
+    "zoteroKey": "col_opted_2026"
+  },
+  {
     "id": "self-improving-autonomous-vehicles-real-world-rl-2026",
     "name": "Self-Improving Autonomous Vehicles",
     "title": "Self-Improving Autonomous Vehicles via Real-World Reinforcement Learning",
@@ -4255,6 +4399,53 @@
     "openSource": false,
     "stars": null,
     "codeStatus": "not-found"
+  },
+  {
+    "id": "2608-22549",
+    "name": "CL4AD",
+    "title": "Scaling Curriculum Learning For Autonomous Driving",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-08",
+    "venue": "Under review at NeurIPS 2026",
+    "tags": [
+      "Curriculum Learning",
+      "Reinforcement Learning",
+      "Sample Efficiency"
+    ],
+    "datasets": [
+      "Waymo Open Motion Dataset"
+    ],
+    "paper": "https://arxiv.org/abs/2608.22549",
+    "code": "https://anonymous.4open.science/r/gpudrive-37D3/README.md",
+    "openSource": true,
+    "stars": null,
+    "codeStatus": "released",
+    "zoteroKey": "koprulu_cl4ad_2026"
+  },
+  {
+    "id": "2606-14032",
+    "name": "AlignADV",
+    "title": "From Attacks to Curricula: Learnability-Guided Adversarial Training for Safe Autonomous Driving",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-06",
+    "venue": "2026",
+    "tags": [
+      "Adversarial Training",
+      "Curriculum Learning",
+      "Safety"
+    ],
+    "datasets": [
+      "Waymo Open Motion Dataset"
+    ],
+    "paper": "https://arxiv.org/abs/2606.14032",
+    "code": null,
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found",
+    "project": "https://meiyuewen.github.io/AlignADV/",
+    "zoteroKey": "mei_alignadv_2026"
   },
   {
     "id": "2606-03678",
@@ -4294,6 +4485,27 @@
     "openSource": false,
     "stars": null,
     "codeStatus": "not-found"
+  },
+  {
+    "id": "feng-breaking-2026",
+    "name": "Dense Learning",
+    "title": "Breaking through safety performance stagnation in autonomous vehicles with dense learning",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-02",
+    "venue": "Nature Communications 2026",
+    "tags": [
+      "Dense Reinforcement Learning",
+      "Safety-Critical Learning",
+      "Real-World Testing"
+    ],
+    "datasets": [],
+    "paper": "https://www.nature.com/articles/s41467-026-69761-x",
+    "code": "https://github.com/michigan-traffic-lab/Dense-Learning-for-AV-Training",
+    "openSource": true,
+    "stars": 7,
+    "codeStatus": "released",
+    "zoteroKey": "feng_breaking_2026"
   },
   {
     "id": "uncertainty-safe-evolving-rl-2025",
@@ -4371,6 +4583,32 @@
     "openSource": false,
     "stars": null,
     "codeStatus": "not-found"
+  },
+  {
+    "id": "2502-03349",
+    "name": "Gigaflow",
+    "title": "Robust Autonomy Emerges from Self-Play",
+    "track": "rsi",
+    "year": 2025,
+    "published": "2025-02",
+    "venue": "ICML 2025",
+    "tags": [
+      "Self-Play",
+      "Closed-Loop Reinforcement Learning",
+      "Large-Scale Simulation"
+    ],
+    "datasets": [
+      "CARLA",
+      "nuPlan",
+      "Waymo Open Motion Dataset"
+    ],
+    "paper": "https://arxiv.org/abs/2502.03349",
+    "code": null,
+    "openSource": false,
+    "stars": null,
+    "codeStatus": "not-found",
+    "project": "https://machinelearning.apple.com/research/robust-autonomy-emerges",
+    "zoteroKey": "cusumano-towner_gigaflow_2025"
   },
   {
     "id": "human-feedback-self-evolving-driving-2024",

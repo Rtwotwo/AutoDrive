@@ -46,10 +46,10 @@ function renderMetrics() {
 function paperCard(paper) {
   const trackLabel = { e2e: 'END-TO-END', 'world-model': 'WORLD MODEL', vla: 'VLA', rsi: 'RSI' }[paper.track];
   const stars = Number.isInteger(paper.stars) ? new Intl.NumberFormat('en-US').format(paper.stars) : '—';
-  const sourceStatus = paper.openSource ? `OPEN SOURCE · ★ ${stars}` : 'NO PUBLIC CODE';
+  const sourceStatus = paper.openSource ? `PUBLIC CODE · ★ ${stars}` : 'NO PUBLIC CODE';
   const links = [
     paper.paper ? `<a href="${paper.paper}" title="Paper" aria-label="Paper" target="_blank" rel="noopener">📄</a>` : '',
-    paper.code ? `<a href="${paper.code}" title="Open-source code" aria-label="Open-source code" target="_blank" rel="noopener">💻</a>` : '',
+    paper.code ? `<a href="${paper.code}" title="Public code repository" aria-label="Public code repository" target="_blank" rel="noopener">💻</a>` : '',
     paper.project ? `<a href="${paper.project}" title="Project page" aria-label="Project page" target="_blank" rel="noopener">🌐</a>` : ''
   ].filter(Boolean).join('');
   return `<article class="paper-card" data-track="${paper.track}">
