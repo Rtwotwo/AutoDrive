@@ -18,6 +18,9 @@ const benchmarkCategories = [
   'Reliability and Robustness'
 ];
 const $ = (selector) => document.querySelector(selector);
+const escapeHTML = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({
+  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+}[character]));
 
 async function loadData() {
   const [papers, datasets, benchmarks, leaderboard] = await Promise.all(
@@ -55,6 +58,7 @@ function paperCard(paper) {
   return `<article class="paper-card" data-track="${paper.track}">
     <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.year}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
     <h3>${paper.name}</h3><p class="paper-title">${paper.title}</p>
+    <p class="paper-summary"><span>SUMMARY</span> ${escapeHTML(paper.summary)}</p>
     <div class="tag-list">${paper.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
     <div class="paper-footer"><span class="source-status ${paper.openSource ? 'available' : ''}">${sourceStatus}</span><div>${links}</div></div>
   </article>`;
@@ -64,7 +68,7 @@ function renderPapers() {
   const query = state.query.trim().toLowerCase();
   const filtered = state.papers.filter((paper) => {
     const trackMatch = state.track === 'all' || paper.track === state.track;
-    const text = [paper.name, paper.title, paper.venue, ...(paper.tags || []), ...(paper.datasets || [])].join(' ').toLowerCase();
+    const text = [paper.name, paper.title, paper.summary, paper.venue, ...(paper.tags || []), ...(paper.datasets || [])].join(' ').toLowerCase();
     return trackMatch && (!query || text.includes(query));
   });
   $('#paperGrid').innerHTML = filtered.map(paperCard).join('');

@@ -35,6 +35,7 @@ unique(papers, 'papers'); unique(datasets, 'datasets'); unique(benchmarks, 'benc
 const benchmarkIds = new Set(benchmarks.map((item) => item.id));
 for (const paper of papers) {
   if (!['e2e','world-model','vla','rsi'].includes(paper.track)) errors.push(`paper ${paper.id}: invalid track`);
+  if (typeof paper.summary !== 'string' || paper.summary.trim().length < 40 || paper.summary.trim().length > 500) errors.push(`paper ${paper.id}: summary must be 40-500 characters`);
   if ('category' in paper) errors.push(`paper ${paper.id}: subcategory field is not allowed`);
   if (!Number.isInteger(paper.year) || paper.year < 1980 || paper.year > 2100) errors.push(`paper ${paper.id}: invalid year`);
   if (!/^\d{4}(?:-\d{2})?$/.test(paper.published || '')) errors.push(`paper ${paper.id}: invalid published date`);

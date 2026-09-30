@@ -17,7 +17,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "chen_driving_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "RRDrive adds dense, time-aligned risk occupancy to guide multimodal trajectory generation and rank candidates using trajectory-conditioned risk queries. The paper also introduces RiskOcc4D-NAVSIM and a sensor-based risk-occupancy predictor, reporting stronger NAVSIM scores and candidate quality, especially in challenging scenes."
   },
   {
     "id": "2609-03677",
@@ -42,7 +43,8 @@
     "openSource": true,
     "stars": 1,
     "codeStatus": "released",
-    "zoteroKey": "truetsch_ad-diff_2026"
+    "zoteroKey": "truetsch_ad-diff_2026",
+    "summary": "The paper studies set-difference captioning for driving datasets: compare object-centered image subsets and generate a natural-language account of their differences. It introduces AD-Diff Bench to test whether open-weight models can detect sparse, real-world dataset shifts in a reproducible way."
   },
   {
     "id": "2609-02270",
@@ -65,7 +67,8 @@
     "openSource": false,
     "stars": null,
     "codeStatus": "not-found",
-    "zoteroKey": "zhang_crashdiffuser_2026"
+    "zoteroKey": "zhang_crashdiffuser_2026",
+    "summary": "CrashDiffuser generates safety-critical traffic scenarios with control over the collision location on a target vehicle. A vision-language model selects collision intent and a diffusion planner repeatedly adapts adversarial trajectories, enabling closed-loop generation of head, rear, or side impacts."
   },
   {
     "id": "2606-31830",
@@ -86,7 +89,8 @@
     "project": "https://ori-mrg.github.io/PriorEye",
     "zoteroKey": "yeon_prioreye_2026",
     "code": "https://github.com/ori-mrg/PriorEye",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "PriorEye augments end-to-end driving with geospatial street-view images retrieved along the planned route, giving the policy visual context beyond its live sensor range. Its dual-memory design adapts how retrieved priors are used and provides a fallback, improving NAVSIM-v2 results and resilience to sensor corruption."
   },
   {
     "id": "2606-19836",
@@ -108,7 +112,8 @@
     "project": "https://opendrivelab.com/WorldEngine/",
     "zoteroKey": "li_world_2026",
     "code": "https://github.com/OpenDriveLab/WorldEngine",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "World Engine reconstructs interactive scenes from driving logs and generates realistic safety-critical variations of rare events. It uses these scenarios to post-train pretrained driving policies with reinforcement learning, reducing failures on long-tail situations without risky real-world exploration."
   },
   {
     "id": "2606-19641",
@@ -128,7 +133,8 @@
     "stars": null,
     "zoteroKey": "rowe_gigapixel_2026",
     "code": "https://github.com/montrealrobotics/gigapixel",
-    "codeStatus": "pending"
+    "codeStatus": "pending",
+    "summary": "Gigapixel is a high-throughput simulator designed for pixel-based self-play training of end-to-end driving policies. It uses lightweight perspective-rendered scenes rather than full photorealism, allowing large-scale closed-loop interaction while retaining the visual structure needed for policy learning."
   },
   {
     "id": "2606-07464",
@@ -148,7 +154,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "liang_compact-va_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "COMPACT-VA compresses long driving histories into a bounded working memory with a conditional VQ-VAE. Because compression is conditioned on learned planning intent, it aims to retain decision-relevant context for monolithic vision-action policies while reducing the token and inference cost of long sequences."
   },
   {
     "id": "2606-07170",
@@ -170,7 +177,8 @@
     "project": "https://valeoai.github.io/TOAD/",
     "zoteroKey": "xu_toad_2026",
     "code": "https://github.com/valeoai/TOAD",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "TOAD improves an existing trajectory planner at test time by treating its scorer as a reward and using cross-entropy search to optimize candidate trajectories. It starts from the planner's proposals, requires no retraining, and is evaluated on NAVSIM-v1/v2 and closed-loop HUGSIM."
   },
   {
     "id": "2605-31116",
@@ -190,7 +198,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "li_ntr_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "Neural Token Reconstruction adds masked latent self-distillation to perception-free driving models so compact scene tokens must preserve information from image patches. Foundation-model semantic priors guide reconstruction toward driving-relevant content without adding explicit perception heads."
   },
   {
     "id": "2605-15120",
@@ -211,7 +220,8 @@
     "openSource": true,
     "stars": 12,
     "zoteroKey": "ang_clover_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "CLOVER addresses the mismatch between imitation of logged paths and rule-based planning evaluation. It combines a diverse trajectory generator with a metric-aware scorer, trains on evaluator-filtered pseudo-experts, and uses conservative closed-loop self-distillation to improve proposal coverage and ranking."
   },
   {
     "id": "2605-08084",
@@ -232,7 +242,8 @@
     "openSource": true,
     "stars": 396,
     "zoteroKey": "dauner_123d_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "123D provides a common API for working with autonomous-driving datasets that differ in sensors, formats, annotation conventions, and sampling rates. Its timestamped event-stream representation supports synchronous or asynchronous multimodal access, helping researchers combine datasets for training and evaluation."
   },
   {
     "id": "2605-04647",
@@ -251,7 +262,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "wang_reflectdrive-2_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "ReflectDrive-2 represents plans as discrete trajectory tokens and lets the same model revise selected tokens through an AutoEdit step. After supervised recovery from perturbed expert plans, rollout-level reinforcement learning trains the full draft-and-reflect process, improving the value of test-time editing."
   },
   {
     "id": "2604-15308",
@@ -272,7 +284,8 @@
     "stars": null,
     "zoteroKey": "gao_radv2_2026",
     "project": "https://hgao-cv.github.io/RAD/",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "RAD-2 pairs a diffusion trajectory generator with an RL-trained discriminator that reranks candidates by long-term driving quality. Temporally consistent group-relative updates and on-policy generator optimization provide structured feedback while avoiding direct optimization of sparse rewards over full trajectories."
   },
   {
     "id": "2604-08366",
@@ -292,7 +305,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "dimlioglu_mosaic_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "MOSAIC selects training data by fitting metric-specific scaling laws across dataset domains and iteratively choosing mixtures expected to improve evaluation performance. In autonomous-driving experiments, it achieves stronger EPDMS results than baselines while using substantially less training data."
   },
   {
     "id": "guo-flowad-2026",
@@ -313,7 +327,8 @@
     "stars": 18,
     "zoteroKey": "guo_flowad_2026",
     "code": "https://github.com/AutoLab-SAI-SJTU/FlowAD",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "FlowAD models how ego motion changes the observed scene by representing ego-scene interaction as scene flow. Its framework derives flow units from logged data, aiming to improve environment representations for driving tasks without depending on scenario simulation."
   },
   {
     "id": "2603-29163",
@@ -334,7 +349,8 @@
     "openSource": true,
     "stars": 255,
     "zoteroKey": "sun_sparsedrivev2_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SparseDriveV2 studies how trajectory-anchor density affects score-based end-to-end planning. Its experiments show that scaling a static trajectory vocabulary can substantially improve planning, questioning whether dynamically generated proposals are always necessary."
   },
   {
     "id": "2602-22801",
@@ -356,7 +372,8 @@
     "zoteroKey": "zheng_hdp_2026",
     "code": "https://github.com/ZhengYinan-AIR/Hyper-Diffusion-Planner",
     "project": "https://zhengyinan-air.github.io/Hyper-Diffusion-Planner/",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Hyper Diffusion Planner systematically studies diffusion-based end-to-end planning choices using large-scale real-vehicle data and road tests. It combines findings on trajectory representation, diffusion training, and data scaling with reinforcement-learning post-training, and reports real-world evaluation across urban scenarios."
   },
   {
     "id": "2602-20060",
@@ -377,7 +394,8 @@
     "openSource": true,
     "stars": 107,
     "zoteroKey": "wang_meanfuser_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "MeanFuser uses Gaussian-mixture noise and MeanFlow to generate continuous multimodal trajectories without relying on a discrete anchor vocabulary. An adaptive reconstruction module can select a proposal or construct a new trajectory, while the one-step formulation targets faster planning."
   },
   {
     "id": "2602-13936",
@@ -398,7 +416,8 @@
     "openSource": true,
     "stars": 8,
     "zoteroKey": "zong_pcm_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "PCM targets zero-shot motion-prediction generalization by separating domain-invariant scene features and combining them with vehicle kinematics. Its intervention-based scene encoder and causal ODE decoder use contextual interactions while preserving physical motion structure."
   },
   {
     "id": "2601-12901",
@@ -418,7 +437,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "li_plannerrft_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "PlannerRFT fine-tunes diffusion planners with a dual-branch reinforcement-learning loop: one branch improves trajectory distributions while another guides denoising toward useful exploration. Its nuMax simulator accelerates rollouts, targeting sample-efficient closed-loop adaptation without changing the planner's inference pipeline."
   },
   {
     "id": "2601-05083",
@@ -440,7 +460,8 @@
     "zoteroKey": "kirby_drivor_2026",
     "code": "https://github.com/valeoai/DrivoR",
     "project": "https://valeoai.github.io/driving-on-registers/",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DrivoR uses camera-aware register tokens to compress multi-camera features from pretrained vision transformers, then lightweight decoders generate and score trajectories. Its scorer predicts interpretable safety, comfort, and efficiency signals, with results evaluated on NAVSIM and closed-loop HUGSIM."
   },
   {
     "id": "2601-01762",
@@ -461,7 +482,8 @@
     "zoteroKey": "wu_aligndrive_2026",
     "code": "https://github.com/YanhaoWu/AlignDrive",
     "project": "https://yanhaowu.github.io/AlignDrive/",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "AlignDrive couples lateral path choice with speed planning: longitudinal motion is predicted along the selected path rather than independently. It also augments training with rare collision-avoidance situations, improving coordination and reported performance on Bench2Drive and Fail2Drive."
   },
   {
     "id": "2512-20563",
@@ -482,7 +504,8 @@
     "openSource": true,
     "stars": 230,
     "zoteroKey": "nguyen_lead_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "LEAD studies why privileged simulator experts are hard for sensor-based imitation learners to copy, including visibility, uncertainty, and route-intent gaps. It proposes ways to reduce these asymmetries and reports stronger closed-loop CARLA performance plus transfer gains on NAVSIM and Waymo driving benchmarks."
   },
   {
     "id": "2512-07745",
@@ -503,7 +526,8 @@
     "openSource": true,
     "stars": 372,
     "zoteroKey": "zou_diffusiondrivev2_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DiffusionDriveV2 adds reinforcement learning to an anchor-conditioned diffusion planner to suppress poor trajectory modes while preserving diverse driving intentions. Separate within-anchor and cross-anchor policy updates improve reward comparisons without collapsing distinct behaviors such as turning and going straight."
   },
   {
     "id": "2512-06865",
@@ -525,7 +549,8 @@
     "project": "https://spatialretrievalad.github.io/",
     "zoteroKey": "jia_spatial_2025",
     "code": "https://github.com/SpatialRetrievalAD/End2End-Planning",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Spatial Retrieval AD supplements live vehicle sensors with geographically retrieved street images, giving driving models prior visual context when visibility is limited. The paper builds a location-aligned nuScenes extension and evaluates the added modality across perception, mapping, occupancy, planning, and world modeling."
   },
   {
     "id": "2512-00470",
@@ -546,7 +571,8 @@
     "stars": null,
     "zoteroKey": "zhang_lap_2026",
     "code": "https://github.com/jhz1192/Latent-Planner",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "LAP performs diffusion planning in a learned latent space that separates high-level driving intent from low-level trajectory geometry. Feature alignment links this space to scene context, enabling one-step denoising and faster closed-loop planning on nuPlan."
   },
   {
     "id": "2511-18729",
@@ -566,7 +592,8 @@
     "openSource": true,
     "stars": 31,
     "zoteroKey": "liu_guideflow_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "GuideFlow uses constrained flow matching to generate diverse end-to-end driving trajectories while enforcing safety and physical constraints during generation. The method aims to avoid mode collapse and reduce the need for a separate post-generation optimization stage."
   },
   {
     "id": "2511-17150",
@@ -585,7 +612,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "yin_diffrefiner_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "DiffRefiner combines an anchor-based transformer that proposes coarse trajectories with a diffusion model that refines them. A fine-grained denoising decoder incorporates surrounding-scene semantics to produce plans that better fit the driving context."
   },
   {
     "id": "2511-16518",
@@ -607,7 +635,8 @@
     "stars": 408,
     "project": "https://huggingface.co/XiaomiMiMo/MiMo-Embodied-7B",
     "zoteroKey": "hao_mimo-embodied_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "MiMo-Embodied is a foundation model trained across autonomous driving and broader embodied-AI tasks. The paper attributes cross-domain gains to curated data, staged training, chain-of-thought reasoning, and reinforcement-learning fine-tuning, and evaluates it on both driving and embodied benchmarks."
   },
   {
     "id": "2511-09013",
@@ -628,7 +657,8 @@
     "stars": null,
     "zoteroKey": "song_unimm-v2x_2025",
     "code": "https://github.com/Souig/UniMM-V2X",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "UniMM-V2X enables vehicles to cooperate across perception, prediction, and planning in one end-to-end multi-agent framework. Shared queries and multi-level fusion coordinate their scene understanding, while mixture-of-experts components adapt representations and motion decoding to different driving situations."
   },
   {
     "id": "2511-01768",
@@ -649,7 +679,8 @@
     "openSource": true,
     "stars": 61,
     "zoteroKey": "liu_unilion_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "UniLION uses linear group recurrent operators to process long sequences of LiDAR, camera, and multimodal driving data with lower attention cost. A single architecture supports several sensor and temporal configurations and performs perception, prediction, and planning tasks."
   },
   {
     "id": "2510-24108",
@@ -670,7 +701,8 @@
     "openSource": true,
     "stars": 77,
     "zoteroKey": "li_ztrs_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ZTRS presents an end-to-end planning approach trained without human driving demonstrations, using real-world images and rule-based rewards. A trajectory scorer helps address reinforcement learning cold start and supports a fully reward-driven training pipeline."
   },
   {
     "id": "2508-09158",
@@ -690,7 +722,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "jiao_evadrive_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "EvaDrive co-evolves a trajectory generator and a multi-objective critic through adversarial reinforcement learning. Its Pareto-based selection preserves trade-offs among driving preferences instead of collapsing them into one reward, enabling repeated proposal refinement and diverse driving styles."
   },
   {
     "id": "2508-05402",
@@ -710,7 +743,8 @@
     "openSource": true,
     "stars": 128,
     "zoteroKey": "yu_distilldrive_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DistillDrive transfers diverse planning behaviors from a structured-scene teacher into an end-to-end model using multiple planning instances, generative training examples, and reinforcement learning. On nuScenes and NAVSIM it reports fewer collisions and improved closed-loop scores."
   },
   {
     "id": "2508-01778",
@@ -731,7 +765,8 @@
     "openSource": true,
     "stars": 56,
     "zoteroKey": "sun_diffsemanticfusion_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DiffSemanticFusion combines semantic raster BEV features with a diffusion-based online map representation to capture both visual semantics and geometric structure. It applies the fused scene representation to motion prediction and end-to-end planning, with experiments on nuScenes and NAVSIM."
   },
   {
     "id": "2507-14456",
@@ -752,7 +787,8 @@
     "openSource": true,
     "stars": 18,
     "zoteroKey": "wan_geminus_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "GEMINUS combines a general driving expert with specialists trained for different scene types. A dual-aware router uses scene features and routing uncertainty to select experts, improving adaptive closed-loop performance in Bench2Drive, including with monocular input."
   },
   {
     "id": "2506-08541",
@@ -774,7 +810,8 @@
     "project": "https://traj-flow.github.io/",
     "zoteroKey": "yan_trajflow_2025",
     "code": "https://github.com/DSL-Lab/TrajFlow",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "TrajFlow uses flow matching to predict several coherent future trajectories in one inference pass instead of repeated sampling. A Plackett-Luce ranking objective improves uncertainty estimates while keeping multimodal motion forecasting computationally efficient."
   },
   {
     "id": "2506-07725",
@@ -795,7 +832,8 @@
     "openSource": true,
     "stars": 48,
     "zoteroKey": "hamdan_eta_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ETA moves expensive large-model reasoning to earlier time steps and predicts ahead asynchronously, while a smaller model handles the current frame rapidly. An action mask fuses both feature streams so large-model guidance is available with lower per-frame latency."
   },
   {
     "id": "2506-06664",
@@ -815,7 +853,8 @@
     "openSource": true,
     "stars": 288,
     "zoteroKey": "li_gtrs_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "GTRS combines diffusion-generated fine-grained proposals with a trajectory scorer trained on a much denser vocabulary, then regularizes the scorer to work on smaller candidate sets. Sensor augmentation and refinement training target better ranking and generalization across driving domains."
   },
   {
     "id": "2506-06659",
@@ -836,7 +875,8 @@
     "stars": null,
     "zoteroKey": "yao_drivesuprim_2025",
     "code": "https://github.com/William-Yao-2000/DriveSuprim",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveSuprim selects safe trajectories from large candidate sets using progressive coarse-to-fine filtering. Rotation-based augmentation improves robustness to distribution shifts, while self-distillation stabilizes training; the paper evaluates it on NAVSIM and the closed-loop Bench2Drive benchmark."
   },
   {
     "id": "2506-04218",
@@ -857,7 +897,8 @@
     "openSource": true,
     "stars": 1109,
     "zoteroKey": "cao_navsim_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "NAVSIM proposes pseudo-simulation for evaluating driving policies from real logs: 3D Gaussian splatting generates future observations at varied positions, headings, and speeds, then behavior-proximity weights emphasize observations matching a policy's likely outcomes."
   },
   {
     "id": "2506-00034",
@@ -878,7 +919,8 @@
     "openSource": true,
     "stars": 96,
     "zoteroKey": "liu_gaussianfusion_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "GaussianFusion fuses camera and other sensor features through compact, interpretable 2D Gaussian scene elements. Explicit semantic-spatial attributes and implicit planning cues are refined together, and a cascade planning head uses them to iteratively improve trajectories."
   },
   {
     "id": "2505-15111",
@@ -899,7 +941,8 @@
     "openSource": true,
     "stars": 144,
     "zoteroKey": "guo_ipad_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "iPad makes candidate plans central to the end-to-end representation: proposal-anchored attention iteratively updates trajectories and image features. Lightweight mapping and motion-prediction tasks add planning-relevant supervision, improving benchmark performance with lower computational cost."
   },
   {
     "id": "2505-09315",
@@ -919,7 +962,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "jiang_transdiffuser_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "TransDiffuser aims to prevent diffusion planners from collapsing to similar trajectories without relying on predefined anchors or stored scene priors. It decorrelates multimodal latent representations during denoising so the model can produce diverse, plausible plans in NAVSIM."
   },
   {
     "id": "2503-14182",
@@ -940,7 +984,8 @@
     "stars": null,
     "zoteroKey": "zhang_bridgead_2025",
     "code": "https://github.com/fudan-zvg/BridgeAD",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "BridgeAD assigns distinct queries to future time steps so historical scene information can support both present-frame perception and multi-step motion planning. This aligns temporal memory with the planning horizon instead of treating history as a generic feature bank."
   },
   {
     "id": "2503-12820",
@@ -960,7 +1005,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "li_hydra-mdp_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "Hydra-MDP++ distills human and rule-based expert behavior into a lightweight raw-image driving model with a multi-head decoder. Its expanded supervision includes traffic-light compliance, lane keeping, and comfort, addressing unsafe behaviors that conventional planning scores can miss."
   },
   {
     "id": "2503-10434",
@@ -980,7 +1026,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "li_trajhf_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "TrajHF fine-tunes generative trajectory models with human feedback to better reflect varied driving styles. Multi-condition denoising and preference-based reinforcement learning aim to personalize multimodal plans while maintaining safety and physical feasibility."
   },
   {
     "id": "2503-08612",
@@ -1000,7 +1047,8 @@
     "stars": null,
     "zoteroKey": "tang_hip-ad_2025",
     "code": "https://github.com/nullmax-vision/HiP-AD",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "HiP-AD uses spatial, temporal, and driving-style waypoint queries at multiple resolutions to supervise planning. A unified decoder with deformable attention retrieves scene features around trajectory locations and jointly handles perception, prediction, and planning."
   },
   {
     "id": "2503-07656",
@@ -1020,7 +1068,8 @@
     "stars": null,
     "zoteroKey": "jia_drivetransformer_2025",
     "code": "https://github.com/Thinklab-SJTU/DriveTransformer",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveTransformer replaces a rigid perception-prediction-planning sequence with parallel interaction among agent, map, and planning queries. Sparse sensor-feature access and streaming query history aim to reduce error accumulation and support efficient long-range temporal reasoning."
   },
   {
     "id": "2503-05689",
@@ -1041,7 +1090,8 @@
     "openSource": true,
     "stars": 425,
     "zoteroKey": "xing_goalflow_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "GoalFlow guides multimodal trajectory generation with selected goal points that constrain the flow-matching process. A scene-conditioned scoring mechanism chooses among candidate goals, targeting more coherent and higher-quality plans than unconstrained trajectory generation."
   },
   {
     "id": "2503-03125",
@@ -1062,7 +1112,8 @@
     "openSource": true,
     "stars": 450,
     "zoteroKey": "song_momad_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "MomAD adds trajectory and perception momentum to stabilize end-to-end plans over time and through occlusions. It matches planning queries to prior paths and reuses historical scene features to support coherent long-horizon predictions and reduce collision risk."
   },
   {
     "id": "2411-15139",
@@ -1083,7 +1134,8 @@
     "openSource": true,
     "stars": 1503,
     "zoteroKey": "liao_diffusiondrivev1_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DiffusionDrive accelerates multimodal trajectory planning by starting from intent-specific anchors and truncating diffusion to two denoising steps. Its cascade decoder conditions trajectories on scene context, targeting real-time inference without losing candidate diversity."
   },
   {
     "id": "2406-15349",
@@ -1104,7 +1156,8 @@
     "openSource": true,
     "stars": 1109,
     "zoteroKey": "dauner_navsim_2024",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "NAVSIM provides a scalable, data-driven evaluation middle ground between open-loop metrics and expensive reactive simulation. It unrolls bird's-eye-view scene abstractions for short horizons and measures progress and safety in a non-reactive setting designed to align better with closed-loop outcomes."
   },
   {
     "id": "2406-06978",
@@ -1125,7 +1178,8 @@
     "stars": null,
     "zoteroKey": "li_hydra-mdp_2024",
     "code": "https://github.com/NVlabs/Hydra-MDP",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Hydra-MDP distills both human and rule-based teachers into a multi-head end-to-end planner that produces diverse trajectories for different evaluation criteria. The approach learns rule-aware planning directly rather than relying on non-differentiable post-processing."
   },
   {
     "id": "2405-19620",
@@ -1146,7 +1200,8 @@
     "openSource": true,
     "stars": 1005,
     "zoteroKey": "sun_sparsedrivev1_2024",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SparseDrive uses sparse scene representations to unify detection, tracking, and mapping, then predicts other agents and plans ego motion in parallel. The design targets safer and more efficient end-to-end driving than dense BEV pipelines."
   },
   {
     "id": "2402-13243",
@@ -1167,7 +1222,8 @@
     "project": "https://hgao-cv.github.io/VADv2",
     "zoteroKey": "chen_vadv2_2024",
     "code": "https://github.com/hustvl/VAD",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "VADv2 treats end-to-end planning as a probability distribution over future actions rather than deterministic regression. It tokenizes a large trajectory vocabulary and models interactions between planning tokens and scene tokens to represent uncertainty."
   },
   {
     "id": "2312-03031",
@@ -1187,7 +1243,8 @@
     "openSource": true,
     "stars": 260,
     "zoteroKey": "li_bev-planner_2024",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "BEV-Planner analyzes whether open-loop end-to-end planners use visual perception or rely mainly on ego status in nuScenes. It proposes a road-adherence metric and a simple perception-light baseline to expose dataset and metric limitations."
   },
   {
     "id": "2303-12077",
@@ -1207,7 +1264,8 @@
     "openSource": true,
     "stars": 1374,
     "zoteroKey": "jiang_vad_2023",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "VAD represents agents and map elements as vectors instead of dense raster grids, preserving instance-level structure for planning. These explicit scene elements act as constraints for safer trajectories while reducing the cost of BEV processing and post-processing."
   },
   {
     "id": "2212-10156",
@@ -1227,7 +1285,8 @@
     "stars": null,
     "project": "https://opendrivelab.github.io/UniAD/",
     "zoteroKey": "hu_uniad_2023",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "UniAD organizes perception, prediction, and planning around the final driving objective rather than optimizing separate task heads in isolation. Its unified network coordinates the full driving stack so scene understanding and forecasting directly support planning."
   },
   {
     "id": "2207-07601",
@@ -1248,7 +1307,8 @@
     "openSource": true,
     "stars": 13,
     "zoteroKey": "hu_st-p3_2022",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ST-P3 jointly learns spatial and temporal features for vision-based perception, prediction, and planning. Egocentric feature accumulation preserves geometry, while temporal pathways model motion and refine planning features for closed-loop control."
   },
   {
     "id": "2205-15997",
@@ -1268,7 +1328,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "chitta_transfuser_2022",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This TransFuser version fuses camera and LiDAR features with multi-scale transformer attention across perspective and bird's-eye views. It targets complex, dense-traffic scenarios in CARLA and reports improved driving scores and fewer collisions than geometry-based fusion."
   },
   {
     "id": "2109-04456",
@@ -1288,7 +1349,8 @@
     "code": "https://github.com/autonomousvision/neat",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "NEAT represents a driving scene as a neural attention field that maps bird's-eye-view locations to semantics and waypoints. Its attention-based compression lets an imitation policy focus on relevant image regions while offering interpretable visualizations."
   },
   {
     "id": "2108-08265",
@@ -1308,7 +1370,8 @@
     "code": "https://github.com/zhejz/carla-roach",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Roach trains a reinforcement-learning driving expert using privileged bird's-eye-view information, then uses that expert as a dense coach for an end-to-end imitation learner. The resulting camera-based policy generalizes across CARLA towns and weather."
   },
   {
     "id": "2104-12861",
@@ -1328,7 +1391,8 @@
     "project": "https://sites.google.com/view/ivmp",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "IVMP predicts future semantic maps in bird's-eye view from surrounding camera images, then plans through these interpretable forecasts. Explicit future scene structure helps the planner account for less likely objects and improve safety."
   },
   {
     "id": "2104-09224",
@@ -1348,7 +1412,8 @@
     "code": "https://github.com/autonomousvision/transfuser",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "The original TransFuser uses transformer attention to combine camera and LiDAR features, enabling global scene reasoning beyond local geometric fusion. Its CARLA experiments show stronger behavior in complex traffic interactions and fewer collisions than prior fusion baselines."
   },
   {
     "id": "2101-06806",
@@ -1367,7 +1432,8 @@
     "paper": "https://arxiv.org/abs/2101.06806",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "MP3 enables mapless driving from raw sensors and a route command by jointly predicting an online map and agent futures, then planning with an uncertainty-aware neural motion planner. It is evaluated in long closed-loop simulations and real-world data."
   },
   {
     "id": "2008-05930",
@@ -1386,7 +1452,8 @@
     "paper": "https://arxiv.org/abs/2008.05930",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "P3 jointly learns perception, prediction, and planning through a semantic-occupancy representation. The planner uses costs aligned with the model's scene predictions, yielding interpretable decisions and safer trajectories in datasets and closed-loop simulation."
   },
   {
     "id": "cvpr2020-data-aggregation",
@@ -1406,7 +1473,8 @@
     "code": "https://github.com/autonomousvision/data_aggregation",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "This study analyzes DAgger-style data aggregation for vision-based urban driving and proposes sampling behaviorally important states into a replay buffer focused on uncertain regions. On CARLA NoCrash it improves generalization in dense traffic while reducing collisions."
   },
   {
     "id": "1911-10868",
@@ -1425,7 +1493,8 @@
     "paper": "https://arxiv.org/abs/1911.10868",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "Implicit Affordances uses learned latent affordance signals to make reinforcement learning practical for complex urban driving tasks such as lane keeping, obstacle avoidance, and traffic-light response. The approach demonstrates camera-only driving in the CARLA challenge."
   },
   {
     "id": "2609-30818",
@@ -1448,7 +1517,8 @@
     "openSource": false,
     "stars": null,
     "codeStatus": "not-found",
-    "zoteroKey": "he_evaluation_2026"
+    "zoteroKey": "he_evaluation_2026",
+    "summary": "iDriveVLA improves multimodal planning by pairing a safety-aware trajectory scorer with a vision-language module that adjusts evaluation criteria to the scene. Its progressive, oracle-aligned training refines candidate generation and ranking, achieving strong results on the NAVSIM-v1 leaderboard."
   },
   {
     "id": "2609-25831",
@@ -1474,7 +1544,8 @@
     "openSource": false,
     "stars": null,
     "codeStatus": "not-found",
-    "zoteroKey": "ye_run-then-walk_2026"
+    "zoteroKey": "ye_run-then-walk_2026",
+    "summary": "Run-then-Walk separates reinforcement learning for VLA driving into a progress-seeking phase followed by a safety-repair phase. This staged reward schedule aims to escape overly conservative behavior first, then correct unsafe actions, improving performance and convergence over one-stage training."
   },
   {
     "id": "2609-00111",
@@ -1495,7 +1566,8 @@
     "openSource": true,
     "stars": 468,
     "zoteroKey": "zhou_qwen-drive-10_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Qwen-Drive-1.0 integrates 3D perception, visual question answering, and motion planning around a pretrained vision-language model. An inspectable BEV head exposes scene structure, while a planning expert predicts trajectories; staged driving and general VLM training seeks to retain broad visual and instruction abilities."
   },
   {
     "id": "bassole-hybriddrivevla-2026",
@@ -1515,7 +1587,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "bassole_hybriddrivevla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "HybridDriveVLA anticipates future scenes with visual chain-of-thought, then scores candidate waypoints for safety, progress, and comfort using a tree-of-thought evaluator."
   },
   {
     "id": "2608-18035",
@@ -1535,7 +1608,8 @@
     "stars": null,
     "zoteroKey": "zhang_plug-and-play_2026",
     "code": "https://github.com/ZZongzheng0918/TE-Aware-E2E-AD",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "This study adds structured traffic-light and road-sign awareness to end-to-end driving systems through a lightweight plug-and-play interface. It also augments public datasets with traffic-element annotations and evaluates the effect across regression, diffusion, trajectory-scoring, and VLA planners."
   },
   {
     "id": "2608-12854",
@@ -1555,7 +1629,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "zhan_brainwam_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "BrainWAM coordinates semantic reasoning from a vision-language model with predictive dynamics from a world-action model. Instead of mixing both through shared token attention, it routes them through specialized action pathways and aligns their compact action representations."
   },
   {
     "id": "2608-10413",
@@ -1576,7 +1651,8 @@
     "openSource": true,
     "stars": 32,
     "zoteroKey": "xing_drivevla-m0_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveVLA-M0 stores past failures with scene structure and expert trajectories, then retrieves structurally similar cases at test time. A lightweight LoRA-based update uses the retrieved examples to correct distribution-shift errors without changing the model backbone."
   },
   {
     "id": "2608-09591",
@@ -1596,7 +1672,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "huang_factordrive_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "FactorDrive grounds multi-step driving reasoning in planning-critical spatial and physical evidence. It introduces a factor-based chain-of-thought dataset and adapts reasoning depth to the scene, then studies post-training aimed at improving planning decisions."
   },
   {
     "id": "2608-01755",
@@ -1616,7 +1693,8 @@
     "stars": null,
     "zoteroKey": "huang_deft-rlvr_2026",
     "code": "https://github.com/hzx122/DEFT-RLVR",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DEFT-RLVR addresses bias caused when a reasoning model sees the logged future trajectory before explaining a driving decision. It frames planning as choosing among explicit candidates and uses future trajectories after the decision as verifiable targets for reinforcement learning."
   },
   {
     "id": "2607-14727",
@@ -1636,7 +1714,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "jiang_workdrive_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "WorkDrive targets roadwork zones where temporary cones and barriers change the usual road layout. It builds perception-grounded causal explanations from structured scene facts, trains the model on them, and uses trajectory-consistency reinforcement learning to improve work-zone planning."
   },
   {
     "id": "2607-08072",
@@ -1657,7 +1736,8 @@
     "stars": null,
     "zoteroKey": "yang_post-training_2026",
     "project": "https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This survey organizes post-training methods for end-to-end autonomous-driving models, including both VLA systems and trajectory-generative planners. It explains why imitation alone is insufficient in interactive safety-critical driving, then compares supervision families, their trade-offs, and open problems."
   },
   {
     "id": "2607-06403",
@@ -1679,7 +1759,8 @@
     "stars": 954,
     "project": "https://technology.robbyant.com/lingbot-vla-v2",
     "zoteroKey": "wu_lingbot-vla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "LingBot-VLA 2.0 expands a generalist robotics VLA with larger cross-embodiment data, a broader action space, and predictive dynamics for temporal reasoning. Its evaluation spans embodied-AI benchmarks and long-horizon mobile manipulation across robot platforms."
   },
   {
     "id": "2607-03182",
@@ -1698,7 +1779,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "liu_anchorvla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "AnchorVLA connects language-level driving decisions to continuous trajectories through behavior-pattern anchors. Each anchor represents a local motion pattern, providing a denser interface between VLA reasoning and executable path generation than long sequences of coordinate tokens."
   },
   {
     "id": "2607-01658",
@@ -1718,7 +1800,8 @@
     "openSource": true,
     "stars": 29,
     "zoteroKey": "yang_driveteach-vla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveTeach-VLA trains driving models to attend to spatially relevant visual evidence, not only text-centric question-answering and reasoning. It combines driving-aware visual distillation with trajectory-guided prompts, followed by supervised and reinforcement fine-tuning."
   },
   {
     "id": "2606-24742",
@@ -1737,7 +1820,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "wang_wvm_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "World Value Model applies temporally predictive world-model representations to assess the value and quality of robotic experiences. It is a cross-domain robotics method rather than a driving-specific planner, and reports improved value ordering on manipulation benchmarks."
   },
   {
     "id": "2606-08525",
@@ -1757,7 +1841,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "chen_drivereward_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "DriveReward introduces a temporally grounded dataset for evaluating driving trajectories, including counterfactual styles and failures, alongside a specialized vision-language reward model. Its compact model is tested for reward alignment, trajectory scoring, and reinforcement-learning fine-tuning."
   },
   {
     "id": "2605-23270",
@@ -1778,7 +1863,8 @@
     "openSource": true,
     "stars": 50,
     "zoteroKey": "wang_chainflow-vla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ChainFlow-VLA combines an autoregressive model for causally ordered interaction modes with a diffusion refiner for global trajectory consistency. VLM-derived semantic features condition residual corrections while preserving the causal structure of the initial plan."
   },
   {
     "id": "2605-21061",
@@ -1798,7 +1884,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "park_ikn_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "IKN reframes driving trajectory prediction as inverse kinematics and argues that current and future visual states are both needed to ground actions. It predicts the next visual scene, then uses a separate conditional diffusion network to decode trajectories from visual states."
   },
   {
     "id": "2605-04470",
@@ -1820,7 +1907,8 @@
     "project": "https://currychen77.github.io/CRAFT",
     "zoteroKey": "chen_craft_2026",
     "code": "https://github.com/CurryChen77/CraftPolicy",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "CRAFT fine-tunes driving policies by combining dense counterfactual trajectory advantages with corrections from closed-loop interaction events. An EMA teacher regularizes the update, aiming to retain stable behavior while making reinforcement fine-tuning more sample-efficient."
   },
   {
     "id": "2604-17915",
@@ -1841,7 +1929,8 @@
     "openSource": true,
     "stars": 19,
     "zoteroKey": "zhang_onedrive_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "OneDrive unifies language generation, object perception, and trajectory planning in one transformer decoder built on a pretrained vision-language model. Visual context and structured query tokens share the decoder, reducing the need for separate or cascaded task-specific heads."
   },
   {
     "id": "2604-02190",
@@ -1862,7 +1951,8 @@
     "openSource": true,
     "stars": 246,
     "zoteroKey": "li_unidrivevla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "UniDriveVLA separates driving understanding, 3D scene perception, and action planning into specialized experts coordinated through masked attention. Sparse perception and staged training aim to improve spatial grounding without sacrificing the language model's reasoning ability."
   },
   {
     "id": "2604-00813",
@@ -1883,7 +1973,8 @@
     "openSource": true,
     "stars": 362,
     "zoteroKey": "zuo_dvgt-2_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DVGT-2 uses streaming dense-geometry prediction as an alternative to language-heavy driving VLA designs. Causal temporal attention and cached history jointly support online scene-geometry estimation and trajectory planning without repeatedly processing full multi-frame batches."
   },
   {
     "id": "2603-28116",
@@ -1904,7 +1995,8 @@
     "openSource": true,
     "stars": 20,
     "zoteroKey": "ye_autodrive-p3_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "AutoDrive-P3 trains a VLA to reason coherently through perception, prediction, and planning rather than skipping intermediate evidence or treating tasks separately. It introduces a structured P3 chain-of-thought dataset and hierarchical reinforcement fine-tuning across the three stages."
   },
   {
     "id": "2603-14972",
@@ -1924,7 +2016,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "gao_takevla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "TakeVLA learns proactively from takeover failures by adding language supervision about hazards before the human intervention, expanding safety margins. The framework also uses active exploration so post-training can improve beyond passively imitating takeover trajectories."
   },
   {
     "id": "2603-14851",
@@ -1946,7 +2039,8 @@
     "project": "https://automot-website.github.io/",
     "zoteroKey": "huang_automot_2026",
     "code": "https://github.com/OscarHuangWind/AutoMoT",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "AutoMoT unifies scene reasoning and action generation in an asynchronous mixture-of-transformers, sharing a model while running slower reasoning and faster control at different rates."
   },
   {
     "id": "2603-11041",
@@ -1968,7 +2062,8 @@
     "project": "https://yaoyao-jpg.github.io/dynvla",
     "zoteroKey": "shang_dynvla_2026",
     "code": "https://github.com/yaoyao-jpg/DynamicsVLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DynVLA introduces Dynamics CoT: compact tokens forecast ego and environment evolution before the model chooses an action. This provides physically grounded temporal context with less redundancy than textual or dense visual chain-of-thought."
   },
   {
     "id": "2603-09465",
@@ -1988,7 +2083,8 @@
     "openSource": true,
     "stars": 50,
     "zoteroKey": "cao_evodrivevla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "EvoDriveVLA uses collaborative teachers to improve both visual grounding and future-aware planning. Self-anchored visual distillation stabilizes perception, while a future-informed teacher refines trajectory reasoning to reduce errors over long horizons."
   },
   {
     "id": "2603-06049",
@@ -2009,7 +2105,8 @@
     "openSource": true,
     "stars": 133,
     "zoteroKey": "chen_curiousvla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Curious-VLA tackles limited exploration in imitation-trained driving agents by expanding feasible trajectory options during supervised learning and prioritizing diverse experiences during reinforcement learning. A wider, style-aware reward signal helps distinguish driving quality."
   },
   {
     "id": "2603-01928",
@@ -2029,7 +2126,8 @@
     "stars": null,
     "zoteroKey": "luoLaSTVLAThinkingLatent2026",
     "code": "https://github.com/luo-yc17/LaST-VLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "LaST-VLA reasons in a continuous spatiotemporal latent space instead of relying on explicit text chain-of-thought. It aligns geometry from 3D foundation models with future dynamics from world models, then progressively learns trajectory generation and safety-aware refinement."
   },
   {
     "id": "2603-01441",
@@ -2048,7 +2146,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "wang_linkvla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "LinkVLA aligns language and actions through a shared discrete codebook, adds trajectory-to-caption supervision, and uses coarse-to-fine decoding to cut inference time."
   },
   {
     "id": "2603-01063",
@@ -2069,7 +2168,8 @@
     "stars": null,
     "zoteroKey": "luo_elf-vla_2026",
     "code": "https://github.com/luo-yc17/ELF-VLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ELF-VLA adds structured failure diagnosis to reinforcement learning for driving VLA models. Its interpretable reports distinguish planning, reasoning, and trajectory-execution errors, providing actionable feedback when ordinary scalar rewards plateau on long-tail scenarios."
   },
   {
     "id": "2602-21172",
@@ -2090,7 +2190,8 @@
     "stars": 12,
     "zoteroKey": "rawal_nord_2026",
     "code": "https://github.com/Applied-Intuition-Open-Source/nord",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "NORD reduces reliance on large driving datasets and costly reasoning annotations, achieving competitive results with a smaller training set and fewer generated tokens. The paper also identifies difficulty bias in GRPO and applies Dr. GRPO to improve reinforcement learning on challenging scenarios."
   },
   {
     "id": "2602-20794",
@@ -2111,7 +2212,8 @@
     "stars": null,
     "zoteroKey": "wang_vggdrive_2026",
     "code": "https://github.com/WJ-CV/VGGDrive",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "VGGDrive equips a vision-language model with cross-view 3D geometric grounding by injecting features from a frozen 3D foundation model. Its hierarchical geometric enabler aims to preserve the base VLM while improving spatial understanding across driving evaluation protocols."
   },
   {
     "id": "2602-13329",
@@ -2131,7 +2233,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "wang_hist-vla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "HiST-VLA combines 3D geometric cues, fine-grained driving commands, and historical state prompts for more reliable trajectory generation. Dynamic token sparsification fuses redundant tokens to improve efficiency without simply dropping potentially useful context."
   },
   {
     "id": "2602-10719",
@@ -2151,7 +2254,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "ang_hybriddrivevla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This study compares vision-language and vision-only driving backbones, finding that each retains distinct behaviorally useful features after policy training. It exploits their complementarity in HybridDriveVLA, running both branches and selecting trajectories with a learned scorer."
   },
   {
     "id": "2601-06474",
@@ -2172,7 +2276,8 @@
     "stars": null,
     "zoteroKey": "dang_sparseoccvla_2026",
     "code": "https://github.com/MSunDYY/SparseOccVLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SparseOccVLA bridges VLM reasoning and 4D occupancy with compact sparse queries, then uses an anchor-diffusion planner for scene understanding, forecasting, and trajectory planning."
   },
   {
     "id": "2601-05640",
@@ -2193,7 +2298,8 @@
     "stars": null,
     "zoteroKey": "li_sgdrive_2026",
     "code": "https://github.com/LogosRoboticsGroup/SGDrive",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SGDrive structures driving reasoning around a scene-agent-goal hierarchy: understand the overall context, focus on safety-critical agents, then formulate short-term goals before acting. This hierarchy is designed to make a general VLM's representations more useful for 3D driving."
   },
   {
     "id": "2601-05611",
@@ -2213,7 +2319,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "xie_latentvla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "FLARE activates pretrained VLM visual knowledge without labor-intensive language labels by predicting future scene features and ego motion in latent space. It then uses reinforcement learning to refine trajectory decisions from unlabeled driving data."
   },
   {
     "id": "2512-22939",
@@ -2235,7 +2342,8 @@
     "project": "https://pqh22.github.io/projects/ColaVLA/index.html",
     "zoteroKey": "peng_colavla_2026",
     "code": "https://github.com/pqh22/ColaVLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ColaVLA moves reasoning from long textual chains into compact cognitive latents and generates hierarchical, causality-consistent trajectories in parallel. The design targets lower VLM latency while connecting high-level decisions to multi-scale continuous plans."
   },
   {
     "id": "2512-10719",
@@ -2256,7 +2364,8 @@
     "stars": 93,
     "zoteroKey": "li_spacedrive_2025",
     "code": "https://github.com/zhenghao2519/SpaceDrive",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SpaceDrive represents 3D coordinates as positional encodings rather than textual number tokens, allowing VLMs to reason jointly about geometry and semantics. It derives spatial cues from multi-view depth, ego history, and language instructions and attaches them to visual tokens."
   },
   {
     "id": "2512-06112",
@@ -2277,7 +2386,8 @@
     "openSource": true,
     "stars": 367,
     "zoteroKey": "xu_wam-flow_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "WAM-Flow turns trajectory planning into discrete flow matching, enabling parallel bidirectional denoising and coarse-to-fine refinement. A geometry-aware tokenizer and simulator-guided policy optimization balance safety, progress, and comfort with a tunable inference-cost trade-off."
   },
   {
     "id": "2512-01830",
@@ -2298,7 +2408,8 @@
     "stars": null,
     "zoteroKey": "zhang_openread_2025",
     "code": "https://github.com/wyddmw/OpenREAD",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "OpenREAD trains an end-to-end driving VLM with open-ended reasoning reinforcement: an LLM critic scores reasoning quality, while a shared fine-tuning pipeline improves both scene reasoning and trajectory planning."
   },
   {
     "id": "2511-00088",
@@ -2320,7 +2431,8 @@
     "stars": 2025,
     "project": "https://huggingface.co/nvidia/Alpamayo-R1-10B",
     "zoteroKey": "nvidia_alpamayo-r1_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Alpamayo-R1 combines causally grounded reasoning traces with a vision-language model and diffusion trajectory decoder, using supervised fine-tuning and reinforcement learning to align explanations with driving actions."
   },
   {
     "id": "2511-00062",
@@ -2341,7 +2453,8 @@
     "openSource": true,
     "stars": 1372,
     "zoteroKey": "nvidia_world_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Cosmos-Predict2.5 is a flow-based video world model for text-, image-, and video-conditioned generation, designed to support controllable synthetic data, policy evaluation, and closed-loop simulation for physical AI."
   },
   {
     "id": "2509-20109",
@@ -2362,7 +2475,8 @@
     "stars": null,
     "zoteroKey": "li_reflectdrive-1_2025",
     "code": "https://github.com/pixeli99/ReflectDrive",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ReflectDrive discretizes driving trajectories and applies gradient-free reflection with local search and inpainting to iteratively replace unsafe actions with feasible alternatives."
   },
   {
     "id": "2509-05578",
@@ -2382,7 +2496,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "liu_occvla_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "OccVLA uses predicted 3D occupancy as implicit spatial reasoning and supervision for a vision-language-action model, improving driving planning without requiring occupancy inference at deployment."
   },
   {
     "id": "2507-23318",
@@ -2402,7 +2517,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "cao_fastdrivevla_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "FastDriveVLA reduces visual-token cost with a plug-and-play reconstruction-based pruning method that preserves task-relevant image regions for efficient end-to-end driving."
   },
   {
     "id": "2506-13757",
@@ -2424,7 +2540,8 @@
     "project": "https://autovla.github.io/",
     "zoteroKey": "zhou_autovla_2025",
     "code": "https://github.com/ucla-mobility/AutoVLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "AutoVLA unifies language reasoning and feasible trajectory tokens in one model, with fast and chain-of-thought modes and reinforcement fine-tuning to reduce needless reasoning."
   },
   {
     "id": "2506-08052",
@@ -2445,7 +2562,8 @@
     "openSource": true,
     "stars": 611,
     "zoteroKey": "li_recogdrive_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ReCogDrive couples hierarchical driving-cognition data and a VLM with a diffusion planner, then applies reinforcement learning to improve trajectory safety and comfort."
   },
   {
     "id": "2505-19381",
@@ -2466,7 +2584,8 @@
     "stars": null,
     "zoteroKey": "jiang_diffvla_2025",
     "code": "https://github.com/boschresearch/DiffVLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DiffVLA combines VLM-guided decisions with a sparse-dense diffusion policy, using agent and map interactions to guide multimodal trajectory generation."
   },
   {
     "id": "2505-16278",
@@ -2488,7 +2607,8 @@
     "project": "https://thinklab-sjtu.github.io/DriveMoE/",
     "zoteroKey": "yang_drivemoe_2025",
     "code": "https://github.com/Thinklab-SJTU/DriveMoE",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveMoE routes camera views and driving behaviors to specialized vision and action experts, aiming to handle varied maneuvers without averaging distinct actions."
   },
   {
     "id": "2505-00284",
@@ -2509,7 +2629,8 @@
     "openSource": true,
     "stars": 145,
     "zoteroKey": "qiao_lightemma_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "LightEMMA evaluates successive VLMs under one lightweight, untuned driving protocol and finds that newer or larger models do not reliably improve prediction performance."
   },
   {
     "id": "2503-23463",
@@ -2530,7 +2651,8 @@
     "stars": null,
     "zoteroKey": "zhou_opendrivevla_2025",
     "code": "https://github.com/DriveVLA/OpenDriveVLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "OpenDriveVLA aligns structured 2D/3D visual tokens with language and models agent-ego interactions to generate grounded trajectories and answer driving questions."
   },
   {
     "id": "2503-15558",
@@ -2550,7 +2672,8 @@
     "openSource": true,
     "stars": 962,
     "zoteroKey": "nvidia_cosmos-reason1_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Cosmos-Reason1 trains multimodal models for physical common sense and embodied decision-making, using structured reasoning data, supervised fine-tuning, and reinforcement learning."
   },
   {
     "id": "2503-07608",
@@ -2571,7 +2694,8 @@
     "openSource": true,
     "stars": 334,
     "zoteroKey": "jiang_alphadrive_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "AlphaDrive applies planning-specific reinforcement-learning rewards and a two-stage reasoning-and-planning training strategy to improve VLM driving decisions."
   },
   {
     "id": "2410-23262",
@@ -2591,7 +2715,8 @@
     "project": "https://waymo.com/research/emma/",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "EMMA maps camera inputs to trajectories, objects, and road graphs in a unified multimodal language space, with joint training improving performance across these tasks."
   },
   {
     "id": "2406-03008",
@@ -2611,7 +2736,8 @@
     "code": "https://github.com/sled-group/driVLMe",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriVLMe explores conversational, long-horizon driving with a video-language agent grounded in simulator experience and human dialogue, and documents its remaining real-world interaction and latency challenges."
   },
   {
     "id": "2402-12289",
@@ -2631,7 +2757,8 @@
     "project": "https://tsinghua-mars-lab.github.io/DriveVLM/",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "DriveVLM uses staged scene description, analysis, and hierarchical planning for complex scenarios; DriveVLM-Dual pairs it with a conventional driving stack and is tested on a production vehicle."
   },
   {
     "id": "2401-05577",
@@ -2650,7 +2777,8 @@
     "paper": "https://arxiv.org/abs/2401.05577",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "VLP combines vision and language context for driving planning, targeting reasoning and long-tail generalization in urban scenes."
   },
   {
     "id": "2312-14150",
@@ -2671,7 +2799,8 @@
     "project": "https://opendrivelab.com/DriveLM/",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveLM formulates driving perception, prediction, and planning as graph-structured visual question answering and releases data and an agent baseline."
   },
   {
     "id": "2312-09245",
@@ -2691,7 +2820,8 @@
     "code": "https://github.com/OpenGVLab/DriveMLM",
     "openSource": false,
     "stars": null,
-    "codeStatus": "pending"
+    "codeStatus": "pending",
+    "summary": "DriveMLM connects multimodal language decisions to standard behavioral-planning states, enabling an LLM to make explainable closed-loop decisions within existing driving stacks."
   },
   {
     "id": "2312-07488",
@@ -2711,7 +2841,8 @@
     "code": "https://github.com/opendilab/LMDrive",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "LMDrive follows natural-language instructions in closed-loop driving by combining language with multimodal sensors, and introduces instruction-following data and the LangAuto benchmark."
   },
   {
     "id": "2312-00438",
@@ -2732,7 +2863,8 @@
     "project": "https://vlm-driver.github.io/",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Dolphins instruction-tunes a multimodal language model for driving tasks, using grounded chain-of-thought to support scene understanding, instruction following, in-context adaptation, and reflection."
   },
   {
     "id": "2311-05332",
@@ -2752,7 +2884,8 @@
     "code": "https://github.com/PJLab-ADG/GPT4V-AD-Exploration",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "On the Road with GPT-4V evaluates a multimodal model on driving-scene understanding, causal reasoning, and decisions, highlighting both its promise and gaps in spatial grounding and traffic-signal perception."
   },
   {
     "id": "2310-03026",
@@ -2772,7 +2905,8 @@
     "project": "https://sites.google.com/view/llm-mpc",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "LanguageMPC uses LLM reasoning for complex driving decisions and translates them into commands for low-level controllers, targeting interpretability and generalization."
   },
   {
     "id": "2310-01957",
@@ -2792,7 +2926,8 @@
     "code": "https://github.com/wayveai/Driving-with-LLMs",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Driving with LLMs aligns object-level vector inputs with a language model and introduces a 160K-pair driving QA dataset for explainable decisions and action generation."
   },
   {
     "id": "2310-01415",
@@ -2813,7 +2948,8 @@
     "project": "https://pointscoder.github.io/projects/gpt_driver/index.html",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "GPT-Driver casts motion planning as language generation, prompting and fine-tuning GPT to output coordinate-based trajectories with natural-language reasoning."
   },
   {
     "id": "2310-01412",
@@ -2834,7 +2970,8 @@
     "openSource": true,
     "stars": null,
     "codeStatus": "released",
-    "code": "https://cloud.tsinghua.edu.cn/d/adbc8fa3a2fc420ca7bc/"
+    "code": "https://cloud.tsinghua.edu.cn/d/adbc8fa3a2fc420ca7bc/",
+    "summary": "DriveGPT4 fine-tunes a multimodal LLM on driving video and instruction data to explain vehicle behavior, answer questions, and predict low-level controls."
   },
   {
     "id": "2309-16292",
@@ -2855,7 +2992,8 @@
     "project": "https://pjlab-adg.github.io/DiLu/",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DiLu equips an LLM driving agent with reasoning, reflection, and memory so it can accumulate experience and generalize decisions beyond fixed driving data."
   },
   {
     "id": "2309-10228",
@@ -2874,7 +3012,8 @@
     "paper": "https://arxiv.org/abs/2309.10228",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "Drive as You Speak outlines an LLM-based vehicle framework that combines natural-language interaction, contextual reasoning, and specialized tools with existing driving modules."
   },
   {
     "id": "2210-12511",
@@ -2895,7 +3034,8 @@
     "project": "https://sled.eecs.umich.edu/publication/ma-2022-emnlp-dorothie/",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DOROTHIE introduces an interactive simulator and spoken-dialogue navigation benchmark for studying how driving agents handle unexpected events through human communication."
   },
   {
     "id": "2609-26792",
@@ -2920,7 +3060,8 @@
     "stars": 10,
     "codeStatus": "pending",
     "project": "https://vail-ucla.github.io/DreamStream/",
-    "zoteroKey": "leng_dreamstream_2026"
+    "zoteroKey": "leng_dreamstream_2026",
+    "summary": "DreamStream is a policy-oriented generative simulator that preserves decision-relevant scene structure for closed-loop driving evaluation and introduces the interactive Navhard-CL benchmark."
   },
   {
     "id": "2609-21712",
@@ -2939,7 +3080,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "hu_zyt-world_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "ZYT-World targets low-latency, controllable seven-camera driving simulation, combining camera-specific conditioning, one-step streaming generation, and place memory."
   },
   {
     "id": "2609-20377",
@@ -2958,7 +3100,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "liu_mm-future_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "MM-Future jointly generates multiple paired future-scene and ego-action hypotheses, then scores candidate trajectories using their predicted futures."
   },
   {
     "id": "2609-03602",
@@ -2977,7 +3120,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "wang_sv-wam_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "SV-WAM uses six-camera future-video prediction as training supervision for a shared world-action model, then removes the video branch for efficient planning."
   },
   {
     "id": "2608-28404",
@@ -2998,7 +3142,8 @@
     "openSource": true,
     "stars": 21,
     "zoteroKey": "besnier_natix_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "This study analyzes video-diffusion scaling on up to 5,500 hours of driving data and finds training exposure especially effective under fixed compute, while larger models improve asymptotic quality."
   },
   {
     "id": "2608-22187",
@@ -3018,7 +3163,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "wang_behaviorworldgen_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "BehaviorWorldGen generates controllable multi-agent traffic rollouts whose agents respond to the ego and one another, then uses rendered scenarios to refine driving policies."
   },
   {
     "id": "2608-20974",
@@ -3039,7 +3185,8 @@
     "openSource": true,
     "stars": 64,
     "zoteroKey": "wang_wa-jepa_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "WA-JEPA adapts video JEPA to action-conditioned driving futures with future-masked training, latent flow matching, and joint future-scene/trajectory prediction."
   },
   {
     "id": "2608-20430",
@@ -3058,7 +3205,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "lu_rise_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "RISE adaptively decides whether to continue world-model rollouts based on expected planning benefit and compute cost, supported by counterfactual risk data."
   },
   {
     "id": "2608-19085",
@@ -3077,7 +3225,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "zhong_da-wam_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "DA-WAM jointly trains action-conditioned future latents and trajectory scoring so each candidate is evaluated against its own predicted consequences."
   },
   {
     "id": "2608-10107",
@@ -3096,7 +3245,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "fu_4d-wam_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "4D-WAM uses geometric-model supervision to improve the physical consistency of predicted driving futures and emphasizes early denoising stages where planning decisions form."
   },
   {
     "id": "2608-07468",
@@ -3117,7 +3267,8 @@
     "openSource": true,
     "stars": 182,
     "zoteroKey": "zhao_simwam_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SimWAM uses future video as training-only supervision for a lightweight action expert, avoiding video generation at inference and adding reinforcement learning for driving rewards."
   },
   {
     "id": "2608-03084",
@@ -3138,7 +3289,8 @@
     "openSource": true,
     "stars": 20,
     "zoteroKey": "yuan_suv_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SUV predicts future visual, semantic, depth, and agent-dynamics streams with a shared video model, then conditions an action expert on those futures for trajectory planning."
   },
   {
     "id": "2607-29031",
@@ -3158,7 +3310,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "yang_auto-jepa_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "Auto-JEPA predicts a continuous future-driving-intent embedding and retrieves/ranks executable trajectories, avoiding dense future-scene reconstruction and a learned trajectory generator."
   },
   {
     "id": "2607-26056",
@@ -3179,7 +3332,8 @@
     "stars": null,
     "zoteroKey": "sun_intact_2026",
     "code": "https://github.com/zju3dv/INTACT-JEPA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "INTACT learns an intent-to-action interface from reward-free trajectories, enabling a direct policy from latent goals while retaining optional sampling or local search."
   },
   {
     "id": "2607-20988",
@@ -3199,7 +3353,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "yu_hyworldvla_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "HyWorldVLA combines pixel-level video reconstruction with latent future prediction during training, then uses future latents to guide trajectory generation."
   },
   {
     "id": "2607-17521",
@@ -3219,7 +3374,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "zhang_geoworldad_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "GeoWorldAD grounds planning in present 3D geometry and predicted future geometry, iteratively refining trajectories to balance safety and progress."
   },
   {
     "id": "2606-30421",
@@ -3239,7 +3395,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "cheng_owmdrive_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "OWMDrive forecasts multi-step 3D occupancy as a causal future prior for diffusion-based trajectory planning in uncertain or partially observed scenes."
   },
   {
     "id": "2606-15869",
@@ -3260,7 +3417,8 @@
     "stars": null,
     "zoteroKey": "li_metis_2026",
     "code": "https://github.com/LogosRoboticsGroup/Metis",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Metis separates video generation and action prediction into transformer experts that train jointly but let the planner skip video generation at inference."
   },
   {
     "id": "2606-03159",
@@ -3280,7 +3438,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "nvidia_nvidia_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "OmniDreams is an action-conditioned video world model for real-time closed-loop simulation, generating reactive observations for long-tail driving scenarios."
   },
   {
     "id": "2606-02800",
@@ -3302,7 +3461,8 @@
     "stars": 11900,
     "project": "https://huggingface.co/collections/nvidia/cosmos3",
     "zoteroKey": "nvidia_cosmos_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Cosmos 3 is an omnimodal foundation world-model family that jointly processes and generates language, images, video, audio, and actions for physical AI."
   },
   {
     "id": "2605-24892",
@@ -3322,7 +3482,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "li_x-foresight_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "X-Foresight integrates long-horizon, chunk-wise future-video prediction into a VLA so world dynamics and action control are trained together, with extra supervision for safety-critical moments."
   },
   {
     "id": "2605-18137",
@@ -3342,7 +3503,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "zhou_xiaomi_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "The Xiaomi Auto World Model combines sparse-query 3D Gaussian reconstruction with few-step causal video generation for consistent closed-loop simulation and data synthesis."
   },
   {
     "id": "2605-17682",
@@ -3362,7 +3524,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "chen_gem_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "GEM represents driving scenes as continuous dynamic 4D Gaussians, enabling non-autoregressive occupancy queries at arbitrary times and downstream motion planning."
   },
   {
     "id": "2605-14696",
@@ -3383,7 +3546,8 @@
     "stars": null,
     "zoteroKey": "xu_eponav2_2026",
     "code": "https://github.com/JiaweiXu8/EponaV2",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "EponaV2 predicts richer future geometry and semantic representations to strengthen scene reasoning for planning, then further tunes plans with flow-matching-based reinforcement learning."
   },
   {
     "id": "2605-11596",
@@ -3404,7 +3568,8 @@
     "stars": 57,
     "zoteroKey": "zhang_horizondrive_2026",
     "code": "https://github.com/zcliangyue/HorizonDrive",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "HorizonDrive trains an autoregressive driving-video teacher to recover from rollout errors, extending reliable supervision to minute-scale simulation while keeping memory bounded."
   },
   {
     "id": "2605-11550",
@@ -3424,7 +3589,8 @@
     "stars": null,
     "zoteroKey": "lu_dawn_2026",
     "code": "https://github.com/COOWAI/DAWN",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DAWN couples latent future-world prediction and action denoising in a short interactive rollout, iteratively refining the imagined scene and planned trajectory."
   },
   {
     "id": "2605-10564",
@@ -3445,7 +3611,8 @@
     "openSource": true,
     "stars": 31,
     "zoteroKey": "zhang_deepsight_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DeepSight predicts parallel future BEV semantic latents for long-horizon world modeling and adds adaptive text reasoning to improve decisions in challenging scenarios."
   },
   {
     "id": "2605-10426",
@@ -3466,7 +3633,8 @@
     "openSource": true,
     "stars": 10,
     "zoteroKey": "huang_coworld-vla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "CoWorld-VLA supplies a planner with expert tokens for semantic interactions, geometry, dynamics, and ego goals, fusing them during diffusion-based trajectory generation."
   },
   {
     "id": "2605-09701",
@@ -3486,7 +3654,8 @@
     "stars": null,
     "project": "https://huggingface.co/spaces/AGC2025/e2e-driving-navhard",
     "zoteroKey": "hong_drivefuture_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "DriveFuture makes predicted future latent states an explicit condition for its diffusion trajectory planner, aligning future modeling with the decision being made."
   },
   {
     "id": "2604-20289",
@@ -3506,7 +3675,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "zeng_x-cache_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "X-Cache accelerates few-step autoregressive world-model inference by selectively reusing transformer block computations across video chunks."
   },
   {
     "id": "2604-04198",
@@ -3527,7 +3697,8 @@
     "stars": null,
     "zoteroKey": "liu_driveva_2026",
     "code": "https://github.com/xiaomi-mlab/DriveVA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveVA jointly predicts videos and trajectories in a shared latent generative process, using video-model priors to support zero-shot transfer across driving domains."
   },
   {
     "id": "2604-02714",
@@ -3549,7 +3720,8 @@
     "project": "https://zihaosheng.github.io/ExploreVLA/",
     "zoteroKey": "sheng_explorevla_2026",
     "code": "https://github.com/zihaosheng/ExploreVLA",
-    "codeStatus": "pending"
+    "codeStatus": "pending",
+    "summary": "ExploreVLA uses future RGB and depth prediction both as dense world supervision and as an uncertainty-based novelty reward for safety-gated policy exploration."
   },
   {
     "id": "2604-01765",
@@ -3570,7 +3742,8 @@
     "project": "https://drivedreamer-policy.github.io/",
     "zoteroKey": "zhou_drivedreamer-policy_2026",
     "code": "https://github.com/youngzhou1999/DriveDreamer-Policy",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveDreamer-Policy unifies depth, future-video, and action generation, using explicit geometry to condition both world prediction and trajectory planning."
   },
   {
     "id": "2603-27287",
@@ -3590,7 +3763,8 @@
     "stars": null,
     "zoteroKey": "liu_uni-world_2026",
     "code": "https://github.com/LogosRoboticsGroup/UniWorldVLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Uni-World VLA interleaves future-frame prediction with trajectory generation so each planning step can react to the imagined scene, with monocular depth cues for geometry."
   },
   {
     "id": "2603-24581",
@@ -3610,7 +3784,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "wang_latent-wam_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "Latent-WAM compresses multi-view scenes into geometry-aware tokens and predicts causal future latents to guide efficient trajectory planning."
   },
   {
     "id": "2603-19979",
@@ -3630,7 +3805,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "zheng_x-world_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "X-World is a controllable, action-conditioned multi-camera video world model designed for reproducible closed-loop policy evaluation with editable traffic and scene attributes."
   },
   {
     "id": "2603-16666",
@@ -3652,7 +3828,8 @@
     "project": "https://yuantianyuan01.github.io/FastWAM/",
     "zoteroKey": "yuan_fast-wam_2026",
     "code": "https://github.com/yuantianyuan01/FastWAM",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Fast-WAM retains video co-training but skips future-video generation at inference, testing whether learned video representations alone can support faster world-action policies."
   },
   {
     "id": "2603-14948",
@@ -3673,7 +3850,8 @@
     "openSource": true,
     "stars": 80,
     "zoteroKey": "gui_worlddrive_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "WorldDrive unifies trajectory-conditioned scene generation and motion representations, then uses a future-aware reward model to rank planning candidates."
   },
   {
     "id": "2602-10884",
@@ -3693,7 +3871,8 @@
     "openSource": true,
     "stars": 63,
     "zoteroKey": "zhang_resworld_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "ResWorld models temporal residuals to focus on dynamic actors, combines them with current static-scene features, and refines candidate paths using predicted future BEV."
   },
   {
     "id": "2602-06521",
@@ -3714,7 +3893,8 @@
     "openSource": true,
     "stars": 127,
     "zoteroKey": "jia_driveworld-vla_2026",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveWorld-VLA shares latent future-scene states directly with a language-action planner, enabling action-conditioned imagination without pixel-level rollout."
   },
   {
     "id": "2602-01536",
@@ -3733,7 +3913,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "liu_unidwm_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "UniDWM learns structured, dynamic latent states with a shared reconstruction-and-generation design to support driving-scene understanding, future prediction, and planning."
   },
   {
     "id": "2601-22032",
@@ -3754,7 +3935,8 @@
     "stars": null,
     "zoteroKey": "wang_drive-jepa_2026",
     "code": "https://github.com/linhanwang/Drive-JEPA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Drive-JEPA adapts video JEPA to planning-relevant driving representations and distills diverse simulated and human trajectories into a multimodal planner."
   },
   {
     "id": "2601-04453",
@@ -3775,7 +3957,8 @@
     "stars": null,
     "project": "https://unidrive-wm.github.io/UniDrive-WM",
     "zoteroKey": "xiong_unidrive-wm_2026",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "UniDrive-WM combines scene understanding, trajectory planning, and trajectory-conditioned future-image generation in one model, using generated futures as planning supervision."
   },
   {
     "id": "2512-23421",
@@ -3797,7 +3980,8 @@
     "zoteroKey": "xia_drivelawunifying_2025",
     "code": "https://github.com/wm-research/DriveLaW",
     "project": "https://wm-research.github.io/DriveLaW/",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveLaW feeds a video world model's latent features directly into a diffusion planner, aligning generated futures and planned motion through staged training."
   },
   {
     "id": "2512-19133",
@@ -3817,7 +4001,8 @@
     "openSource": false,
     "stars": null,
     "zoteroKey": "yang_worldrft_2025",
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "WorldRFT aligns latent scene representations with hierarchical planning and locally refined trajectories, then applies collision-aware reinforcement fine-tuning."
   },
   {
     "id": "2512-04441",
@@ -3839,7 +4024,8 @@
     "zoteroKey": "sun_minddrive_2025",
     "code": "https://github.com/xiaomi-mlab/MindDrive",
     "project": "https://xiaomi-mlab.github.io/MindDrive/",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "MindDrive uses a world-action model for what-if scene simulation and candidate generation, then applies VLM-based safety, comfort, and efficiency evaluation."
   },
   {
     "id": "2511-23369",
@@ -3861,7 +4047,8 @@
     "project": "https://opendrivelab.com/SimScale",
     "zoteroKey": "tian_simscale_2025",
     "code": "https://github.com/OpenDriveLab/SimScale",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "SimScale synthesizes reactive, photorealistic driving scenarios and pseudo-expert trajectories from real logs, enabling policy gains that scale with generated data."
   },
   {
     "id": "2510-12796",
@@ -3882,7 +4069,8 @@
     "stars": null,
     "zoteroKey": "li_drivevla-w0_2025",
     "code": "https://github.com/BraveGroup/DriveVLA-W0",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveVLA-W0 adds future-image prediction as dense self-supervision to VLA training and finds that world modeling strengthens performance scaling with more driving data."
   },
   {
     "id": "2510-10726",
@@ -3903,7 +4091,8 @@
     "stars": 1200,
     "zoteroKey": "liu_worldmirror_2025",
     "code": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "WorldMirror is a general-purpose 3D reconstruction model that accepts varied geometric priors and predicts multiple scene representations in one feed-forward system."
   },
   {
     "id": "2510-04333",
@@ -3925,7 +4114,8 @@
     "project": "https://alan-lanfeng.github.io/RAP/",
     "zoteroKey": "feng_rap_2026",
     "code": "https://github.com/vita-epfl/RAP",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "RAP uses lightweight 3D rasterization to generate counterfactual views and recovery trajectories, then aligns raster features with real data for robust planner training."
   },
   {
     "id": "2508-06571",
@@ -3946,7 +4136,8 @@
     "stars": null,
     "zoteroKey": "jiang_irl-vla_2025",
     "code": "https://github.com/IRL-VLA/IRL-VLA",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "IRL-VLA trains a driving policy with a lightweight inverse-reinforcement-learning reward world model, enabling closed-loop policy optimization without relying on expensive high-fidelity simulation."
   },
   {
     "id": "2507-00603",
@@ -3966,7 +4157,8 @@
     "openSource": true,
     "stars": 111,
     "zoteroKey": "zheng_world4drive_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "World4Drive learns intention-aware latent futures and uses a world-model selector to compare multimodal trajectories without requiring perception annotations."
   },
   {
     "id": "2506-24113",
@@ -3988,7 +4180,8 @@
     "stars": 388,
     "project": "https://kevin-thu.github.io/Epona/",
     "zoteroKey": "zhang_eponav1_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Epona models driving video with autoregressive diffusion and separates temporal dynamics from detailed frame generation, while integrating trajectory planning."
   },
   {
     "id": "2504-01941",
@@ -4009,7 +4202,8 @@
     "openSource": true,
     "stars": 270,
     "zoteroKey": "li_wote_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "WoTE uses a BEV world model to forecast trajectory outcomes and evaluate candidate paths efficiently in open- and closed-loop benchmarks."
   },
   {
     "id": "2503-14492",
@@ -4030,7 +4224,8 @@
     "openSource": true,
     "stars": 826,
     "zoteroKey": "nvidia_cosmos-transfer1_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Cosmos-Transfer enables controllable world-to-world generation from spatial inputs such as segmentation, depth, and edges, including autonomous-driving data enrichment."
   },
   {
     "id": "2501-14729",
@@ -4051,7 +4246,8 @@
     "openSource": true,
     "stars": 264,
     "zoteroKey": "zhou_hermes_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "HERMES unifies BEV-based 3D scene understanding and future-scene generation, injecting contextual world knowledge through causal world queries."
   },
   {
     "id": "2501-03575",
@@ -4072,7 +4268,8 @@
     "openSource": true,
     "stars": 473,
     "zoteroKey": "nvidia_cosmos_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Cosmos is a foundation-model platform for building customized physical-AI world models, with video curation tools, pretrained models, and tokenizers."
   },
   {
     "id": "2412-10371",
@@ -4093,7 +4290,8 @@
     "openSource": true,
     "stars": 130,
     "zoteroKey": "zheng_gaussianad_2024",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "GaussianAD represents driving scenes with dynamic 3D semantic Gaussians to support perception, occupancy forecasting, and end-to-end motion planning."
   },
   {
     "id": "2406-08481",
@@ -4114,7 +4312,8 @@
     "openSource": true,
     "stars": 391,
     "zoteroKey": "li_law_2025",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "LAW predicts future latent scene features from current observations and ego trajectories, adding self-supervised supervision to improve end-to-end planning."
   },
   {
     "id": "2405-17398",
@@ -4136,7 +4335,8 @@
     "stars": 901,
     "project": "https://vista-demo.github.io",
     "zoteroKey": "gao_vista_2024",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "Vista is a controllable driving world model designed for high-fidelity, long-horizon predictions that generalize across environments and action conditions."
   },
   {
     "id": "2403-09630",
@@ -4156,7 +4356,8 @@
     "project": "https://github.com/OpenDriveLab/DriveAGI",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "GenAD is a large-scale latent-diffusion driving-video predictor trained on diverse web videos, with adaptations for action-conditioned prediction and motion planning."
   },
   {
     "id": "2312-02934",
@@ -4176,7 +4377,8 @@
     "code": "https://github.com/fudan-zvg/WoVoGen",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "WoVoGen predicts a controllable 4D world volume and uses it to generate spatially and temporally consistent multi-camera driving videos."
   },
   {
     "id": "2311-17918",
@@ -4197,7 +4399,8 @@
     "project": "https://drive-wm.github.io/",
     "openSource": false,
     "stars": null,
-    "codeStatus": "pending"
+    "codeStatus": "pending",
+    "summary": "Drive-WM generates controllable multi-view futures for candidate maneuvers and uses image-based rewards to select a safer driving trajectory."
   },
   {
     "id": "2311-16038",
@@ -4218,7 +4421,8 @@
     "openSource": true,
     "stars": 587,
     "zoteroKey": "zheng_occworld_2023",
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "OccWorld tokenizes 3D occupancy and autoregressively predicts both future scenes and ego trajectories, without relying on instance or map labels."
   },
   {
     "id": "2311-13549",
@@ -4237,7 +4441,8 @@
     "paper": "https://arxiv.org/abs/2311.13549",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "ADriver-I interleaves vision and action tokens to iteratively predict controls and future frames, enabling the policy to act within its own generated world."
   },
   {
     "id": "2310-07771",
@@ -4257,7 +4462,8 @@
     "code": "https://github.com/shalfun/DrivingDiffusion",
     "openSource": false,
     "stars": null,
-    "codeStatus": "pending"
+    "codeStatus": "pending",
+    "summary": "DrivingDiffusion generates multi-camera driving videos from 3D layouts, combining cross-view communication, temporal modeling, and long-video processing."
   },
   {
     "id": "2309-17080",
@@ -4276,7 +4482,8 @@
     "paper": "https://arxiv.org/abs/2309.17080",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "GAIA-1 is a video-, text-, and action-conditioned generative driving world model that predicts discrete sequences to produce controllable future scenarios."
   },
   {
     "id": "2309-09777",
@@ -4296,7 +4503,8 @@
     "code": "https://github.com/JeffWang987/DriveDreamer",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveDreamer learns traffic structure and future-state generation from real-world driving data, producing controllable videos and policy-relevant scenarios."
   },
   {
     "id": "2210-07729",
@@ -4316,7 +4524,8 @@
     "code": "https://github.com/wayveai/mile",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "MILE jointly learns a compact latent world model and driving policy from offline videos, enabling planning through imagined future states."
   },
   {
     "id": "2105-00636",
@@ -4337,7 +4546,8 @@
     "project": "https://dotchen.github.io/world_on_rails/",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "World on Rails learns a vision-based driving policy from logged data using a non-reactive world model to evaluate and supervise candidate trajectories."
   },
   {
     "id": "2104-15060",
@@ -4357,7 +4567,8 @@
     "code": "https://github.com/nv-tlabs/DriveGAN_code",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DriveGAN learns a controllable, differentiable neural driving simulator directly from video and action pairs, allowing actions and scene attributes such as weather to be varied."
   },
   {
     "id": "2609-20756",
@@ -4379,7 +4590,8 @@
     "stars": null,
     "codeStatus": "not-found",
     "project": "https://01dami23.github.io/opted/",
-    "zoteroKey": "col_opted_2026"
+    "zoteroKey": "col_opted_2026",
+    "summary": "OPTED fine-tunes a pretrained driving policy in closed loop using a privileged RL teacher, reducing the simulator interactions needed for post-training."
   },
   {
     "id": "self-improving-autonomous-vehicles-real-world-rl-2026",
@@ -4398,7 +4610,8 @@
     "paper": "https://www.ijcai.org/proceedings/2026/493",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This real-world reinforcement-learning method selects informative driving situations and aborts episodes before unsafe states, allowing vehicles to improve with less human intervention."
   },
   {
     "id": "2608-22549",
@@ -4421,7 +4634,8 @@
     "openSource": true,
     "stars": null,
     "codeStatus": "released",
-    "zoteroKey": "koprulu_cl4ad_2026"
+    "zoteroKey": "koprulu_cl4ad_2026",
+    "summary": "CL4AD applies curriculum learning to large-scale driving simulators, prioritizing scenarios by learning utility to improve sample efficiency over uniform randomization."
   },
   {
     "id": "2606-14032",
@@ -4445,7 +4659,8 @@
     "stars": null,
     "codeStatus": "not-found",
     "project": "https://meiyuewen.github.io/AlignADV/",
-    "zoteroKey": "mei_alignadv_2026"
+    "zoteroKey": "mei_alignadv_2026",
+    "summary": "AlignADV generates adversarial yet learnable driving scenarios and samples them according to the evolving policy's capabilities, improving training efficiency and safety."
   },
   {
     "id": "2606-03678",
@@ -4465,7 +4680,8 @@
     "code": "https://github.com/tongnie/EvoDrive",
     "openSource": false,
     "stars": null,
-    "codeStatus": "pending"
+    "codeStatus": "pending",
+    "summary": "EvoDrive evolves traffic-scenario generators and evaluators through simulator-grounded LLM agents, preserving a Pareto set of diverse realism-versus-adversariality trade-offs."
   },
   {
     "id": "agentic-ai-driving-skillbank-2026",
@@ -4484,7 +4700,8 @@
     "paper": "https://doi.org/10.5220/0014358100004052",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This framework combines PPO with an LLM-guided SkillBank of reusable maneuvers and curiosity-driven exploration to improve driving safety and learning stability."
   },
   {
     "id": "feng-breaking-2026",
@@ -4505,7 +4722,8 @@
     "openSource": true,
     "stars": 7,
     "codeStatus": "released",
-    "zoteroKey": "feng_breaking_2026"
+    "zoteroKey": "feng_breaking_2026",
+    "summary": "Dense learning selects informative failures and successes, including near misses, to reduce variance in safety-critical policy training while preserving unbiased learning."
   },
   {
     "id": "uncertainty-safe-evolving-rl-2025",
@@ -4524,7 +4742,8 @@
     "paper": "https://doi.org/10.1016/j.engappai.2025.112108",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This highway-driving method combines internal and external stability with safety mechanisms, using uncertainty awareness to support safer reinforcement-learning evolution."
   },
   {
     "id": "2408-12187",
@@ -4543,7 +4762,8 @@
     "paper": "https://arxiv.org/abs/2408.12187",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "Mechanism-Experience Learning narrows the RL search space with human-like driving tendencies and constrains exploration with a safety-aware mechanistic model."
   },
   {
     "id": "expert-agent-positive-feedback-2025",
@@ -4563,7 +4783,8 @@
     "code": "https://github.com/giant-ape/expert-against-rl",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "This expert-guided RL framework lets an agent surpass an imperfect expert while using high-quality agent experience to improve the expert policy in return."
   },
   {
     "id": "2408-12805",
@@ -4582,7 +4803,8 @@
     "paper": "https://doi.org/10.1016/j.aap.2025.107941",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "A data-driven risk model estimates the safety of candidate driving actions and guides policy updates, allowing the controller to improve its performance while explicitly accounting for risk."
   },
   {
     "id": "2502-03349",
@@ -4608,7 +4830,8 @@
     "stars": null,
     "codeStatus": "not-found",
     "project": "https://machinelearning.apple.com/research/robust-autonomy-emerges",
-    "zoteroKey": "cusumano-towner_gigaflow_2025"
+    "zoteroKey": "cusumano-towner_gigaflow_2025",
+    "summary": "Gigaflow enables large-scale simulator self-play, showing that robust, naturalistic driving policies can emerge without human driving demonstrations."
   },
   {
     "id": "human-feedback-self-evolving-driving-2024",
@@ -4627,7 +4850,8 @@
     "paper": "https://doi.org/10.1007/s43684-024-00071-z",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This perspective proposes a self-evolving intelligent-driving framework that uses human demonstrations, evaluations, interventions, and prior knowledge to guide policy learning."
   },
   {
     "id": "dcar-l-dynamic-confidence-2023",
@@ -4647,7 +4871,8 @@
     "code": "https://github.com/dcarl-opensource/DCARL",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "DCARL uses confidence-aware reinforcement learning to improve driving policies from collected experience while reverting to a safer baseline in uncertain situations."
   },
   {
     "id": "2210-16575",
@@ -4667,7 +4892,8 @@
     "code": "https://github.com/data-and-decision-lab/self-improving-RL",
     "openSource": true,
     "stars": null,
-    "codeStatus": "released"
+    "codeStatus": "released",
+    "summary": "This framework uses black-box verification to discover RL driving failures, then retrains the policy on those scenarios to improve safety."
   },
   {
     "id": "trustworthy-safety-improvement-rl-2022",
@@ -4686,6 +4912,7 @@
     "paper": "https://doi.org/10.1016/j.trc.2022.103656",
     "openSource": false,
     "stars": null,
-    "codeStatus": "not-found"
+    "codeStatus": "not-found",
+    "summary": "This method improves a rule-based driving controller with reinforcement learning and uses a value-based safety gate to deploy the learned policy only when it is expected to outperform the trusted baseline."
   }
 ]
