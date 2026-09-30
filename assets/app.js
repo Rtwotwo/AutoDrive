@@ -55,7 +55,7 @@ function paperCard(paper) {
     paper.code ? `<a href="${paper.code}" title="Public code repository" aria-label="Public code repository" target="_blank" rel="noopener">💻</a>` : '',
     paper.project ? `<a href="${paper.project}" title="Project page" aria-label="Project page" target="_blank" rel="noopener">🌐</a>` : ''
   ].filter(Boolean).join('');
-  return `<article class="paper-card" data-track="${paper.track}">
+  return `<article class="paper-card" data-paper-id="${escapeHTML(paper.id)}" data-track="${paper.track}">
     <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.year}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
     <h3>${paper.name}</h3><p class="paper-title">${paper.title}</p>
     <p class="paper-summary"><span>SUMMARY</span> ${escapeHTML(paper.summary)}</p>
@@ -74,6 +74,7 @@ function renderPapers() {
   $('#paperGrid').innerHTML = filtered.map(paperCard).join('');
   $('#paperCount').textContent = `Showing ${filtered.length} of ${state.papers.length} papers`;
   $('#paperEmpty').hidden = filtered.length !== 0;
+  window.dispatchEvent(new Event('papers-rendered'));
 }
 
 function datasetCard(item) {
@@ -151,7 +152,11 @@ function bindEvents() {
     const button = event.target.closest('[data-track]');
     if (!button) return;
     state.track = button.dataset.track;
-    document.querySelectorAll('.filter').forEach((item) => item.classList.toggle('active', item === button));
+    document.querySelectorAll('.filter').forEach((item) => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
     renderPapers();
   });
   $('#paperSearch').addEventListener('input', (event) => { state.query = event.target.value; renderPapers(); });
@@ -159,11 +164,13 @@ function bindEvents() {
   $('#themeToggle').addEventListener('click', () => {
     const dark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', dark ? 'dark' : 'light');
+    $('#themeToggle').setAttribute('aria-pressed', String(dark));
   });
 }
 
 async function init() {
   if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+  $('#themeToggle').setAttribute('aria-pressed', String(document.documentElement.classList.contains('dark')));
   try {
     await loadData();
     renderMetrics(); renderPapers(); renderDatasets(); renderBenchmarks(); renderLeaderboard(); bindEvents();

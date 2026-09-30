@@ -17,14 +17,27 @@
       <span class="brand-mark">A<span>D</span></span>
       <span><strong>AutoDrive</strong><small>Research Hub</small></span>
     </a>
-    <nav aria-label="Primary navigation">
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-controls="primaryNav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primaryNav" aria-label="Primary navigation">
       <a href="#landscape">Landscape</a>
       <a href="#papers">Papers</a>
       <a href="#benchmarks">Benchmarks</a>
       <a href="#leaderboard">Leaderboard</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">◐</button>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme" aria-pressed="false">◐</button>
   </header>
+
+  <dialog class="paper-dialog" id="paperDialog" aria-labelledby="paperDialogTitle">
+    <div class="paper-dialog-shell">
+      <div class="paper-dialog-bar">
+        <span>RESEARCH NOTE <i></i> PAPER DETAIL</span>
+        <button class="dialog-close" type="button" data-close-paper aria-label="Close paper analysis">×</button>
+      </div>
+      <div class="paper-detail-content" id="paperDetailContent"></div>
+    </div>
+  </dialog>
 
   <main id="top">
     <section class="hero shell">
@@ -79,21 +92,26 @@
       <div class="shell">
         <div class="section-heading compact">
           <div><span class="section-index">02</span><p class="kicker">CURATED PAPERS</p></div>
-          <h2>Curated paper index</h2>
+          <h2>Read beyond the abstract.</h2>
         </div>
-        <div class="paper-toolbar">
+        <p class="section-intro paper-intro">Browse, save, and open a structured reading note for each paper. Notes link to their sources and separate indexed evidence from questions to verify in the full text.</p>
+        <div class="paper-tools">
           <div class="filter-group" id="trackFilters" role="group" aria-label="Filter by research track">
-            <button class="filter active" data-track="all">All</button>
-            <button class="filter" data-track="e2e">End-to-End</button>
-            <button class="filter" data-track="world-model">World Model</button>
-            <button class="filter" data-track="vla">VLA</button>
-            <button class="filter" data-track="rsi">RSI</button>
+            <button class="filter active" type="button" data-track="all" aria-pressed="true">All tracks</button>
+            <button class="filter" type="button" data-track="e2e" aria-pressed="false">End-to-End</button>
+            <button class="filter" type="button" data-track="world-model" aria-pressed="false">World Model</button>
+            <button class="filter" type="button" data-track="vla" aria-pressed="false">VLA</button>
+            <button class="filter" type="button" data-track="rsi" aria-pressed="false">RSI</button>
           </div>
-          <label class="search"><span>⌕</span><input id="paperSearch" type="search" placeholder="Search methods, titles, tags…" autocomplete="off"></label>
+          <div class="paper-query-controls">
+            <label class="search"><span aria-hidden="true">⌕</span><input id="paperSearch" type="search" placeholder="Search title, method, tag, or dataset…" autocomplete="off" aria-label="Search papers"></label>
+            <label class="sort-control"><span>Sort</span><select id="paperSort" aria-label="Sort papers"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="title">Title A–Z</option></select></label>
+            <button class="clear-search" id="clearSearch" type="button">Clear</button>
+          </div>
         </div>
-        <p class="result-count" id="paperCount"></p>
+        <div class="paper-result-bar"><p class="result-count" id="paperCount" aria-live="polite"></p><button class="saved-toggle" id="savedOnly" type="button" aria-pressed="false"><span aria-hidden="true">☆</span> Saved <span class="saved-count" id="savedCount">0</span></button></div>
         <div class="paper-grid" id="paperGrid"></div>
-        <div class="empty-state" id="paperEmpty" hidden>No matching papers. Try another keyword.</div>
+        <div class="empty-state" id="paperEmpty" hidden><strong>No papers match these filters.</strong><p>Try a broader search or reset the filters.</p><button class="button secondary" id="resetPaperFilters" type="button">RESET FILTERS</button></div>
       </div>
     </section>
 
@@ -150,5 +168,6 @@
 
   <footer><div class="shell"><div class="brand footer-brand"><span class="brand-mark">A<span>D</span></span><span><strong>AutoDrive</strong><small>Research Hub</small></span></div><p>Built for open, reproducible autonomous-driving research.</p><a href="#top">BACK TO TOP ↑</a></div></footer>
   <script type="module" src="assets/app.js"></script>
+  <script type="module" src="assets/paper-analysis.js"></script>
 </body>
 </html>
