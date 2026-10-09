@@ -9,6 +9,7 @@
     "sync:zotero": "node scripts/sync_zotero.mjs",
     "readme": "node scripts/render_readme.mjs",
     "update:stars": "node scripts/update_github_stars.mjs",
+    "update:citations": "node scripts/update_citations.mjs",
     "serve": "node scripts/serve.mjs"
   },
   "engines": {

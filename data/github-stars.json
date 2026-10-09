@@ -1,378 +1,841 @@
 {
-  "updatedAt": "2026-09-29T13:11:11.000Z",
+  "updatedAt": "2026-10-09T08:47:06.801Z",
+  "source": "GitHub REST API",
   "repositories": {
-    "adept-thu/MomAD": {
-      "stars": 450,
-      "url": "https://github.com/adept-thu/MomAD"
-    },
-    "AFARI-Research/ChainFlow-VLA": {
-      "stars": 50,
-      "url": "https://github.com/AFARI-Research/ChainFlow-VLA"
-    },
-    "AFARI-Research/CoWorld-VLA": {
-      "stars": 10,
-      "url": "https://github.com/AFARI-Research/CoWorld-VLA"
-    },
-    "AFARI-Research/WA-JEPA": {
-      "stars": 64,
-      "url": "https://github.com/AFARI-Research/WA-JEPA"
-    },
-    "ASH-2046/SUV": {
-      "stars": 20,
-      "url": "https://github.com/ASH-2046/SUV"
-    },
-    "autonomousvision/navsim": {
-      "stars": 1109,
-      "url": "https://github.com/autonomousvision/navsim"
-    },
-    "BraveGroup/LAW": {
-      "stars": 391,
-      "url": "https://github.com/BraveGroup/LAW"
-    },
-    "fudan-generative-vision/WAM-Flow": {
-      "stars": 367,
-      "url": "https://github.com/fudan-generative-vision/WAM-Flow"
-    },
-    "H-EmbodVis/SimWAM": {
-      "stars": 182,
-      "url": "https://github.com/H-EmbodVis/SimWAM"
-    },
-    "haha-yuki-haha/AutoDrive-P3": {
-      "stars": 20,
-      "url": "https://github.com/haha-yuki-haha/AutoDrive-P3"
-    },
-    "happinesslz/UniLION": {
-      "stars": 61,
-      "url": "https://github.com/happinesslz/UniLION"
-    },
-    "hey-cjj/EvoDriveVLA": {
-      "stars": 50,
-      "url": "https://github.com/hey-cjj/EvoDriveVLA"
-    },
-    "hotdogcheesewhite/DeepSight": {
+    "VAIL-UCLA/NavSafe-infty": {
       "stars": 31,
-      "url": "https://github.com/hotdogcheesewhite/DeepSight"
+      "url": "https://github.com/VAIL-UCLA/NavSafe-infty",
+      "checkedAt": "2026-10-09"
     },
-    "hustvl/AlphaDrive": {
-      "stars": 334,
-      "url": "https://github.com/hustvl/AlphaDrive"
+    "KIT-MRT/AD-Diff": {
+      "stars": 2,
+      "url": "https://github.com/KIT-MRT/AD-Diff",
+      "checkedAt": "2026-10-09"
     },
-    "hustvl/DiffusionDrive": {
-      "stars": 1503,
-      "url": "https://github.com/hustvl/DiffusionDrive"
+    "WZiang/navsim-score-basis-audit": {
+      "stars": 2,
+      "url": "https://github.com/WZiang/navsim-score-basis-audit",
+      "checkedAt": "2026-10-09"
     },
-    "hustvl/DiffusionDriveV2": {
-      "stars": 372,
-      "url": "https://github.com/hustvl/DiffusionDriveV2"
-    },
-    "hustvl/VAD": {
-      "stars": 1374,
-      "url": "https://github.com/hustvl/VAD"
-    },
-    "kesai-labs/py123d": {
-      "stars": 396,
-      "url": "https://github.com/kesai-labs/py123d"
-    },
-    "Kevin-thu/Epona": {
-      "stars": 388,
-      "url": "https://github.com/Kevin-thu/Epona"
-    },
-    "Kguo-cs/iPad": {
-      "stars": 144,
-      "url": "https://github.com/Kguo-cs/iPad"
-    },
-    "liulin815/DriveWorld-VLA": {
-      "stars": 127,
-      "url": "https://github.com/liulin815/DriveWorld-VLA"
-    },
-    "liulin815/GuideFlow": {
-      "stars": 31,
-      "url": "https://github.com/liulin815/GuideFlow"
-    },
-    "liyingyanUCAS/WoTE": {
-      "stars": 270,
-      "url": "https://github.com/liyingyanUCAS/WoTE"
-    },
-    "LMD0311/HERMES": {
-      "stars": 264,
-      "url": "https://github.com/LMD0311/HERMES"
-    },
-    "mengtan00/ResWorld": {
-      "stars": 63,
-      "url": "https://github.com/mengtan00/ResWorld"
-    },
-    "michigan-traffic-lab/LightEMMA": {
-      "stars": 145,
-      "url": "https://github.com/michigan-traffic-lab/LightEMMA"
-    },
-    "newbrains1/GEMINUS": {
-      "stars": 18,
-      "url": "https://github.com/newbrains1/GEMINUS"
-    },
-    "nvidia-cosmos/cosmos-predict1": {
-      "stars": 473,
-      "url": "https://github.com/nvidia-cosmos/cosmos-predict1"
-    },
-    "nvidia-cosmos/cosmos-predict2.5": {
-      "stars": 1372,
-      "url": "https://github.com/nvidia-cosmos/cosmos-predict2.5"
-    },
-    "nvidia-cosmos/cosmos-reason1": {
-      "stars": 962,
-      "url": "https://github.com/nvidia-cosmos/cosmos-reason1"
-    },
-    "nvidia-cosmos/cosmos-transfer1": {
-      "stars": 826,
-      "url": "https://github.com/nvidia-cosmos/cosmos-transfer1"
-    },
-    "nvidia/cosmos": {
-      "stars": 11900,
-      "url": "https://github.com/nvidia/cosmos"
-    },
-    "NVlabs/alpamayo": {
-      "stars": 2025,
-      "url": "https://github.com/NVlabs/alpamayo"
-    },
-    "NVlabs/BEV-Planner": {
-      "stars": 260,
-      "url": "https://github.com/NVlabs/BEV-Planner"
-    },
-    "NVlabs/GTRS": {
-      "stars": 288,
-      "url": "https://github.com/NVlabs/GTRS"
-    },
-    "opendrivelab/ETA": {
-      "stars": 48,
-      "url": "https://github.com/opendrivelab/ETA"
-    },
-    "OpenDriveLab/Vista": {
-      "stars": 901,
-      "url": "https://github.com/OpenDriveLab/Vista"
-    },
-    "OpenPerceptionX/ST-P3": {
-      "stars": 13,
-      "url": "https://github.com/OpenPerceptionX/ST-P3"
-    },
-    "QwenLM/Qwen-Drive-1.0": {
-      "stars": 468,
-      "url": "https://github.com/QwenLM/Qwen-Drive-1.0"
-    },
-    "robbyant/lingbot-vla-v2": {
-      "stars": 954,
-      "url": "https://github.com/robbyant/lingbot-vla-v2"
-    },
-    "Say2L/GaussianFusion": {
-      "stars": 96,
-      "url": "https://github.com/Say2L/GaussianFusion"
-    },
-    "ShivaTeam/DriveTeach-VLA": {
-      "stars": 29,
-      "url": "https://github.com/ShivaTeam/DriveTeach-VLA"
-    },
-    "swc-17/SparseDrive": {
-      "stars": 1005,
-      "url": "https://github.com/swc-17/SparseDrive"
-    },
-    "swc-17/SparseDriveV2": {
-      "stars": 255,
-      "url": "https://github.com/swc-17/SparseDriveV2"
-    },
-    "TabGuigui/WorldDrive": {
-      "stars": 80,
-      "url": "https://github.com/TabGuigui/WorldDrive"
-    },
-    "ucaszyp/World4Drive": {
-      "stars": 111,
-      "url": "https://github.com/ucaszyp/World4Drive"
-    },
-    "valeoai/VATIX": {
-      "stars": 21,
-      "url": "https://github.com/valeoai/VATIX"
-    },
-    "WilliamXuanYu/CLOVER": {
-      "stars": 12,
-      "url": "https://github.com/WilliamXuanYu/CLOVER"
-    },
-    "wjl2244/MeanFuser": {
-      "stars": 107,
-      "url": "https://github.com/wjl2244/MeanFuser"
-    },
-    "woxihuanjiangguo/ZTRS": {
-      "stars": 77,
-      "url": "https://github.com/woxihuanjiangguo/ZTRS"
-    },
-    "wzzheng/DVGT": {
-      "stars": 362,
-      "url": "https://github.com/wzzheng/DVGT"
-    },
-    "wzzheng/GaussianAD": {
-      "stars": 130,
-      "url": "https://github.com/wzzheng/GaussianAD"
-    },
-    "wzzheng/OccWorld": {
-      "stars": 587,
-      "url": "https://github.com/wzzheng/OccWorld"
-    },
-    "xiaomi-research/recogdrive": {
-      "stars": 611,
-      "url": "https://github.com/xiaomi-research/recogdrive"
-    },
-    "xiaomi-research/unidrivevla": {
-      "stars": 246,
-      "url": "https://github.com/xiaomi-research/unidrivevla"
-    },
-    "XiaomiMiMo/MiMo-Embodied": {
-      "stars": 408,
-      "url": "https://github.com/XiaomiMiMo/MiMo-Embodied"
-    },
-    "YuruiAI/DistillDrive": {
-      "stars": 128,
-      "url": "https://github.com/YuruiAI/DistillDrive"
-    },
-    "YvanYin/GoalFlow": {
-      "stars": 425,
-      "url": "https://github.com/YvanYin/GoalFlow"
-    },
-    "Z1zyw/OneDrive": {
-      "stars": 19,
-      "url": "https://github.com/Z1zyw/OneDrive"
-    },
-    "ZebinX/DriveVLA-M0": {
-      "stars": 32,
-      "url": "https://github.com/ZebinX/DriveVLA-M0"
-    },
-    "ZY-Zong/Physics-guided-Causal-Model": {
-      "stars": 8,
-      "url": "https://github.com/ZY-Zong/Physics-guided-Causal-Model"
-    },
-    "Mashiroln/curious_vla": {
-      "stars": 133,
-      "url": "https://github.com/Mashiroln/curious_vla"
+    "Summer72Wang/NeoAD": {
+      "stars": 2,
+      "url": "https://github.com/Summer72Wang/NeoAD",
+      "checkedAt": "2026-10-09"
     },
     "ori-mrg/PriorEye": {
       "stars": 61,
       "url": "https://github.com/ori-mrg/PriorEye",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-10-09"
+    },
+    "lixirui142/FlowR2A": {
+      "stars": 8,
+      "url": "https://github.com/lixirui142/FlowR2A",
+      "checkedAt": "2026-10-09"
     },
     "OpenDriveLab/WorldEngine": {
-      "stars": 506,
+      "stars": 515,
       "url": "https://github.com/OpenDriveLab/WorldEngine",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-10-09"
     },
-    "SpatialRetrievalAD/End2End-Planning": {
-      "stars": 3,
-      "url": "https://github.com/SpatialRetrievalAD/End2End-Planning",
-      "checkedAt": "2026-09-24"
+    "montrealrobotics/gigapixel": {
+      "stars": 52,
+      "url": "https://github.com/montrealrobotics/gigapixel",
+      "checkedAt": "2026-10-09"
     },
-    "DSL-Lab/TrajFlow": {
-      "stars": 83,
-      "url": "https://github.com/DSL-Lab/TrajFlow",
-      "checkedAt": "2026-09-24"
+    "valeoai/TOAD": {
+      "stars": 27,
+      "url": "https://github.com/valeoai/TOAD",
+      "checkedAt": "2026-10-09"
     },
-    "CurryChen77/CraftPolicy": {
-      "stars": 21,
-      "url": "https://github.com/CurryChen77/CraftPolicy",
-      "checkedAt": "2026-09-24"
+    "WilliamXuanYu/CLOVER": {
+      "stars": 14,
+      "url": "https://github.com/WilliamXuanYu/CLOVER",
+      "checkedAt": "2026-10-09"
     },
-    "OscarHuangWind/AutoMoT": {
-      "stars": 61,
-      "url": "https://github.com/OscarHuangWind/AutoMoT",
-      "checkedAt": "2026-09-24"
+    "kesai-labs/py123d": {
+      "stars": 400,
+      "url": "https://github.com/kesai-labs/py123d",
+      "checkedAt": "2026-10-09"
     },
-    "yaoyao-jpg/DynamicsVLA": {
-      "stars": 58,
-      "url": "https://github.com/yaoyao-jpg/DynamicsVLA",
-      "checkedAt": "2026-09-24"
-    },
-    "Applied-Intuition-Open-Source/nord": {
-      "stars": 12,
-      "url": "https://github.com/Applied-Intuition-Open-Source/nord",
-      "checkedAt": "2026-09-24"
-    },
-    "pqh22/ColaVLA": {
-      "stars": 67,
-      "url": "https://github.com/pqh22/ColaVLA",
-      "checkedAt": "2026-09-24"
-    },
-    "zhenghao2519/SpaceDrive": {
-      "stars": 93,
-      "url": "https://github.com/zhenghao2519/SpaceDrive",
-      "checkedAt": "2026-09-24"
-    },
-    "ucla-mobility/AutoVLA": {
-      "stars": 655,
-      "url": "https://github.com/ucla-mobility/AutoVLA",
-      "checkedAt": "2026-09-24"
-    },
-    "Thinklab-SJTU/DriveMoE": {
-      "stars": 234,
-      "url": "https://github.com/Thinklab-SJTU/DriveMoE",
-      "checkedAt": "2026-09-24"
-    },
-    "zcliangyue/HorizonDrive": {
-      "stars": 57,
-      "url": "https://github.com/zcliangyue/HorizonDrive",
-      "checkedAt": "2026-09-24"
-    },
-    "youngzhou1999/DriveDreamer-Policy": {
-      "stars": 59,
-      "url": "https://github.com/youngzhou1999/DriveDreamer-Policy",
-      "checkedAt": "2026-09-24"
-    },
-    "yuantianyuan01/FastWAM": {
-      "stars": 1500,
-      "url": "https://github.com/yuantianyuan01/FastWAM",
-      "checkedAt": "2026-09-24"
-    },
-    "OpenDriveLab/SimScale": {
-      "stars": 327,
-      "url": "https://github.com/OpenDriveLab/SimScale",
-      "checkedAt": "2026-09-24"
-    },
-    "Tencent-Hunyuan/HunyuanWorld-Mirror": {
-      "stars": 1200,
-      "url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
-      "checkedAt": "2026-09-24"
-    },
-    "vita-epfl/RAP": {
-      "stars": 164,
-      "url": "https://github.com/vita-epfl/RAP",
-      "checkedAt": "2026-09-24"
+    "hustvl/RAD": {
+      "stars": 276,
+      "url": "https://github.com/hustvl/RAD",
+      "checkedAt": "2026-10-09"
     },
     "AutoLab-SAI-SJTU/FlowAD": {
       "stars": 18,
       "url": "https://github.com/AutoLab-SAI-SJTU/FlowAD",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-10-09"
+    },
+    "swc-17/SparseDriveV2": {
+      "stars": 257,
+      "url": "https://github.com/swc-17/SparseDriveV2",
+      "checkedAt": "2026-10-09"
+    },
+    "ZhengYinan-AIR/Hyper-Diffusion-Planner": {
+      "stars": 181,
+      "url": "https://github.com/ZhengYinan-AIR/Hyper-Diffusion-Planner",
+      "checkedAt": "2026-10-09"
+    },
+    "wjl2244/MeanFuser": {
+      "stars": 111,
+      "url": "https://github.com/wjl2244/MeanFuser",
+      "checkedAt": "2026-10-09"
+    },
+    "ZY-Zong/Physics-guided-Causal-Model": {
+      "stars": 8,
+      "url": "https://github.com/ZY-Zong/Physics-guided-Causal-Model",
+      "checkedAt": "2026-10-09"
+    },
+    "valeoai/DrivoR": {
+      "stars": 285,
+      "url": "https://github.com/valeoai/DrivoR",
+      "checkedAt": "2026-10-09"
+    },
+    "YanhaoWu/AlignDrive": {
+      "stars": 11,
+      "url": "https://github.com/YanhaoWu/AlignDrive",
+      "checkedAt": "2026-10-09"
     },
     "kesai-labs/lead": {
-      "stars": 230,
+      "stars": 235,
       "url": "https://github.com/kesai-labs/lead",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-10-09"
+    },
+    "hustvl/DiffusionDriveV2": {
+      "stars": 374,
+      "url": "https://github.com/hustvl/DiffusionDriveV2",
+      "checkedAt": "2026-10-09"
+    },
+    "SpatialRetrievalAD/End2End-Planning": {
+      "stars": 3,
+      "url": "https://github.com/SpatialRetrievalAD/End2End-Planning",
+      "checkedAt": "2026-10-09"
+    },
+    "jhz1192/Latent-Planner": {
+      "stars": 12,
+      "url": "https://github.com/jhz1192/Latent-Planner",
+      "checkedAt": "2026-10-09"
+    },
+    "liulin815/GuideFlow": {
+      "stars": 31,
+      "url": "https://github.com/liulin815/GuideFlow",
+      "checkedAt": "2026-10-09"
+    },
+    "XiaomiMiMo/MiMo-Embodied": {
+      "stars": 408,
+      "url": "https://github.com/XiaomiMiMo/MiMo-Embodied",
+      "checkedAt": "2026-10-09"
+    },
+    "Souig/UniMM-V2X": {
+      "stars": 25,
+      "url": "https://github.com/Souig/UniMM-V2X",
+      "checkedAt": "2026-10-09"
+    },
+    "happinesslz/UniLION": {
+      "stars": 61,
+      "url": "https://github.com/happinesslz/UniLION",
+      "checkedAt": "2026-10-09"
+    },
+    "woxihuanjiangguo/ZTRS": {
+      "stars": 77,
+      "url": "https://github.com/woxihuanjiangguo/ZTRS",
+      "checkedAt": "2026-10-09"
+    },
+    "Duckyee728/ResAD-released": {
+      "stars": 74,
+      "url": "https://github.com/Duckyee728/ResAD-released",
+      "checkedAt": "2026-10-09"
+    },
+    "YuruiAI/DistillDrive": {
+      "stars": 128,
+      "url": "https://github.com/YuruiAI/DistillDrive",
+      "checkedAt": "2026-10-09"
     },
     "SunZhigang7/DiffSemanticFusion_MaplessQCNet": {
       "stars": 56,
       "url": "https://github.com/SunZhigang7/DiffSemanticFusion_MaplessQCNet",
-      "checkedAt": "2026-09-24"
+      "checkedAt": "2026-10-09"
     },
-    "zihaosheng/ExploreVLA": {
-      "stars": 29,
-      "url": "https://github.com/zihaosheng/ExploreVLA",
-      "checkedAt": "2026-09-24"
+    "newbrains1/GEMINUS": {
+      "stars": 18,
+      "url": "https://github.com/newbrains1/GEMINUS",
+      "checkedAt": "2026-10-09"
+    },
+    "DSL-Lab/TrajFlow": {
+      "stars": 83,
+      "url": "https://github.com/DSL-Lab/TrajFlow",
+      "checkedAt": "2026-10-09"
+    },
+    "opendrivelab/ETA": {
+      "stars": 48,
+      "url": "https://github.com/opendrivelab/ETA",
+      "checkedAt": "2026-10-09"
+    },
+    "NVlabs/GTRS": {
+      "stars": 289,
+      "url": "https://github.com/NVlabs/GTRS",
+      "checkedAt": "2026-10-09"
+    },
+    "William-Yao-2000/DriveSuprim": {
+      "stars": 38,
+      "url": "https://github.com/William-Yao-2000/DriveSuprim",
+      "checkedAt": "2026-10-09"
+    },
+    "autonomousvision/navsim": {
+      "stars": 1118,
+      "url": "https://github.com/autonomousvision/navsim",
+      "checkedAt": "2026-10-09"
+    },
+    "Say2L/GaussianFusion": {
+      "stars": 96,
+      "url": "https://github.com/Say2L/GaussianFusion",
+      "checkedAt": "2026-10-09"
+    },
+    "Kguo-cs/iPad": {
+      "stars": 145,
+      "url": "https://github.com/Kguo-cs/iPad",
+      "checkedAt": "2026-10-09"
+    },
+    "fudan-zvg/BridgeAD": {
+      "stars": 111,
+      "url": "https://github.com/fudan-zvg/BridgeAD",
+      "checkedAt": "2026-10-09"
+    },
+    "nullmax-vision/HiP-AD": {
+      "stars": 140,
+      "url": "https://github.com/nullmax-vision/HiP-AD",
+      "checkedAt": "2026-10-09"
+    },
+    "Thinklab-SJTU/DriveTransformer": {
+      "stars": 243,
+      "url": "https://github.com/Thinklab-SJTU/DriveTransformer",
+      "checkedAt": "2026-10-09"
+    },
+    "YvanYin/GoalFlow": {
+      "stars": 426,
+      "url": "https://github.com/YvanYin/GoalFlow",
+      "checkedAt": "2026-10-09"
+    },
+    "adept-thu/MomAD": {
+      "stars": 452,
+      "url": "https://github.com/adept-thu/MomAD",
+      "checkedAt": "2026-10-09"
+    },
+    "hustvl/DiffusionDrive": {
+      "stars": 1507,
+      "url": "https://github.com/hustvl/DiffusionDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "NVlabs/Hydra-MDP": {
+      "stars": 417,
+      "url": "https://github.com/NVlabs/Hydra-MDP",
+      "checkedAt": "2026-10-09"
+    },
+    "swc-17/SparseDrive": {
+      "stars": 1006,
+      "url": "https://github.com/swc-17/SparseDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "hustvl/VAD": {
+      "stars": 1380,
+      "url": "https://github.com/hustvl/VAD",
+      "checkedAt": "2026-10-09"
+    },
+    "NVlabs/BEV-Planner": {
+      "stars": 260,
+      "url": "https://github.com/NVlabs/BEV-Planner",
+      "checkedAt": "2026-10-09"
+    },
+    "OpenDriveLab/UniAD": {
+      "stars": 4775,
+      "url": "https://github.com/OpenDriveLab/UniAD",
+      "checkedAt": "2026-10-09"
+    },
+    "OpenDriveLab/ST-P3": {
+      "stars": 442,
+      "url": "https://github.com/OpenDriveLab/ST-P3",
+      "checkedAt": "2026-10-09"
+    },
+    "autonomousvision/transfuser": {
+      "stars": 1607,
+      "url": "https://github.com/autonomousvision/transfuser",
+      "checkedAt": "2026-10-09"
+    },
+    "autonomousvision/neat": {
+      "stars": 330,
+      "url": "https://github.com/autonomousvision/neat",
+      "checkedAt": "2026-10-09"
+    },
+    "zhejz/carla-roach": {
+      "stars": 400,
+      "url": "https://github.com/zhejz/carla-roach",
+      "checkedAt": "2026-10-09"
+    },
+    "autonomousvision/data_aggregation": {
+      "stars": 50,
+      "url": "https://github.com/autonomousvision/data_aggregation",
+      "checkedAt": "2026-10-09"
+    },
+    "valeoai/LearningByCheating": {
+      "stars": 61,
+      "url": "https://github.com/valeoai/LearningByCheating",
+      "checkedAt": "2026-10-09"
+    },
+    "QwenLM/Qwen-Drive-1.0": {
+      "stars": 499,
+      "url": "https://github.com/QwenLM/Qwen-Drive-1.0",
+      "checkedAt": "2026-10-09"
+    },
+    "ZZongzheng0918/TE-Aware-E2E-AD": {
+      "stars": 10,
+      "url": "https://github.com/ZZongzheng0918/TE-Aware-E2E-AD",
+      "checkedAt": "2026-10-09"
+    },
+    "ZebinX/DriveVLA-M0": {
+      "stars": 33,
+      "url": "https://github.com/ZebinX/DriveVLA-M0",
+      "checkedAt": "2026-10-09"
+    },
+    "hzx122/DEFT-RLVR": {
+      "stars": 40,
+      "url": "https://github.com/hzx122/DEFT-RLVR",
+      "checkedAt": "2026-10-09"
+    },
+    "RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers": {
+      "stars": 37,
+      "url": "https://github.com/RYNing/Awesome-Post-Training-In-Autonomous-Driving-Papers",
+      "checkedAt": "2026-10-09"
+    },
+    "robbyant/lingbot-vla-v2": {
+      "stars": 1007,
+      "url": "https://github.com/robbyant/lingbot-vla-v2",
+      "checkedAt": "2026-10-09"
+    },
+    "ShivaTeam/DriveTeach-VLA": {
+      "stars": 32,
+      "url": "https://github.com/ShivaTeam/DriveTeach-VLA",
+      "checkedAt": "2026-10-09"
+    },
+    "QwenLM/Qwen-RobotNav": {
+      "stars": 183,
+      "url": "https://github.com/QwenLM/Qwen-RobotNav",
+      "checkedAt": "2026-10-09"
+    },
+    "AFARI-Research/ChainFlow-VLA": {
+      "stars": 52,
+      "url": "https://github.com/AFARI-Research/ChainFlow-VLA",
+      "checkedAt": "2026-10-09"
+    },
+    "CurryChen77/CraftPolicy": {
+      "stars": 26,
+      "url": "https://github.com/CurryChen77/CraftPolicy",
+      "checkedAt": "2026-10-09"
+    },
+    "Z1zyw/OneDrive": {
+      "stars": 19,
+      "url": "https://github.com/Z1zyw/OneDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "xiaomi-research/unidrivevla": {
+      "stars": 249,
+      "url": "https://github.com/xiaomi-research/unidrivevla",
+      "checkedAt": "2026-10-09"
+    },
+    "wzzheng/DVGT": {
+      "stars": 367,
+      "url": "https://github.com/wzzheng/DVGT",
+      "checkedAt": "2026-10-09"
+    },
+    "haha-yuki-haha/AutoDrive-P3_with_Run-then-walk": {
+      "stars": 21,
+      "url": "https://github.com/haha-yuki-haha/AutoDrive-P3_with_Run-then-walk",
+      "checkedAt": "2026-10-09"
+    },
+    "OscarHuangWind/AutoMoT": {
+      "stars": 65,
+      "url": "https://github.com/OscarHuangWind/AutoMoT",
+      "checkedAt": "2026-10-09"
+    },
+    "yaoyao-jpg/DynamicsVLA": {
+      "stars": 61,
+      "url": "https://github.com/yaoyao-jpg/DynamicsVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "hey-cjj/EvoDriveVLA": {
+      "stars": 50,
+      "url": "https://github.com/hey-cjj/EvoDriveVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "Mashiroln/curious_vla": {
+      "stars": 135,
+      "url": "https://github.com/Mashiroln/curious_vla",
+      "checkedAt": "2026-10-09"
+    },
+    "luo-yc17/LaST-VLA": {
+      "stars": 43,
+      "url": "https://github.com/luo-yc17/LaST-VLA",
+      "checkedAt": "2026-10-09"
+    },
+    "luo-yc17/ELF-VLA": {
+      "stars": 5,
+      "url": "https://github.com/luo-yc17/ELF-VLA",
+      "checkedAt": "2026-10-09"
+    },
+    "Applied-Intuition-Open-Source/nord": {
+      "stars": 13,
+      "url": "https://github.com/Applied-Intuition-Open-Source/nord",
+      "checkedAt": "2026-10-09"
+    },
+    "WJ-CV/VGGDrive": {
+      "stars": 104,
+      "url": "https://github.com/WJ-CV/VGGDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "MSunDYY/SparseOccVLA": {
+      "stars": 87,
+      "url": "https://github.com/MSunDYY/SparseOccVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "LogosRoboticsGroup/SGDrive": {
+      "stars": 76,
+      "url": "https://github.com/LogosRoboticsGroup/SGDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "pqh22/ColaVLA": {
+      "stars": 67,
+      "url": "https://github.com/pqh22/ColaVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "zhenghao2519/SpaceDrive": {
+      "stars": 95,
+      "url": "https://github.com/zhenghao2519/SpaceDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "fudan-generative-vision/WAM-Flow": {
+      "stars": 369,
+      "url": "https://github.com/fudan-generative-vision/WAM-Flow",
+      "checkedAt": "2026-10-09"
+    },
+    "wyddmw/OpenREAD": {
+      "stars": 43,
+      "url": "https://github.com/wyddmw/OpenREAD",
+      "checkedAt": "2026-10-09"
+    },
+    "NVlabs/alpamayo": {
+      "stars": 2035,
+      "url": "https://github.com/NVlabs/alpamayo",
+      "checkedAt": "2026-10-09"
+    },
+    "nvidia-cosmos/cosmos-predict2.5": {
+      "stars": 1378,
+      "url": "https://github.com/nvidia-cosmos/cosmos-predict2.5",
+      "checkedAt": "2026-10-09"
+    },
+    "pixeli99/ReflectDrive": {
+      "stars": 35,
+      "url": "https://github.com/pixeli99/ReflectDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "ucla-mobility/AutoVLA": {
+      "stars": 661,
+      "url": "https://github.com/ucla-mobility/AutoVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "xiaomi-research/recogdrive": {
+      "stars": 618,
+      "url": "https://github.com/xiaomi-research/recogdrive",
+      "checkedAt": "2026-10-09"
+    },
+    "boschresearch/DiffVLA": {
+      "stars": 36,
+      "url": "https://github.com/boschresearch/DiffVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "Thinklab-SJTU/DriveMoE": {
+      "stars": 236,
+      "url": "https://github.com/Thinklab-SJTU/DriveMoE",
+      "checkedAt": "2026-10-09"
+    },
+    "michigan-traffic-lab/LightEMMA": {
+      "stars": 145,
+      "url": "https://github.com/michigan-traffic-lab/LightEMMA",
+      "checkedAt": "2026-10-09"
+    },
+    "DriveVLA/OpenDriveVLA": {
+      "stars": 820,
+      "url": "https://github.com/DriveVLA/OpenDriveVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "nvidia-cosmos/cosmos-reason1": {
+      "stars": 961,
+      "url": "https://github.com/nvidia-cosmos/cosmos-reason1",
+      "checkedAt": "2026-10-09"
+    },
+    "RenzKa/simlingo": {
+      "stars": 454,
+      "url": "https://github.com/RenzKa/simlingo",
+      "checkedAt": "2026-10-09"
+    },
+    "hustvl/AlphaDrive": {
+      "stars": 335,
+      "url": "https://github.com/hustvl/AlphaDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "sled-group/driVLMe": {
+      "stars": 69,
+      "url": "https://github.com/sled-group/driVLMe",
+      "checkedAt": "2026-10-09"
+    },
+    "Tsinghua-MARS-Lab/DriveVLM": {
+      "stars": 97,
+      "url": "https://github.com/Tsinghua-MARS-Lab/DriveVLM",
+      "checkedAt": "2026-10-09"
+    },
+    "OpenDriveLab/DriveLM": {
+      "stars": 1348,
+      "url": "https://github.com/OpenDriveLab/DriveLM",
+      "checkedAt": "2026-10-09"
+    },
+    "OpenGVLab/DriveMLM": {
+      "stars": 184,
+      "url": "https://github.com/OpenGVLab/DriveMLM",
+      "checkedAt": "2026-10-09"
+    },
+    "opendilab/LMDrive": {
+      "stars": 930,
+      "url": "https://github.com/opendilab/LMDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "SaFo-Lab/Dolphins": {
+      "stars": 88,
+      "url": "https://github.com/SaFo-Lab/Dolphins",
+      "checkedAt": "2026-10-09"
+    },
+    "PJLab-ADG/GPT4V-AD-Exploration": {
+      "stars": 302,
+      "url": "https://github.com/PJLab-ADG/GPT4V-AD-Exploration",
+      "checkedAt": "2026-10-09"
+    },
+    "wayveai/Driving-with-LLMs": {
+      "stars": 580,
+      "url": "https://github.com/wayveai/Driving-with-LLMs",
+      "checkedAt": "2026-10-09"
+    },
+    "PointsCoder/GPT-Driver": {
+      "stars": 304,
+      "url": "https://github.com/PointsCoder/GPT-Driver",
+      "checkedAt": "2026-10-09"
+    },
+    "PJLab-ADG/DiLu": {
+      "stars": 310,
+      "url": "https://github.com/PJLab-ADG/DiLu",
+      "checkedAt": "2026-10-09"
+    },
+    "sled-group/DOROTHIE": {
+      "stars": 22,
+      "url": "https://github.com/sled-group/DOROTHIE",
+      "checkedAt": "2026-10-09"
+    },
+    "HaoranZhuExplorer/AD-E2E-JEPA": {
+      "stars": 46,
+      "url": "https://github.com/HaoranZhuExplorer/AD-E2E-JEPA",
+      "checkedAt": "2026-10-09"
     },
     "VAIL-UCLA/DreamStream": {
-      "stars": 10,
+      "stars": 11,
       "url": "https://github.com/VAIL-UCLA/DreamStream",
-      "checkedAt": "2026-09-29"
+      "checkedAt": "2026-10-09"
     },
-    "KIT-MRT/AD-Diff": {
+    "valeoai/VATIX": {
+      "stars": 22,
+      "url": "https://github.com/valeoai/VATIX",
+      "checkedAt": "2026-10-09"
+    },
+    "AFARI-Research/WA-JEPA": {
+      "stars": 72,
+      "url": "https://github.com/AFARI-Research/WA-JEPA",
+      "checkedAt": "2026-10-09"
+    },
+    "H-EmbodVis/SimWAM": {
+      "stars": 194,
+      "url": "https://github.com/H-EmbodVis/SimWAM",
+      "checkedAt": "2026-10-09"
+    },
+    "ASH-2046/SUV": {
+      "stars": 20,
+      "url": "https://github.com/ASH-2046/SUV",
+      "checkedAt": "2026-10-09"
+    },
+    "NoctYang/Auto-JEPA": {
+      "stars": 23,
+      "url": "https://github.com/NoctYang/Auto-JEPA",
+      "checkedAt": "2026-10-09"
+    },
+    "zju3dv/INTACT-JEPA": {
+      "stars": 202,
+      "url": "https://github.com/zju3dv/INTACT-JEPA",
+      "checkedAt": "2026-10-09"
+    },
+    "wyddmw/GeoWorldAD": {
+      "stars": 7,
+      "url": "https://github.com/wyddmw/GeoWorldAD",
+      "checkedAt": "2026-10-09"
+    },
+    "LogosRoboticsGroup/Metis": {
+      "stars": 18,
+      "url": "https://github.com/LogosRoboticsGroup/Metis",
+      "checkedAt": "2026-10-09"
+    },
+    "nv-tlabs/omni-dreams": {
+      "stars": 346,
+      "url": "https://github.com/nv-tlabs/omni-dreams",
+      "checkedAt": "2026-10-09"
+    },
+    "nvidia/cosmos": {
+      "stars": 11996,
+      "url": "https://github.com/nvidia/cosmos",
+      "checkedAt": "2026-10-09"
+    },
+    "JiaweiXu8/EponaV2": {
+      "stars": 35,
+      "url": "https://github.com/JiaweiXu8/EponaV2",
+      "checkedAt": "2026-10-09"
+    },
+    "zcliangyue/HorizonDrive": {
+      "stars": 60,
+      "url": "https://github.com/zcliangyue/HorizonDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "COOWAI/DAWN": {
+      "stars": 69,
+      "url": "https://github.com/COOWAI/DAWN",
+      "checkedAt": "2026-10-09"
+    },
+    "hotdogcheesewhite/DeepSight": {
+      "stars": 31,
+      "url": "https://github.com/hotdogcheesewhite/DeepSight",
+      "checkedAt": "2026-10-09"
+    },
+    "AFARI-Research/CoWorld-VLA": {
+      "stars": 12,
+      "url": "https://github.com/AFARI-Research/CoWorld-VLA",
+      "checkedAt": "2026-10-09"
+    },
+    "xiaomi-mlab/DriveVA": {
+      "stars": 63,
+      "url": "https://github.com/xiaomi-mlab/DriveVA",
+      "checkedAt": "2026-10-09"
+    },
+    "zihaosheng/ExploreVLA": {
+      "stars": 30,
+      "url": "https://github.com/zihaosheng/ExploreVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "youngzhou1999/DriveDreamer-Policy": {
+      "stars": 60,
+      "url": "https://github.com/youngzhou1999/DriveDreamer-Policy",
+      "checkedAt": "2026-10-09"
+    },
+    "LogosRoboticsGroup/UniWorldVLA": {
+      "stars": 30,
+      "url": "https://github.com/LogosRoboticsGroup/UniWorldVLA",
+      "checkedAt": "2026-10-09"
+    },
+    "yuantianyuan01/FastWAM": {
+      "stars": 1554,
+      "url": "https://github.com/yuantianyuan01/FastWAM",
+      "checkedAt": "2026-10-09"
+    },
+    "TabGuigui/WorldDrive": {
+      "stars": 85,
+      "url": "https://github.com/TabGuigui/WorldDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "mengtan00/ResWorld": {
+      "stars": 67,
+      "url": "https://github.com/mengtan00/ResWorld",
+      "checkedAt": "2026-10-09"
+    },
+    "liulin815/DriveWorld-VLA": {
+      "stars": 128,
+      "url": "https://github.com/liulin815/DriveWorld-VLA",
+      "checkedAt": "2026-10-09"
+    },
+    "linhanwang/Drive-JEPA": {
+      "stars": 196,
+      "url": "https://github.com/linhanwang/Drive-JEPA",
+      "checkedAt": "2026-10-09"
+    },
+    "UniDrive-WM/UniDrive-WM": {
       "stars": 1,
-      "url": "https://github.com/KIT-MRT/AD-Diff",
-      "checkedAt": "2026-09-29"
+      "url": "https://github.com/UniDrive-WM/UniDrive-WM",
+      "checkedAt": "2026-10-09"
+    },
+    "xiaomi-research/drivelaw": {
+      "stars": 157,
+      "url": "https://github.com/xiaomi-research/drivelaw",
+      "checkedAt": "2026-10-09"
+    },
+    "pengxuanyang/WorldRFT": {
+      "stars": 42,
+      "url": "https://github.com/pengxuanyang/WorldRFT",
+      "checkedAt": "2026-10-09"
+    },
+    "xiaomi-mlab/MindDrive": {
+      "stars": 275,
+      "url": "https://github.com/xiaomi-mlab/MindDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "OpenDriveLab/SimScale": {
+      "stars": 331,
+      "url": "https://github.com/OpenDriveLab/SimScale",
+      "checkedAt": "2026-10-09"
+    },
+    "BraveGroup/DriveVLA-W0": {
+      "stars": 413,
+      "url": "https://github.com/BraveGroup/DriveVLA-W0",
+      "checkedAt": "2026-10-09"
+    },
+    "Tencent-Hunyuan/HunyuanWorld-Mirror": {
+      "stars": 1211,
+      "url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
+      "checkedAt": "2026-10-09"
+    },
+    "vita-epfl/RAP": {
+      "stars": 165,
+      "url": "https://github.com/vita-epfl/RAP",
+      "checkedAt": "2026-10-09"
+    },
+    "IRL-VLA/IRL-VLA": {
+      "stars": 81,
+      "url": "https://github.com/IRL-VLA/IRL-VLA",
+      "checkedAt": "2026-10-09"
+    },
+    "ucaszyp/World4Drive": {
+      "stars": 112,
+      "url": "https://github.com/ucaszyp/World4Drive",
+      "checkedAt": "2026-10-09"
+    },
+    "Kevin-thu/Epona": {
+      "stars": 391,
+      "url": "https://github.com/Kevin-thu/Epona",
+      "checkedAt": "2026-10-09"
+    },
+    "liyingyanUCAS/WoTE": {
+      "stars": 271,
+      "url": "https://github.com/liyingyanUCAS/WoTE",
+      "checkedAt": "2026-10-09"
+    },
+    "nvidia-cosmos/cosmos-transfer1": {
+      "stars": 827,
+      "url": "https://github.com/nvidia-cosmos/cosmos-transfer1",
+      "checkedAt": "2026-10-09"
+    },
+    "LMD0311/HERMES": {
+      "stars": 264,
+      "url": "https://github.com/LMD0311/HERMES",
+      "checkedAt": "2026-10-09"
+    },
+    "nvidia-cosmos/cosmos-predict1": {
+      "stars": 474,
+      "url": "https://github.com/nvidia-cosmos/cosmos-predict1",
+      "checkedAt": "2026-10-09"
+    },
+    "wzzheng/GaussianAD": {
+      "stars": 133,
+      "url": "https://github.com/wzzheng/GaussianAD",
+      "checkedAt": "2026-10-09"
+    },
+    "BraveGroup/LAW": {
+      "stars": 393,
+      "url": "https://github.com/BraveGroup/LAW",
+      "checkedAt": "2026-10-09"
+    },
+    "OpenDriveLab/Vista": {
+      "stars": 907,
+      "url": "https://github.com/OpenDriveLab/Vista",
+      "checkedAt": "2026-10-09"
+    },
+    "OpenDriveLab/DriveAGI": {
+      "stars": 807,
+      "url": "https://github.com/OpenDriveLab/DriveAGI",
+      "checkedAt": "2026-10-09"
+    },
+    "fudan-zvg/WoVoGen": {
+      "stars": 114,
+      "url": "https://github.com/fudan-zvg/WoVoGen",
+      "checkedAt": "2026-10-09"
+    },
+    "BraveGroup/Drive-WM": {
+      "stars": 439,
+      "url": "https://github.com/BraveGroup/Drive-WM",
+      "checkedAt": "2026-10-09"
+    },
+    "wzzheng/OccWorld": {
+      "stars": 589,
+      "url": "https://github.com/wzzheng/OccWorld",
+      "checkedAt": "2026-10-09"
+    },
+    "shalfun/DrivingDiffusion": {
+      "stars": 565,
+      "url": "https://github.com/shalfun/DrivingDiffusion",
+      "checkedAt": "2026-10-09"
+    },
+    "JeffWang987/DriveDreamer": {
+      "stars": 595,
+      "url": "https://github.com/JeffWang987/DriveDreamer",
+      "checkedAt": "2026-10-09"
+    },
+    "wayveai/mile": {
+      "stars": 437,
+      "url": "https://github.com/wayveai/mile",
+      "checkedAt": "2026-10-09"
+    },
+    "dotchen/WorldOnRails": {
+      "stars": 184,
+      "url": "https://github.com/dotchen/WorldOnRails",
+      "checkedAt": "2026-10-09"
+    },
+    "nv-tlabs/DriveGAN_code": {
+      "stars": 100,
+      "url": "https://github.com/nv-tlabs/DriveGAN_code",
+      "checkedAt": "2026-10-09"
+    },
+    "Hongbin98/RoXDrive": {
+      "stars": 3,
+      "url": "https://github.com/Hongbin98/RoXDrive",
+      "checkedAt": "2026-10-09"
+    },
+    "XiaomiAutoL3/DriveZero": {
+      "stars": 121,
+      "url": "https://github.com/XiaomiAutoL3/DriveZero",
+      "checkedAt": "2026-10-09"
+    },
+    "tongnie/EvoDrive": {
+      "stars": 2,
+      "url": "https://github.com/tongnie/EvoDrive",
+      "checkedAt": "2026-10-09"
     },
     "michigan-traffic-lab/Dense-Learning-for-AV-Training": {
-      "stars": 7,
+      "stars": 8,
       "url": "https://github.com/michigan-traffic-lab/Dense-Learning-for-AV-Training",
-      "checkedAt": "2026-09-29"
+      "checkedAt": "2026-10-09"
+    },
+    "giant-ape/expert-against-rl": {
+      "stars": 4,
+      "url": "https://github.com/giant-ape/expert-against-rl",
+      "checkedAt": "2026-10-09"
+    },
+    "dcarl-opensource/DCARL": {
+      "stars": 0,
+      "url": "https://github.com/dcarl-opensource/DCARL",
+      "checkedAt": "2026-10-09"
+    },
+    "data-and-decision-lab/self-improving-RL": {
+      "stars": 6,
+      "url": "https://github.com/data-and-decision-lab/self-improving-RL",
+      "checkedAt": "2026-10-09"
     }
   }
 }

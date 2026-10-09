@@ -5,6 +5,10 @@ import { fileURLToPath } from 'node:url';
 const root = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const readJson = async (path) => JSON.parse(await readFile(join(root, path), 'utf8'));
 const papers = await readJson('data/papers.json');
+const citationCache = await readJson('data/citations.json');
+const starCache = await readJson('data/github-stars.json');
+const githubAudit = await readJson('data/github-audit.json');
+const starRecords = new Map(Object.entries(starCache.repositories).map(([name, record]) => [name.toLowerCase(), record]));
 const datasets = await readJson('data/datasets.json');
 const benchmarks = await readJson('data/benchmarks.json');
 const leaderboard = await readJson('data/leaderboard.json');
@@ -34,6 +38,23 @@ function unique(items, label) {
 unique(papers, 'papers'); unique(datasets, 'datasets'); unique(benchmarks, 'benchmarks'); unique(leaderboard, 'leaderboard');
 const benchmarkIds = new Set(benchmarks.map((item) => item.id));
 for (const paper of papers) {
+  const repository = paper.githubRepo?.match(/^https:\/\/github\.com\/([^/]+\/[^/#?]+)\/?$/i)?.[1];
+  const stars = repository && starRecords.get(repository.toLowerCase());
+  const audit = githubAudit.records?.[paper.id];
+  if (paper.githubRepo && !repository) errors.push(`paper ${paper.id}: invalid GitHub repository URL`);
+  if (paper.stars !== null && (!repository || stars?.stars !== paper.stars || stars?.checkedAt !== paper.githubStarsCheckedAt)) errors.push(`paper ${paper.id}: GitHub star snapshot mismatch`);
+  if (paper.stars !== null && !/^\d{4}-\d{2}-\d{2}$/.test(paper.githubStarsCheckedAt || '')) errors.push(`paper ${paper.id}: a star count requires its observation date`);
+  if (paper.stars === null && paper.githubStarsCheckedAt !== null) errors.push(`paper ${paper.id}: unknown stars cannot have an observation date`);
+  if (!audit || audit.repository !== paper.githubRepo || audit.codeStatus !== paper.codeStatus || audit.codeScope !== (paper.codeScope || null)) errors.push(`paper ${paper.id}: repository audit mismatch`);
+  if (paper.codeScope === 'partial' && paper.codeStatus !== 'released') errors.push(`paper ${paper.id}: partial releases must identify public code`);
+  const citation = citationCache.records?.[paper.id];
+  if (!(paper.citationCount === null || (Number.isInteger(paper.citationCount) && paper.citationCount >= 0))) errors.push(`paper ${paper.id}: invalid citationCount`);
+  if (!['available','not-indexed','unavailable'].includes(paper.citationStatus)) errors.push(`paper ${paper.id}: invalid citationStatus`);
+  if (paper.citationSource !== 'OpenAlex') errors.push(`paper ${paper.id}: invalid citationSource`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(paper.citationCheckedAt || '')) errors.push(`paper ${paper.id}: citationCheckedAt must be YYYY-MM-DD`);
+  if (paper.citationStatus === 'available' && (!Number.isInteger(paper.citationCount) || !/^https:\/\/openalex\.org\/W\d+$/.test(paper.citationURL || ''))) errors.push(`paper ${paper.id}: available citations require a count and source record`);
+  if (paper.citationStatus !== 'available' && paper.citationCount !== null) errors.push(`paper ${paper.id}: unknown citations must use null, not zero`);
+  if (!citation || citation.count !== paper.citationCount || citation.source !== paper.citationSource || citation.status !== paper.citationStatus || citation.checkedAt !== paper.citationCheckedAt || citation.url !== paper.citationURL) errors.push(`paper ${paper.id}: citation snapshot mismatch`);
   if (!['e2e','world-model','vla','rsi'].includes(paper.track)) errors.push(`paper ${paper.id}: invalid track`);
   if (typeof paper.summary !== 'string' || paper.summary.trim().length < 40 || paper.summary.trim().length > 500) errors.push(`paper ${paper.id}: summary must be 40-500 characters`);
   if ('category' in paper) errors.push(`paper ${paper.id}: subcategory field is not allowed`);
@@ -44,10 +65,9 @@ for (const paper of papers) {
   if (paper.openSource !== (paper.codeStatus === 'released')) errors.push(`paper ${paper.id}: openSource must match released code status`);
   if ((paper.codeStatus === 'released' || paper.codeStatus === 'pending') !== Boolean(paper.code)) errors.push(`paper ${paper.id}: code link must match released/pending status`);
   if (paper.stars !== null && (!Number.isInteger(paper.stars) || paper.stars < 0)) errors.push(`paper ${paper.id}: invalid stars`);
-  // The README's GitHub badge loads the current star count live. The JSON
-  // snapshot may be null when a repository has not yet been cached.
-  for (const field of ['paper','code','project']) if (paper[field] && !https(paper[field])) errors.push(`paper ${paper.id}: ${field} must use https`);
+  for (const field of ['paper','code','project','githubRepo']) if (paper[field] && !https(paper[field])) errors.push(`paper ${paper.id}: ${field} must use https`);
 }
+if (Object.keys(githubAudit.records || {}).length !== papers.length) errors.push('repository audit must contain exactly one record per paper');
 for (const track of ['e2e','vla','world-model','rsi']) {
   const items = papers.filter((paper) => paper.track === track);
   for (let index = 1; index < items.length; index += 1) {

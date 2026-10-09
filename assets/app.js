@@ -1,3 +1,6 @@
+import { citationMarkup } from './citations.js';
+import { computeReadingIndices, readingIndexMarkup } from './reading-index.js';
+
 const paths = {
   papers: 'data/papers.json',
   datasets: 'data/datasets.json',
@@ -6,6 +9,7 @@ const paths = {
 };
 
 const state = { papers: [], datasets: [], benchmarks: [], leaderboard: [], track: 'all', query: '' };
+let readingIndices = new Map();
 const datasetCategories = [
   'Perception and Multimodal Understanding',
   'Motion, Planning, and Cooperative Driving',
@@ -31,6 +35,7 @@ async function loadData() {
     })
   );
   state.papers = papers;
+  readingIndices = computeReadingIndices(papers);
   state.datasets = datasets;
   state.benchmarks = benchmarks;
   state.leaderboard = leaderboard;
@@ -44,20 +49,27 @@ function renderMetrics() {
     [state.datasets.length, 'PUBLIC DATASETS'],
     [latest, 'LATEST YEAR']
   ].map(([value, label]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join('');
+  const citationNote = $('#citationNote');
+  const dates = [...new Set(state.papers.map(paper => paper.citationCheckedAt).filter(Boolean))].sort();
+  const matched = state.papers.filter(paper => Number.isInteger(paper.citationCount)).length;
+  const starDates = [...new Set(state.papers.map(paper => paper.githubStarsCheckedAt).filter(Boolean))].sort();
+  const starMatches = state.papers.filter(paper => Number.isInteger(paper.stars)).length;
+  if (citationNote) citationNote.textContent = `OpenAlex citations: ${dates.at(-1) || 'not yet collected'} (${matched}/${state.papers.length} matched). GitHub stars: ${starDates.at(-1) || 'not yet collected'} (${starMatches}/${state.papers.length} available). N/A means unavailable; 0 is a verified count. Consider publication age and topic relevance alongside the Reading Index.`;
 }
 
 function paperCard(paper) {
   const trackLabel = { e2e: 'END-TO-END', 'world-model': 'WORLD MODEL', vla: 'VLA', rsi: 'RSI' }[paper.track];
-  const stars = Number.isInteger(paper.stars) ? new Intl.NumberFormat('en-US').format(paper.stars) : '—';
-  const sourceStatus = paper.openSource ? `PUBLIC CODE · ★ ${stars}` : 'NO PUBLIC CODE';
+  const sourceStatus = paper.codeStatus === 'pending' ? 'CODE PENDING' : paper.openSource ? (paper.codeScope === 'partial' ? 'PARTIAL CODE' : 'PUBLIC CODE') : 'NO VERIFIED CODE LINK';
   const links = [
     paper.paper ? `<a href="${paper.paper}" title="Paper" aria-label="Paper" target="_blank" rel="noopener">📄</a>` : '',
-    paper.code ? `<a href="${paper.code}" title="Public code repository" aria-label="Public code repository" target="_blank" rel="noopener">💻</a>` : '',
+    (paper.code || paper.githubRepo) ? `<a href="${paper.githubRepo || paper.code}" title="${paper.codeStatus === 'pending' ? 'Repository (code pending)' : paper.code ? 'Public code resource' : 'Paper-related GitHub repository'}" aria-label="Paper repository or code resource" target="_blank" rel="noopener">💻</a>` : '',
     paper.project ? `<a href="${paper.project}" title="Project page" aria-label="Project page" target="_blank" rel="noopener">🌐</a>` : ''
   ].filter(Boolean).join('');
   return `<article class="paper-card" data-paper-id="${escapeHTML(paper.id)}" data-track="${paper.track}">
     <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.year}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
     <h3>${paper.name}</h3><p class="paper-title">${paper.title}</p>
+    ${citationMarkup(paper)}
+    ${readingIndexMarkup(paper, readingIndices.get(paper.id))}
     <p class="paper-summary"><span>SUMMARY</span> ${escapeHTML(paper.summary)}</p>
     <div class="tag-list">${paper.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
     <div class="paper-footer"><span class="source-status ${paper.openSource ? 'available' : ''}">${sourceStatus}</span><div>${links}</div></div>

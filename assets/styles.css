@@ -40,6 +40,25 @@ footer { border-top: 1px solid var(--line); padding: 44px 0; }footer .shell { di
 @media (max-width: 640px) { .shell { width: min(100% - 28px, 1180px); }.site-header { padding: 0 14px; }.theme-toggle { margin-left: auto; }.hero { min-height: 660px; padding-top: 80px; }.hero h1 { font-size: 60px; }.hero-actions, .hero-metrics { flex-wrap: wrap; }.hero-metrics { gap: 28px; }.section { padding-block: 80px; }.track-grid, .paper-grid, .benchmark-grid, .principle-grid { grid-template-columns: 1fr; }.track-card:last-child { grid-column: auto; }.track-card { border-right: 0; }.paper-toolbar, .leaderboard-controls, footer .shell { align-items: stretch; flex-direction: column; }.search, .leaderboard-controls select { width: 100%; }.benchmark-card dl { grid-template-columns: 1fr; }.section-intro { margin-top: 0; }.hero-orbit { display: none; } }
 
 /* Paper detail experience and usability refinements */
+.paper-citation { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; margin: 0 0 14px; }
+.citation-count { display: inline-flex; align-items: center; gap: 5px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 50px; color: var(--ink); font-size: 10px; font-variant-numeric: tabular-nums; }
+.citation-count > span { color: var(--orange); }
+a.citation-count:hover { border-color: var(--orange); }
+.citation-count.unavailable { color: var(--muted); }
+.paper-citation small { color: var(--muted); font-size: 9px; line-height: 1.5; }
+.citation-note { max-width: 880px; margin: 16px 0 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.paper-facts .paper-citation { justify-content: flex-end; margin: 0; }
+.paper-facts .paper-citation small { width: 100%; }
+.reading-signals { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 7px 12px; margin: 0 0 14px; }
+.reading-index { display: inline-flex; align-items: baseline; gap: 5px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.reading-index > strong { font-size: 14px; }
+.reading-index > strong small { color: var(--muted); font-size: 9px; }
+.reading-index > small { color: var(--muted); font-size: 8px; letter-spacing: .08em; font-weight: 800; }
+.github-star-count { color: var(--muted); font-size: 9px; font-variant-numeric: tabular-nums; }
+a.github-star-count:hover { color: var(--orange); }
+.github-star-count.unavailable { color: var(--muted); }
+.paper-facts .reading-signals { justify-content: flex-start; margin: 0; }
+.paper-facts .github-star-count { font-size: 9px; }
 :root { scroll-behavior: smooth; scroll-padding-top: 92px; }
 :focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
 .site-header { position: sticky; top: 0; z-index: 30; background: rgba(248,248,242,.94); backdrop-filter: blur(14px); }

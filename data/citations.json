@@ -1,0 +1,5130 @@
+{
+  "source": "OpenAlex",
+  "checkedAt": "2026-10-08",
+  "policy": "Use the highest cited_by_count among exact-title/DOI-matched versions of the same paper. Never sum version counts. A verified 0 differs from N/A.",
+  "records": {
+    "2609-26618": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214111511",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "NavSafe-$\\infty$: Benchmarking Closed-Loop Driving Safety in Photorealistic Environments",
+      "doi": "https://doi.org/10.48550/arxiv.2609.26618",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214111511",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.26618",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-21486": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7213944440",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Driving on Registers, Reasoning on Risk: Risk-Aware Occupancy for Register-Based End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.21486",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7213944440",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.21486",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-10377": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7212195541",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Data-Driven Risk Fields for Safer End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.10377",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7212195541",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.10377",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-09650": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7212120827",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "A Risk-Sensitive and Uncertainty-Aware Decision-Making and Control Framework for Safe and Robust Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.09650",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7212120827",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.09650",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-03677": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7208792383",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Understanding Autonomous Driving Datasets by Describing Differences between Image Subsets in Natural Language",
+      "doi": "https://doi.org/10.48550/arxiv.2609.03677",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7208792383",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.03677",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-02270": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7207800880",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "CrashDiffuser: VLM-Guided Collision Intent Reasoning for Fine-Grained Safety-Critical Traffic Scenario Generation",
+      "doi": "https://doi.org/10.48550/arxiv.2609.02270",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7207800880",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.02270",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-04896": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7197028202",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "When Shared Rollouts Fail in Defensive Driving Evaluation: A NAVSIM Score Basis Audit",
+      "doi": "https://doi.org/10.48550/arxiv.2608.04896",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7197028202",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.04896",
+          "type": "preprint"
+        }
+      ]
+    },
+    "neo-ad-cvprw-2026": {
+      "count": null,
+      "source": "OpenAlex",
+      "checkedAt": "2026-10-08",
+      "status": "not-indexed"
+    },
+    "2609-01609": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7207679012",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DiDrive: A Risk-Aware Hierarchical Diffusion Framework for Safe Offline Reinforcement Learning in Autonomous Driving",
+      "doi": "https://doi.org/10.2139/ssrn.7466142",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7207679012",
+          "count": 0,
+          "doi": "https://doi.org/10.2139/ssrn.7466142",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-31830": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7166813747",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "PriorEye: Geospatial Visual Priors for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1007/978-3-032-37016-7_36",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7166813747",
+          "count": 0,
+          "doi": "https://doi.org/10.1007/978-3-032-37016-7_36",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2606-24231": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7165734185",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "FlowR2A: Learning Reward-to-Action Distribution for Multimodal Driving Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2606.24231",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7165734185",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.24231",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-19836": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7167910353",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "World Engine: Towards the Era of Post-Training for Autonomous Driving",
+      "doi": "https://doi.org/10.15496/publikation-122723",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7167910353",
+          "count": 0,
+          "doi": "https://doi.org/10.15496/publikation-122723",
+          "type": "preprint"
+        },
+        {
+          "url": "https://openalex.org/W7165390311",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.19836",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-19641": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7165372480",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Scaling Self-Play for End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2606.19641",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7165372480",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.19641",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-07464": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7163906032",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Planning-Aligned Token Compression for Long-Context Autonomous Driving",
+      "doi": "https://doi.org/10.1109/lra.2026.3728337",
+      "publicationYear": 2026,
+      "recordType": "article",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7163906032",
+          "count": 0,
+          "doi": "https://doi.org/10.1109/lra.2026.3728337",
+          "type": "article"
+        }
+      ]
+    },
+    "2606-07170": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7163887292",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Test-Time Trajectory Optimization for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2606.07170",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7163887292",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.07170",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-31116": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7163066416",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "NTR: Neural Token Reconstruction for Scene Token Bottleneck in End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2605.31116",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7163066416",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.31116",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-15120": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7161237039",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "CLOVER: Closed-Loop Value Estimation and Ranking for End-to-End Autonomous Driving Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2605.15120",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7161237039",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.15120",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-08084": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160857896",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "123D: Unifying Multi-Modal Autonomous Driving Data at Scale",
+      "doi": "https://doi.org/10.48550/arxiv.2605.08084",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160857896",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.08084",
+          "type": "preprint"
+        },
+        {
+          "url": "https://openalex.org/W7160969038",
+          "count": 0,
+          "doi": null,
+          "type": "preprint"
+        },
+        {
+          "url": "https://openalex.org/W7163081615",
+          "count": 0,
+          "doi": "https://doi.org/10.15496/publikation-121477",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-04647": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160506645",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ReflectDrive-2: Reinforcement-Learning-Aligned Self-Editing for Discrete Diffusion Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2605.04647",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160506645",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.04647",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2604-15308": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7154707671",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "RAD-2: Scaling Reinforcement Learning in a Generator-Discriminator Framework",
+      "doi": "https://doi.org/10.48550/arxiv.2604.15308",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7154707671",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2604.15308",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2604-08366": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7153262735",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Scaling-Aware Data Selection for End-to-End Autonomous Driving Systems",
+      "doi": "https://doi.org/10.48550/arxiv.2604.08366",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7153262735",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2604.08366",
+          "type": "preprint"
+        }
+      ]
+    },
+    "guo-flowad-2026": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138191642",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "FlowAD: Ego-Scene Interactive Modeling for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.13399",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138191642",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.13399",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-29163": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7147714410",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SparseDriveV2: Scoring is All You Need for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1007/978-3-032-37362-5_24",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7147714410",
+          "count": 0,
+          "doi": "https://doi.org/10.1007/978-3-032-37362-5_24",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2602-22801": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7131837435",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Unleashing the Potential of Diffusion Models for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2602.22801",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7131837435",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.22801",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-20060": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7131429899",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "MeanFuser: Fast One-Step Multi-Modal Trajectory Generation and Adaptive Reconstruction via MeanFlow for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2602.20060",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7131429899",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.20060",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-13936": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7129487538",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving",
+      "doi": "https://doi.org/10.1109/icra57385.2026.11695983",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7129487538",
+          "count": 0,
+          "doi": "https://doi.org/10.1109/icra57385.2026.11695983",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2601-12901": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7125250485",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "PlannerRFT: Reinforcing Diffusion Planners through Closed-Loop and Sample-Efficient Fine-Tuning",
+      "doi": "https://doi.org/10.48550/arxiv.2601.12901",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7125250485",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2601.12901",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2601-05083": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7119990947",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Driving on Registers",
+      "doi": "https://doi.org/10.48550/arxiv.2601.05083",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7119990947",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2601.05083",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2601-01762": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7118237443",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "AlignDrive: Aligned Lateral-Longitudinal Planning for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2601.01762",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7118237443",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2601.01762",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-20563": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7117256687",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "LEAD: Minimizing Learner-Expert Asymmetry in End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.20563",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7117256687",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.20563",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-07745": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7111213928",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DiffusionDriveV2: Reinforcement Learning-Constrained Truncated Diffusion Modeling in End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.07745",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7111213928",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.07745",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-06865": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7111376274",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Spatial Retrieval Augmented Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.06865",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7111376274",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.06865",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-00470": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416936861",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "LAP: Fast LAtent Diffusion Planner for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.00470",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416936861",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.00470",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-18729": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7106713323",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2511.18729",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7106713323",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2511.18729",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-17150": {
+      "count": 2,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138308259",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DiffRefiner: Coarse to Fine Trajectory Planning via Diffusion Refinement with Semantic Interaction for End to End Autonomous Driving",
+      "doi": "https://doi.org/10.1609/aaai.v40i14.38189",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138308259",
+          "count": 2,
+          "doi": "https://doi.org/10.1609/aaai.v40i14.38189",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W7128718206",
+          "count": 0,
+          "doi": "https://doi.org/10.48448/3zkz-aa04",
+          "type": "other"
+        },
+        {
+          "url": "https://openalex.org/W4416595885",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2511.17150",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-16518": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416551720",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "MiMo-Embodied: X-Embodied Foundation Model Technical Report",
+      "doi": "https://doi.org/10.48550/arxiv.2511.16518",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416551720",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2511.16518",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-09013": {
+      "count": 2,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138015650",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "UniMM-V2X: MoE-Enhanced Multi-Level Fusion for End-to-End Cooperative Autonomous Driving",
+      "doi": "https://doi.org/10.1609/aaai.v40i11.37870",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138015650",
+          "count": 2,
+          "doi": "https://doi.org/10.1609/aaai.v40i11.37870",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W7128719903",
+          "count": 0,
+          "doi": "https://doi.org/10.48448/0whk-8p92",
+          "type": "other"
+        },
+        {
+          "url": "https://openalex.org/W4416235975",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2511.09013",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-01768": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416440173",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "UniLION: Towards Unified Autonomous Driving Model with Linear Group RNNs",
+      "doi": "https://doi.org/10.48550/arxiv.2511.01768",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416440173",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2511.01768",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2510-24108": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7102391376",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Zero-Human Demonstration End-to-end Autonomous Driving with Trajectory Scorer",
+      "doi": "https://doi.org/10.48550/arxiv.2510.24108",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7102391376",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2510.24108",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2510-08562": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416385830",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ResAD: Normalized Residual Trajectory Modeling for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2510.08562",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416385830",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2510.08562",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2508-09158": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W6910582638",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "EvaDrive: Evolutionary Adversarial Policy Optimization for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2508.09158",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W6910582638",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2508.09158",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2508-05402": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160164679",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DistillDrive: End-to-End Multi-Mode Autonomous Driving Distillation by Isomorphic Hetero-Source Planning Model",
+      "doi": "https://doi.org/10.1109/iccv51701.2025.02430",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160164679",
+          "count": 0,
+          "doi": "https://doi.org/10.1109/iccv51701.2025.02430",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2508-01778": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4417100878",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DiffSemanticFusion: Semantic Raster BEV Fusion for Autonomous Driving via Online HD Map Diffusion",
+      "doi": "https://doi.org/10.48550/arxiv.2508.01778",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4417100878",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2508.01778",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2507-14456": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4417439335",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GEMINUS: Dual-aware Global and Scene-Adaptive Mixture-of-Experts for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2507.14456",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4417439335",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2507.14456",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2506-08541": {
+      "count": 5,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416749619",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "TrajFlow: Multi-modal Motion Prediction via Flow Matching",
+      "doi": "https://doi.org/10.1109/iros60139.2025.11247503",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416749619",
+          "count": 5,
+          "doi": "https://doi.org/10.1109/iros60139.2025.11247503",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4417257541",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2506.08541",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2506-07725": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4417135147",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ETA: Efficiency through Thinking Ahead, a Dual Approach to Self-Driving with Large Models",
+      "doi": "https://doi.org/10.1109/iccv51701.2025.02462",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4417135147",
+          "count": 1,
+          "doi": "https://doi.org/10.1109/iccv51701.2025.02462",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2506-06664": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4417119532",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Generalized Trajectory Scoring for End-to-end Multimodal Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2506.06664",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4417119532",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2506.06664",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2506-06659": {
+      "count": 4,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7137865300",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveSuprim: Towards Precise Trajectory Selection for End-to-End Planning",
+      "doi": "https://doi.org/10.1609/aaai.v40i14.38178",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7137865300",
+          "count": 4,
+          "doi": "https://doi.org/10.1609/aaai.v40i14.38178",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4417119514",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2506.06659",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2506-04218": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416075228",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Pseudo-Simulation for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2506.04218",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416075228",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2506.04218",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2506-00034": {
+      "count": 2,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4414887515",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GaussianFusion: Gaussian-Based Multi-Sensor Fusion for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.52202/085713-1603",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4414887515",
+          "count": 2,
+          "doi": "https://doi.org/10.52202/085713-1603",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2505-15111": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415328521",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "iPad: Iterative Proposal-Centric End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1109/lra.2026.3723334",
+      "publicationYear": 2026,
+      "recordType": "article",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415328521",
+          "count": 1,
+          "doi": "https://doi.org/10.1109/lra.2026.3723334",
+          "type": "article"
+        }
+      ]
+    },
+    "2505-09315": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415314490",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "TransDiffuser: Diverse Trajectory Generation with Decorrelated Multi-modal Representation for End-to-end Autonomous Driving",
+      "doi": "https://doi.org/10.1109/icra57385.2026.11695998",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415314490",
+          "count": 0,
+          "doi": "https://doi.org/10.1109/icra57385.2026.11695998",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2503-14182": {
+      "count": 11,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4413147123",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Bridging Past and Future: End-to-End Autonomous Driving with Historical Prediction and Planning",
+      "doi": "https://doi.org/10.1109/cvpr52734.2025.00643",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4413147123",
+          "count": 11,
+          "doi": "https://doi.org/10.1109/cvpr52734.2025.00643",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2503-12820": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W6929312968",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Hydra-MDP++: Advancing End-to-End Driving via Expert-Guided Hydra-Distillation",
+      "doi": "https://doi.org/10.48550/arxiv.2503.12820",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W6929312968",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2503.12820",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2503-10434": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416829987",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Learning Personalized Driving Styles via Reinforcement Learning from Human Feedback",
+      "doi": "https://doi.org/10.48550/arxiv.2503.10434",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416829987",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2503.10434",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2503-08612": {
+      "count": 4,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4414578615",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "HiP-AD: Hierarchical and Multi-Granularity Planning with Deformable Attention for Autonomous Driving in a Single Decoder",
+      "doi": "https://doi.org/10.1109/iccv51701.2025.02375",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4414578615",
+          "count": 4,
+          "doi": "https://doi.org/10.1109/iccv51701.2025.02375",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2503-07656": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4414565400",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveTransformer: Unified Transformer for Scalable End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2503.07656",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4414565400",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2503.07656",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2503-05689": {
+      "count": 31,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4413145448",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GoalFlow: Goal-Driven Flow Matching for Multimodal Trajectories Generation in End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr52734.2025.00157",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4413145448",
+          "count": 31,
+          "doi": "https://doi.org/10.1109/cvpr52734.2025.00157",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4414800359",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2503.05689",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2503-03125": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416111222",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Don't Shake the Wheel: Momentum-Aware Planning in End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2503.03125",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416111222",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2503.03125",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2411-15139": {
+      "count": 88,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4413147287",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DiffusionDrive: Truncated Diffusion Model for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr52734.2025.01124",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4413147287",
+          "count": 88,
+          "doi": "https://doi.org/10.1109/cvpr52734.2025.01124",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4404987761",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2411.15139",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2406-15349": {
+      "count": 45,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415798424",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking",
+      "doi": "https://doi.org/10.52202/079017-0902",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415798424",
+          "count": 45,
+          "doi": "https://doi.org/10.52202/079017-0902",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4399991297",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2406.15349",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2406-06978": {
+      "count": 3,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4399598145",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Hydra-MDP: End-to-end Multimodal Planning with Multi-target Hydra-Distillation",
+      "doi": "https://doi.org/10.48550/arxiv.2406.06978",
+      "publicationYear": 2024,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4399598145",
+          "count": 3,
+          "doi": "https://doi.org/10.48550/arxiv.2406.06978",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2405-19620": {
+      "count": 55,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4413947039",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SparseDrive: End-to-End Autonomous Driving via Sparse Scene Representation",
+      "doi": "https://doi.org/10.1109/icra55743.2025.11128800",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4413947039",
+          "count": 55,
+          "doi": "https://doi.org/10.1109/icra55743.2025.11128800",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4399252196",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2405.19620",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2402-13243": {
+      "count": 3,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4392019867",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "VADv2: End-to-End Vectorized Autonomous Driving via Probabilistic Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2402.13243",
+      "publicationYear": 2024,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4392019867",
+          "count": 3,
+          "doi": "https://doi.org/10.48550/arxiv.2402.13243",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2312-03031": {
+      "count": 78,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4402727673",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Is Ego Status All You Need for Open-Loop End-to-End Autonomous Driving?",
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.01408",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4402727673",
+          "count": 78,
+          "doi": "https://doi.org/10.1109/cvpr52733.2024.01408",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4389470822",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2312.03031",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2303-12077": {
+      "count": 313,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4390872423",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "VAD: Vectorized Scene Representation for Efficient Autonomous Driving",
+      "doi": "https://doi.org/10.1109/iccv51070.2023.00766",
+      "publicationYear": 2023,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4390872423",
+          "count": 313,
+          "doi": "https://doi.org/10.1109/iccv51070.2023.00766",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4353111654",
+          "count": 4,
+          "doi": "https://doi.org/10.48550/arxiv.2303.12077",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2212-10156": {
+      "count": 907,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4386076400",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Planning-oriented Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr52729.2023.01712",
+      "publicationYear": 2023,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4386076400",
+          "count": 907,
+          "doi": "https://doi.org/10.1109/cvpr52729.2023.01712",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4312091144",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2212.10156",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2207-07601": {
+      "count": 250,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4312396550",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ST-P3: End-to-End Vision-Based Autonomous Driving via Spatial-Temporal Feature Learning",
+      "doi": "https://doi.org/10.1007/978-3-031-19839-7_31",
+      "publicationYear": 2022,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4312396550",
+          "count": 250,
+          "doi": "https://doi.org/10.1007/978-3-031-19839-7_31",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4286235995",
+          "count": 2,
+          "doi": "https://doi.org/10.48550/arxiv.2207.07601",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2205-15997": {
+      "count": 485,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4292347911",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "TransFuser: Imitation With Transformer-Based Sensor Fusion for Autonomous Driving",
+      "doi": "https://doi.org/10.1109/tpami.2022.3200245",
+      "publicationYear": 2022,
+      "recordType": "article",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4292347911",
+          "count": 485,
+          "doi": "https://doi.org/10.1109/tpami.2022.3200245",
+          "type": "article"
+        },
+        {
+          "url": "https://openalex.org/W4281728371",
+          "count": 12,
+          "doi": "https://doi.org/10.48550/arxiv.2205.15997",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2109-04456": {
+      "count": 222,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3198460218",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "NEAT: Neural Attention Fields for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1109/iccv48922.2021.01550",
+      "publicationYear": 2021,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3198460218",
+          "count": 222,
+          "doi": "https://doi.org/10.1109/iccv48922.2021.01550",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W3202212882",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2109.04456",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2108-08265": {
+      "count": 215,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3193987867",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "End-to-End Urban Driving by Imitating a Reinforcement Learning Coach",
+      "doi": "https://doi.org/10.1109/iccv48922.2021.01494",
+      "publicationYear": 2021,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3193987867",
+          "count": 215,
+          "doi": "https://doi.org/10.1109/iccv48922.2021.01494",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W3204675306",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2108.08265",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2104-12861": {
+      "count": 40,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3206486597",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Learning Interpretable End-to-End Vision-Based Motion Planning for Autonomous Driving with Optical Flow Distillation",
+      "doi": "https://doi.org/10.1109/icra48506.2021.9561334",
+      "publicationYear": 2021,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3206486597",
+          "count": 40,
+          "doi": "https://doi.org/10.1109/icra48506.2021.9561334",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W3159540948",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2104.12861",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2104-09224": {
+      "count": 582,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3155500647",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Multi-Modal Fusion Transformer for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr46437.2021.00700",
+      "publicationYear": 2021,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3155500647",
+          "count": 582,
+          "doi": "https://doi.org/10.1109/cvpr46437.2021.00700",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2101-06806": {
+      "count": 222,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3125926538",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "MP3: A Unified Model to Map, Perceive, Predict and Plan",
+      "doi": "https://doi.org/10.1109/cvpr46437.2021.01417",
+      "publicationYear": 2021,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3125926538",
+          "count": 222,
+          "doi": "https://doi.org/10.1109/cvpr46437.2021.01417",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2008-05930": {
+      "count": 183,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3048966129",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Perceive, Predict, and Plan: Safe Motion Planning Through Interpretable Semantic Representations",
+      "doi": "https://doi.org/10.1007/978-3-030-58592-1_25",
+      "publicationYear": 2020,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3048966129",
+          "count": 183,
+          "doi": "https://doi.org/10.1007/978-3-030-58592-1_25",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "cvpr2020-data-aggregation": {
+      "count": 80,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3034552332",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Exploring Data Aggregation in Policy Learning for Vision-Based Urban Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr42600.2020.01178",
+      "publicationYear": 2020,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3034552332",
+          "count": 80,
+          "doi": "https://doi.org/10.1109/cvpr42600.2020.01178",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "1911-10868": {
+      "count": 206,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W2991115325",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "End-to-End Model-Free Reinforcement Learning for Urban Driving Using Implicit Affordances",
+      "doi": "https://doi.org/10.1109/cvpr42600.2020.00718",
+      "publicationYear": 2020,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W2991115325",
+          "count": 206,
+          "doi": "https://doi.org/10.1109/cvpr42600.2020.00718",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2609-33190": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214793731",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "FocusDrive: Reasoning with Visual Focus for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.33190",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214793731",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.33190",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-30818": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214655900",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Evaluation Is All You Need for Multi-Modal Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.30818",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214655900",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.30818",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-25831": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214101441",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Sometimes You Gotta Run Before You Can Walk: Run-then-Walk Scheduling Strategy for VLM Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.25831",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214101441",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.25831",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-18623": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7213527338",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "FIVE-VLA: Fast and EffectIVE Autonomous Driving with Recurrent Action Memory",
+      "doi": "https://doi.org/10.48550/arxiv.2609.18623",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7213527338",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.18623",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-00111": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7206210860",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Qwen-Drive-1.0: An Initial Step towards a Vision-Language Foundation Model for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.00111",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7206210860",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.00111",
+          "type": "preprint"
+        }
+      ]
+    },
+    "bassole-hybriddrivevla-2026": {
+      "count": null,
+      "source": "OpenAlex",
+      "checkedAt": "2026-10-08",
+      "status": "not-indexed"
+    },
+    "2608-18035": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7203782255",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Plug-and-Play Traffic Element Awareness for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1007/978-3-032-36839-3_6",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7203782255",
+          "count": 0,
+          "doi": "https://doi.org/10.1007/978-3-032-36839-3_6",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2608-12854": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7203439860",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "BrainWAM: Action-Space Coordination of Semantic Priors and Predictive Dynamics for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.12854",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7203439860",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.12854",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-10413": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7202248877",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveVLA-M0: Failure-Aware Memory Augmentation for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.10413",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7202248877",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.10413",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-09591": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7202207893",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "FactorDrive: Adaptive Multi-Step Reasoning Driven by Planning-Critical Factors for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.09591",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7202207893",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.09591",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-01755": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7172433503",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Deferred Exposure of Future Trajectories for Verifiable Reasoning in Autonomous Driving VLMs",
+      "doi": "https://doi.org/10.48550/arxiv.2608.01755",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7172433503",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.01755",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-14727": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7169624290",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "WorkDrive: Roadwork Chain of Causation for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2607.14727",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7169624290",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.14727",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-08072": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7167928588",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Post-Training in End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2607.08072",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7167928588",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.08072",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-06403": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7167668292",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "From Foundation to Application: Improving VLA Models in Practice",
+      "doi": "https://doi.org/10.48550/arxiv.2607.06403",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7167668292",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.06403",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-03182": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7167571414",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "AnchorVLA: Bridging Discrete Decisions and Continuous Trajectories for Vision-Language-Action Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2607.03182",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7167571414",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.03182",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-01658": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7167254234",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Teaching Vision-Language-Action Models What to See and Where to Look",
+      "doi": "https://doi.org/10.1007/978-3-032-37356-4_18",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7167254234",
+          "count": 0,
+          "doi": "https://doi.org/10.1007/978-3-032-37356-4_18",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2606-24742": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7165807676",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "World Value Models for Robotic Manipulation",
+      "doi": "https://doi.org/10.48550/arxiv.2606.24742",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7165807676",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.24742",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-18112": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7165037828",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Qwen-RobotNav Technical Report: A Scalable Navigation Model Designed for an Agentic Navigation System",
+      "doi": "https://doi.org/10.48550/arxiv.2606.18112",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7165037828",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.18112",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-08525": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7164014085",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveReward: A Comprehensive Dataset and Generative Vision-Language Reward Model for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2606.08525",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7164014085",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.08525",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-23270": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7162310230",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ChainFlow-VLA: Causal Flow Planning with Vision-Language Models",
+      "doi": "https://doi.org/10.48550/arxiv.2605.23270",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7162310230",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.23270",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-21061": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7161947304",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Grounding Driving VLA via Inverse Kinematics",
+      "doi": "https://doi.org/10.48550/arxiv.2605.21061",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7161947304",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.21061",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-04470": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160547054",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "CRAFT: Counterfactual-to-Interactive Reinforcement Fine-Tuning for Driving Policies",
+      "doi": "https://doi.org/10.48550/arxiv.2605.04470",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160547054",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.04470",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2604-17915": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7155043721",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "OneDrive: Unified Multi-Paradigm Driving with Vision-Language-Action Models",
+      "doi": "https://doi.org/10.48550/arxiv.2604.17915",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7155043721",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2604.17915",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2604-02190": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7148997739",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2604.02190",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7148997739",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2604.02190",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2604-00813": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7148447167",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DVGT-2: Vision-Geometry-Action Model for Autonomous Driving at Scale",
+      "doi": "https://doi.org/10.48550/arxiv.2604.00813",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7148447167",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2604.00813",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-28116": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7147598337",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "$AutoDrive\\text{-}P^3$: Unified Chain of Perception-Prediction-Planning Thought via Reinforcement Fine-Tuning",
+      "doi": "https://doi.org/10.48550/arxiv.2603.28116",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7147598337",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.28116",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-14972": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138382548",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Learning from Mistakes: Post-Training for Driving VLA with Takeover Data",
+      "doi": "https://doi.org/10.48550/arxiv.2603.14972",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138382548",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.14972",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-14851": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7137819507",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "AutoMoT: A Unified Vision-Language-Action Model with Asynchronous Mixture-of-Transformers for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.14851",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7137819507",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.14851",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-11041": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7135069019",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DynVLA: Learning World Dynamics for Action Reasoning in Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.11041",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7135069019",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.11041",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-09465": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7134931647",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "EvoDriveVLA: Evolving Driving VLA Models via Collaborative Perception-Planning Distillation",
+      "doi": "https://doi.org/10.48550/arxiv.2603.09465",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7134931647",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.09465",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-06049": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7134264936",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Devil is in Narrow Policy: Unleashing Exploration in Driving VLA Models",
+      "doi": "https://doi.org/10.48550/arxiv.2603.06049",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7134264936",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.06049",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-01928": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7133338915",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "LaST-VLA: Thinking in Latent Spatio-Temporal Space for Vision-Language-Action in Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.01928",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7133338915",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.01928",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-01441": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7133359517",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Unifying Language-Action Understanding and Generation for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.01441",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7133359517",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.01441",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-01063": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7133351785",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures",
+      "doi": "https://doi.org/10.48550/arxiv.2603.01063",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7133351785",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.01063",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-21172": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7131423417",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "NoRD: A Data-Efficient Vision-Language-Action Model that Drives without Reasoning",
+      "doi": "https://doi.org/10.48550/arxiv.2602.21172",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7131423417",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.21172",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-20794": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7131374213",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "VGGDrive: Empowering Vision-Language Models with Cross-View Geometric Grounding for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2602.20794",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7131374213",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.20794",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-13329": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7129420311",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "HiST-VLA: A Hierarchical Spatio-Temporal Vision-Language-Action Model for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2602.13329",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7129420311",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.13329",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-10719": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7128704387",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "From Representational Complementarity to Dual Systems: Synergizing VLM and Vision-Only Backbones for End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2602.10719",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7128704387",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.10719",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2601-06474": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7123477539",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SparseOccVLA: Bridging Occupancy and Vision-Language Models via Sparse Queries for Unified 4D Scene Understanding and Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2601.06474",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7123477539",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2601.06474",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2601-05640": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7123263041",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SGDrive: Scene-to-Goal Hierarchical World Cognition for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2601.05640",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7123263041",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2601.05640",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2601-05611": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7123260088",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "FLARE: Learning Future-Aware Latent Representations from Vision-Language Models for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2601.05611",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7123260088",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2601.05611",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-22939": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7117671457",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.22939",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7117671457",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.22939",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-10719": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4417296652",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SpaceDrive: Infusing Spatial Awareness into VLM-based Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.10719",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4417296652",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.10719",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-06112": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4417295869",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "WAM-Flow: Parallel Coarse-to-Fine Motion Planning via Discrete Flow Matching for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.06112",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4417295869",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.06112",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-01830": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416967343",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "OpenREAD: Reinforced Open-Ended Reasoning for End-to-End Autonomous Driving with LLM-as-Critic",
+      "doi": "https://doi.org/10.48550/arxiv.2512.01830",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416967343",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.01830",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-00088": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415935425",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Alpamayo-R1: Bridging Reasoning and Action Prediction for Generalizable Autonomous Driving in the Long Tail",
+      "doi": "https://doi.org/10.48550/arxiv.2511.00088",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415935425",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2511.00088",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-00062": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415935378",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "World Simulation with Video Foundation Models for Physical AI",
+      "doi": "https://doi.org/10.48550/arxiv.2511.00062",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415935378",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2511.00062",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2509-20109": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7083309304",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Discrete Diffusion for Reflective Vision-Language-Action Models in Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2509.20109",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7083309304",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2509.20109",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2509-05578": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415059311",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "OccVLA: Vision-Language-Action Model with Implicit 3D Occupancy Supervision",
+      "doi": "https://doi.org/10.48550/arxiv.2509.05578",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415059311",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2509.05578",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2507-23318": {
+      "count": 2,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138407488",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "FastDriveVLA: Efficient End-to-End Driving via Plug-and-Play Reconstruction-based Token Pruning",
+      "doi": "https://doi.org/10.1609/aaai.v40i4.37244",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138407488",
+          "count": 2,
+          "doi": "https://doi.org/10.1609/aaai.v40i4.37244",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W7128724544",
+          "count": 0,
+          "doi": "https://doi.org/10.48448/rr0q-fw89",
+          "type": "other"
+        },
+        {
+          "url": "https://openalex.org/W4414920245",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2507.23318",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2506-13757": {
+      "count": 16,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415109354",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning",
+      "doi": "https://doi.org/10.52202/085713-0942",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415109354",
+          "count": 16,
+          "doi": "https://doi.org/10.52202/085713-0942",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2506-08052": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415337225",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ReCogDrive: A Reinforced Cognitive Framework for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2506.08052",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415337225",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2506.08052",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2505-19381": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415145326",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DiffVLA: Vision-Language Guided Diffusion Planning for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2505.19381",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415145326",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2505.19381",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2505-16278": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416450316",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2505.16278",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416450316",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2505.16278",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2505-00284": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W6929339462",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "LightEMMA: A Longitudinal Evaluation of Vision-Language Models for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2505.00284",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W6929339462",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2505.00284",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2503-23463": {
+      "count": 26,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138474371",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "OpenDriveVLA: Towards End-to-end Autonomous Driving with Large Vision Language Action Model",
+      "doi": "https://doi.org/10.1609/aaai.v40i16.38386",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138474371",
+          "count": 26,
+          "doi": "https://doi.org/10.1609/aaai.v40i16.38386",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4416413108",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2503.23463",
+          "type": "preprint"
+        },
+        {
+          "url": "https://openalex.org/W7128739692",
+          "count": 0,
+          "doi": "https://doi.org/10.48448/1k3x-b378",
+          "type": "other"
+        }
+      ]
+    },
+    "2503-15558": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W6966680242",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Cosmos-Reason1: From Physical Common Sense To Embodied Reasoning",
+      "doi": "https://doi.org/10.48550/arxiv.2503.15558",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W6966680242",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2503.15558",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2503-09594": {
+      "count": 29,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4413146849",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SimLingo: Vision-Only Closed-Loop Autonomous Driving with Language-Action Alignment",
+      "doi": "https://doi.org/10.1109/cvpr52734.2025.01120",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4413146849",
+          "count": 29,
+          "doi": "https://doi.org/10.1109/cvpr52734.2025.01120",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4415098759",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2503.09594",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2503-07608": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W6891859616",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "AlphaDrive: Unleashing the Power of VLMs in Autonomous Driving via Reinforcement Learning and Reasoning",
+      "doi": "https://doi.org/10.48550/arxiv.2503.07608",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W6891859616",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2503.07608",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2410-23262": {
+      "count": 5,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4404350186",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "EMMA: End-to-End Multimodal Model for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2410.23262",
+      "publicationYear": 2024,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4404350186",
+          "count": 5,
+          "doi": "https://doi.org/10.48550/arxiv.2410.23262",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2406-03008": {
+      "count": 25,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4405785469",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriVLMe: Enhancing LLM-based Autonomous Driving Agents with Embodied and Social Experiences",
+      "doi": "https://doi.org/10.1109/iros58592.2024.10802555",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4405785469",
+          "count": 25,
+          "doi": "https://doi.org/10.1109/iros58592.2024.10802555",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4399447743",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2406.03008",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2402-12289": {
+      "count": 23,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4391988276",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models",
+      "doi": "https://doi.org/10.48550/arxiv.2402.12289",
+      "publicationYear": 2024,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4391988276",
+          "count": 23,
+          "doi": "https://doi.org/10.48550/arxiv.2402.12289",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2401-05577": {
+      "count": 76,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4402753604",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "VLP: Vision Language Planning for Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.01398",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4402753604",
+          "count": 76,
+          "doi": "https://doi.org/10.1109/cvpr52733.2024.01398",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4390833096",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2401.05577",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2312-14150": {
+      "count": 217,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4404820176",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveLM: Driving with Graph Visual Question Answering",
+      "doi": "https://doi.org/10.1007/978-3-031-72943-0_15",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4404820176",
+          "count": 217,
+          "doi": "https://doi.org/10.1007/978-3-031-72943-0_15",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4390137328",
+          "count": 4,
+          "doi": "https://doi.org/10.48550/arxiv.2312.14150",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2312-09245": {
+      "count": 40,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416731372",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveMLM: aligning multi-modal large language models with behavioral planning states for autonomous driving",
+      "doi": "https://doi.org/10.1007/s44267-025-00095-w",
+      "publicationYear": 2025,
+      "recordType": "article",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416731372",
+          "count": 40,
+          "doi": "https://doi.org/10.1007/s44267-025-00095-w",
+          "type": "article"
+        }
+      ]
+    },
+    "2312-07488": {
+      "count": 169,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4402727495",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "LMDrive: Closed-Loop End-to-End Driving with Large Language Models",
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.01432",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4402727495",
+          "count": 169,
+          "doi": "https://doi.org/10.1109/cvpr52733.2024.01432",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4389712937",
+          "count": 4,
+          "doi": "https://doi.org/10.48550/arxiv.2312.07488",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2312-00438": {
+      "count": 48,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4404654684",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Dolphins: Multimodal Language Model for Driving",
+      "doi": "https://doi.org/10.1007/978-3-031-72995-9_23",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4404654684",
+          "count": 48,
+          "doi": "https://doi.org/10.1007/978-3-031-72995-9_23",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4389325892",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2312.00438",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2311-05332": {
+      "count": 21,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4388585446",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "On the Road with GPT-4V(ision): Early Explorations of Visual-Language Model on Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2311.05332",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4388585446",
+          "count": 21,
+          "doi": "https://doi.org/10.48550/arxiv.2311.05332",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2310-03026": {
+      "count": 48,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4387390364",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "LanguageMPC: Large Language Models as Decision Makers for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2310.03026",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4387390364",
+          "count": 48,
+          "doi": "https://doi.org/10.48550/arxiv.2310.03026",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2310-01957": {
+      "count": 175,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4401414574",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Driving with LLMs: Fusing Object-Level Vector Modality for Explainable Autonomous Driving",
+      "doi": "https://doi.org/10.1109/icra57147.2024.10611018",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4401414574",
+          "count": 175,
+          "doi": "https://doi.org/10.1109/icra57147.2024.10611018",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4387356085",
+          "count": 6,
+          "doi": "https://doi.org/10.48550/arxiv.2310.01957",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2310-01415": {
+      "count": 39,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4387323024",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GPT-Driver: Learning to Drive with GPT",
+      "doi": "https://doi.org/10.48550/arxiv.2310.01415",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4387323024",
+          "count": 39,
+          "doi": "https://doi.org/10.48550/arxiv.2310.01415",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2310-01412": {
+      "count": 420,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4401386967",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveGPT4: Interpretable End-to-End Autonomous Driving Via Large Language Model",
+      "doi": "https://doi.org/10.1109/lra.2024.3440097",
+      "publicationYear": 2024,
+      "recordType": "article",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4401386967",
+          "count": 420,
+          "doi": "https://doi.org/10.1109/lra.2024.3440097",
+          "type": "article"
+        },
+        {
+          "url": "https://openalex.org/W4387323020",
+          "count": 18,
+          "doi": "https://doi.org/10.48550/arxiv.2310.01412",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2309-16292": {
+      "count": 39,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4387221829",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "doi": "https://doi.org/10.48550/arxiv.2309.16292",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4387221829",
+          "count": 39,
+          "doi": "https://doi.org/10.48550/arxiv.2309.16292",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2309-10228": {
+      "count": 115,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4394862768",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Drive as You Speak: Enabling Human-Like Interaction with Large Language Models in Autonomous Vehicles",
+      "doi": "https://doi.org/10.1109/wacvw60836.2024.00101",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4394862768",
+          "count": 115,
+          "doi": "https://doi.org/10.1109/wacvw60836.2024.00101",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4386907297",
+          "count": 3,
+          "doi": "https://doi.org/10.48550/arxiv.2309.10228",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2210-12511": {
+      "count": 5,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4385574219",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DOROTHIE: Spoken Dialogue for Handling Unexpected Situations in Interactive Autonomous Driving Agents",
+      "doi": "https://doi.org/10.18653/v1/2022.findings-emnlp.354",
+      "publicationYear": 2022,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4385574219",
+          "count": 5,
+          "doi": "https://doi.org/10.18653/v1/2022.findings-emnlp.354",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4317440198",
+          "count": 0,
+          "doi": "https://doi.org/10.17863/cam.106604",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4307311009",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2210.12511",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2610-02825": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7220389462",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "TerrainForge: Physics-Grounded road geometry Editing for Counterfactual Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2610.02825",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7220389462",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2610.02825",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-34085": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214745133",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "AD-E2E-JEPA: A Joint-Embedding Predictive Architecture For End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.34085",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214745133",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.34085",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-26792": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214105272",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DreamStream: Towards Policy-Oriented Generative Simulation for End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.26792",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214105272",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.26792",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-26299": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214067357",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ForeDrive: Foresight-Guided End-to-End Autonomous Driving with a Planning-Relevant Latent World Model",
+      "doi": "https://doi.org/10.48550/arxiv.2609.26299",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214067357",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.26299",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-21712": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7213916778",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ZYT-World: A Real-Time Controllable World Model for Closed-Loop Autonomous-Driving Simulation",
+      "doi": "https://doi.org/10.48550/arxiv.2609.21712",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7213916778",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.21712",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-20377": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7213598710",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "MM-Future: Multi-Mode Joint World-Action Modeling for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.20377",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7213598710",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.20377",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-03602": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7208720242",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2609.03602",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7208720242",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.03602",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-28404": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7204834778",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "How Far Can 5,500 Hours of Driving Take You? A Scaling Law Analysis of Video Diffusion Models",
+      "doi": "https://doi.org/10.48550/arxiv.2608.28404",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7204834778",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.28404",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-22187": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7204194591",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "BehaviorWorldGen: Closing the Loop between Action Models and World Simulators via Controllable Behavior-Aware Structured World Generation",
+      "doi": "https://doi.org/10.48550/arxiv.2608.22187",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7204194591",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.22187",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-20974": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7204096338",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "WA-JEPA: Rethinking the Video JEPA Paradigm for World-Action Modeling in Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.20974",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7204096338",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.20974",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-20430": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7202135670",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "RISE: Adaptive Imagination for World Action Models",
+      "doi": "https://doi.org/10.20944/preprints202608.1336.v1",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7202135670",
+          "count": 0,
+          "doi": "https://doi.org/10.20944/preprints202608.1336.v1",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-19085": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7203937597",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DA-WAM: Decision-Aligned Future Latents for Driving World Models",
+      "doi": "https://doi.org/10.48550/arxiv.2608.19085",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7203937597",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.19085",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-10107": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7202273033",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "4D-WAM: 4D Consistent World Modeling for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.10107",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7202273033",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.10107",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-07468": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7202118011",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SimWAM: A Simple World Action Model for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.07468",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7202118011",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.07468",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2608-03084": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7172542206",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SUV: Future Scene Understanding as Video Generation for End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.03084",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7172542206",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.03084",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-29031": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7172308214",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Auto-JEPA: A Latent World Model of Continuous Intent for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2607.29031",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7172308214",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.29031",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-26056": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7171630636",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "INTACT: Isomorphic Intent-to-Action Learning for Search-Free World Models",
+      "doi": "https://doi.org/10.48550/arxiv.2607.26056",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7171630636",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.26056",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-20988": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7170785359",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "HyWorldVLA: A Vision-Language-Action Model with Hybrid World Modeling for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2607.20988",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7170785359",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.20988",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2607-17521": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7169844426",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GeoWorldAD: Geometry World Action Model for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2607.17521",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7169844426",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2607.17521",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-30421": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7166676698",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "OWMDrive: Causality-Aware End-to-End Autonomous Driving via 4D Occupancy World Model",
+      "doi": "https://doi.org/10.48550/arxiv.2606.30421",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7166676698",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.30421",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-15869": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7164951501",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Metis: A Generalizable and Efficient World-Action Model for Autonomous Driving and Urban Navigation",
+      "doi": "https://doi.org/10.48550/arxiv.2606.15869",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7164951501",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.15869",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-03159": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7163395620",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation",
+      "doi": "https://doi.org/10.48550/arxiv.2606.03159",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7163395620",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.03159",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-02800": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7163380451",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Cosmos 3: Omnimodal World Models for Physical AI",
+      "doi": "https://doi.org/10.48550/arxiv.2606.02800",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7163380451",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.02800",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-24892": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7162425781",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "X-Foresight: A Joint Vision-Action Causal Forecasting Network via Predictive World Modeling",
+      "doi": "https://doi.org/10.48550/arxiv.2605.24892",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7162425781",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.24892",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-18137": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7161725120",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Xiaomi Auto World Model: A Joint World Model Integrating Reconstruction and Generation for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2605.18137",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7161725120",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.18137",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-17682": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7161723141",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GEM: Gaussian Evolution Model for Occupancy Forecasting and Motion Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2605.17682",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7161723141",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.17682",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-14696": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7161262407",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "EponaV2: Driving World Model with Comprehensive Future Reasoning",
+      "doi": "https://doi.org/10.48550/arxiv.2605.14696",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7161262407",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.14696",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-11596": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160983811",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "HorizonDrive: Self-Corrective Autoregressive World Model for Long-horizon Driving Simulation",
+      "doi": "https://doi.org/10.48550/arxiv.2605.11596",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160983811",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.11596",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-11550": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160984293",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "The DAWN of World-Action Interactive Models",
+      "doi": "https://doi.org/10.48550/arxiv.2605.11550",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160984293",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.11550",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-10564": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160931675",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DeepSight: Long-Horizon World Modeling via Latent States Prediction for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2605.10564",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160931675",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.10564",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-10426": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160947000",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "CoWorld-VLA: Thinking in a Multi-Expert World Model for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2605.10426",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160947000",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.10426",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2605-09701": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160934311",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveFuture: Future-Aware Latent World Models for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2605.09701",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160934311",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2605.09701",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2604-20289": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7155377970",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "X-Cache: Cross-Chunk Block Caching for Few-Step Autoregressive World Models Inference",
+      "doi": "https://doi.org/10.48550/arxiv.2604.20289",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7155377970",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2604.20289",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2604-04198": {
+      "count": 5,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7151563113",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveVA: Video Action Models are Zero-Shot Drivers",
+      "doi": "https://doi.org/10.1007/978-3-032-37718-0_19",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7151563113",
+          "count": 5,
+          "doi": "https://doi.org/10.1007/978-3-032-37718-0_19",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2604-02714": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7151047574",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ExploreVLA: Dense World Modeling and Exploration for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.1007/978-3-032-37261-1_16",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7151047574",
+          "count": 0,
+          "doi": "https://doi.org/10.1007/978-3-032-37261-1_16",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2604-01765": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7148938948",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveDreamer-Policy: A Geometry-Grounded World-Action Model for Unified Generation and Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2604.01765",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7148938948",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2604.01765",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-27287": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7147197057",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Uni-World VLA: Interleaved World Modeling and Planning for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.27287",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7147197057",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.27287",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-24581": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7140875411",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Latent-WAM: Latent World Action Modeling for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.24581",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7140875411",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.24581",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-19979": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7140080798",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2603.19979",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7140080798",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.19979",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-16666": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138923929",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+      "doi": "https://doi.org/10.48550/arxiv.2603.16666",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138923929",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.16666",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2603-14948": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7138445157",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Bridging Scene Generation and Planning: Driving with World Model via Unifying Vision and Motion Representation",
+      "doi": "https://doi.org/10.48550/arxiv.2603.14948",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7138445157",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2603.14948",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-10884": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7128682378",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ResWorld: Temporal Residual World Model for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2602.10884",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7128682378",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.10884",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-06521": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7128356427",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2602.06521",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7128356427",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.06521",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2602-01536": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7127325217",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "UniDWM: Towards a Unified Driving World Model via Multifaceted Representation Learning",
+      "doi": "https://doi.org/10.48550/arxiv.2602.01536",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7127325217",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2602.01536",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2601-22032": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7126273793",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Drive-JEPA: Video JEPA Meets Multimodal Trajectory Distillation for End-to-End Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2601.22032",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7126273793",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2601.22032",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2601-04453": {
+      "count": 3,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7119651606",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "UniDrive-WM: Unified Understanding, Planning and Generation World Model for Autonomous Driving",
+      "doi": "https://doi.org/10.1007/978-3-032-37252-9_21",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7119651606",
+          "count": 3,
+          "doi": "https://doi.org/10.1007/978-3-032-37252-9_21",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2512-23421": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7117692002",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveLaW:Unifying Planning and Video Generation in a Latent Driving World",
+      "doi": "https://doi.org/10.48550/arxiv.2512.23421",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7117692002",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.23421",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-19133": {
+      "count": 5,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7137819967",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "WorldRFT: Latent World Model Planning with Reinforcement Fine-Tuning for Autonomous Driving",
+      "doi": "https://doi.org/10.1609/aaai.v40i14.38149",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7137819967",
+          "count": 5,
+          "doi": "https://doi.org/10.1609/aaai.v40i14.38149",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W7117174090",
+          "count": 0,
+          "doi": null,
+          "type": "preprint"
+        },
+        {
+          "url": "https://openalex.org/W7117110679",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.19133",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2512-04441": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4417086833",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "MindDrive: An All-in-One Framework Bridging World Models and Vision-Language Model for End-to-End Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2512.04441",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4417086833",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2512.04441",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2511-23369": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416931790",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "SimScale: Learning to Drive via Real-World Simulation at Scale",
+      "doi": "https://doi.org/10.48550/arxiv.2511.23369",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416931790",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2511.23369",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2510-12796": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415272869",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveVLA-W0: World Models Amplify Data Scaling Law in Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2510.12796",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415272869",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2510.12796",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2510-10726": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7090779471",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "WorldMirror: Universal 3D World Reconstruction with Any-Prior Prompting",
+      "doi": "https://doi.org/10.48550/arxiv.2510.10726",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7090779471",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2510.10726",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2510-04333": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416291059",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "RAP: 3D Rasterization Augmented End-to-End Planning",
+      "doi": "https://doi.org/10.48550/arxiv.2510.04333",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416291059",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2510.04333",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2508-06571": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W6966868548",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "IRL-VLA: Training an Vision-Language-Action Policy via Reward World Model",
+      "doi": "https://doi.org/10.48550/arxiv.2508.06571",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W6966868548",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2508.06571",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2507-00603": {
+      "count": 16,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416887510",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "World4Drive: End-to-End Autonomous Driving via Intention-Aware Physical Latent World Model",
+      "doi": "https://doi.org/10.1109/iccv51701.2025.02659",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416887510",
+          "count": 16,
+          "doi": "https://doi.org/10.1109/iccv51701.2025.02659",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2506-24113": {
+      "count": 14,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4416525310",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Epona: Autoregressive Diffusion World Model for Autonomous Driving",
+      "doi": "https://doi.org/10.1109/iccv51701.2025.02527",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4416525310",
+          "count": 14,
+          "doi": "https://doi.org/10.1109/iccv51701.2025.02527",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2504-01941": {
+      "count": 17,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7160124948",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "End-to-End Driving with Online Trajectory Evaluation via BEV World Model",
+      "doi": "https://doi.org/10.1109/iccv51701.2025.02519",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7160124948",
+          "count": 17,
+          "doi": "https://doi.org/10.1109/iccv51701.2025.02519",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2503-14492": {
+      "count": 2,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W6929442871",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal Control",
+      "doi": "https://doi.org/10.48550/arxiv.2503.14492",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W6929442871",
+          "count": 2,
+          "doi": "https://doi.org/10.48550/arxiv.2503.14492",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2501-14729": {
+      "count": 5,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4406841381",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "HERMES: A Unified Self-Driving World Model for Simultaneous 3D Scene Understanding and Generation",
+      "doi": "https://doi.org/10.1109/iccv51701.2025.02582",
+      "publicationYear": 2025,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4406841381",
+          "count": 5,
+          "doi": "https://doi.org/10.1109/iccv51701.2025.02582",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2501-03575": {
+      "count": 11,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4406191642",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Cosmos World Foundation Model Platform for Physical AI",
+      "doi": "https://doi.org/10.48550/arxiv.2501.03575",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4406191642",
+          "count": 11,
+          "doi": "https://doi.org/10.48550/arxiv.2501.03575",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2412-10371": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4405434092",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GaussianAD: Gaussian-Centric End-to-End Autonomous Driving",
+      "doi": null,
+      "publicationYear": 2024,
+      "recordType": "preprint",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4405434092",
+          "count": 0,
+          "doi": null,
+          "type": "preprint"
+        }
+      ]
+    },
+    "2406-08481": {
+      "count": 1,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4399657820",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Enhancing End-to-End Autonomous Driving with Latent World Model",
+      "doi": "https://doi.org/10.48550/arxiv.2406.08481",
+      "publicationYear": 2024,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4399657820",
+          "count": 1,
+          "doi": "https://doi.org/10.48550/arxiv.2406.08481",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2405-17398": {
+      "count": 41,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4415796242",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Vista: A Generalizable Driving World Model with High Fidelity and Versatile Controllability",
+      "doi": "https://doi.org/10.52202/079017-2906",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4415796242",
+          "count": 41,
+          "doi": "https://doi.org/10.52202/079017-2906",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4399144322",
+          "count": 2,
+          "doi": "https://doi.org/10.48550/arxiv.2405.17398",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2403-09630": {
+      "count": 49,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4402716256",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Generalized Predictive Model for Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.01389",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4402716256",
+          "count": 49,
+          "doi": "https://doi.org/10.1109/cvpr52733.2024.01389",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2312-02934": {
+      "count": 25,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4403759442",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "WoVoGen: World Volume-Aware Diffusion for Controllable Multi-camera Driving Scene Generation",
+      "doi": "https://doi.org/10.1007/978-3-031-72989-8_19",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4403759442",
+          "count": 25,
+          "doi": "https://doi.org/10.1007/978-3-031-72989-8_19",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4389470785",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2312.02934",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2311-17918": {
+      "count": 105,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4402778069",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Driving Into the Future: Multiview Visual Forecasting and Planning with World Model for Autonomous Driving",
+      "doi": "https://doi.org/10.1109/cvpr52733.2024.01397",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4402778069",
+          "count": 105,
+          "doi": "https://doi.org/10.1109/cvpr52733.2024.01397",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4389218154",
+          "count": 2,
+          "doi": "https://doi.org/10.48550/arxiv.2311.17918",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2311-16038": {
+      "count": 75,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4403771534",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving",
+      "doi": "https://doi.org/10.1007/978-3-031-72624-8_4",
+      "publicationYear": 2024,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4403771534",
+          "count": 75,
+          "doi": "https://doi.org/10.1007/978-3-031-72624-8_4",
+          "type": "conference-paper"
+        },
+        {
+          "url": "https://openalex.org/W4389116508",
+          "count": 5,
+          "doi": "https://doi.org/10.48550/arxiv.2311.16038",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2311-13549": {
+      "count": 7,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4388963851",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "ADriver-I: A General World Model for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2311.13549",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4388963851",
+          "count": 7,
+          "doi": "https://doi.org/10.48550/arxiv.2311.13549",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2310-07771": {
+      "count": 4,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4387634829",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DrivingDiffusion: Layout-Guided multi-view driving scene video generation with latent diffusion model",
+      "doi": "https://doi.org/10.48550/arxiv.2310.07771",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4387634829",
+          "count": 4,
+          "doi": "https://doi.org/10.48550/arxiv.2310.07771",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2309-17080": {
+      "count": 27,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4387294122",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "GAIA-1: A Generative World Model for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2309.17080",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4387294122",
+          "count": 27,
+          "doi": "https://doi.org/10.48550/arxiv.2309.17080",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2309-09777": {
+      "count": 15,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4386876077",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveDreamer: Towards Real-world-driven World Models for Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2309.09777",
+      "publicationYear": 2023,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4386876077",
+          "count": 15,
+          "doi": "https://doi.org/10.48550/arxiv.2309.09777",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2210-07729": {
+      "count": 31,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4306706296",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Model-Based Imitation Learning for Urban Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2210.07729",
+      "publicationYear": 2022,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4306706296",
+          "count": 31,
+          "doi": "https://doi.org/10.48550/arxiv.2210.07729",
+          "type": "preprint"
+        },
+        {
+          "url": "https://openalex.org/W7133218611",
+          "count": 14,
+          "doi": "https://doi.org/10.52202/068431-1505",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2105-00636": {
+      "count": 104,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3157529972",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Learning to drive from a world on rails",
+      "doi": "https://doi.org/10.1109/iccv48922.2021.01530",
+      "publicationYear": 2021,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3157529972",
+          "count": 104,
+          "doi": "https://doi.org/10.1109/iccv48922.2021.01530",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2104-15060": {
+      "count": 70,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W3158192271",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveGAN: Towards a Controllable High-Quality Neural Simulation",
+      "doi": "https://doi.org/10.1109/cvpr46437.2021.00576",
+      "publicationYear": 2021,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W3158192271",
+          "count": 70,
+          "doi": "https://doi.org/10.1109/cvpr46437.2021.00576",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2609-36851": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7214892509",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "RoXDrive: Closed-Loop Reinforcement Learning for End-to-End Autonomous Driving via Action-Faithful Rollouts",
+      "doi": "https://doi.org/10.48550/arxiv.2609.36851",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7214892509",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.36851",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-20756": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7213611325",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "OPTED: On-Policy Fine-Tuning for End-to-End Driving using a Render-Free Teacher",
+      "doi": "https://doi.org/10.48550/arxiv.2609.20756",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7213611325",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.20756",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2609-06055": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7212028101",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "DriveZero: End-to-End Driving Beyond Human Demonstrations",
+      "doi": "https://doi.org/10.48550/arxiv.2609.06055",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7212028101",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2609.06055",
+          "type": "preprint"
+        }
+      ]
+    },
+    "self-improving-autonomous-vehicles-real-world-rl-2026": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7213424265",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Self-Improving Autonomous Vehicles via Real-World Reinforcement Learning",
+      "doi": "https://doi.org/10.24963/ijcai.2026/493",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7213424265",
+          "count": 0,
+          "doi": "https://doi.org/10.24963/ijcai.2026/493",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "2608-22549": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7204187721",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Scaling Curriculum Learning For Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2608.22549",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7204187721",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2608.22549",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-14032": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7164812927",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "From Attacks to Curricula: Learnability-Guided Adversarial Training for Safe Autonomous Driving",
+      "doi": "https://doi.org/10.48550/arxiv.2606.14032",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7164812927",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.14032",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2606-03678": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7163318586",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "EvoDrive: Pareto Evolution for Safety-Critical Autonomous Driving via Self-Improving LLM Agents",
+      "doi": "https://doi.org/10.48550/arxiv.2606.03678",
+      "publicationYear": 2026,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7163318586",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2606.03678",
+          "type": "preprint"
+        }
+      ]
+    },
+    "agentic-ai-driving-skillbank-2026": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7135065763",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Agentic AI in Autonomous Driving: LLM-Enhanced RL with Reusable Skills and Adaptive Exploration for Enhanced Safety",
+      "doi": "https://doi.org/10.5220/0014358100004052",
+      "publicationYear": 2026,
+      "recordType": "conference-paper",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7135065763",
+          "count": 0,
+          "doi": "https://doi.org/10.5220/0014358100004052",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "feng-breaking-2026": {
+      "count": 2,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W7131359948",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Breaking through safety performance stagnation in autonomous vehicles with dense learning",
+      "doi": "https://doi.org/10.1038/s41467-026-69761-x",
+      "publicationYear": 2026,
+      "recordType": "article",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W7131359948",
+          "count": 2,
+          "doi": "https://doi.org/10.1038/s41467-026-69761-x",
+          "type": "article"
+        }
+      ]
+    },
+    "uncertainty-safe-evolving-rl-2025": {
+      "count": 13,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4413916436",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "An uncertainty-aware safe-evolving reinforcement learning algorithm for decision-making and control in highway autonomous driving",
+      "doi": "https://doi.org/10.1016/j.engappai.2025.112108",
+      "publicationYear": 2025,
+      "recordType": "article",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4413916436",
+          "count": 13,
+          "doi": "https://doi.org/10.1016/j.engappai.2025.112108",
+          "type": "article"
+        }
+      ]
+    },
+    "2408-12187": {
+      "count": 4,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4411550838",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "A Safe and Efficient Self-Evolving Algorithm for Decision-Making and Control of Autonomous Driving Systems",
+      "doi": "https://doi.org/10.1109/tits.2025.3576372",
+      "publicationYear": 2025,
+      "recordType": "article",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4411550838",
+          "count": 4,
+          "doi": "https://doi.org/10.1109/tits.2025.3576372",
+          "type": "article"
+        },
+        {
+          "url": "https://openalex.org/W4405622341",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2408.12187",
+          "type": "preprint"
+        }
+      ]
+    },
+    "expert-agent-positive-feedback-2025": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4412919887",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Integrating “Expert-Agent” Bi-Directional Positive Feedback for Autonomous Driving Through Reinforcement Learning",
+      "doi": "https://doi.org/10.3233/atde250441",
+      "publicationYear": 2025,
+      "recordType": "book-chapter",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4412919887",
+          "count": 0,
+          "doi": "https://doi.org/10.3233/atde250441",
+          "type": "book-chapter"
+        }
+      ]
+    },
+    "2408-12805": {
+      "count": 11,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4407568208",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "A safe self-evolution algorithm for autonomous driving based on data-driven risk quantification model",
+      "doi": "https://doi.org/10.1016/j.aap.2025.107941",
+      "publicationYear": 2025,
+      "recordType": "article",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4407568208",
+          "count": 11,
+          "doi": "https://doi.org/10.1016/j.aap.2025.107941",
+          "type": "article"
+        },
+        {
+          "url": "https://openalex.org/W4402699014",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2408.12805",
+          "type": "preprint"
+        }
+      ]
+    },
+    "2502-03349": {
+      "count": 0,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4407231336",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Robust Autonomy Emerges from Self-Play",
+      "doi": "https://doi.org/10.48550/arxiv.2502.03349",
+      "publicationYear": 2025,
+      "recordType": "preprint",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4407231336",
+          "count": 0,
+          "doi": "https://doi.org/10.48550/arxiv.2502.03349",
+          "type": "preprint"
+        }
+      ]
+    },
+    "human-feedback-self-evolving-driving-2024": {
+      "count": 14,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4399610174",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Human feedback enhanced autonomous intelligent systems: a perspective from intelligent driving",
+      "doi": "https://doi.org/10.1007/s43684-024-00071-z",
+      "publicationYear": 2024,
+      "recordType": "article",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4399610174",
+          "count": 14,
+          "doi": "https://doi.org/10.1007/s43684-024-00071-z",
+          "type": "article"
+        }
+      ]
+    },
+    "dcar-l-dynamic-confidence-2023": {
+      "count": 88,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4321611535",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Continuous improvement of self-driving cars using dynamic confidence-aware reinforcement learning",
+      "doi": "https://doi.org/10.1038/s42256-023-00610-y",
+      "publicationYear": 2023,
+      "recordType": "article",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4321611535",
+          "count": 88,
+          "doi": "https://doi.org/10.1038/s42256-023-00610-y",
+          "type": "article"
+        }
+      ]
+    },
+    "2210-16575": {
+      "count": 4,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4383108280",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Self-Improving Safety Performance of Reinforcement Learning Based Driving with Black-Box Verification Algorithms",
+      "doi": "https://doi.org/10.1109/icra48891.2023.10160883",
+      "publicationYear": 2023,
+      "recordType": "conference-paper",
+      "match": "exact-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4383108280",
+          "count": 4,
+          "doi": "https://doi.org/10.1109/icra48891.2023.10160883",
+          "type": "conference-paper"
+        }
+      ]
+    },
+    "trustworthy-safety-improvement-rl-2022": {
+      "count": 84,
+      "source": "OpenAlex",
+      "url": "https://openalex.org/W4220902452",
+      "checkedAt": "2026-10-08",
+      "status": "available",
+      "matchedTitle": "Trustworthy safety improvement for autonomous driving using reinforcement learning",
+      "doi": "https://doi.org/10.1016/j.trc.2022.103656",
+      "publicationYear": 2022,
+      "recordType": "article",
+      "match": "doi-and-title",
+      "candidates": [
+        {
+          "url": "https://openalex.org/W4220902452",
+          "count": 84,
+          "doi": "https://doi.org/10.1016/j.trc.2022.103656",
+          "type": "article"
+        }
+      ]
+    }
+  },
+  "failures": []
+}

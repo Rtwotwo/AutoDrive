@@ -1,3 +1,6 @@
+import { citationMarkup, compareCitations } from './citations.js';
+import { compareReadingIndices, computeReadingIndices, readingIndexMarkup } from './reading-index.js';
+
 const savedKey = 'autodrive-saved-papers-v1';
 const labels = {
   e2e: 'End-to-End',
@@ -6,35 +9,36 @@ const labels = {
   rsi: 'Recursive Self-Improvement'
 };
 const framing = {
-  e2e: '本篇属于端到端驾驶方向。阅读时可重点关注它如何把感知输入、场景表征与驾驶决策连接起来。',
-  'world-model': '本篇属于驾驶世界模型方向。阅读时可重点关注它如何表示场景状态、预测未来或支撑下游驾驶任务。',
-  vla: '本篇属于视觉—语言—动作方向。阅读时可重点关注语言推理如何结合视觉场景并落实为可执行动作。',
-  rsi: '本篇属于递归自我改进方向。阅读时可重点关注反馈、经验或重复优化如何带来可验证且安全的性能变化。'
+  e2e: 'This paper belongs to end-to-end driving. Focus on how sensor inputs and scene representations support executable driving decisions.',
+  'world-model': 'This paper belongs to driving world models. Focus on how it represents scene states, forecasts futures, or supports downstream driving tasks.',
+  vla: 'This paper belongs to vision-language-action research. Focus on how reasoning is grounded in visual scenes and translated into executable actions.',
+  rsi: 'This paper belongs to recursive self-improvement research. Focus on the feedback loop, repeated optimization, and evidence of safe policy improvement.'
 };
 const prompts = {
   e2e: [
-    '主要结果来自开环评测、闭环评测，还是两者都有？指标能否反映交互场景中的安全表现？',
-    '基线是否使用相同传感器、数据划分、训练预算和规划时域？',
-    '消融实验能否单独说明论文核心表示或训练策略带来的收益？'
+    'Are the main results open-loop, closed-loop, or both? Do the metrics capture safety in interactive traffic?',
+    'Do baselines use the same sensors, data splits, training budget, and planning horizon?',
+    'Do ablations isolate the benefits of the central representation or training strategy?'
   ],
   'world-model': [
-    '论文如何衡量时间一致性、可控性和长时预测稳定性？',
-    '视觉或预测质量的提升是否转化成下游驾驶策略的收益？',
-    '生成的未来场景是否检查了物理合理性和安全关键事件？'
+    'How are temporal consistency, controllability, and long-horizon rollout stability measured?',
+    'Do gains in visual or predictive quality improve downstream driving policies?',
+    'Are generated futures checked for physical plausibility and safety-critical events?'
   ],
   vla: [
-    '自然语言指令如何结合场景信息并映射到具体动作空间？',
-    '评测是否覆盖长尾场景、歧义指令和闭环交互？',
-    '出现错误决策时，系统如何区分感知、推理与动作解码问题？'
+    'How are natural-language instructions grounded in the scene and mapped to the action space?',
+    'Does evaluation cover long-tail scenes, ambiguous instructions, and closed-loop interactions?',
+    'When decisions fail, can perception, reasoning, and action-decoding errors be distinguished?'
   ],
   rsi: [
-    '每轮改进由哪些安全约束、独立回归测试和停止条件控制？',
-    '收益是否跨场景稳定，还是集中在少数评测子集？',
-    '重复更新如何避免损害原本可靠的驾驶行为？'
+    'What safety constraints, independent regression tests, and stopping rules govern each improvement round?',
+    'Are gains consistent across scenarios or concentrated in a few evaluation subsets?',
+    'How do repeated updates preserve driving behaviors that were already reliable?'
   ]
 };
 const byId = new Map();
 let papers = [];
+let readingIndices = new Map();
 let currentId = null;
 let sortedVisible = [];
 let savedOnly = false;
@@ -96,6 +100,8 @@ function applyListControls() {
   cards.sort((left, right) => {
     const a = byId.get(left.dataset.paperId) || {};
     const b = byId.get(right.dataset.paperId) || {};
+    if (order === 'citations') return compareCitations(a, b);
+    if (order === 'reading') return compareReadingIndices(a, b, readingIndices);
     if (order === 'title') return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
     const result = (Number(a.year) || 0) - (Number(b.year) || 0) || String(a.published || '').localeCompare(String(b.published || ''));
     return order === 'oldest' ? result : -result;
@@ -146,8 +152,8 @@ function analysisMarkup(paper) {
   const tags = (paper.tags || []).map((tag) => '<span class="detail-chip">' + escapeHTML(tag) + '</span>').join('');
   const datasets = (paper.datasets || []).map((item) => '<span class="detail-chip">' + escapeHTML(item) + '</span>').join('');
   const questions = (prompts[paper.track] || prompts.e2e).concat([
-    '消融实验是否隔离了论文所称的关键收益？对比设置是否一致？',
-    '论文明确讨论了哪些假设、失效场景和计算成本？这些条件会怎样限制迁移？'
+    'Do ablations isolate the claimed contribution, and are comparison settings consistent?',
+    'Which assumptions, failure cases, and compute costs are discussed, and how do they limit transfer?'
   ]);
   const related = relatedPapers(paper).map((item) =>
     '<li><button type="button" class="related-paper" data-open-paper="' + escapeHTML(item.paper.id) + '">' +
@@ -156,12 +162,13 @@ function analysisMarkup(paper) {
     '<small>' + escapeHTML((item.paper.summary || '').slice(0, 145)) + ((item.paper.summary || '').length > 145 ? '…' : '') + '</small></button></li>'
   ).join('');
   const code = paper.code
-    ? externalLink(paper.code, 'Open implementation ↗', 'detail-resource-link')
+    ? externalLink(paper.code, paper.codeStatus === 'pending' ? 'Open official repository (code pending) ↗' : paper.codeScope === 'partial' ? 'Open released component ↗' : 'Open implementation ↗', 'detail-resource-link')
     : (paper.openSource
-      ? '<span class="resource-state">索引标记该论文有公开代码，但没有记录直接仓库链接。</span>'
-      : '<span class="resource-state">当前索引没有记录公开实现链接。</span>');
+      ? '<span class="resource-state">The catalog marks public code as available but does not record a direct repository link.</span>'
+      : '<span class="resource-state">No released implementation link is recorded in the current catalog.</span>');
   const source = externalLink(paper.paper, 'Read the original paper ↗', 'button primary detail-source');
   const project = externalLink(paper.project, 'Project page ↗', 'button secondary');
+  const stars = readingIndexMarkup(paper, readingIndices.get(paper.id));
   const saved = readSaved().has(paper.id);
   return '<div class="paper-detail-head">' +
     '<div class="detail-kicker"><span>' + escapeHTML(track.toUpperCase()) + '</span><span>' + escapeHTML(paper.year) + (paper.venue && paper.venue !== String(paper.year) ? ' · ' + escapeHTML(paper.venue) : '') + '</span><span>ID ' + escapeHTML(paper.id) + '</span></div>' +
@@ -172,24 +179,24 @@ function analysisMarkup(paper) {
       '<button class="button secondary detail-save" type="button" data-save-paper="' + escapeHTML(paper.id) + '" aria-pressed="' + String(saved) + '">' + (saved ? '★ Saved' : '☆ Save paper') + '</button></div>' +
     '<div class="detail-navigation"><button type="button" data-adjacent-paper="-1">← Previous paper</button><span>Shareable detail page</span><button type="button" data-adjacent-paper="1">Next paper →</button></div></div>' +
     '<div class="paper-detail-grid"><div class="analysis-main">' +
-      '<section class="analysis-card analysis-lead"><div class="analysis-section-label"><span>01</span> 研究定位 · RESEARCH FRAMING</div><h2>这篇论文试图解决什么问题？</h2>' +
-        '<p class="analysis-framing">' + escapeHTML(framing[paper.track] || framing.e2e) + '</p><p class="analysis-source-summary">' + escapeHTML(paper.summary || '当前索引尚未收录摘要。') + '</p>' +
-        '<p class="analysis-footnote">本段依据本站收录的标题、标签和摘要级总结组织；问题定义与作者原话请以原文为准。</p></section>' +
-      '<section class="analysis-card"><div class="analysis-section-label"><span>02</span> 摘要拆解 · ARGUMENT FLOW</div><h2>沿着作者的技术路线读</h2>' +
-        '<p class="section-help">以下要点从本站摘要逐句拆出，用来梳理论证顺序；不补写未收录的实验数字。</p><ol class="analysis-steps">' + steps + '</ol></section>' +
-      '<section class="analysis-card"><div class="analysis-section-label"><span>03</span> 精读核验 · READER CHECKLIST</div><h2>读原文时重点核对</h2>' +
-        '<p class="section-help">这些是帮助判断证据强弱的阅读问题，不代表已经确认的论文缺陷。</p><ul class="reader-prompts">' +
+      '<section class="analysis-card analysis-lead"><div class="analysis-section-label"><span>01</span> RESEARCH FRAMING</div><h2>What problem does this paper address?</h2>' +
+        '<p class="analysis-framing">' + escapeHTML(framing[paper.track] || framing.e2e) + '</p><p class="analysis-source-summary">' + escapeHTML(paper.summary || 'A summary is not yet available in this catalog.') + '</p>' +
+        '<p class="analysis-footnote">This framing uses the catalog title, tags, and summary. Consult the original paper for the precise problem definition.</p></section>' +
+      '<section class="analysis-card"><div class="analysis-section-label"><span>02</span> ARGUMENT FLOW</div><h2>Follow the technical approach</h2>' +
+        '<p class="section-help">These points follow the sentences in the curated summary to help trace the method.</p><ol class="analysis-steps">' + steps + '</ol></section>' +
+      '<section class="analysis-card"><div class="analysis-section-label"><span>03</span> READER CHECKLIST</div><h2>Questions for a closer reading</h2>' +
+        '<p class="section-help">Use these questions to assess the evidence while reading the full paper.</p><ul class="reader-prompts">' +
         questions.map((question) => '<li><span aria-hidden="true">↗</span><p>' + escapeHTML(question) + '</p></li>').join('') + '</ul></section>' +
       '</div><aside class="analysis-aside">' +
-        '<section class="analysis-card fact-card"><div class="analysis-section-label"><span>04</span> 论文信息 · PAPER FACTS</div>' +
-          '<dl class="paper-facts"><div><dt>研究方向</dt><dd>' + escapeHTML(track) + '</dd></div><div><dt>年份 / 会议</dt><dd>' + escapeHTML(paper.venue || paper.year) + '</dd></div><div><dt>收录 ID</dt><dd>' + escapeHTML(paper.id) + '</dd></div></dl>' +
-          '<h3>主题标签</h3><div class="detail-chip-list">' + (tags || '<span class="muted-copy">尚无主题标签</span>') + '</div>' +
-          '<h3>数据集与评测对象</h3><div class="detail-chip-list">' + (datasets || '<span class="muted-copy">当前索引未列出数据集</span>') + '</div></section>' +
-        '<section class="analysis-card evidence-card"><div class="analysis-section-label"><span>05</span> 证据与复现 · EVIDENCE</div><h2>当前索引能确认的内容</h2>' +
-          '<p>' + escapeHTML(paper.summary || '当前索引尚未收录摘要。') + '</p><div class="resource-status"><strong>公开实现</strong>' + code + '</div>' +
-          '<p class="analysis-footnote">索引没有保存全文页码、表格数值或消融结果。引用具体指标、局限与页码前，请打开原文核对。</p></section>' +
-        '<section class="analysis-card related-card"><div class="analysis-section-label"><span>06</span> 延伸阅读 · RELATED PAPERS</div><h2>按主题和数据集关联</h2>' +
-          (related ? '<ul class="related-paper-list">' + related + '</ul>' : '<p class="muted-copy">还没有找到共享标签或数据集的关联论文。</p>') +
+        '<section class="analysis-card fact-card"><div class="analysis-section-label"><span>04</span> PAPER FACTS</div>' +
+          '<dl class="paper-facts"><div><dt>Research track</dt><dd>' + escapeHTML(track) + '</dd></div><div><dt>Year / Venue</dt><dd>' + escapeHTML(paper.venue || paper.year) + '</dd></div><div><dt>Reading index</dt><dd>' + stars + '</dd></div><div><dt>Citations</dt><dd>' + citationMarkup(paper) + '</dd></div><div><dt>Catalog ID</dt><dd>' + escapeHTML(paper.id) + '</dd></div></dl>' +
+          '<h3>Topics</h3><div class="detail-chip-list">' + (tags || '<span class="muted-copy">No topic tags recorded</span>') + '</div>' +
+          '<h3>Datasets and evaluation</h3><div class="detail-chip-list">' + (datasets || '<span class="muted-copy">No datasets recorded in this catalog</span>') + '</div></section>' +
+        '<section class="analysis-card evidence-card"><div class="analysis-section-label"><span>05</span> EVIDENCE AND REPRODUCTION</div><h2>What the catalog records</h2>' +
+          '<p>' + escapeHTML(paper.summary || 'A summary is not yet available in this catalog.') + '</p><div class="resource-status"><strong>Public implementation</strong>' + code + (paper.codeNote ? '<span class="resource-state">' + escapeHTML(paper.codeNote) + '</span>' : '') + '</div>' +
+          '<p class="analysis-footnote">Open the original paper to verify specific metrics, limitations, ablations, and page references.</p></section>' +
+        '<section class="analysis-card related-card"><div class="analysis-section-label"><span>06</span> RELATED PAPERS</div><h2>Explore related topics and datasets</h2>' +
+          (related ? '<ul class="related-paper-list">' + related + '</ul>' : '<p class="muted-copy">No papers with shared tags or datasets were found.</p>') +
         '</section></aside></div>';
 }
 
@@ -348,6 +355,7 @@ async function initPaperAnalysis() {
     const response = await fetch('data/papers.json');
     if (!response.ok) throw new Error('Unable to load paper records.');
     papers = await response.json();
+    readingIndices = computeReadingIndices(papers);
     papers.forEach((paper) => {
       byId.set(paper.id, paper);
     });

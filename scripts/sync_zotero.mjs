@@ -24,6 +24,9 @@ try {
 }
 
 const existingById = new Map(existingPapers.map((paper) => [paper.id, paper]));
+const titleKey = (value = '') => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
+const existingByTitle = new Map(existingPapers.map(paper => [titleKey(paper.title), paper]));
+const existingByDOI = new Map(existingPapers.filter(paper => /doi\.org\//i.test(paper.paper || '')).map(paper => [paper.paper.split(/doi\.org\//i)[1].toLowerCase(), paper]));
 const existingByArxiv = new Map(existingPapers.flatMap((paper) => {
   const id = paper.paper?.match(/arxiv\.org\/abs\/(\d{4}\.\d{4,5})/i)?.[1];
   return id ? [[id, paper]] : [];
@@ -227,7 +230,7 @@ for (const entry of rawEntries) {
   };
   const fallbackUrl = entry.url ? https(entry.url) : entry.doi ? `https://doi.org/${clean(entry.doi)}` : '';
   const generatedPaperUrl = arxiv ? `https://arxiv.org/abs/${arxiv}` : knownPaperUrls[title] || fallbackUrl;
-  const existing = (arxiv && existingByArxiv.get(arxiv)) || existingById.get(
+  const existing = (arxiv && existingByArxiv.get(arxiv)) || existingByTitle.get(titleKey(title)) || existingByDOI.get(clean(entry.doi || '').toLowerCase()) || existingById.get(
     (arxiv || entry.key).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
   );
   const track = existing?.track || classifiedTrack;
@@ -242,7 +245,7 @@ for (const entry of rawEntries) {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
-  const repository = githubRepository(existing?.code);
+  const repository = githubRepository(existing?.githubRepo || existing?.code);
   const stars = repository && Number.isInteger(starCache.repositories?.[repository]?.stars)
     ? starCache.repositories[repository].stars
     : existing?.stars ?? null;
@@ -263,14 +266,16 @@ for (const entry of rawEntries) {
     openSource: Boolean(code),
     stars,
     project: existing?.project || (extra.project && extra.project !== paperUrl ? extra.project : undefined),
+    // Preserve summaries, audited releases, and citation snapshots during import.
+    ...existing,
     zoteroKey: entry.key
   });
 }
 
-// Preserve the manually curated RSI reading list even when those papers are
-// not present in the Zotero export yet.
+// Preserve manually curated papers in every track, including papers that are
+// absent from this export or whose BibTeX metadata still lacks a year.
 const normalizeTitle = (value = '') => value.toLowerCase().replace(/[^a-z0-9]+/g, '');
-for (const paper of existingPapers.filter((item) => item.track === 'rsi')) {
+for (const paper of existingPapers) {
   const imported = papers.find((item) => item.id === paper.id || normalizeTitle(item.title) === normalizeTitle(paper.title));
   if (imported) {
     const zoteroKey = imported.zoteroKey;
