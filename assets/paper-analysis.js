@@ -1,6 +1,3 @@
-import { citationMarkup, compareCitations } from './citations.js';
-import { compareReadingIndices, computeReadingIndices, readingIndexMarkup } from './reading-index.js';
-
 const savedKey = 'autodrive-saved-papers-v1';
 const labels = {
   e2e: 'End-to-End',
@@ -38,7 +35,6 @@ const prompts = {
 };
 const byId = new Map();
 let papers = [];
-let readingIndices = new Map();
 let currentId = null;
 let sortedVisible = [];
 let savedOnly = false;
@@ -100,8 +96,6 @@ function applyListControls() {
   cards.sort((left, right) => {
     const a = byId.get(left.dataset.paperId) || {};
     const b = byId.get(right.dataset.paperId) || {};
-    if (order === 'citations') return compareCitations(a, b);
-    if (order === 'reading') return compareReadingIndices(a, b, readingIndices);
     if (order === 'title') return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
     const result = (Number(a.year) || 0) - (Number(b.year) || 0) || String(a.published || '').localeCompare(String(b.published || ''));
     return order === 'oldest' ? result : -result;
@@ -168,7 +162,6 @@ function analysisMarkup(paper) {
       : '<span class="resource-state">No released implementation link is recorded in the current catalog.</span>');
   const source = externalLink(paper.paper, 'Read the original paper ↗', 'button primary detail-source');
   const project = externalLink(paper.project, 'Project page ↗', 'button secondary');
-  const stars = readingIndexMarkup(paper, readingIndices.get(paper.id));
   const saved = readSaved().has(paper.id);
   return '<div class="paper-detail-head">' +
     '<div class="detail-kicker"><span>' + escapeHTML(track.toUpperCase()) + '</span><span>' + escapeHTML(paper.year) + (paper.venue && paper.venue !== String(paper.year) ? ' · ' + escapeHTML(paper.venue) : '') + '</span><span>ID ' + escapeHTML(paper.id) + '</span></div>' +
@@ -189,7 +182,7 @@ function analysisMarkup(paper) {
         questions.map((question) => '<li><span aria-hidden="true">↗</span><p>' + escapeHTML(question) + '</p></li>').join('') + '</ul></section>' +
       '</div><aside class="analysis-aside">' +
         '<section class="analysis-card fact-card"><div class="analysis-section-label"><span>04</span> PAPER FACTS</div>' +
-          '<dl class="paper-facts"><div><dt>Research track</dt><dd>' + escapeHTML(track) + '</dd></div><div><dt>Year / Venue</dt><dd>' + escapeHTML(paper.venue || paper.year) + '</dd></div><div><dt>Reading index</dt><dd>' + stars + '</dd></div><div><dt>Citations</dt><dd>' + citationMarkup(paper) + '</dd></div><div><dt>Catalog ID</dt><dd>' + escapeHTML(paper.id) + '</dd></div></dl>' +
+          '<dl class="paper-facts"><div><dt>Research track</dt><dd>' + escapeHTML(track) + '</dd></div><div><dt>Year / Venue</dt><dd>' + escapeHTML(paper.venue || paper.year) + '</dd></div><div><dt>Catalog ID</dt><dd>' + escapeHTML(paper.id) + '</dd></div></dl>' +
           '<h3>Topics</h3><div class="detail-chip-list">' + (tags || '<span class="muted-copy">No topic tags recorded</span>') + '</div>' +
           '<h3>Datasets and evaluation</h3><div class="detail-chip-list">' + (datasets || '<span class="muted-copy">No datasets recorded in this catalog</span>') + '</div></section>' +
         '<section class="analysis-card evidence-card"><div class="analysis-section-label"><span>05</span> EVIDENCE AND REPRODUCTION</div><h2>What the catalog records</h2>' +
@@ -355,7 +348,6 @@ async function initPaperAnalysis() {
     const response = await fetch('data/papers.json');
     if (!response.ok) throw new Error('Unable to load paper records.');
     papers = await response.json();
-    readingIndices = computeReadingIndices(papers);
     papers.forEach((paper) => {
       byId.set(paper.id, paper);
     });

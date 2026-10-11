@@ -1,6 +1,3 @@
-import { citationMarkup } from './citations.js';
-import { computeReadingIndices, readingIndexMarkup } from './reading-index.js';
-
 const paths = {
   papers: 'data/papers.json',
   datasets: 'data/datasets.json',
@@ -9,7 +6,6 @@ const paths = {
 };
 
 const state = { papers: [], datasets: [], benchmarks: [], leaderboard: [], track: 'all', query: '' };
-let readingIndices = new Map();
 const datasetCategories = [
   'Perception and Multimodal Understanding',
   'Motion, Planning, and Cooperative Driving',
@@ -35,7 +31,6 @@ async function loadData() {
     })
   );
   state.papers = papers;
-  readingIndices = computeReadingIndices(papers);
   state.datasets = datasets;
   state.benchmarks = benchmarks;
   state.leaderboard = leaderboard;
@@ -49,12 +44,6 @@ function renderMetrics() {
     [state.datasets.length, 'PUBLIC DATASETS'],
     [latest, 'LATEST YEAR']
   ].map(([value, label]) => `<div><strong>${value}</strong><span>${label}</span></div>`).join('');
-  const citationNote = $('#citationNote');
-  const dates = [...new Set(state.papers.map(paper => paper.citationCheckedAt).filter(Boolean))].sort();
-  const matched = state.papers.filter(paper => Number.isInteger(paper.citationCount)).length;
-  const starDates = [...new Set(state.papers.map(paper => paper.githubStarsCheckedAt).filter(Boolean))].sort();
-  const starMatches = state.papers.filter(paper => Number.isInteger(paper.stars)).length;
-  if (citationNote) citationNote.textContent = `OpenAlex citations: ${dates.at(-1) || 'not yet collected'} (${matched}/${state.papers.length} matched). GitHub stars: ${starDates.at(-1) || 'not yet collected'} (${starMatches}/${state.papers.length} available). N/A means unavailable; 0 is a verified count. Consider publication age and topic relevance alongside the Reading Index.`;
 }
 
 function paperCard(paper) {
@@ -68,8 +57,6 @@ function paperCard(paper) {
   return `<article class="paper-card" data-paper-id="${escapeHTML(paper.id)}" data-track="${paper.track}">
     <div class="paper-meta"><span class="track-pill ${paper.track}">${trackLabel}</span><span>${paper.year}${paper.venue !== String(paper.year) ? ` · ${paper.venue}` : ''}</span></div>
     <h3>${paper.name}</h3><p class="paper-title">${paper.title}</p>
-    ${citationMarkup(paper)}
-    ${readingIndexMarkup(paper, readingIndices.get(paper.id))}
     <p class="paper-summary"><span>SUMMARY</span> ${escapeHTML(paper.summary)}</p>
     <div class="tag-list">${paper.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
     <div class="paper-footer"><span class="source-status ${paper.openSource ? 'available' : ''}">${sourceStatus}</span><div>${links}</div></div>
