@@ -1,5 +1,37 @@
 [
   {
+    "id": "2610-13232",
+    "name": "FPD-Drive",
+    "title": "FPD-Drive: Future Policy Distillation for End-to-End Autonomous Driving",
+    "track": "e2e",
+    "year": 2026,
+    "published": "2026-10",
+    "venue": "2026",
+    "tags": [
+      "Privileged Future Supervision",
+      "Policy Distillation",
+      "Safety-Aware Scoring"
+    ],
+    "datasets": [
+      "NAVSIM",
+      "HUGSIM"
+    ],
+    "paper": "https://arxiv.org/abs/2610.13232",
+    "openSource": false,
+    "codeStatus": "not-found",
+    "stars": null,
+    "summary": "FPD-Drive transfers a privileged teacher policy with access to future observations into a deployable driving policy. It distills multiple teacher targets and applies safety-aware score correction, evaluating the resulting planner on NAVSIM and HUGSIM. Future information is used for training supervision.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": null,
+    "githubRepoRole": null,
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null
+  },
+  {
     "id": "2609-26618",
     "name": "NavSafe-∞",
     "title": "NavSafe-∞: Benchmarking Closed-Loop Driving Safety in Photorealistic Environments",
@@ -2402,6 +2434,74 @@
     "codeCheckedAt": "2026-10-09"
   },
   {
+    "id": "2610-17903",
+    "name": "DriveWLA",
+    "title": "DriveWLA: Unifying Future Dynamics and Scene Semantics through World-Language-Action Modeling for Autonomous Driving",
+    "track": "vla",
+    "year": 2026,
+    "published": "2026-10",
+    "venue": "2026",
+    "tags": [
+      "World-Language-Action",
+      "Mixture of Transformers",
+      "Flow-GRPO"
+    ],
+    "datasets": [
+      "NAVSIM",
+      "nuScenes",
+      "HUGSIM",
+      "Bench2Drive"
+    ],
+    "paper": "https://arxiv.org/abs/2610.17903",
+    "openSource": false,
+    "codeStatus": "not-found",
+    "stars": null,
+    "summary": "DriveWLA combines world, language, and action experts through controlled cross-expert attention, then refines trajectory generation with Flow-GRPO. The paper evaluates planning on NAVSIM and transfer to additional driving benchmarks. It studies coordinated experts rather than recursive self-modification.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": null,
+    "githubRepoRole": null,
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null
+  },
+  {
+    "id": "2610-16985",
+    "name": "AUGUstus",
+    "title": "AUGUstus: Autonomous Driving VLA Model with Unified Generation and Understanding",
+    "track": "vla",
+    "year": 2026,
+    "published": "2026-10",
+    "venue": "2026",
+    "tags": [
+      "Unified Generation and Understanding",
+      "Chain of Thought",
+      "GRPO"
+    ],
+    "datasets": [
+      "NAVSIM",
+      "nuScenes"
+    ],
+    "paper": "https://arxiv.org/abs/2610.16985",
+    "openSource": true,
+    "codeStatus": "released",
+    "stars": null,
+    "summary": "AUGUstus jointly trains diffusion-based driving actions and autoregressive chain-of-thought reasoning. Action-first ordering lets reasoning supervise shared representations during training while inference emits actions directly. Joint GRPO further refines the model; evaluations include NAVSIM, nuScenes, and preliminary vehicle deployment.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": "https://github.com/haha-yuki-haha/AUGUstus",
+    "githubRepoRole": "implementation",
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null,
+    "code": "https://github.com/haha-yuki-haha/AUGUstus",
+    "project": "https://augustus-ad.github.io/"
+  },
+  {
     "id": "2609-33190",
     "name": "FocusDrive",
     "title": "FocusDrive: Reasoning with Visual Focus for Autonomous Driving",
@@ -4735,6 +4835,104 @@
     "codeCheckedAt": "2026-10-09"
   },
   {
+    "id": "2610-17688",
+    "name": "OccWAM",
+    "title": "OccWAM: Occupancy World-Action Models with Joint Scene-to-Ego Flow Matching",
+    "track": "world-model",
+    "year": 2026,
+    "published": "2026-10",
+    "venue": "2026",
+    "tags": [
+      "Occupancy",
+      "World-Action Model",
+      "Flow Matching"
+    ],
+    "datasets": [
+      "Bench2Drive",
+      "nuScenes"
+    ],
+    "paper": "https://arxiv.org/abs/2610.17688",
+    "openSource": false,
+    "codeStatus": "not-found",
+    "stars": null,
+    "summary": "OccWAM jointly generates future occupancy and ego trajectories. A scene-centric prediction is re-indexed into predicted ego frames for a second joint refinement stage. Experiments cover closed-loop driving, open-loop planning, and occupancy forecasting, with different input protocols across tasks.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": null,
+    "githubRepoRole": null,
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null
+  },
+  {
+    "id": "2610-14871",
+    "name": "MORE",
+    "title": "MORE: Learning Motion-Oriented Registers for Driving World Models and Planning",
+    "track": "world-model",
+    "year": 2026,
+    "published": "2026-10",
+    "venue": "2026",
+    "tags": [
+      "V-JEPA",
+      "Motion-Oriented Registers",
+      "Latent World Model"
+    ],
+    "datasets": [
+      "NAVSIM"
+    ],
+    "paper": "https://arxiv.org/abs/2610.14871",
+    "openSource": false,
+    "codeStatus": "not-found",
+    "stars": null,
+    "summary": "MORE learns compact motion-conditioned registers during video pretraining using masked patch prediction and register masking. The same register space then supports future-state prediction, trajectory generation, and scoring, aligning the pretrained representation with downstream world modeling and planning.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": null,
+    "githubRepoRole": null,
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null
+  },
+  {
+    "id": "2610-13781",
+    "name": "SimVTA",
+    "title": "SimVTA: Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models",
+    "track": "world-model",
+    "year": 2026,
+    "published": "2026-10",
+    "venue": "2026",
+    "tags": [
+      "Simulation Supervision",
+      "World-Action Model",
+      "GRPO"
+    ],
+    "datasets": [
+      "NAVSIM",
+      "HUGSIM"
+    ],
+    "paper": "https://arxiv.org/abs/2610.13781",
+    "openSource": false,
+    "codeStatus": "pending",
+    "stars": null,
+    "summary": "SimVTA renders future videos for alternative high-reward trajectories in reconstructed scenes, then combines trajectory GRPO with matched-video flow supervision. Prioritizing difficult rendered futures improves shared representations. The model predicts trajectories without simulator calls at inference.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": "https://github.com/OpenDriveLab/SimVTA",
+    "githubRepoRole": "project",
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null,
+    "code": "https://github.com/OpenDriveLab/SimVTA",
+    "project": "https://opendrivelab.com/SimVTA/",
+    "codeNote": "Official repository currently contains results and documentation; implementation and checkpoints remain on its release checklist."
+  },
+  {
     "id": "2610-02825",
     "name": "TerrainForge",
     "title": "TerrainForge: Physics-Grounded road geometry Editing for Counterfactual Autonomous Driving",
@@ -4783,13 +4981,13 @@
       "NAVSIM"
     ],
     "paper": "https://arxiv.org/abs/2609.34085",
-    "openSource": false,
-    "codeStatus": "pending",
+    "openSource": true,
+    "codeStatus": "released",
     "stars": 46,
     "summary": "AD-E2E-JEPA introduces a regularized projector that compresses visual patch embeddings for efficient action-conditioned world-model rollouts. It evaluates goal-conditioned planning without a trained driving policy, using ground-truth future observations as goals, and also studies downstream imitation learning.",
     "zoteroKey": "zhu_ad-e2e-jepa_2026",
-    "codeCheckedAt": "2026-10-09",
-    "codeNote": "The author announces source-code release by October 19, 2026; the current repository contains a README and figures.",
+    "codeCheckedAt": "2026-10-20",
+    "codeNote": "Main source code released; training and evaluation launchers target Slurm and require local adaptation.",
     "code": "https://github.com/HaoranZhuExplorer/AD-E2E-JEPA",
     "citationCount": 0,
     "citationSource": "OpenAlex",
@@ -4797,7 +4995,7 @@
     "citationCheckedAt": "2026-10-08",
     "citationURL": "https://openalex.org/W7214745133",
     "githubRepo": "https://github.com/HaoranZhuExplorer/AD-E2E-JEPA",
-    "githubRepoRole": "pending-implementation",
+    "githubRepoRole": "implementation",
     "githubStarsCheckedAt": "2026-10-09"
   },
   {
@@ -6627,6 +6825,40 @@
     "codeCheckedAt": "2026-10-09"
   },
   {
+    "id": "2411-13807",
+    "name": "MagicDrive-V2",
+    "title": "MagicDrive-V2: High-Resolution Long Video Generation for Autonomous Driving with Adaptive Control",
+    "track": "world-model",
+    "year": 2024,
+    "published": "2024-11",
+    "venue": "ICCV 2025",
+    "tags": [
+      "Multi-View Video Generation",
+      "Diffusion Transformer",
+      "Geometry Control"
+    ],
+    "datasets": [
+      "nuScenes",
+      "Waymo Open Dataset"
+    ],
+    "paper": "https://arxiv.org/abs/2411.13807",
+    "openSource": true,
+    "codeStatus": "released",
+    "stars": null,
+    "summary": "MagicDrive-V2 combines multi-view diffusion transformers with spatiotemporal conditioning and progressive mixed-video training to generate longer, higher-resolution driving videos under geometric and textual control. First released as MagicDriveDiT, it was renamed for the ICCV 2025 version.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": "https://github.com/flymin/MagicDrive-V2",
+    "githubRepoRole": "implementation",
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null,
+    "code": "https://github.com/flymin/MagicDrive-V2",
+    "project": "https://gaoruiyuan.com/magicdrive-v2/"
+  },
+  {
     "id": "2406-08481",
     "name": "LAW",
     "title": "Enhancing End-to-End Autonomous Driving with Latent World Model",
@@ -7024,6 +7256,37 @@
     "githubRepoRole": "implementation",
     "githubStarsCheckedAt": "2026-10-09",
     "codeCheckedAt": "2026-10-09"
+  },
+  {
+    "id": "2610-08640",
+    "name": "RIWANav",
+    "title": "RIWANav: Recursive World-Action Models with Self-Improvement for Urban Navigation",
+    "track": "rsi",
+    "year": 2026,
+    "published": "2026-10",
+    "venue": "2026",
+    "tags": [
+      "Recursive Self-Improvement",
+      "World-Policy Co-Adaptation",
+      "Urban Navigation"
+    ],
+    "datasets": [
+      "Urban navigation"
+    ],
+    "paper": "https://arxiv.org/abs/2610.08640",
+    "openSource": false,
+    "codeStatus": "not-found",
+    "stars": null,
+    "summary": "RIWANav alternates policy improvement from imagined world-model feedback with world-model refinement using a grounded self-curriculum. Novel expert-consistent action-video pairs close the policy/world-model adaptation loop. This is task-specific urban-navigation RSI, not evidence of a generally self-modifying AGI.",
+    "codeCheckedAt": "2026-10-20",
+    "githubRepo": null,
+    "githubRepoRole": null,
+    "githubStarsCheckedAt": null,
+    "citationCount": null,
+    "citationSource": "OpenAlex",
+    "citationStatus": "unavailable",
+    "citationCheckedAt": "2026-10-20",
+    "citationURL": null
   },
   {
     "id": "2609-36851",

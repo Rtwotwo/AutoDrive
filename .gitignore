@@ -2,4 +2,13 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
-
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
+paper-studio-*/
+PaperStudio/
+_site/
+*.dpapi

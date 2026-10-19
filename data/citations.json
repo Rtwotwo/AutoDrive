@@ -5124,6 +5124,70 @@
           "type": "article"
         }
       ]
+    },
+    "2610-17903": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
+    },
+    "2610-17688": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
+    },
+    "2610-16985": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
+    },
+    "2610-14871": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
+    },
+    "2610-13781": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
+    },
+    "2610-13232": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
+    },
+    "2610-08640": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
+    },
+    "2411-13807": {
+      "count": null,
+      "source": "OpenAlex",
+      "url": null,
+      "checkedAt": "2026-10-20",
+      "status": "unavailable",
+      "note": "Not queried during this metadata/code-release update; no citation count is inferred."
     }
   },
   "failures": []

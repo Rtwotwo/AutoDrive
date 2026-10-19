@@ -26,10 +26,14 @@ jobs:
         with:
           node-version: 20
       - run: npm run validate
+      - name: Stage public research hub only
+        run: |
+          mkdir -p _site
+          cp -R assets benchmark data index.html README.md LICENSE CONTRIBUTING.md _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

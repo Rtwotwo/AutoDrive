@@ -51,8 +51,9 @@ const resources = (item) => [
 
 let readme = '# Awesome Autonomous Driving Research\n\n';
 readme += `A curated research collection for end-to-end autonomous driving, driving world models, vision-language-action models, recursive self-improvement, public datasets, and reproducible evaluation. The catalog currently contains **${papers.length} papers** across four research tracks.\n\n`;
-const reviewDate = new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10);
+const reviewDate = process.env.CATALOG_REVIEW_DATE || new Date(Date.now() + 8 * 60 * 60 * 1000).toISOString().slice(0, 10);
 readme += `Last updated: ${reviewDate}. Verify paper metadata against the latest arXiv or publisher version before citation.\n\n`;
+readme += '[Paper Studio](paper-studio/README.md) is the companion local paper-to-WeChat workspace, available under a separate **noncommercial source license**.\n\n';
 readme += '## Table of Contents\n\n- [Papers](#papers)\n';
 for (const [, title] of tracks) readme += `  - [${title}](#${title.toLowerCase().replace(/[^a-z0-9]+/g, '-')})\n`;
 readme += '- [Public Datasets](#public-datasets)\n- [Public Evaluation Benchmarks](#public-evaluation-benchmarks)\n- [Leaderboard](#leaderboard)\n- [License](#license)\n\n';
@@ -123,9 +124,9 @@ for (const category of benchmarkCategories) {
 
 readme += '\n## Leaderboard\n\n';
 readme += 'Benchmark results are stored in [data/leaderboard.json](data/leaderboard.json). Each entry preserves its evaluation protocol, data split, and reproducibility evidence. Results from incompatible protocols are not ranked together.\n\n';
-readme += '## License\n\nThis project is released under the [Apache License 2.0](LICENSE).\n';
+readme += '## License\n\nThe AutoDrive catalog and website use the [Apache License 2.0](LICENSE). The companion [Paper Studio application](paper-studio/README.md) uses [PolyForm Noncommercial 1.0.0](paper-studio/LICENSE); its original code is source-available for noncommercial use. Third-party components retain their own licenses.\n';
 readme += '\n## Acknowledgements\n\n';
-readme += 'We thank the maintainers of [GE2EAD](https://github.com/AutoLab-SAI-SJTU/GE2EAD), [GenAI4AD](https://github.com/taco-group/GenAI4AD), and [ReCogDrive](https://github.com/xiaomi-research/recogdrive) for their research collections and dataset references, which helped inform this catalog. Please consult the original projects for their own licenses and access terms.\n';
+readme += 'We thank the maintainers of [GE2EAD](https://github.com/AutoLab-SAI-SJTU/GE2EAD), [GenAI4AD](https://github.com/taco-group/GenAI4AD), and [ReCogDrive](https://github.com/xiaomi-research/recogdrive) for their research collections and dataset references, which helped inform this catalog. We also acknowledge [ADFeed](https://mp.weixin.qq.com/s/Q1ez7hgkQ8gLLI1T-XvJlA) as an editorial discovery reference and [Awesome World Models](https://github.com/LMD0311/Awesome-World-Model) for discovery leads. Catalog facts and release status are verified against primary paper and author sources. Please consult the original projects for their own licenses and access terms.\n';
 
 await writeFile(join(root, 'README.md'), readme, 'utf8');
 console.log(`Rendered README for ${papers.length} papers, ${datasets.length} datasets, and ${benchmarks.length} benchmarks.`);

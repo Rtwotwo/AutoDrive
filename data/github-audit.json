@@ -2,7 +2,7 @@
   "checkedAt": "2026-10-09",
   "scope": "Per-paper repository identity and release-availability audit. Repository roots and README release statements were inspected; implementations were not executed. A no-match result is not proof that no public implementation exists. Third-party paper lists and same-name repositories were not treated as author code.",
   "coverage": {
-    "papers": 244,
+    "papers": 252,
     "repositoryNameSearches": 85,
     "identifierFileSearches": 78,
     "repositoryRootChecks": 166,
@@ -4323,21 +4323,28 @@
       ]
     },
     "2609-34085": {
-      "checkedAt": "2026-10-09",
-      "codeStatus": "pending",
+      "checkedAt": "2026-10-20",
+      "codeStatus": "released",
       "codeScope": null,
       "repository": "https://github.com/HaoranZhuExplorer/AD-E2E-JEPA",
-      "repositoryRole": "pending-implementation",
+      "repositoryRole": "implementation",
       "stars": 46,
-      "note": "The author announces source-code release by October 19, 2026; the current repository contains a README and figures.",
+      "note": "Main source code released; training and evaluation launchers target Slurm and require local adaptation.",
       "evidence": [
         "https://arxiv.org/abs/2609.34085",
         "https://github.com/HaoranZhuExplorer/AD-E2E-JEPA"
       ],
       "readmeMatch": "paper-title",
       "rootFiles": [
+        "docs",
+        "imgs",
+        "navsim",
+        "planning_vocabulary",
+        "scripts",
         "README.md",
-        "imgs"
+        "LICENSE",
+        "requirements.txt",
+        "setup.py"
       ],
       "searches": []
     },
@@ -6885,6 +6892,179 @@
           "returnedCandidates": 0
         }
       ]
+    },
+    "2610-17903": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author-linked implementation verified from arXiv, paper HTML, and title-based web searches as of this date; this is not proof of absence.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.17903"
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "searches": [
+        "DriveWLA official code repository"
+      ]
+    },
+    "2610-17688": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author-linked implementation verified from arXiv, paper HTML, and title-based web searches as of this date; this is not proof of absence.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.17688"
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "searches": [
+        "OccWAM official code repository"
+      ]
+    },
+    "2610-16985": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/haha-yuki-haha/AUGUstus",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Author-linked repository contains implementation directories and usage instructions; code was not executed.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.16985",
+        "https://augustus-ad.github.io/",
+        "https://github.com/haha-yuki-haha/AUGUstus"
+      ],
+      "readmeMatch": "paper-title",
+      "rootFiles": [
+        "AUGUstus_SFT",
+        "AUGUstus_GRPO",
+        "README.md"
+      ],
+      "searches": [
+        "AUGUstus official code repository"
+      ]
+    },
+    "2610-14871": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author-linked implementation verified from arXiv, paper HTML, and title-based web searches as of this date; this is not proof of absence.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.14871"
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "searches": [
+        "MORE official code repository"
+      ]
+    },
+    "2610-13781": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "pending",
+      "codeScope": null,
+      "repository": "https://github.com/OpenDriveLab/SimVTA",
+      "repositoryRole": "project",
+      "stars": null,
+      "note": "Official repository currently contains results and documentation; implementation and checkpoints remain on its release checklist.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.13781",
+        "https://opendrivelab.com/SimVTA/",
+        "https://github.com/OpenDriveLab/SimVTA"
+      ],
+      "readmeMatch": "paper-title",
+      "rootFiles": [
+        "results",
+        "README.md"
+      ],
+      "searches": [
+        "SimVTA official code repository"
+      ]
+    },
+    "2610-13232": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author-linked implementation verified from arXiv, paper HTML, and title-based web searches as of this date; this is not proof of absence.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.13232"
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "searches": [
+        "FPD-Drive official code repository"
+      ]
+    },
+    "2610-08640": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author-linked implementation verified from arXiv, paper HTML, and title-based web searches as of this date; this is not proof of absence.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.08640"
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "searches": [
+        "RIWANav official code repository"
+      ]
+    },
+    "2411-13807": {
+      "checkedAt": "2026-10-20",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/flymin/MagicDrive-V2",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Author-linked repository contains implementation directories and usage instructions; code was not executed.",
+      "evidence": [
+        "https://arxiv.org/abs/2411.13807",
+        "https://gaoruiyuan.com/magicdrive-v2/",
+        "https://github.com/flymin/MagicDrive-V2"
+      ],
+      "readmeMatch": "paper-title",
+      "rootFiles": [
+        "configs",
+        "magicdrivedit",
+        "scripts",
+        "tools",
+        "README.md",
+        "LICENSE"
+      ],
+      "searches": [
+        "MagicDrive-V2 official code repository"
+      ]
     }
+  },
+  "lastIncrementalUpdate": {
+    "date": "2026-10-20",
+    "added": [
+      "DriveWLA",
+      "OccWAM",
+      "AUGUstus",
+      "MORE",
+      "SimVTA",
+      "FPD-Drive",
+      "RIWANav",
+      "MagicDrive-V2"
+    ],
+    "releaseStatusUpdated": [
+      "AD-E2E-JEPA"
+    ],
+    "note": "Only these entries were rechecked in this increment. Older records keep their original observation dates."
   }
 }

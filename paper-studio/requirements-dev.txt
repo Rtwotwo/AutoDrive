@@ -1,0 +1,2 @@
+-r requirements-desktop.txt
+reportlab==5.0.1
