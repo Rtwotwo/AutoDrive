@@ -2,7 +2,7 @@
   "checkedAt": "2026-10-09",
   "scope": "Per-paper repository identity and release-availability audit. Repository roots and README release statements were inspected; implementations were not executed. A no-match result is not proof that no public implementation exists. Third-party paper lists and same-name repositories were not treated as author code.",
   "coverage": {
-    "papers": 252,
+    "papers": 277,
     "repositoryNameSearches": 85,
     "identifierFileSearches": 78,
     "repositoryRootChecks": 166,
@@ -7048,23 +7048,1021 @@
       "searches": [
         "MagicDrive-V2 official code repository"
       ]
+    },
+    "2610-23262": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "pending",
+      "codeScope": null,
+      "repository": "https://github.com/iis-esslingen/Expand-and-Prune",
+      "repositoryRole": "pending-implementation",
+      "stars": null,
+      "note": "Live repository contains only README.md. Authors announce code release by the end of October 2026; no implementation was available on 2026-10-22.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.23262",
+        "https://github.com/iis-esslingen/Expand-and-Prune/blob/main/README.md",
+        "https://api.github.com/repos/iis-esslingen/Expand-and-Prune/git/trees/4168e5c0cf2d4a7e466cf7ca4b2b9c46fda400eb?recursive=1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.23262",
+          "note": "Official arXiv record verifies title, first submission 2026-10-16, WACV 2027 acceptance, benchmarks and author repository."
+        },
+        {
+          "url": "https://github.com/iis-esslingen/Expand-and-Prune/blob/main/README.md",
+          "note": "Live GitHub connector read: code scheduled for the end of October 2026."
+        },
+        {
+          "url": "https://api.github.com/repos/iis-esslingen/Expand-and-Prune/git/trees/4168e5c0cf2d4a7e466cf7ca4b2b9c46fda400eb?recursive=1",
+          "note": "Verified tree contains README.md only; not a released implementation."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [
+        "README.md"
+      ],
+      "implementationFiles": [],
+      "releaseScope": "Project announcement only",
+      "firstSubmitted": "2026-10-16",
+      "searches": [
+        "\"end-to-end autonomous driving\" \"2026-10\" \"arxiv\"",
+        "GitHub live tree iis-esslingen/Expand-and-Prune"
+      ]
+    },
+    "2610-21984": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/yangzhaojason/GRID-Planner",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Author-linked implementation builds on Flow Planner and retains its Python namespace. Verified concrete reward calculations and documented training/evaluation launchers. README states trained weights and datasets are not distributed.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.21984",
+        "https://github.com/yangzhaojason/GRID-Planner",
+        "https://github.com/yangzhaojason/GRID-Planner/blob/main/flow_planner/reward/rrs.py",
+        "https://arxiv.org/html/2610.21984v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.21984",
+          "note": "Official arXiv title, 2026-10-15 submission, abstract, datasets and author-linked repository."
+        },
+        {
+          "url": "https://github.com/yangzhaojason/GRID-Planner",
+          "note": "Official repository identifies ACM Multimedia 2026 (DOI 10.1145/3767308.3835263); provides model/core/onpolicy modules and training/nuPlan simulation commands. Weights not bundled."
+        },
+        {
+          "url": "https://github.com/yangzhaojason/GRID-Planner/blob/main/flow_planner/reward/rrs.py",
+          "note": "GitHub connector inspected real PyTorch RelationalRewardSurrogate code, including acceleration/jerk comfort terms and neighbor distance/collision penalties; blob 95ba6bd46e7c73997d1137b846dbc8157daf721e."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.21984v1",
+          "note": "RSI placement: Section 3.5 samples candidates from the current policy, selects high-return teachers and updates the student; Section 4.2 reports online self-distillation epochs. This is a policy-improvement loop, not only inference-time trajectory refinement."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://github.com/yangzhaojason/GRID-Planner/blob/main/flow_planner/reward/rrs.py"
+      ],
+      "releaseScope": "Planning model, reward surrogates, training/refinement and nuPlan evaluation; not a raw-sensor perception stack",
+      "firstSubmitted": "2026-10-15",
+      "searches": [
+        "\"GRID-Planner\" driving",
+        "GitHub live file yangzhaojason/GRID-Planner flow_planner/reward/rrs.py"
+      ]
+    },
+    "2610-18167": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No matching official implementation or project link was located in the official paper and targeted web/GitHub repository searches as of 2026-10-22.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.18167",
+        "https://arxiv.org/html/2610.18167v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.18167",
+          "note": "Official title, first submission 2026-10-13, DIVA expansion, method and Bench2Drive evaluation."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.18167v1",
+          "note": "Full paper inspected for implementation/project links; no author implementation link found. Search outcomes are absence of verification, not proof that no code exists."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-10-13",
+      "searches": [
+        "\"Beyond Planning\" \"Differentiable\" driving",
+        "\"Beyond Planning\" \"DIVA\" github",
+        "GitHub repository search: \"DIVA\" \"driving\""
+      ]
+    },
+    "2610-16908": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No matching official repository was found by the ConDenseDrive GitHub repository search, and the inspected arXiv abstract/full text provide no author implementation link as of 2026-10-22.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.16908",
+        "https://arxiv.org/html/2610.16908v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.16908",
+          "note": "Official arXiv record verifies title, 2026-10-12 first submission, method and three benchmarks."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.16908v1",
+          "note": "Full paper describes three-stage encoder training, DINOv3/SigLIP2/Depth Anything 3 teacher distillation and NAVSIM/HUGSIM evaluation."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-10-12",
+      "searches": [
+        "\"ConDenseDrive\"",
+        "GitHub repository search: ConDenseDrive"
+      ]
+    },
+    "2610-09695": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": "partial",
+      "repository": "https://github.com/OpenDriveLab/ViRA",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "ViRA-Diffusion inference/evaluation code and linked checkpoints released 2026-10-22; full code/checkpoint release remains pending. Verified model and evaluation launcher. Cached web pages still show the older placeholder state; current GitHub files were used.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.09695",
+        "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/README.md",
+        "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/navsim/agents/diffusiondrive/transfuser_model_v2.py",
+        "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/scripts/evaluation_navtest/run_vira_diffusion_evaluation.sh"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.09695",
+          "note": "Official arXiv record verifies full title, submission date 2026-10-07 and author repository."
+        },
+        {
+          "url": "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/README.md",
+          "note": "Live README release notice dated 2026-10-22; ViRA-Diffusion inference/checkpoints checked complete, all-code/all-checkpoint tasks remain unchecked."
+        },
+        {
+          "url": "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/navsim/agents/diffusiondrive/transfuser_model_v2.py",
+          "note": "Inspected substantive V2TransfuserModel PyTorch implementation with backbone, trajectory generation and diffusion modules."
+        },
+        {
+          "url": "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/scripts/evaluation_navtest/run_vira_diffusion_evaluation.sh",
+          "note": "Inspected concrete NAVSIM evaluation entrypoint loading ckpts/vira_diffusion.ckpt and calling run_pdm_score_one_stage_gpu_diffusiondrive.py."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/navsim/agents/diffusiondrive/transfuser_model_v2.py",
+        "https://github.com/OpenDriveLab/ViRA/blob/c994f7179c64f05dafa3d52f24f9ed010d664df0/scripts/evaluation_navtest/run_vira_diffusion_evaluation.sh"
+      ],
+      "firstSubmitted": "2026-10-07",
+      "searches": [
+        "\"end-to-end\" \"driving\" \"October 2026\" github",
+        "\"ViRA\" \"Do Better Visual Representations\" arxiv",
+        "GitHub live README/tree/model/evaluation launcher: OpenDriveLab/ViRA"
+      ]
+    },
+    "2610-06469": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/SNU-ADR/Odyssey",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Live repository contains substantial evaluation, route-scoring and simulator code plus installation/run guides and external scenes/checkpoints. This supersedes older arXiv/Hugging Face text saying code would be released.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.06469",
+        "https://github.com/SNU-ADR/Odyssey/blob/main/README.md",
+        "https://github.com/SNU-ADR/Odyssey/blob/8c4a902ebfe242feb624d00e756c6c1ccc95555e/OdysseyBenchmark/odyssey_runtime/eval.py",
+        "https://github.com/SNU-ADR/Odyssey/blob/8c4a902ebfe242feb624d00e756c6c1ccc95555e/OdysseyBenchmark/odyssey_benchmark/sdroute_score.py"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.06469",
+          "note": "Official arXiv record confirms full title, 2026-10-05 first submission, 100 scenarios, nuPlan source logs and benchmark contribution."
+        },
+        {
+          "url": "https://github.com/SNU-ADR/Odyssey/blob/main/README.md",
+          "note": "Live author repository links exact arXiv paper/project; documents OdysseyRenderer, OdysseyZoo, OdysseyTrafficAgent, OdysseyBenchmark, data, weights and concrete evaluation commands."
+        },
+        {
+          "url": "https://github.com/SNU-ADR/Odyssey/blob/8c4a902ebfe242feb624d00e756c6c1ccc95555e/OdysseyBenchmark/odyssey_runtime/eval.py",
+          "note": "Inspected real multi-GPU batch evaluation runtime with resumable jobs, scene sets and result manifests."
+        },
+        {
+          "url": "https://github.com/SNU-ADR/Odyssey/blob/8c4a902ebfe242feb624d00e756c6c1ccc95555e/OdysseyBenchmark/odyssey_benchmark/sdroute_score.py",
+          "note": "Inspected real route scoring code including executed-window trimming and SDRouteMetric."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://github.com/SNU-ADR/Odyssey/blob/8c4a902ebfe242feb624d00e756c6c1ccc95555e/OdysseyBenchmark/odyssey_runtime/eval.py",
+        "https://github.com/SNU-ADR/Odyssey/blob/8c4a902ebfe242feb624d00e756c6c1ccc95555e/OdysseyBenchmark/odyssey_benchmark/sdroute_score.py"
+      ],
+      "releaseScope": "Benchmark/runtime, renderer, traffic agents, metrics and adapted planner baselines",
+      "firstSubmitted": "2026-10-05",
+      "searches": [
+        "\"Odyssey\" autonomous driving arxiv 2026",
+        "\"Odyssey\" \"SNU-ADR\" github benchmark",
+        "GitHub repository search: Odyssey closed-loop driving",
+        "GitHub live tree/runtime/metrics: SNU-ADR/Odyssey"
+      ]
+    },
+    "2609-31383": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No matching official implementation or project link was located in the paper, exact-title web searches and endpoint-constrained GitHub repository search as of 2026-10-22.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.31383",
+        "https://arxiv.org/html/2609.31383v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.31383",
+          "note": "Official arXiv title, 2026-09-25 submission, ECO method, six policies and two closed-loop simulators."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.31383v1",
+          "note": "Full paper describes training-free endpoint-constrained optimization and notes that preserving a poor endpoint limits corrections; no author implementation link verified."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-25",
+      "searches": [
+        "site:arxiv.org/abs \"end-to-end\" \"driving\" \"Sep\" \"2026\"",
+        "\"ECO\" \"Guiding End-to-End Driving\" github",
+        "GitHub repository search: \"Endpoint-Constrained\""
+      ]
+    },
+    "2609-21470": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No official repository was located in the inspected paper or the ROIDrive web/GitHub repository searches as of 2026-10-22. Distinct paper from existing RRDrive arXiv:2609.21486.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.21470",
+        "https://arxiv.org/html/2609.21470v2"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.21470",
+          "note": "Official arXiv record verifies title and first submission 2026-09-18; v2 revised 2026-09-23."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.21470v2",
+          "note": "Current paper verifies ROIDrive architecture, GenAD integration, RiskOcc4D-nuScenes built on nuScenes/Occ3D, and open-loop evaluation. No verified official code link."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-18",
+      "searches": [
+        "site:arxiv.org/abs \"end-to-end\" \"driving\" \"Sep\" \"2026\"",
+        "\"ROIDrive\" github",
+        "GitHub repository search: ROIDrive"
+      ]
+    },
+    "2610-25734": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "The author project page announces that code and checkpoint release links are coming soon, but provides no verified repository URL as of 2026-10-22. Classified as not-found under the catalog rule requiring an actual repository for pending status.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.25734",
+        "https://arxiv.org/html/2610.25734v1#S4.SS2",
+        "https://wj-cv.github.io/LECDrive/"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.25734",
+          "note": "Official title, initial submission 2026-10-19 and NeurIPS 2026 comment."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.25734v1#S4.SS2",
+          "note": "Section 4.2 names NuInstruct, DriveLM, OmniDrive, NuScenes-Plan and NAVSIM; Section 4.3 also evaluates NAVSIM v2."
+        },
+        {
+          "url": "https://wj-cv.github.io/LECDrive/",
+          "note": "Author project page confirms NeurIPS 2026, method and pending release links."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "releaseScope": "Author project page only; no verified implementation repository URL.",
+      "firstSubmitted": "2026-10-19",
+      "searches": [
+        "\"autonomous driving\" \"VLA\" \"October\" \"2026\" arxiv",
+        "2610.25734 official arXiv and author project"
+      ]
+    },
+    "2610-24590": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/yang-luvu/Scene-Adaptive-VLA",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Verified nonempty implementation files: simlingo_adaption_training/models/budget_assigner.py, models/driving.py and team_code_adaption/agent_simlingo.py, plus start_eval_simlingo_adaption.py. Code presence verified; experiments were not rerun.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.24590",
+        "https://github.com/yang-luvu/Scene-Adaptive-VLA",
+        "https://github.com/yang-luvu/Scene-Adaptive-VLA/blob/main/simlingo_adaption_training/models/budget_assigner.py",
+        "https://github.com/yang-luvu/Scene-Adaptive-VLA/blob/main/start_eval_simlingo_adaption.py"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.24590",
+          "note": "Official title, initial submission 2026-10-17, acceptance at NeurIPS 2026, method and Bench2Drive evaluation."
+        },
+        {
+          "url": "https://github.com/yang-luvu/Scene-Adaptive-VLA",
+          "note": "Repository linked by arXiv; contains model, configuration, CARLA and evaluation directories."
+        },
+        {
+          "url": "https://github.com/yang-luvu/Scene-Adaptive-VLA/blob/main/simlingo_adaption_training/models/budget_assigner.py",
+          "note": "Read actual Python implementation including BaseBudgetAssigner, runtime budgets and scheduler state; GitHub blob e3817f8feac4c18c1871bbcdfc5cb2042434f9b2."
+        },
+        {
+          "url": "https://github.com/yang-luvu/Scene-Adaptive-VLA/blob/main/start_eval_simlingo_adaption.py",
+          "note": "Verified nonempty evaluation implementation, 45,874 bytes in the repository tree."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://github.com/yang-luvu/Scene-Adaptive-VLA/blob/main/simlingo_adaption_training/models/budget_assigner.py",
+        "https://github.com/yang-luvu/Scene-Adaptive-VLA/blob/main/start_eval_simlingo_adaption.py"
+      ],
+      "releaseScope": "Model and budget-routing implementation, training utilities and Bench2Drive evaluation.",
+      "firstSubmitted": "2026-10-17",
+      "searches": [
+        "\"autonomous driving\" \"VLA\" \"October\" \"2026\" arxiv",
+        "2610.24590 official arXiv",
+        "GitHub official repository recursive tree and budget_assigner.py"
+      ]
+    },
+    "2610-20609": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/ASGuard-UCI/safedrive-vla",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Verified safedrive_vla/models/safedrive_vla.py and dreaming.py, safedrive_vla/train.py, world_model/models/world_model.py, world_model/train.py and team_code/agent_safedrive.py. Code presence verified; experiments were not rerun.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.20609",
+        "https://safedrive-vla.github.io/SafeDriveVLA/",
+        "https://github.com/ASGuard-UCI/safedrive-vla/blob/main/safedrive_vla/models/safedrive_vla.py",
+        "https://api.github.com/repos/ASGuard-UCI/safedrive-vla/git/trees/main?recursive=1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.20609",
+          "note": "Official title, initial submission 2026-10-14, CoRL 2026 acceptance and method. Uses arXiv first-submission date rather than an earlier author publication-page month."
+        },
+        {
+          "url": "https://safedrive-vla.github.io/SafeDriveVLA/",
+          "note": "Author page links official repository and names CARLA-F, B2D-C, NavSim-C and B2D-Adv benchmarks."
+        },
+        {
+          "url": "https://github.com/ASGuard-UCI/safedrive-vla/blob/main/safedrive_vla/models/safedrive_vla.py",
+          "note": "Read implementation containing mode/action tokens, world-model dreamer, path head and training objective; blob 66c5565b2fc397b8c2202792b3d8307c1ce7e8ab."
+        },
+        {
+          "url": "https://api.github.com/repos/ASGuard-UCI/safedrive-vla/git/trees/main?recursive=1",
+          "note": "GitHub connector verified nonempty VLA, world-model training and agent implementation files; tree f38b4ad43931ceb56c36571724474b4152206ed8."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://github.com/ASGuard-UCI/safedrive-vla/blob/main/safedrive_vla/models/safedrive_vla.py"
+      ],
+      "releaseScope": "VLA, world model, training and CARLA evaluation code plus conflict/adversarial benchmarks.",
+      "firstSubmitted": "2026-10-14",
+      "searches": [
+        "\"SafeDriveVLA\"",
+        "2610.20609 official arXiv",
+        "GitHub ASGuard-UCI/safedrive-vla recursive tree and core model"
+      ]
+    },
+    "2609-38641": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "The author page provides paper, videos, method and results links but no implementation link; targeted web and GitHub repository searches did not verify an official code release on 2026-10-22.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.38641",
+        "https://arxiv.org/html/2609.38641v1",
+        "https://kaiyan289.github.io/projects/ad-memo/"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.38641",
+          "note": "Official title, initial submission 2026-09-29 and AD-Memo/Da Capo method."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.38641v1",
+          "note": "Section 3.1 derives two memory datasets from NVIDIA PhysicalAI AV; Appendix B.2 describes LingoQA and WaymoQA memory-portability evaluation."
+        },
+        {
+          "url": "https://kaiyan289.github.io/projects/ad-memo/",
+          "note": "Official author project page with paper and demonstrations; no code link verified."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.38641v1",
+          "note": "Section 3.2 and Appendix F distinguish memory-closed/control-open evaluation with logged visual states and trajectories; no independent action expert in the reported setup."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-29",
+      "searches": [
+        "site:arxiv.org/abs/2610 autonomous driving vision language action",
+        "site:github.com \"AD-Memo\"",
+        "GitHub repository search: AD-Memo"
+      ]
+    },
+    "2609-27747": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No official code link found in the paper HTML; targeted title and GitHub repository searches did not verify an implementation on 2026-10-22.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.27747",
+        "https://arxiv.org/html/2609.27747v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.27747",
+          "note": "Official title, initial submission 2026-09-23, three-stage LADA method and Bench2Drive experiments."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.27747v1",
+          "note": "Full paper inspected for implementation link; no official GitHub or release link found."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-23",
+      "searches": [
+        "\"autonomous driving\" \"VLA\" \"September\" \"2026\" arxiv",
+        "\"Less Language, More Latents\" github",
+        "GitHub repository search: LADA autonomous driving"
+      ]
+    },
+    "2609-17728": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No official repository link found in arXiv HTML; targeted web and GitHub repository searches did not verify an implementation on 2026-10-22.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.17728",
+        "https://arxiv.org/html/2609.17728v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.17728",
+          "note": "Official title, initial submission 2026-09-15, future-alignment method and NAVSIM evaluation."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.17728v1",
+          "note": "Full paper inspected; no author GitHub implementation link found."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-15",
+      "searches": [
+        "\"autonomous driving\" \"VLA\" \"September\" \"2026\" arxiv",
+        "\"RAF-VLA\" github",
+        "site:github.com \"RAF-VLA\"",
+        "GitHub repository search: RAF-VLA"
+      ]
+    },
+    "2609-04070": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author implementation link found in arXiv HTML or targeted web/GitHub repository searches as of 2026-10-22. AlpaSim is the evaluation simulator, rather than a standalone dataset.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.04070",
+        "https://arxiv.org/html/2609.04070v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.04070",
+          "note": "Official title, initial submission 2026-09-03, residual VQ-VAE latent planning, nuScenes and AlpaSim evaluation."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.04070v1",
+          "note": "Full paper inspected; no author GitHub or project link found."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-03",
+      "searches": [
+        "\"autonomous driving\" \"VLA\" \"September\" \"2026\" arxiv",
+        "\"LaPla\" \"driving\" github",
+        "GitHub repository search: LaPla driving"
+      ]
+    },
+    "2609-02341": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/caiocj1/ad-vla",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Read ad_vla/models/aux_heads/bev_forcing.py with BEVForcingAuxHead and SimpleBEV teacher integration. Repository also documents text_traj_vlm.py, supervised_train_module.py and scripts/run_training.py. Code presence verified; experiments were not rerun.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.02341",
+        "https://arxiv.org/html/2609.02341v1",
+        "https://github.com/caiocj1/ad-vla",
+        "https://github.com/caiocj1/ad-vla/blob/main/ad_vla/models/aux_heads/bev_forcing.py"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.02341",
+          "note": "Official title, initial submission 2026-09-02, BEV-Forcing and transfer-study conclusions."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.02341v1",
+          "note": "Section 4.1 names WOD-E2E, NAVSIM, nuScenes, NVIDIA Physical AI and nuScenes-QA; paper directly links author repository."
+        },
+        {
+          "url": "https://github.com/caiocj1/ad-vla",
+          "note": "Author implementation documents SFT, optional BEV forcing, dataset adapters and reproducible PhysicalAI validation subset."
+        },
+        {
+          "url": "https://github.com/caiocj1/ad-vla/blob/main/ad_vla/models/aux_heads/bev_forcing.py",
+          "note": "Read actual BEVForcingAuxHead implementation with teacher-model integration; blob 4e7e12a8f5761779b878e32563e598ea5230ac72."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://github.com/caiocj1/ad-vla/blob/main/ad_vla/models/aux_heads/bev_forcing.py"
+      ],
+      "releaseScope": "Trajectory VLM, BEV-forcing auxiliary head, dataset adapters and training/evaluation entry points.",
+      "firstSubmitted": "2026-09-02",
+      "searches": [
+        "\"autonomous driving\" \"VLA\" \"September\" \"2026\" arxiv",
+        "2609.02341 official arXiv HTML",
+        "GitHub caiocj1/ad-vla implementation verification"
+      ]
+    },
+    "2610-17799": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/lzqw/SOAR-Flow",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Actual online-learning source inspected. Dataset and model releases are announced separately; this is not a verified turnkey reproduction.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.17799",
+        "https://arxiv.org/html/2610.17799v1",
+        "https://lzqw.github.io/SOAR-Flow/",
+        "https://github.com/lzqw/SOAR-Flow",
+        "https://raw.githubusercontent.com/lzqw/SOAR-Flow/main/code/relax/algorithm/guardian_dsac_flow_paper.py"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.17799",
+          "note": "Primary metadata: first submitted 2026-10-13; exact title and authors verified. Abstract explicitly describes online fine-tuning and continued policy improvement."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.17799v1",
+          "note": "Section IV-A specifies SafeMetaDriveEnv, held-out scenario seeds and online training; Section V describes UGV experiments."
+        },
+        {
+          "url": "https://lzqw.github.io/SOAR-Flow/",
+          "note": "Author project page read directly after web-reader failure; HTTP 200 and links to github.com/lzqw/SOAR-Flow/tree/main/code verified."
+        },
+        {
+          "url": "https://github.com/lzqw/SOAR-Flow",
+          "note": "Official repository identifies the same paper/authors and links reference programs. Model and dataset release remain separate."
+        },
+        {
+          "url": "https://raw.githubusercontent.com/lzqw/SOAR-Flow/main/code/relax/algorithm/guardian_dsac_flow_paper.py",
+          "note": "Direct public-source read succeeded, 24,115 bytes; contains GuardianDSACFlowPaper, online_joint_update and prepare_online_training implementations."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://raw.githubusercontent.com/lzqw/SOAR-Flow/main/code/relax/algorithm/guardian_dsac_flow_paper.py"
+      ],
+      "releaseScope": "Reference research implementation, training, evaluation, control and component tests",
+      "firstSubmitted": "2026-10-13",
+      "searches": [
+        "\"Beyond Safe Execution\"",
+        "\"SOAR-Flow\" github",
+        "\"SOAR-Flow\" \"lzqw\""
+      ]
+    },
+    "2610-11382": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "pending",
+      "codeScope": null,
+      "repository": "https://github.com/jinchan9/PlanWAM",
+      "repositoryRole": "pending-implementation",
+      "stars": null,
+      "note": "Author-linked repository contains LICENSE and README only, with code and models promised soon. The paper's source-availability statement does not establish a released implementation.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.11382",
+        "https://arxiv.org/html/2610.11382v1",
+        "https://jinchan9.github.io/PlanWAM_project_page/",
+        "https://github.com/jinchan9/PlanWAM"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.11382",
+          "note": "Primary metadata verifies title, authors and first submission on 2026-10-08; abstract supports method and benchmark scope."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.11382v1",
+          "note": "Author project URL appears in the paper; reproducibility statement claims source availability through that page."
+        },
+        {
+          "url": "https://jinchan9.github.io/PlanWAM_project_page/",
+          "note": "Author project Code button resolves to jinchan9/PlanWAM."
+        },
+        {
+          "url": "https://github.com/jinchan9/PlanWAM",
+          "note": "Inspected repository listing: only LICENSE and README.md. README explicitly says code and models will be released soon."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [
+        "LICENSE",
+        "README.md"
+      ],
+      "implementationFiles": [],
+      "releaseScope": "Repository placeholder",
+      "firstSubmitted": "2026-10-08",
+      "searches": [
+        "\"world model\" \"autonomous driving\" \"2026\" \"October\" arxiv",
+        "\"PlanWAM\" github"
+      ]
+    },
+    "2610-07381": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author-linked implementation found in the paper or exact title/author searches as of 2026-10-22. The method spans driving and other robotics domains.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.07381",
+        "https://arxiv.org/html/2610.07381v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.07381",
+          "note": "Primary metadata verifies title, authors and first submission on 2026-10-05; abstract establishes explicit geometry forecasting and cross-domain scope."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.07381v1",
+          "note": "Section IV-A names KITTI, Cityscapes, TartanAir and DOMINO. Paper contains no author implementation URL; searches did not locate one."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-10-05",
+      "searches": [
+        "\"GeoWM\" github",
+        "\"GeoWM\" code world model",
+        "\"GeoWM\" \"Noori\" github"
+      ]
+    },
+    "2609-39245": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": "partial",
+      "repository": "https://github.com/LeapWM/rewam",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Actual agent source inspected. Repository explicitly excludes training, auxiliary losses and cache builders. Evaluation expects external assets and current-frame oracle agent states; checkpoint download availability was not independently verified.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.39245",
+        "https://arxiv.org/html/2609.39245v1",
+        "https://github.com/LeapWM/rewam",
+        "https://raw.githubusercontent.com/LeapWM/rewam/main/ReWAM-main/Action-DiT/navsim/agents/videodrive/videodrive_agent.py"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.39245",
+          "note": "Primary metadata verifies title, authors and first submission on 2026-09-30. Level-k inference is not an iterative policy self-improvement loop, so classified as world-model."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.39245v1",
+          "note": "Paper explicitly links https://github.com/LeapWM/rewam; this distinguishes the author repository from a separate hustvl/ReWAM placeholder found in search."
+        },
+        {
+          "url": "https://github.com/LeapWM/rewam",
+          "note": "README states inference-only scope, excluded training components and oracle-agent-state evaluation condition. Source directory listing was inspected."
+        },
+        {
+          "url": "https://raw.githubusercontent.com/LeapWM/rewam/main/ReWAM-main/Action-DiT/navsim/agents/videodrive/videodrive_agent.py",
+          "note": "Direct public-source read succeeded, 29,222 bytes, with LevelKConfig and trajectory-agent implementation; not a README-only release."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://raw.githubusercontent.com/LeapWM/rewam/main/ReWAM-main/Action-DiT/navsim/agents/videodrive/videodrive_agent.py"
+      ],
+      "firstSubmitted": "2026-09-30",
+      "searches": [
+        "\"world model\" \"autonomous driving\" \"2026\" \"October\" arxiv",
+        "\"ReWAM\" github autonomous"
+      ]
+    },
+    "2609-37970": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "Paper announces future code, training/evaluation scripts and checkpoints, but no author release repository was located. Listed as a preprint, not an accepted conference paper.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.37970",
+        "https://arxiv.org/html/2609.37970v1",
+        "https://junjieye.com/publications.html"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.37970",
+          "note": "Primary metadata verifies exact title, authors and first submission on 2026-09-29; comments identify a technical report."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.37970v1",
+          "note": "Reproducibility statement explicitly promises a future code/scripts/checkpoint release and names NAVSIM/OpenScene and HUGSIM."
+        },
+        {
+          "url": "https://junjieye.com/publications.html",
+          "note": "Coauthor publications page lists PhysWAM with a PDF link; no code or project link for this entry was found."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-29",
+      "searches": [
+        "\"PhysWAM\" github",
+        "\"PhysWAM\" \"Parikh\" code project"
+      ]
+    },
+    "2609-37098": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author implementation URL found in the paper or exact-title code searches as of 2026-10-22. Action-to-world feedback is trajectory refinement, not evidence of recursive policy improvement.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.37098",
+        "https://arxiv.org/html/2609.37098v2"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.37098",
+          "note": "Primary metadata verifies title, authors and first submission on 2026-09-29; v2 is dated 2026-09-30, not the original publication date."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.37098v2",
+          "note": "Section 4.1.1 identifies V2X-Seq-SPD and the validation split; method describes trajectory refinement through predicted consequences. No author code URL located."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-29",
+      "searches": [
+        "\"world model\" \"autonomous driving\" \"2026\" \"October\" arxiv",
+        "\"V2X-WAM\" github"
+      ]
+    },
+    "2609-22762": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "released",
+      "codeScope": null,
+      "repository": "https://github.com/ffengc/drivereferee",
+      "repositoryRole": "implementation",
+      "stars": null,
+      "note": "Repository states code released 2026-10-08; actual analytic-referee source verified. Checkpoints remain coming soon. ICRA 2027 submission is not acceptance.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.22762",
+        "https://ffengc.github.io/drivereferee/",
+        "https://github.com/ffengc/drivereferee",
+        "https://raw.githubusercontent.com/ffengc/drivereferee/main/tools/referee.py"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.22762",
+          "note": "Primary metadata verifies exact title, authors and first submission on 2026-09-19. Abstract supports WAM preference distillation and analytic verification; repeated self-evolution is not claimed here."
+        },
+        {
+          "url": "https://ffengc.github.io/drivereferee/",
+          "note": "Author project page links the paper and ffengc/drivereferee code repository."
+        },
+        {
+          "url": "https://github.com/ffengc/drivereferee",
+          "note": "README records 2026-10-08 code release, checkpoints coming soon, and pipeline scripts for data conversion, self-sampling, preference training, map prediction and evaluation."
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ffengc/drivereferee/main/tools/referee.py",
+          "note": "Direct public-source read succeeded, 6,858 bytes; contains NavSim rollout, occupancy-grid collision/drivable-area checking and CLI implementation."
+        }
+      ],
+      "readmeMatch": "paper-title-or-author-link",
+      "rootFiles": [],
+      "implementationFiles": [
+        "https://raw.githubusercontent.com/ffengc/drivereferee/main/tools/referee.py"
+      ],
+      "releaseScope": "Training, preference construction, geometry readout, inference and evaluation",
+      "firstSubmitted": "2026-09-19",
+      "searches": [
+        "\"DriveReferee\"",
+        "DriveReferee ZYT-World arxiv"
+      ]
+    },
+    "2609-21617": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "No author-linked implementation located in the paper, laboratory publication entry, or exact-title GitHub searches as of 2026-10-22. PufferDrive is a dependency, not CounterPlay's released code.",
+      "evidence": [
+        "https://arxiv.org/abs/2609.21617",
+        "https://arxiv.org/html/2609.21617v1",
+        "https://rl.informatik.uni-freiburg.de/publications"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2609.21617",
+          "note": "Primary metadata verifies exact title, authors and first submission on 2026-09-18; abstract explicitly describes failure-driven backtracking, verified retries and policy distillation."
+        },
+        {
+          "url": "https://arxiv.org/html/2609.21617v1",
+          "note": "Sections III-D/E detail retry distillation and self-play integration; Section IV-A uses BehaviorBench and PufferDrive. Only dependency code links were found."
+        },
+        {
+          "url": "https://rl.informatik.uni-freiburg.de/publications",
+          "note": "Author laboratory lists CounterPlay as arXiv:2609.21617 with a paper download, but no code or project link for the entry."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-09-18",
+      "searches": [
+        "CounterPlay autonomous driving 2026 arxiv",
+        "\"CounterPlay\" github",
+        "\"CounterPlay\" \"Jiarong\" code",
+        "\"CounterPlay\" \"driving\" site:github.com"
+      ]
+    },
+    "2610-28184": {
+      "checkedAt": "2026-10-22",
+      "codeStatus": "not-found",
+      "codeScope": null,
+      "repository": null,
+      "repositoryRole": null,
+      "stars": null,
+      "note": "The paper links an author project page, but the page could not be retrieved. Targeted title and author GitHub repository searches found no verified implementation URL as of 2026-10-22. CARLA/Fail2Drive and AlpaSim/NuRec are evaluation instruments, not standalone datasets.",
+      "evidence": [
+        "https://arxiv.org/abs/2610.28184",
+        "https://arxiv.org/html/2610.28184v1"
+      ],
+      "sourceNotes": [
+        {
+          "url": "https://arxiv.org/abs/2610.28184",
+          "note": "Official title and first submission on 2026-10-20 13:21:14 UTC. Authors: Matteo Cercola, Katie Z Luo, Simone Formentin and Marco Pavone."
+        },
+        {
+          "url": "https://arxiv.org/html/2610.28184v1",
+          "note": "Section III-A identifies NVIDIA PhysicalAI-AV logged scenes, CARLA via Fail2Drive, and AlpaSim/NuRec closed-loop replay. Sections V and VIII qualify guidance results and domain-shift limitations. Author footnote supplies the project URL."
+        }
+      ],
+      "readmeMatch": null,
+      "rootFiles": [],
+      "implementationFiles": [],
+      "firstSubmitted": "2026-10-20",
+      "searches": [
+        "\"autonomous driving\" \"VLA\" \"October 20, 2026\"",
+        "\"autonomous driving\" \"VLA\" \"October 21, 2026\"",
+        "\"autonomous driving\" \"VLA\" \"October 22, 2026\"",
+        "site:arxiv.org/abs/2610 driving 20 Oct 2026",
+        "site:arxiv.org/abs/2610 driving 21 Oct 2026",
+        "site:arxiv.org/abs/2610 driving 22 Oct 2026",
+        "\"Perceives but Doesn't Brake\"",
+        "\"Perceives but Doesn't Brake\" github",
+        "GitHub repository search: user:matcercola18 pbdb"
+      ]
     }
   },
   "lastIncrementalUpdate": {
-    "date": "2026-10-20",
+    "date": "2026-10-22",
     "added": [
-      "DriveWLA",
-      "OccWAM",
-      "AUGUstus",
-      "MORE",
-      "SimVTA",
-      "FPD-Drive",
-      "RIWANav",
-      "MagicDrive-V2"
+      "Expand-and-Prune",
+      "GRID-Planner",
+      "DIVA",
+      "ConDenseDrive",
+      "ViRA",
+      "Odyssey",
+      "ECO",
+      "ROIDrive",
+      "LECDrive",
+      "Scene-Adaptive VLA",
+      "SafeDriveVLA",
+      "AD-Memo",
+      "LADA",
+      "RAF-VLA",
+      "LaPla",
+      "BEV-Forcing",
+      "SOAR-Flow",
+      "PlanWAM",
+      "GeoWM",
+      "ReWAM",
+      "PhysWAM",
+      "V2X-WAM",
+      "DriveReferee",
+      "CounterPlay",
+      "Perceives but Doesn't Brake"
     ],
-    "releaseStatusUpdated": [
-      "AD-E2E-JEPA"
-    ],
-    "note": "Only these entries were rechecked in this increment. Older records keep their original observation dates."
+    "releaseStatusUpdated": [],
+    "counts": {
+      "added": 25,
+      "byTrack": {
+        "e2e": 7,
+        "vla": 9,
+        "world-model": 6,
+        "rsi": 3
+      },
+      "released": 9,
+      "partial": 2,
+      "pending": 2,
+      "notFound": 14
+    },
+    "note": "Only the newly added entries were checked in this increment. Older entries and audit dates are preserved. ADFeed was searched as a discovery reference, but recent WeChat pages could not be retrieved; these additions are not represented as an ADFeed recommendation list. Metadata and code status rely on primary paper and author sources."
   }
 }
